@@ -1,0 +1,22 @@
+<svg width="240" height="232" viewBox="0 0 240 232" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M196 92C191.6 92 188 95.6 188 100V140C188 144.4 191.6 148 196 148H236L224.8 92H196Z" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M128 140H160C162.24 140 164 138.232 164 136V96C164 93.76 162.24 92 160 92H128C125.76 92 124 93.76 124 96V136C124 138.232 125.76 140 128 140Z" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 4H236" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 220H236" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M204 228V220H228V228" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M156 228V220H180V228" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M108 228V220H132V228" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M60 228V220H84V228" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 228V220H36V228" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M152 208C156.418 208 160 204.418 160 200C160 195.582 156.418 192 152 192C147.582 192 144 195.582 144 200C144 204.418 147.582 208 152 208Z" stroke="black" stroke-width="8" stroke-miterlimit="10"/>
+<path d="M120 208C124.418 208 128 204.418 128 200C128 195.582 124.418 192 120 192C115.582 192 112 195.582 112 200C112 204.418 115.582 208 120 208Z" stroke="black" stroke-width="8" stroke-miterlimit="10"/>
+<path d="M72 140H104C106.24 140 108 138.232 108 136V96C108 93.76 106.24 92 104 92H72C69.76 92 68 93.76 68 96V136C68 138.232 69.76 140 72 140Z" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 68H200.32C211.76 68 221.6 76.08 223.84 87.28L236 148V196C236 200.4 232.4 204 228 204H176L174.24 193.36C172.96 185.68 166.32 180 158.472 180H113.52C105.68 180 99.032 185.68 97.752 193.36L96 204H28" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.008 92H12C7.6 92 4 95.6 4 100V204H28" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28 92H44C48.4 92 52 95.6 52 100V204" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28 148H52" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 148H16" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28 92V204" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M100 12L128 40L100 68" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M235.816 172H220" stroke="black" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
