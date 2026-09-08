@@ -12,15 +12,14 @@
         </button>
       </div>
 
-      <!-- Світло-сірий вертикальний блок з навігатором рисочок -->
-      <div class="sidebar-content">
-        <SidebarNav 
-          v-if="totalItems > 0"
-          :totalItems="totalItems" 
-          :activeIndex="activeIndex"
-          @navigate="$emit('navigate', $event)"
-        />
-      </div>
+      <!-- Навігатор сам вирівнюється нижче середини та має власний плаваючий плашка-контейнер -->
+      <SidebarNav 
+        v-if="totalItems > 0"
+        :items="items"
+        :totalItems="totalItems" 
+        :activeIndex="activeIndex"
+        @navigate="$emit('navigate', $event)"
+      />
 
       <!-- Футер: Кругла кнопка перемикання мов -->
       <div class="sidebar-footer">
@@ -57,6 +56,10 @@ export default {
       type: Boolean,
       default: false
     },
+    items: {
+      type: Array,
+      default: () => []
+    },
     totalItems: {
       type: Number,
       default: 0
@@ -88,7 +91,8 @@ export default {
   box-sizing: border-box;
 }
 
-.sidebar-header {
+.sidebar-header,
+.sidebar-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,27 +128,6 @@ export default {
 .back-btn .arrow {
   font-size: 1.4vw;
   line-height: 1;
-}
-
-.sidebar-content {
-  width: 100%;
-  flex: 1;
-  background-color: #f8fafc;
-  border-radius: 1vw;
-  border: 0.1vw solid rgba(226, 232, 240, 0.8);
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.sidebar-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
 }
 
 .lang-btn {
