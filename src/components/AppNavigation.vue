@@ -7,7 +7,7 @@
     >
       <span class="button-label">{{ button.label }}</span>
 
-      <button class="kiosk-btn" @click="$emit('select', button.id)">
+      <button class="kiosk-btn" @click="$emit('select', button.id, $event)">
         <AppIcon :name="button.icon" />
       </button>
     </div>
