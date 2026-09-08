@@ -1,54 +1,77 @@
 <template>
   <div class="main-screen">
-    <!-- Новий винесений компонент фону -->
+    <!-- Фоновий компонент -->
     <AppBackground :currentState="currentBgState" />
 
-    <!-- Кнопка повернення на головну -->
+    <!-- Верхній градієнт -->
     <Transition name="fade">
-      <button 
-        v-if="isOfferActive && !isAnimating" 
-        class="back-btn" 
-        @click="closeOffer"
-      >
-        <span class="arrow">←</span>
-        <span>На головну</span>
-      </button>
+      <div v-if="isOfferActive && !isAnimating" class="offer-top-gradient"></div>
     </Transition>
 
+    <!-- Логотип у лівому верхньому куті (для Оферти) -->
+    <Transition name="fade">
+      <div v-if="isOfferActive && !isAnimating" class="offer-header-brand">
+        <img src="./assets/logo.png" class="header-logo" alt="Логотип компанії" />
+        <span class="active-offer-title">{{ currentOfferData.title }}</span>
+      </div>
+    </Transition>
+
+    <!-- Бічна панель -->
+    <AppSidebar 
+      :isOpen="isOfferActive && !isAnimating" 
+      @toggle-language="handleLanguageToggle"
+      @go-home="closeOffer"
+    />
+
     <div class="content-container">
-      <div class="top-content-group" :class="{ 'offer-layout': isOfferActive }">
-        <div class="logo-container" :class="{ 'logo-top-left': isOfferActive }">
-          <img src="./assets/logo.png" class="logo" alt="Логотип компанії" />
-        </div>
-        
-        <Transition name="fade">
-          <div v-if="!isOfferActive" class="interactive-group">
+      <!-- Центральна група елементів (Головний екран) з анімацією появи -->
+      <Transition name="main-content-fade" appear>
+        <div v-if="!isOfferActive" class="top-content-group" key="main-group">
+          <div class="main-logo-container">
+            <img src="./assets/logo.png" class="main-logo" alt="Логотип компанії" />
+          </div>
+          <div class="interactive-group">
             <InfoTicker :phrases="phrases" :interval="5000" />
             <AppNavigation :buttons="buttons" @select="handleButtonClick" />
           </div>
-        </Transition>
-      </div>
+        </div>
+      </Transition>
 
+      <!-- Контейнер для вмісту оферти -->
       <Transition name="fade">
-        <SolutionsCarousel v-if="!isOfferActive" :solutions="solutions" :speed="1" />
+        <main v-if="isOfferActive && !isAnimating" class="offer-content-container" key="offer-group">
+          <OfferDetails :offer="currentOfferData" />
+        </main>
+      </Transition>
+
+      <!-- Карусель головного екрана -->
+      <Transition name="main-content-fade" appear>
+        <SolutionsCarousel v-if="!isOfferActive" :solutions="solutions" :speed="1" key="carousel" />
       </Transition>
     </div>
 
-<div 
-  v-if="ripple.active" 
-  class="ripple-overlay" 
-  :style="{ left: `${ripple.x}px`, top: `${ripple.y}px` }"
->
-  <div class="ripple-circle circle-1"></div>
-</div>
+    <!-- Ripple Overlay -->
+    <Transition name="ripple-fade">
+      <div 
+        v-if="ripple.active" 
+        class="ripple-overlay" 
+        :style="{ left: `${ripple.x}px`, top: `${ripple.y}px` }"
+      >
+        <div class="ripple-circle circle-1"></div>
+      </div>
+    </Transition>
   </div>
 </template>
 
 <script>
+import offersDataJson from '@/assets/data/offers.json';
+
 import AppBackground from './components/AppBackground.vue'
 import InfoTicker from './components/InfoTicker.vue'
 import AppNavigation from './components/AppNavigation.vue'
 import SolutionsCarousel from './components/SolutionsCarousel.vue'
+import AppSidebar from './components/AppSidebar.vue'
+import OfferDetails from './components/OfferDetails.vue'
 
 export default {
   name: 'MainScreen',
@@ -56,7 +79,9 @@ export default {
     AppBackground,
     InfoTicker,
     AppNavigation,
-    SolutionsCarousel
+    SolutionsCarousel,
+    AppSidebar,
+    OfferDetails
   },
   data() {
     return {
@@ -76,6 +101,8 @@ export default {
         { id: 'przemysl', label: 'Przemysł', icon: 'przemysl' },
         { id: 'budynki', label: 'Budynki', icon: 'wibro' }
       ],
+      
+      offersData: offersDataJson,
       phrases: [
         'Сучасні рішення для інфраструктури',
         'Надійне віброізоляційне обладнання',
@@ -92,68 +119,95 @@ export default {
           title: 'Підшпальні мати Sylomer',
           description: 'Зменшення зносу баласту та рівня шуму.',
           image: 'https://picsum.photos/400/250?random=2'
-        },
-        {
-          title: 'Віброізоляція будівель',
-          description: 'Захист споруд від динамічних навантажень.',
-          image: 'https://picsum.photos/400/250?random=3'
-        },
-        {
-          title: 'Промислові опори Sylodyn',
-          description: 'Ізоляція важкого обладнання та верстатів.',
-          image: 'https://picsum.photos/400/250?random=4'
-        },
-        {
-          title: 'Метрополітен системи',
-          description: 'Зниження рівня шуму в тунелях та на станціях.',
-          image: 'https://picsum.photos/400/250?random=5'
         }
-      ]    }
+      ]
+    }
   },
   computed: {
-    // Передаємо потрібний ключ фону
     currentBgState() {
       return this.isOfferActive ? this.activeOfferId : 'main'
+    },
+    currentOfferData() {
+      return this.offersData[this.activeOfferId] || {
+        category: 'Інформація',
+        title: 'Заголовок оферти',
+        subtitle: 'Підзаголовок',
+        description: 'Опис відсутній',
+        features: []
+      }
     }
   },
+  methods: {
+    handleButtonClick(id, event) {
+      if (this.isAnimating) return
+      this.isAnimating = true
 
-methods: {
-  handleButtonClick(id, event) {
-    if (this.isAnimating) return
-    this.isAnimating = true
+      if (event && event.clientX) {
+        this.ripple.x = event.clientX
+        this.ripple.y = event.clientY
+      } else {
+        this.ripple.x = window.innerWidth / 2
+        this.ripple.y = window.innerHeight / 2
+      }
 
-    if (event && event.clientX) {
-      this.ripple.x = event.clientX
-      this.ripple.y = event.clientY
-    } else {
-      this.ripple.x = window.innerWidth / 2
-      this.ripple.y = window.innerHeight / 2
+      this.ripple.active = true
+
+      setTimeout(() => {
+        this.activeOfferId = id
+        this.isOfferActive = true
+      }, 100)
+
+      setTimeout(() => {
+        this.ripple.active = false
+      }, 500)
+
+      setTimeout(() => {
+        this.isAnimating = false
+      }, 950)
+    },
+
+    closeOffer() {
+      this.isOfferActive = false
+      this.activeOfferId = null
+    },
+
+    handleLanguageToggle() {
+      console.log('Перемикання мови')
     }
-
-    this.ripple.active = true
-
-    // Перемикаємо стан оферти рівно посередині розгортання кола (500ms)
-    setTimeout(() => {
-      this.activeOfferId = id
-      this.isOfferActive = true
-    }, 400)
-
-    // Повне завершення повільної анімації (1100ms)
-    setTimeout(() => {
-      this.ripple.active = false
-      this.isAnimating = false
-    }, 800)
-  },
-
-  closeOffer() {
-    this.isOfferActive = false
-    this.activeOfferId = null
   }
 }
-  }
 </script>
 
 <style scoped>
+/* --- АНІМАЦІЯ ПОЯВИ ЦЕНТРАЛЬНОГО КОНТЕНТУ --- */
+.main-content-fade-enter-active {
+  transition: all 0.7s ease-in-out;
+  transition-delay: 0.2s; /* Невеличка затримка для виходу з оферти */
+}
+
+.main-content-fade-leave-active {
+  transition: all 0.4s ease-in-out;
+}
+
+.main-content-fade-enter-from {
+  opacity: 0;
+  transform: translateY(20px) scale(0.96);
+}
+
+.main-content-fade-leave-to {
+  opacity: 0;
+  transform: translateY(-10px) scale(0.98);
+}
+
+/* Стандартна плавна транзиція для градієнтів та оферти */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+/* --- РЕШТА СТИЛІВ СТОРІНКИ --- */
 .main-screen {
   position: fixed;
   top: 0;
@@ -168,25 +222,80 @@ methods: {
   align-items: center;
 }
 
-.bg-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
-  height: 100vh;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  z-index: 1;
+.offer-header-brand {
+  position: fixed;
+  top: 3vh;
+  left: 3vw;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 1.2vw;
 }
 
-.bg-overlay {
+.header-logo {
+  width: 10vw;
+  height: auto;
+  object-fit: contain;
+}
+
+.active-offer-title {
+  font-size: 1.3vw;
+  font-weight: 700;
+  color: #0f172a;
+  white-space: nowrap;
+  padding-left: 1.2vw;
+  border-left: 0.15vw solid #007bc2;
+  line-height: 1.1;
+}
+
+.main-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  margin-bottom: 1vh;
+}
+
+.main-logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.offer-top-gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 8vw;
+  height: 14vh;
+  z-index: 10;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg, 
+    rgba(255, 255, 255, 0.98) 0%, 
+    rgba(255, 255, 255, 0.7) 50%, 
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.offer-content-container {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  z-index: 2;
+  right: 8vw;
+  bottom: 0;
+  z-index: 5;
+  overflow-y: auto;
+  padding: 16vh 4vw 6vh 18vw;
+  box-sizing: border-box;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.offer-content-container::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
 }
 
 .content-container {
@@ -208,12 +317,7 @@ methods: {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 20vh;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.top-content-group.offer-layout {
-  margin-top: 0;
+  margin-top: 18vh;
 }
 
 .interactive-group {
@@ -223,68 +327,6 @@ methods: {
   align-items: center;
 }
 
-/* Логотип */
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25%;
-  margin-bottom: 1vh;
-  transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-/* Переміщення логотипа в лівий верхній кут */
-.logo-container.logo-top-left {
-  position: absolute;
-  top: 3vh;
-  left: 3vw;
-  width: 12vw;
-  margin: 0;
-}
-
-.logo {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-/* Кнопка "На головну" */
-.back-btn {
-  position: absolute;
-  top: 3.5vh;
-  right: 4vw;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  gap: 0.6vw;
-  padding: 0.8vw 1.5vw;
-  background-color: #ffffff;
-  border: 0.12vw solid rgba(226, 232, 240, 0.9);
-  border-radius: 2vw;
-  box-shadow: 0 0.5vw 1.5vw rgba(0, 0, 0, 0.08);
-  font-family: inherit;
-  font-size: 1vw;
-  font-weight: 600;
-  color: #1a202c;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
-}
-
-.back-btn:hover {
-  background-color: #f8fafc;
-  transform: translateY(-0.1vw);
-  box-shadow: 0 0.8vw 2vw rgba(0, 0, 0, 0.12);
-}
-
-.back-btn:active {
-  transform: scale(0.96);
-}
-
-.back-btn .arrow {
-  font-size: 1.2vw;
-}
-
-/* --- RIPPLE ANIMATION OVERLAY --- */
 .ripple-overlay {
   position: fixed;
   z-index: 999;
@@ -297,35 +339,24 @@ methods: {
   border-radius: 50%;
   background: #ffffff;
   transform: scale(0);
-  animation: rippleExpand 0.8s ease-in forwards;
+  will-change: transform;
+  animation: rippleExpand 1.2s ease-in-out forwards;
 }
 
 .circle-1 {
-  width: 300vw;
-  height: 300vw;
-  margin-left: -150vw;
-  margin-top: -150vw;
+  width: 320vw;
+  height: 320vw;
+  margin-left: -160vw;
+  margin-top: -160vw;
   opacity: 1;
-  animation-delay: 0s;
 }
 
 @keyframes rippleExpand {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
 }
 
-/* FADE TRANSITIONS */
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.4s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
+.ripple-fade-enter-active { transition: opacity 0.4s ease-out; }
+.ripple-fade-leave-active { transition: opacity 2s ease-out; }
+.ripple-fade-enter-from, .ripple-fade-leave-to { opacity: 0; }
 </style>

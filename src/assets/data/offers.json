@@ -1,0 +1,337 @@
+{
+  "kolej": {
+    "id": "kolej",
+    "title": "Infrastruktura Kolejowa (Kolej)",
+    "subtitle": "Kompleksowe rozwiązania dla torów i magistrali kolejowych",
+    "items": [
+      {
+        "id": "kolej-1",
+        "title": "1. Podkłady podtorowe Sylomer®",
+        "description": "Elastyczne podkładki redukują obciążenie mechaniczne podsypki tłuczniowej, zapobiegając jej rozdrabnianiu i wydłużając żywotność toru.",
+        "image": "https://picsum.photos/600/400?random=101"
+      },
+      {
+        "id": "kolej-2",
+        "title": "2. Maty podpłytowe do podłoży żelbetowych",
+        "description": "Zapewniają wysokowydajną wibroizolację na mostach i estakadach, zmniejszając hałas strukturalny od pociągów.",
+        "image": "https://picsum.photos/600/400?random=102"
+      },
+      {
+        "id": "kolej-3",
+        "title": "3. Przekładki podszynowe",
+        "description": "Równomiernie rozkładają obciążenia punktowe od kół pojazdów, zmniejszając zużycie szyn oraz podnosząc płynność jazdy.",
+        "image": "https://picsum.photos/600/400?random=103"
+      },
+      {
+        "id": "kolej-4",
+        "title": "4. Izolacja akustyczna ekranów torowych",
+        "description": "Specjalne panele tłumiące fale dźwiękowe wywoływane przez ruch pociągów dużych prędkości w pobliżu stref mieszkalnych.",
+        "image": "https://picsum.photos/600/400?random=104"
+      },
+      {
+        "id": "kolej-5",
+        "title": "5. Systemy mocowania szyn bezpodsypkowych",
+        "description": "Bezpieczne mocowania zapewniające stabilność geometrii toru w trudnych warunkach eksploatacyjnych.",
+        "image": "https://picsum.photos/600/400?random=105"
+      },
+      {
+        "id": "kolej-6",
+        "title": "6. Dylatacje dla obiektów mostowych",
+        "description": "Elementy kompensujące odkształcenia termiczne i dynamiczne w strukturach mostów kolejowych.",
+        "image": "https://picsum.photos/600/400?random=106"
+      },
+      {
+        "id": "kolej-7",
+        "title": "7. Podkładki pod rozjazdy kolejowe",
+        "description": "Dedykowane wibroizolatory redukujące wstrząsy i uderzenia w miejscach rozjazdów i skrzyżowań torów.",
+        "image": "https://picsum.photos/600/400?random=107"
+      },
+      {
+        "id": "kolej-8",
+        "title": "8. Ochrona podsypki tłuczniowej",
+        "description": "Geosiatki i materiały wzmacniające warstwę nośną torowiska przed osiadaniem i rozsuwaniem.",
+        "image": "https://picsum.photos/600/400?random=108"
+      },
+      {
+        "id": "kolej-9",
+        "title": "9. Tłumiki hałasu szynowego",
+        "description": "Nakładki montowane bezpośrednio na szynach, obniżające pisk i wibracje na łukach toru.",
+        "image": "https://picsum.photos/600/400?random=109"
+      },
+      {
+        "id": "kolej-10",
+        "title": "10. Systemy odwodnienia torowisk",
+        "description": "Kompleksowe rozwiązanie do szybkiego odprowadzania wody deszczowej z obszaru podsypki i podtorza.",
+        "image": "https://picsum.photos/600/400?random=110"
+      }
+    ]
+  },
+  "metro": {
+    "id": "metro",
+    "title": "Systemy Metra (Metro)",
+    "subtitle": "Ochrona środowiska miejskiego przed wibracjami tunelowymi",
+    "items": [
+      {
+        "id": "metro-1",
+        "title": "1. Systemy Masa-Sprężyna",
+        "description": "Wysokowydajna izolacja podtorowa do tuneli metra, redukująca przenoszenie drgań o niskiej częstotliwości na budynki.",
+        "image": "https://picsum.photos/600/400?random=201"
+      },
+      {
+        "id": "metro-2",
+        "title": "2. Otuliny bloków podkładowych",
+        "description": "Elastyczne buty izolacyjne przeznaczone do osadzania bloków podkładowych bezpośrednio w betonowej podbudowie.",
+        "image": "https://picsum.photos/600/400?random=202"
+      },
+      {
+        "id": "metro-3",
+        "title": "3. Izolacja akustyczna stacji podziemnych",
+        "description": "Panele pochłaniające hałas montowane na ścianach i sufitach peronów metra dla komfortu pasażerów.",
+        "image": "https://picsum.photos/600/400?random=203"
+      },
+      {
+        "id": "metro-4",
+        "title": "4. Podkładki pod trzecią szynę",
+        "description": "Izolatory elektryczne i mechaniczne zapewniające stabilne mocowanie szyny zasilającej w tunelu.",
+        "image": "https://picsum.photos/600/400?random=204"
+      },
+      {
+        "id": "metro-5",
+        "title": "5. Elastyczne uszczelnienia tunelowe",
+        "description": "Materiały uszczelniające chroniące konstrukcję tunelu przed wnikaniem wód gruntowych i drganiami.",
+        "image": "https://picsum.photos/600/400?random=205"
+      },
+      {
+        "id": "metro-6",
+        "title": "6. Tłumiki rezonansowe drgań",
+        "description": "Specjalistyczne urządzenia pasywne pochłaniające falę drgań o specyficznych częstotliwościach w tunelu.",
+        "image": "https://picsum.photos/600/400?random=206"
+      },
+      {
+        "id": "metro-7",
+        "title": "7. Maty tłumiące pod płyty torowe",
+        "description": "Elastyczne maty kompozytowe stosowane pod wylewanymi płytami betonowymi w tunelach głębokich.",
+        "image": "https://picsum.photos/600/400?random=207"
+      },
+      {
+        "id": "metro-8",
+        "title": "8. Wibroizolacja wentylatorów metra",
+        "description": "Systemy zawieszenia dla potężnych wentylatorów szybów wentylacyjnych metra redukujące szumy.",
+        "image": "https://picsum.photos/600/400?random=208"
+      },
+      {
+        "id": "metro-9",
+        "title": "9. Przejścia szczelne kabli i rur",
+        "description": "Wibroizolowane elementy uszczelniające do przeprowadzania instalacji przez ściany tunelu.",
+        "image": "https://picsum.photos/600/400?random=209"
+      },
+      {
+        "id": "metro-10",
+        "title": "10. Systemy monitoringu drgań",
+        "description": "Czujniki i rejestratory do ciągłego pomiaru poziomu wibracji w tunelach oraz w pobliżu budynków.",
+        "image": "https://picsum.photos/600/400?random=210"
+      }
+    ]
+  },
+  "tramwaj": {
+    "id": "tramwaj",
+    "title": "Linie Tramwajowe (Tramwaj)",
+    "subtitle": "Cichy i niezawodny miejski transport szynowy",
+    "items": [
+      {
+        "id": "tramwaj-1",
+        "title": "1. Wkładki komorowe do szyn",
+        "description": "Profile kauczukowe wyciszające rowek szyny w nawierzchniach drogowych i na skrzyżowaniach.",
+        "image": "https://picsum.photos/600/400?random=301"
+      },
+      {
+        "id": "tramwaj-2",
+        "title": "2. Otuliny szynowe ciągłe",
+        "description": "System całkowitego zalewania lub otulania szyn materiałem elastycznym chroniącym przed prądami błądzącymi.",
+        "image": "https://picsum.photos/600/400?random=302"
+      },
+      {
+        "id": "tramwaj-3",
+        "title": "3. Izolacja łuków i zwrotnic",
+        "description": "Dedykowane maty do tłumienia hałasu na zakrętach i łukach o małym promieniu.",
+        "image": "https://picsum.photos/600/400?random=303"
+      },
+      {
+        "id": "tramwaj-4",
+        "title": "4. Systemy dla torowisk zielonych",
+        "description": "Rozwiązania umożliwiające układanie trawników na torowiskach z zachowaniem pełnej wibroizolacji.",
+        "image": "https://picsum.photos/600/400?random=304"
+      },
+      {
+        "id": "tramwaj-5",
+        "title": "5. Podkładki pod płyty prefabrykowane",
+        "description": "Maty pod płyty betonowe w technologii bezpodsypkowej stosowane na przystankach i skrzyżowaniach.",
+        "image": "https://picsum.photos/600/400?random=305"
+      },
+      {
+        "id": "tramwaj-6",
+        "title": "6. Elastyczne wypełnienia zalewowe",
+        "description": "Masy poliuretanowe do elastycznego uszczelniania styku szyny z asfaltem lub kostką brukową.",
+        "image": "https://picsum.photos/600/400?random=306"
+      },
+      {
+        "id": "tramwaj-7",
+        "title": "7. Ochrona antykorozyjna szyn",
+        "description": "Powłoki chroniące szyny tramwajowe przed solą drogową i wilgocią w okresie zimowym.",
+        "image": "https://picsum.photos/600/400?random=307"
+      },
+      {
+        "id": "tramwaj-8",
+        "title": "8. Tłumiki drgań dla mostów miejskich",
+        "description": "Specjalny system mocowania szyn na mostach miejskich ograniczający hałas rezonansowy przęseł.",
+        "image": "https://picsum.photos/600/400?random=308"
+      },
+      {
+        "id": "tramwaj-9",
+        "title": "9. Profile dylatacyjne torowiska",
+        "description": "Elementy przejęcie odkształceń termicznych nawierzchni szynowej i drogowej wokół toru.",
+        "image": "https://picsum.photos/600/400?random=309"
+      },
+      {
+        "id": "tramwaj-10",
+        "title": "10. Izolatory prądów błądzących",
+        "description": "Materiały elektroizolacyjne zapobiegające elektrochemicznej korozji podziemnych instalacji miejskich.",
+        "image": "https://picsum.photos/600/400?random=310"
+      }
+    ]
+  },
+  "przemysl": {
+    "id": "przemysl",
+    "title": "Obiekty Przemysłowe (Przemysł)",
+    "subtitle": "Ochrona konstrukcji i izolacja ciężkiego wyposażenia",
+    "items": [
+      {
+        "id": "przemysl-1",
+        "title": "1. Posadowienie pras i młotów",
+        "description": "Wibroizolacja fundamentów blokowych pod prasy kuźnicze i tłoczniki pochłaniająca uderzenia impulsowe.",
+        "image": "https://picsum.photos/600/400?random=401"
+      },
+      {
+        "id": "przemysl-2",
+        "title": "2. Izolacja stanowisk badawczych",
+        "description": "Fundamenty pływające dla dokładnych stanowisk pomiarowych wymagających zerowego poziomu drgań z zewnątrz.",
+        "image": "https://picsum.photos/600/400?random=402"
+      },
+      {
+        "id": "przemysl-3",
+        "title": "3. Stopy i podpory maszynowe",
+        "description": "Regulowane wibroizolatory do poziomowania i izolacji obrabiarek CNC, kompresorów i dmuchaw.",
+        "image": "https://picsum.photos/600/400?random=403"
+      },
+      {
+        "id": "przemysl-4",
+        "title": "4. Izolacja kruszarek i młynów",
+        "description": "Materiały o wysokiej wytrzymałości na obciążenia dynamiczne stosowane w zakładach wydobywczych.",
+        "image": "https://picsum.photos/600/400?random=404"
+      },
+      {
+        "id": "przemysl-5",
+        "title": "5. Maty pod podłogi przemysłowe",
+        "description": "Warstwy wibroizolacyjne układane pod posadzkami w halach produkcyjnych z wózkami widłowymi.",
+        "image": "https://picsum.photos/600/400?random=405"
+      },
+      {
+        "id": "przemysl-6",
+        "title": "6. Zawieszenia rurociągów przemysłowych",
+        "description": "Uchwyty i zawieszenia tłumiące drgania wywoływane przez przepływ mediów pod wysokim ciśnieniem.",
+        "image": "https://picsum.photos/600/400?random=406"
+      },
+      {
+        "id": "przemysl-7",
+        "title": "7. Wibroizolacja silników i agregatów",
+        "description": "Podstawa elastomerowa pod agregaty prądotwórcze i turbiny wyciszająca ich pracę.",
+        "image": "https://picsum.photos/600/400?random=407"
+      },
+      {
+        "id": "przemysl-8",
+        "title": "8. Ochrona fundamentów suwnic",
+        "description": "Podkładki pod szyny suwnicowe redukujące uderzenia kół oraz hałas w halach magazynowych.",
+        "image": "https://picsum.photos/600/400?random=408"
+      },
+      {
+        "id": "przemysl-9",
+        "title": "9. Izolacja wentylatorów przemysłowych",
+        "description": "Rozwiązania do redukcji wibracji i hałasu generowanego przez wielkogabarytowe systemy wentylacji.",
+        "image": "https://picsum.photos/600/400?random=409"
+      },
+      {
+        "id": "przemysl-10",
+        "title": "10. Kompensatory tkaninowe i gumowe",
+        "description": "Elastyczne złącza do kanałów spalin i powietrza zapobiegające przenoszeniu naprężeń i drgań.",
+        "image": "https://picsum.photos/600/400?random=410"
+      }
+    ]
+  },
+  "budynki": {
+    "id": "budynki",
+    "title": "Wibroizolacja Budynków (Budynki)",
+    "subtitle": "Ochrona obiektów mieszkalnych i komercyjnych",
+    "items": [
+      {
+        "id": "budynki-1",
+        "title": "1. Maty podfundamentowe Sylodyn®",
+        "description": "Całopowierzchniowa izolacja płyty fundamentowej chroniąca budynek przed drganiami z pobliskiej linii metra.",
+        "image": "https://picsum.photos/600/400?random=501"
+      },
+      {
+        "id": "budynki-2",
+        "title": "2. Podpory punktowe dla słupów",
+        "description": "Elastyczne bloki łożyskowe montowane pod stopami fundamentowymi i słupami nośnymi budynku.",
+        "image": "https://picsum.photos/600/400?random=502"
+      },
+      {
+        "id": "budynki-3",
+        "title": "3. Izolacja taśmowa ścian ławowych",
+        "description": "Pasowe układanie wibroizolacji pod ścianami nośnymi w celu przerwania mostków akustycznych.",
+        "image": "https://picsum.photos/600/400?random=503"
+      },
+      {
+        "id": "budynki-4",
+        "title": "4. Pływające podłogi jastrychowe",
+        "description": "Wysokowydajne maty pod wylewki betonowe zapobiegające przenoszeniu hałasu uderzeniowego między piętrami.",
+        "image": "https://picsum.photos/600/400?random=504"
+      },
+      {
+        "id": "budynki-5",
+        "title": "5. Wibroizolacja szybów wind",
+        "description": "Elastyczne oddzielenie konstrukcji szybu windy od ścian mieszkań w celu wyeliminowania szumów jazdy.",
+        "image": "https://picsum.photos/600/400?random=505"
+      },
+      {
+        "id": "budynki-6",
+        "title": "6. Izolacja maszynowni HVAC na dachu",
+        "description": "Podstawy pod centrale wentylacyjne i chillery zapobiegające rezonansowi ze stropem ostatniego piętra.",
+        "image": "https://picsum.photos/600/400?random=506"
+      },
+      {
+        "id": "budynki-7",
+        "title": "7. Dylatacje akustyczne budynków",
+        "description": "Wypełnienia szczelin dylatacyjnych między sąsiadującymi segmentami budynków materiałami tłumiącymi.",
+        "image": "https://picsum.photos/600/400?random=507"
+      },
+      {
+        "id": "budynki-8",
+        "title": "8. Izolacja podestów klatek schodowych",
+        "description": "Elementy elastyczne łączące spoczniki ze ścianami w celu tłumienia odgłosów kroków.",
+        "image": "https://picsum.photos/600/400?random=508"
+      },
+      {
+        "id": "budynki-9",
+        "title": "9. Wibroizolacja studni kanalizacyjnych",
+        "description": "Podkładki pod włazy i studzienki zapobiegające hałasowi uderzeniowemu podczas przejazdu samochodów.",
+        "image": "https://picsum.photos/600/400?random=509"
+      },
+      {
+        "id": "budynki-10",
+        "title": "10. Studio w studiu (Box-in-Box)",
+        "description": "Kompleksowe rozwiązania dla sal koncertowych, kin i kin domowych wymagających pełnej izolacji dźwiękowej.",
+        "image": "https://picsum.photos/600/400?random=510"
+      }
+    ]
+  }
+}
