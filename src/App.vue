@@ -1,14 +1,11 @@
 <template>
   <div class="main-screen">
-    <!-- Фоновий компонент -->
     <AppBackground :currentState="currentBgState" />
 
-    <!-- Верхній градієнт -->
     <Transition name="fade">
       <div v-if="isOfferActive && !isAnimating" class="offer-top-gradient"></div>
     </Transition>
 
-    <!-- Логотип у лівому верхньому куті (для Оферти) -->
     <Transition name="fade">
       <div v-if="isOfferActive && !isAnimating" class="offer-header-brand">
         <img src="./assets/logo.png" class="header-logo" alt="Логотип компанії" />
@@ -16,15 +13,17 @@
       </div>
     </Transition>
 
-    <!-- Бічна панель -->
+    <!-- Бічна панель з параметрами підсвітки та прокрутки -->
     <AppSidebar 
       :isOpen="isOfferActive && !isAnimating" 
+      :totalItems="currentOfferItemsCount"
+      :activeIndex="activeOfferItemIndex"
       @toggle-language="handleLanguageToggle"
       @go-home="closeOffer"
+      @navigate="scrollToOfferItem"
     />
 
     <div class="content-container">
-      <!-- Центральна група елементів (Головний екран) з анімацією появи -->
       <Transition name="main-content-fade" appear>
         <div v-if="!isOfferActive" class="top-content-group" key="main-group">
           <div class="main-logo-container">
@@ -37,14 +36,17 @@
         </div>
       </Transition>
 
-      <!-- Контейнер для вмісту оферти -->
+      <!-- Вміст оферти -->
       <Transition name="fade">
         <main v-if="isOfferActive && !isAnimating" class="offer-content-container" key="offer-group">
-          <OfferDetails :offer="currentOfferData" />
+          <OfferDetails 
+            ref="offerDetailsRef"
+            :offer="currentOfferData" 
+            @active-item-change="handleActiveItemChange"
+          />
         </main>
       </Transition>
 
-      <!-- Карусель головного екрана -->
       <Transition name="main-content-fade" appear>
         <SolutionsCarousel v-if="!isOfferActive" :solutions="solutions" :speed="1" key="carousel" />
       </Transition>
@@ -88,6 +90,7 @@ export default {
       isOfferActive: false,
       isAnimating: false,
       activeOfferId: null,
+      activeOfferItemIndex: 0,
       
       ripple: {
         active: false,
@@ -133,14 +136,18 @@ export default {
         title: 'Заголовок оферти',
         subtitle: 'Підзаголовок',
         description: 'Опис відсутній',
-        features: []
+        items: []
       }
+    },
+    currentOfferItemsCount() {
+      return this.currentOfferData.items ? this.currentOfferData.items.length : 0
     }
   },
   methods: {
     handleButtonClick(id, event) {
       if (this.isAnimating) return
       this.isAnimating = true
+      this.activeOfferItemIndex = 0
 
       if (event && event.clientX) {
         this.ripple.x = event.clientX
@@ -169,20 +176,32 @@ export default {
     closeOffer() {
       this.isOfferActive = false
       this.activeOfferId = null
+      this.activeOfferItemIndex = 0
     },
 
     handleLanguageToggle() {
       console.log('Перемикання мови')
+    },
+
+    handleActiveItemChange(index) {
+      this.activeOfferItemIndex = index
+    },
+
+    scrollToOfferItem(index) {
+      if (index < 0 || index >= this.currentOfferItemsCount) return
+      this.activeOfferItemIndex = index
+      if (this.$refs.offerDetailsRef) {
+        this.$refs.offerDetailsRef.scrollToIndex(index)
+      }
     }
   }
 }
 </script>
 
 <style scoped>
-/* --- АНІМАЦІЯ ПОЯВИ ЦЕНТРАЛЬНОГО КОНТЕНТУ --- */
 .main-content-fade-enter-active {
   transition: all 0.7s ease-in-out;
-  transition-delay: 0.2s; /* Невеличка затримка для виходу з оферти */
+  transition-delay: 0.2s;
 }
 
 .main-content-fade-leave-active {
@@ -199,7 +218,6 @@ export default {
   transform: translateY(-10px) scale(0.98);
 }
 
-/* Стандартна плавна транзиція для градієнтів та оферти */
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.5s ease;
 }
@@ -207,7 +225,6 @@ export default {
   opacity: 0;
 }
 
-/* --- РЕШТА СТИЛІВ СТОРІНКИ --- */
 .main-screen {
   position: fixed;
   top: 0;
@@ -288,6 +305,7 @@ export default {
   overflow-y: auto;
   padding: 16vh 4vw 6vh 18vw;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }

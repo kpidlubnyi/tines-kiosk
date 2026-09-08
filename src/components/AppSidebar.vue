@@ -12,17 +12,14 @@
         </button>
       </div>
 
-      <!-- Світло-сірий вертикальний блок для іконок/кружечків -->
+      <!-- Світло-сірий вертикальний блок з навігатором рисочок -->
       <div class="sidebar-content">
-        <slot>
-          <!-- Дефолтні кружечки-індикатори/іконки -->
-          <div class="sidebar-items">
-            <div class="sidebar-circle active"></div>
-            <div class="sidebar-circle"></div>
-            <div class="sidebar-circle"></div>
-            <div class="sidebar-circle"></div>
-          </div>
-        </slot>
+        <SidebarNav 
+          v-if="totalItems > 0"
+          :totalItems="totalItems" 
+          :activeIndex="activeIndex"
+          @navigate="$emit('navigate', $event)"
+        />
       </div>
 
       <!-- Футер: Кругла кнопка перемикання мов -->
@@ -48,20 +45,32 @@
 </template>
 
 <script>
+import SidebarNav from './SidebarNav.vue'
+
 export default {
   name: 'AppSidebar',
+  components: {
+    SidebarNav
+  },
   props: {
     isOpen: {
       type: Boolean,
       default: false
+    },
+    totalItems: {
+      type: Number,
+      default: 0
+    },
+    activeIndex: {
+      type: Number,
+      default: 0
     }
   },
-  emits: ['toggle-language', 'go-home']
+  emits: ['toggle-language', 'go-home', 'navigate']
 }
 </script>
 
 <style scoped>
-/* Вузька бічна панель (~4vw ширини) */
 .sidebar {
   position: fixed;
   top: 0;
@@ -79,7 +88,6 @@ export default {
   box-sizing: border-box;
 }
 
-/* Верхній блок з кнопкою "На головну" */
 .sidebar-header {
   display: flex;
   justify-content: center;
@@ -118,7 +126,6 @@ export default {
   line-height: 1;
 }
 
-/* Світло-сірий блок у центрі */
 .sidebar-content {
   width: 100%;
   flex: 1;
@@ -130,35 +137,9 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1vw 0;
+  overflow: hidden;
 }
 
-.sidebar-items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5vw;
-}
-
-/* Кружечки/іконки */
-.sidebar-circle {
-  width: 1.8vw;
-  height: 1.8vw;
-  border-radius: 50%;
-  background-color: #e2e8f0;
-  border: 0.15vw solid #cbd5e1;
-  cursor: pointer;
-  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
-}
-
-.sidebar-circle.active,
-.sidebar-circle:hover {
-  background-color: #007bc2;
-  border-color: #005a8f;
-  transform: scale(1.1);
-}
-
-/* Нижній блок з кнопкою мови */
 .sidebar-footer {
   display: flex;
   justify-content: center;
@@ -196,7 +177,6 @@ export default {
   color: #007bc2;
 }
 
-/* Анімація виїзду з правого краю */
 .slide-sidebar-enter-active,
 .slide-sidebar-leave-active {
   transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);

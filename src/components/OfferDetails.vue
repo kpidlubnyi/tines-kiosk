@@ -1,19 +1,18 @@
 <template>
   <div class="offer-details">
-    <!-- Вертикальний стос айтемів (без шапки) -->
     <div class="offer-items-stack">
       <article 
         v-for="(item, index) in offer.items" 
-        :key="index" 
+        :key="item.id || index" 
+        :id="`offer-item-${index}`"
+        ref="itemRefs"
         class="offer-item-card"
         :class="{ 'even-item': index % 2 !== 0 }"
       >
-        <!-- Блок з фотографією -->
         <div class="item-media">
           <img :src="item.image" :alt="item.title" class="item-image" />
         </div>
 
-        <!-- Блок з текстом (назва та опис) -->
         <div class="item-content">
           <h2 class="item-title">{{ item.title }}</h2>
           <p class="item-description">{{ item.description }}</p>
@@ -30,9 +29,54 @@ export default {
     offer: {
       type: Object,
       required: true,
-      default: () => ({
-        items: []
+      default: () => ({ items: [] })
+    }
+  },
+  emits: ['active-item-change'],
+  data() {
+    return {
+      observer: null
+    }
+  },
+  mounted() {
+    this.initObserver()
+  },
+  beforeUnmount() {
+    if (this.observer) this.observer.disconnect()
+  },
+  methods: {
+    initObserver() {
+      const options = {
+        root: null, // контейнер скролу або viewport
+        rootMargin: '-30% 0px -30% 0px', // активуємо центральну зону
+        threshold: 0.2
+      }
+
+      this.observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = Array.from(this.$refs.itemRefs || []).indexOf(entry.target)
+            if (index !== -1) {
+              this.$emit('active-item-change', index)
+            }
+          }
+        })
+      }, options)
+
+      this.$nextTick(() => {
+        if (this.$refs.itemRefs) {
+          this.$refs.itemRefs.forEach((el) => this.observer.observe(el))
+        }
       })
+    },
+
+    scrollToIndex(index) {
+      if (this.$refs.itemRefs && this.$refs.itemRefs[index]) {
+        this.$refs.itemRefs[index].scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        })
+      }
     }
   }
 }
@@ -47,14 +91,12 @@ export default {
   padding-bottom: 4vh;
 }
 
-/* Вертикальний стос айтемів */
 .offer-items-stack {
   display: flex;
   flex-direction: column;
   gap: 2.5vw;
 }
 
-/* Картка айтему з матовим склом */
 .offer-item-card {
   display: flex;
   align-items: center;
@@ -66,6 +108,7 @@ export default {
   overflow: hidden;
   box-shadow: 0 0.8vw 2.5vw rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  scroll-margin-top: 15vh;
 }
 
 .offer-item-card:hover {
@@ -73,12 +116,10 @@ export default {
   box-shadow: 0 1.2vw 3vw rgba(0, 0, 0, 0.08);
 }
 
-/* Реверсивне розташування для парних айтемів */
 .offer-item-card.even-item {
   flex-direction: row-reverse;
 }
 
-/* Блок фотографії */
 .item-media {
   width: 50%;
   height: 100%;
@@ -100,7 +141,6 @@ export default {
   transform: scale(1.03);
 }
 
-/* Блок тексту */
 .item-content {
   width: 50%;
   padding: 2.5vw;
