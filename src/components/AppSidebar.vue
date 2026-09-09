@@ -1,7 +1,7 @@
 <template>
   <Transition name="slide-sidebar">
     <aside v-if="isOpen" class="sidebar">
-      <!-- Верхній блок: Кнопка повернення + Другий навігатор оферт -->
+      <!-- Верхній блок: Кнопка на головну + Навігатор оферт -->
       <div class="sidebar-header-group">
         <button 
           class="back-btn" 
@@ -11,7 +11,6 @@
           <span class="arrow">←</span>
         </button>
 
-        <!-- Другий навігаційний шедевр: перемикач оферт -->
         <OfferSidebarNav 
           :offers="offers"
           :activeOfferId="activeOfferId"
@@ -19,9 +18,21 @@
         />
       </div>
 
-      <!-- Основний навігатор по елементах поточного опису -->
+      <!-- Центральний/Нижній блок навігації -->
+      <!-- РЕЖИМ 1: Якщо ми Всередині Айтема — показуємо Кнопку Повернення до Оферти -->
+      <div v-if="isItemDetailActive" class="back-to-offer-container">
+        <button 
+          class="back-to-offer-btn" 
+          title="Повернутися до оферти"
+          @click="$emit('back-to-offer')"
+        >
+          <AppIcon name="arrow-left" class="back-icon" />
+        </button>
+      </div>
+
+      <!-- РЕЖИМ 2: Якщо ми в списку оферти — показуємо смужки/кружечки -->
       <SidebarNav 
-        v-if="totalItems > 0"
+        v-else-if="totalItems > 0"
         :items="items"
         :totalItems="totalItems" 
         :activeIndex="activeIndex"
@@ -53,15 +64,21 @@
 <script>
 import SidebarNav from './SidebarNav.vue'
 import OfferSidebarNav from './OfferSidebarNav.vue'
+import AppIcon from './AppIcon.vue'
 
 export default {
   name: 'AppSidebar',
   components: {
     SidebarNav,
-    OfferSidebarNav
+    OfferSidebarNav,
+    AppIcon
   },
   props: {
     isOpen: {
+      type: Boolean,
+      default: false
+    },
+    isItemDetailActive: {
       type: Boolean,
       default: false
     },
@@ -86,7 +103,7 @@ export default {
       default: 0
     }
   },
-  emits: ['toggle-language', 'go-home', 'navigate', 'select-offer']
+  emits: ['toggle-language', 'go-home', 'navigate', 'select-offer', 'back-to-offer']
 }
 </script>
 
@@ -146,6 +163,48 @@ export default {
 .back-btn .arrow {
   font-size: 1.4vw;
   line-height: 1;
+}
+
+/* Блок для кнопки повернення до списку оферти */
+.back-to-offer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+  padding-bottom: 6vh;
+}
+
+.back-to-offer-btn {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  background-color: #007bc2;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffffff;
+  box-shadow: 0 0.4vw 1.2vw rgba(0, 123, 194, 0.35);
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  padding: 0;
+}
+
+.back-to-offer-btn:hover {
+  background-color: #0069a5;
+  transform: scale(1.1);
+  box-shadow: 0 0.6vw 1.6vw rgba(0, 123, 194, 0.45);
+}
+
+.back-to-offer-btn:active {
+  transform: scale(0.95);
+}
+
+.back-icon {
+  width: 1.4vw;
+  height: 1.4vw;
+  color: #ffffff !important;
 }
 
 .lang-btn {

@@ -8,6 +8,7 @@
         ref="itemRefs"
         class="offer-item-card"
         :class="{ 'even-item': index % 2 !== 0 }"
+        @click="handleCardClick(item, $event)"
       >
         <div class="item-media">
           <img :src="item.image" :alt="item.title" class="item-image" />
@@ -32,7 +33,7 @@ export default {
       default: () => ({ items: [] })
     }
   },
-  emits: ['active-item-change'],
+  emits: ['active-item-change', 'select-item'],
   data() {
     return {
       observer: null
@@ -45,6 +46,13 @@ export default {
     if (this.observer) this.observer.disconnect()
   },
   methods: {
+    handleCardClick(item, event) {
+      this.$emit('select-item', {
+        item,
+        event
+      })
+    },
+
     initObserver() {
       const options = {
         root: null,
@@ -109,11 +117,12 @@ export default {
   box-shadow: 0 0.8vw 2.5vw rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   scroll-margin-top: 15vh;
+  cursor: pointer;
 }
 
 .offer-item-card:hover {
-  transform: translateY(-0.2vw);
-  box-shadow: 0 1.2vw 3vw rgba(0, 0, 0, 0.08);
+  transform: translateY(-0.3vw) scale(1.005);
+  box-shadow: 0 1.2vw 3vw rgba(0, 0, 0, 0.12);
 }
 
 .offer-item-card.even-item {
@@ -130,15 +139,15 @@ export default {
 }
 
 .item-image {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
   transition: transform 0.5s ease;
 }
 
 .offer-item-card:hover .item-image {
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
 .item-content {
@@ -158,7 +167,6 @@ export default {
   line-height: 1.3;
 }
 
-/* Додаткові стилі для красивого відображення <sup> */
 .item-title :deep(sup),
 .item-description :deep(sup) {
   font-size: 0.6em;

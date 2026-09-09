@@ -8,7 +8,8 @@
         "id": "kolej-1",
         "description": "To jest szczegółowy opis oferty numer 1 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
         "title": "System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup>",
-        "image": "/products/kolej/zint-nawierzchnia-tines.png"
+        "image": "/products/kolej/zint-nawierzchnia-tines.png",
+        "sketchfabId": "c0dac337daad4dabbe6ee1ff943f83a9"
       },
       {
         "id": "kolej-2",
