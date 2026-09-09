@@ -63,7 +63,7 @@ export default {
         },
         przemysl: {
           type: 'image',
-          src: new URL('../assets/backgrounds/bg-przemysl.avif', import.meta.url).href
+          src: new URL('../assets/backgrounds/bg-przemysl.jpg', import.meta.url).href
         },
         budynki: {
           type: 'image',

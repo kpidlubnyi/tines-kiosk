@@ -14,8 +14,8 @@
         </div>
 
         <div class="item-content">
-          <h2 class="item-title">{{ item.title }}</h2>
-          <p class="item-description">{{ item.description }}</p>
+          <h2 class="item-title" v-html="item.title"></h2>
+          <p class="item-description" v-html="item.description"></p>
         </div>
       </article>
     </div>
@@ -47,8 +47,8 @@ export default {
   methods: {
     initObserver() {
       const options = {
-        root: null, // контейнер скролу або viewport
-        rootMargin: '-30% 0px -30% 0px', // активуємо центральну зону
+        root: null,
+        rootMargin: '-30% 0px -30% 0px',
         threshold: 0.2
       }
 
@@ -100,7 +100,7 @@ export default {
 .offer-item-card {
   display: flex;
   align-items: center;
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.33);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 0.1vw solid rgba(226, 232, 240, 0.8);
@@ -130,8 +130,8 @@ export default {
 }
 
 .item-image {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   object-fit: cover;
   display: block;
   transition: transform 0.5s ease;
@@ -156,6 +156,14 @@ export default {
   font-weight: 700;
   color: #0f172a;
   line-height: 1.3;
+}
+
+/* Додаткові стилі для красивого відображення <sup> */
+.item-title :deep(sup),
+.item-description :deep(sup) {
+  font-size: 0.6em;
+  vertical-align: super;
+  line-height: 0;
 }
 
 .item-description {

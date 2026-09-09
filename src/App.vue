@@ -14,10 +14,9 @@
         class="offer-header-brand"
       >
         <img src="./assets/logo.png" class="header-logo" alt="Логотип компанії" />
-        <span class="active-offer-title">{{ currentOfferData.title }}</span>
+        <span class="active-offer-title" v-html="currentOfferData.title"></span>
       </div>
     </Transition>
-
     <!-- Бічна панель -->
     <AppSidebar 
       :isOpen="isOfferActive && !isAnimating" 
@@ -110,11 +109,11 @@ export default {
         y: 0
       },
       buttons: [
-        { id: 'kolej', label: 'Kolej', icon: 'kolej' },
-        { id: 'metro', label: 'Metro', icon: 'metro' },
-        { id: 'tramwaj', label: 'Tramwaj', icon: 'tramwaj' },
-        { id: 'przemysl', label: 'Przemysł', icon: 'przemysl' },
-        { id: 'budynki', label: 'Budynki', icon: 'wibro' }
+        { id: 'kolej', label: 'KOLEJ', icon: 'kolej' },
+        { id: 'przemysl', label: 'KOLEJ PRZEMYSŁOWA', icon: 'przemysl' },
+        { id: 'metro', label: 'METRO', icon: 'metro' },
+        { id: 'tramwaj', label: 'TRAMWAJ', icon: 'tramwaj' },
+        { id: 'budynki', label: 'WIBROIZOLACJA BUDYNKÓW', icon: 'wibro' }
       ],
       
       offersData: offersDataJson,

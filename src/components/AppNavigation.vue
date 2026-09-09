@@ -44,6 +44,7 @@ export default {
 }
 
 .button-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,13 +53,19 @@ export default {
 }
 
 .button-label {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140%;
   font-family: inherit;
-  font-size: 1vw;
+  font-size: 0.7vw;
   font-weight: 600;
   color: #1a202c;
   margin-bottom: 8%;
   text-align: center;
-  white-space: nowrap;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 /* Кнопка */
