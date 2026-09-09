@@ -39,6 +39,7 @@ export default {
   justify-content: space-around;
   align-items: flex-end;
   width: 33%;
+  margin-top: 3%;
   margin-bottom: 2%;
 }
 

@@ -6,21 +6,29 @@
       <div v-if="isOfferActive && !isAnimating" class="offer-top-gradient"></div>
     </Transition>
 
-    <Transition name="fade">
-      <div v-if="isOfferActive && !isAnimating" class="offer-header-brand">
+    <!-- Заголовок оферти з плавним переходом -->
+    <Transition name="offer-change" mode="out-in">
+      <div 
+        v-if="isOfferActive && !isAnimating" 
+        :key="`header-${activeOfferId}`"
+        class="offer-header-brand"
+      >
         <img src="./assets/logo.png" class="header-logo" alt="Логотип компанії" />
         <span class="active-offer-title">{{ currentOfferData.title }}</span>
       </div>
     </Transition>
 
-    <!-- Бічна панель з параметрами підсвітки та прокрутки -->
+    <!-- Бічна панель -->
     <AppSidebar 
       :isOpen="isOfferActive && !isAnimating" 
+      :offers="buttons"
+      :activeOfferId="activeOfferId"
       :totalItems="currentOfferItemsCount"
       :activeIndex="activeOfferItemIndex"
       @toggle-language="handleLanguageToggle"
       @go-home="closeOffer"
       @navigate="scrollToOfferItem"
+      @select-offer="switchOffer"
     />
 
     <div class="content-container">
@@ -36,9 +44,13 @@
         </div>
       </Transition>
 
-      <!-- Вміст оферти -->
-      <Transition name="fade">
-        <main v-if="isOfferActive && !isAnimating" class="offer-content-container" key="offer-group">
+      <!-- Контент оферти з плавним переходом та ефектом розмиття -->
+      <Transition name="offer-change" mode="out-in">
+        <main 
+          v-if="isOfferActive && !isAnimating" 
+          :key="`content-${activeOfferId}`"
+          class="offer-content-container"
+        >
           <OfferDetails 
             ref="offerDetailsRef"
             :offer="currentOfferData" 
@@ -107,10 +119,10 @@ export default {
       
       offersData: offersDataJson,
       phrases: [
-        'Сучасні рішення для інфраструктури',
-        'Надійне віброізоляційне обладнання',
-        'Інноваційні технології будівництва',
-        'Безпека та якість на кожному етапі'
+        '22 lat doświadczenia',
+        '600+ zrealizowanych projektów',
+        '380000+ metrów toru pojedyńczego',
+        '480000+ metrów kwadratowych mat wibroizolacyjnych'
       ],
       solutions: [
         {
@@ -193,7 +205,23 @@ export default {
       if (this.$refs.offerDetailsRef) {
         this.$refs.offerDetailsRef.scrollToIndex(index)
       }
-    }
+    },
+    
+switchOffer(id) {
+    if (this.activeOfferId === id || this.isAnimating) return
+
+    // Перемикаємо ID оферти
+    this.activeOfferId = id
+    this.activeOfferItemIndex = 0
+
+    // Прокручуємо контейнер до самого верху
+    this.$nextTick(() => {
+      const container = document.querySelector('.offer-content-container')
+      if (container) {
+        container.scrollTop = 0
+      }
+    })
+  }
   }
 }
 </script>
@@ -377,4 +405,30 @@ export default {
 .ripple-fade-enter-active { transition: opacity 0.4s ease-out; }
 .ripple-fade-leave-active { transition: opacity 2s ease-out; }
 .ripple-fade-enter-from, .ripple-fade-leave-to { opacity: 0; }
+
+/* Анімація плавної зміни оферти (Blur + Fade + Scale) */
+.offer-change-enter-active {
+  transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.45s ease;
+  transition-delay: 0.1s;
+}
+
+.offer-change-leave-active {
+  transition: opacity 0.3s cubic-bezier(0.7, 0, 0.84, 0),
+              transform 0.3s cubic-bezier(0.7, 0, 0.84, 0),
+              filter 0.3s ease;
+}
+
+.offer-change-enter-from {
+  opacity: 0;
+  transform: translateY(18px) scale(0.98);
+  filter: blur(8px);
+}
+
+.offer-change-leave-to {
+  opacity: 0;
+  transform: translateY(-12px) scale(0.98);
+  filter: blur(8px);
+}
 </style>

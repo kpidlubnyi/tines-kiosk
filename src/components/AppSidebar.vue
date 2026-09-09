@@ -1,8 +1,8 @@
 <template>
   <Transition name="slide-sidebar">
     <aside v-if="isOpen" class="sidebar">
-      <!-- Верхній блок: Кнопка повернення на головну -->
-      <div class="sidebar-header">
+      <!-- Верхній блок: Кнопка повернення + Другий навігатор оферт -->
+      <div class="sidebar-header-group">
         <button 
           class="back-btn" 
           title="На головну" 
@@ -10,9 +10,16 @@
         >
           <span class="arrow">←</span>
         </button>
+
+        <!-- Другий навігаційний шедевр: перемикач оферт -->
+        <OfferSidebarNav 
+          :offers="offers"
+          :activeOfferId="activeOfferId"
+          @select-offer="$emit('select-offer', $event)"
+        />
       </div>
 
-      <!-- Навігатор сам вирівнюється нижче середини та має власний плаваючий плашка-контейнер -->
+      <!-- Основний навігатор по елементах поточного опису -->
       <SidebarNav 
         v-if="totalItems > 0"
         :items="items"
@@ -21,7 +28,7 @@
         @navigate="$emit('navigate', $event)"
       />
 
-      <!-- Футер: Кругла кнопка перемикання мов -->
+      <!-- Футер: Перемикання мов -->
       <div class="sidebar-footer">
         <button class="lang-btn" title="Переключити мову" @click="$emit('toggle-language')">
           <svg 
@@ -35,7 +42,7 @@
           >
             <circle cx="12" cy="12" r="10"></circle>
             <line x1="2" y1="12" x2="22" y2="12"></line>
-            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z"></path>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4 10z"></path>
           </svg>
         </button>
       </div>
@@ -45,16 +52,26 @@
 
 <script>
 import SidebarNav from './SidebarNav.vue'
+import OfferSidebarNav from './OfferSidebarNav.vue'
 
 export default {
   name: 'AppSidebar',
   components: {
-    SidebarNav
+    SidebarNav,
+    OfferSidebarNav
   },
   props: {
     isOpen: {
       type: Boolean,
       default: false
+    },
+    offers: {
+      type: Array,
+      default: () => []
+    },
+    activeOfferId: {
+      type: String,
+      default: null
     },
     items: {
       type: Array,
@@ -69,7 +86,7 @@ export default {
       default: 0
     }
   },
-  emits: ['toggle-language', 'go-home', 'navigate']
+  emits: ['toggle-language', 'go-home', 'navigate', 'select-offer']
 }
 </script>
 
@@ -91,9 +108,10 @@ export default {
   box-sizing: border-box;
 }
 
-.sidebar-header,
+.sidebar-header-group,
 .sidebar-footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
