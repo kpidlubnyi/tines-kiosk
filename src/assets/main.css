@@ -29,3 +29,8 @@ textarea,
 select {
   font-family: 'MyKioskFont', sans-serif !important;
 }
+
+html {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}

@@ -63,48 +63,14 @@
           >
             <AppIcon 
               v-if="currentSlide === 0" 
-              name="gallery" 
+              name="photos" 
               class="toggle-icon" 
             />
-            <svg 
-              v-else-if="!hasAppIcon" 
-              viewBox="0 0 24 24" 
-              width="20" 
-              height="20" 
-              fill="none" 
-              stroke="currentColor" 
-              stroke-width="2" 
-              stroke-linecap="round" 
-              stroke-linejoin="round"
-              class="toggle-icon"
-            >
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-              <circle cx="8.5" cy="8.5" r="1.5"></circle>
-              <polyline points="21 15 16 10 5 21"></polyline>
-            </svg>
-
             <AppIcon 
               v-if="currentSlide === 1" 
               name="description" 
               class="toggle-icon" 
             />
-            <svg 
-              v-else-if="!hasAppIcon" 
-              viewBox="0 0 24 24" 
-              width="20" 
-              height="20" 
-              fill="none" 
-              stroke="currentColor" 
-              stroke-width="2" 
-              stroke-linecap="round" 
-              stroke-linejoin="round"
-              class="toggle-icon"
-            >
-              <line x1="17" y1="10" x2="3" y2="10"></line>
-              <line x1="21" y1="6" x2="3" y2="6"></line>
-              <line x1="21" y1="14" x2="3" y2="14"></line>
-              <line x1="17" y1="18" x2="3" y2="18"></line>
-            </svg>
           </button>
         </div>
 
@@ -138,7 +104,7 @@
                     class="gallery-item-card"
                   >
                     <div class="placeholder-content">
-                      <span>Фото {{ n }} (16:9)</span>
+                      <span>Zdjęcie {{ n }} (16:9)</span>
                     </div>
                   </div>
                 </div>
