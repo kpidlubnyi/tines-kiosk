@@ -73,12 +73,21 @@
           v-if="isOfferActive && isItemDetailActive && selectedItem && !isAnimating" 
           class="item-detail-full-container"
         >
-          <ItemDetailView :item="selectedItem" />
+          <ItemDetailView 
+            :key="`${activeOfferId}-${selectedItem.id}`" 
+            :item="selectedItem" 
+          />
         </main>
       </Transition>
-
+      
       <Transition name="main-content-fade" appear>
-        <SolutionsCarousel v-if="!isOfferActive" :solutions="solutions" :speed="1" key="carousel" />
+        <SolutionsCarousel 
+          v-if="!isOfferActive" 
+          :solutions="solutions" 
+          :speed="1" 
+          key="carousel"
+          @select-item="handleCarouselSelect"
+        />
       </Transition>
     </div>
 
@@ -199,6 +208,60 @@ export default {
       }, 950)
     },
 
+handleCarouselSelect({ item, event }) {
+  if (this.isAnimating) return
+
+  // 1. Знаходимо першу категорію з масиву categories
+  const targetCategory = item && item.categories && item.categories.length > 0 
+    ? item.categories[0] 
+    : 'kolej'
+
+  this.isAnimating = true
+  this.activeOfferItemIndex = 0
+
+  // 2. Запускаємо хвильовий ефект (Ripple)
+  this.triggerRipple(event)
+
+  // 3. Встановлюємо категорію ТА обраний продукт
+  setTimeout(() => {
+    this.activeOfferId = targetCategory
+    this.isOfferActive = true
+
+    // --- ВАРІАНТ А: Відкрити детальний екран продукту (ItemDetailView) ---
+    // Формуємо повний об'єкт елемента або шукаємо його в даних
+    const categoryData = this.offersData[targetCategory]
+    let foundItem = null
+
+    if (categoryData && categoryData.items) {
+      foundItem = categoryData.items.find(i => i.id === item.id || i.id.endsWith(item.id))
+    }
+
+    // Якщо знайшли продукт у структурі категорії — відкриваємо його детально,
+    // якщо ні — передаємо об'єкт з каруселі
+    this.selectedItem = foundItem || item
+    this.isItemDetailActive = true
+
+    /* 
+    --- ВАРІАНТ Б: Якщо ви НЕ хочете детальний екран, а хочете просто прокрутити до нього у списку категорії ---
+    Замість 3 рядків вище (selectedItem та isItemDetailActive) використайте:
+    
+    if (categoryData && categoryData.items) {
+      const itemIndex = categoryData.items.findIndex(i => i.id === item.id || i.id.endsWith(item.id))
+      if (itemIndex !== -1) {
+        this.activeOfferItemIndex = itemIndex
+        this.$nextTick(() => {
+          this.scrollToOfferItem(itemIndex)
+        })
+      }
+    }
+    */
+  }, 100)
+
+  setTimeout(() => {
+    this.isAnimating = false
+  }, 950)
+},
+
     openItemDetail({ item, event }) {
       if (this.isAnimating) return
       this.isAnimating = true
@@ -292,22 +355,52 @@ export default {
       }, 950)
     },
 
-    handleCrossCategorySwitch(targetCategoryKey) {
-    if (this.activeOfferId === targetCategoryKey) return;
+handleCrossCategorySwitch(targetCategoryKey) {
+  if (this.activeOfferId === targetCategoryKey || this.isAnimating) return;
+  
+  this.isAnimating = true;
+
+  // Запускаємо ripple-хвилю для плавності
+  this.triggerRipple();
+
+  setTimeout(() => {
+    // 1. Перемикаємо категорію
+    this.activeOfferId = targetCategoryKey;
+    this.activeOfferItemIndex = 0;
+
+    // 2. Якщо ми знаходилися всередині детального перегляду товару (ItemDetailView)
+    if (this.isItemDetailActive && this.selectedItem) {
+      const newCategoryData = this.offersData[targetCategoryKey];
+      
+      if (newCategoryData && newCategoryData.items && newCategoryData.items.length > 0) {
+        // Шукаємо такий самий товар у новій категорії за ID або схожою назвою
+        const matchedItem = newCategoryData.items.find(
+          item => item.id === this.selectedItem.id || item.title === this.selectedItem.title
+        );
+
+        // Якщо товар знайдено — показуємо його в новій категорії, 
+        // якщо ні — беремо перший товар нової категорії
+        this.selectedItem = matchedItem || newCategoryData.items[0];
+      } else {
+        // Якщо в новій категорії немає товарів — закриваємо детальний перегляд
+        this.isItemDetailActive = false;
+        this.selectedItem = null;
+      }
+    }
+  }, 150);
+
+  setTimeout(() => {
+    this.isAnimating = false;
     
-    // Вмикаємо швидкий перехід лише з ефектом Blur (без хвильового Ripple)
-    this.isAnimating = true;
-
-    setTimeout(() => {
-      this.activeOfferId = targetCategoryKey;
-      // Якщо обрано продукт у детальній картці — можна лишитись у detail view для відповідної нової категорії
-    }, 150);
-
-    setTimeout(() => {
-      this.isAnimating = false;
-    }, 450);
-  }
-  }
+    // Скидаємо скрол контейнера до початку
+    this.$nextTick(() => {
+      const container = this.$refs.offerContentContainer;
+      if (container) {
+        container.scrollTop = 0;
+      }
+    });
+  }, 600);
+}  }
 }
 </script>
 
@@ -392,7 +485,6 @@ export default {
   display: none;
 }
 
-/* Контейнер детального перегляду на весь екран */
 .item-detail-full-container {
   position: absolute;
   top: 0;
@@ -482,7 +574,6 @@ export default {
 .ripple-fade-leave-active { transition: opacity 2s ease-out; }
 .ripple-fade-enter-from, .ripple-fade-leave-to { opacity: 0; }
 
-/* Анімації контенту */
 .offer-change-enter-active {
   transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
               transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),

@@ -6,7 +6,7 @@
     "items": [
       {
         "id": "kolej-zint-tines",
-        "description": "To jest szczegółowy opis oferty numer 1 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
+        "description": "KOLEJ To jest szczegółowy opis oferty numer 1 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
         "title": "System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup>",
         "image": "/products/kolej/zint-nawierzchnia-tines.png",
         "sketchfab": {
@@ -122,7 +122,7 @@
       {
         "id": "metro-zint-tines",
         "title": "System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup>",
-        "description": "To jest szczegółowy opis oferty numer 1 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
+        "description": "METRO To jest szczegółowy opis oferty numer 1 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
         "image": "/products/metro/zint-nawierzchnia-tines.png",
         "crossCategories": [
           "kolej",
@@ -292,7 +292,7 @@
       {
         "id": "przemysl-zint-tines",
         "title": "System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup>",
-        "description": "To jest szczegółowy opis oferty numer 1 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
+        "description": "PRZEMYSL To jest szczegółowy opis oferty numer 1 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
         "image": "/products/przemysl/zint-nawierzchnia-tines.png",
         "crossCategories": [
           "kolej",
