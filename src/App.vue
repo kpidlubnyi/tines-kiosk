@@ -27,11 +27,13 @@
       :activeOfferId="activeOfferId"
       :totalItems="currentOfferItemsCount"
       :activeIndex="activeOfferItemIndex"
+      :crossCategories="activeCrossCategories"
       @toggle-language="handleLanguageToggle"
       @go-home="closeOffer"
       @navigate="scrollToOfferItem"
       @select-offer="switchOffer"
       @back-to-offer="closeItemDetail"
+      @select-cross-category="switchCrossCategory"
     />
 
     <div class="content-container">
@@ -65,10 +67,11 @@
         </main>
       </Transition>
 
-      <!-- Екран 2: Детальний перегляд елемента (На всю область) -->
+      <!-- Екран 2: Детальний перегляд елемента -->
       <Transition name="offer-change" mode="out-in">
         <main 
           v-if="isOfferActive && isItemDetailActive && selectedItem && !isAnimating" 
+          :key="`item-${selectedItem.id || activeOfferId}`"
           class="item-detail-full-container"
         >
           <ItemDetailView :item="selectedItem" />
@@ -80,7 +83,7 @@
       </Transition>
     </div>
 
-    <!-- Ripple Overlay для всіх переходів -->
+    <!-- Ripple Overlay для стандартних переходів -->
     <Transition name="ripple-fade">
       <div 
         v-if="ripple.active" 
@@ -163,6 +166,16 @@ export default {
     },
     currentOfferItemsCount() {
       return this.currentOfferData.items ? this.currentOfferData.items.length : 0
+    },
+    // Пріоритет віддається крос-категоріям обраної оферти (або з картки товару, або зі списку)
+    activeCrossCategories() {
+      if (this.selectedItem && this.selectedItem.crossCategories) {
+        return this.selectedItem.crossCategories
+      }
+      if (this.currentOfferData && this.currentOfferData.crossCategories) {
+        return this.currentOfferData.crossCategories
+      }
+      return []
     }
   },
   methods: {
@@ -201,13 +214,11 @@ export default {
       if (this.isAnimating) return
       this.isAnimating = true
 
-      // Зберігаємо позицію скролу
       const container = this.$refs.offerContentContainer
       if (container) {
         this.savedScrollTop = container.scrollTop
       }
 
-      // Запускаємо ripple-хвилю від точки кліку на елемент
       this.triggerRipple(event)
 
       setTimeout(() => {
@@ -288,6 +299,26 @@ export default {
           }
         })
       }, 950)
+    },
+
+    // Швидкий перехід між crossCategories ТІЛЬКИ з ефектом blur (без тривалого ripple)
+    switchCrossCategory(targetCategory) {
+      if (this.activeOfferId === targetCategory || this.isAnimating) return
+      this.isAnimating = true
+
+      setTimeout(() => {
+        this.activeOfferId = targetCategory
+        this.activeOfferItemIndex = 0
+        
+        // Якщо знаходиться в детальному перегляді, підбираємо відповідний елемент з нової категорії
+        if (this.isItemDetailActive && this.currentOfferData.items?.length > 0) {
+          this.selectedItem = this.currentOfferData.items[0]
+        }
+      }, 150)
+
+      setTimeout(() => {
+        this.isAnimating = false
+      }, 450)
     }
   }
 }
@@ -374,7 +405,6 @@ export default {
   display: none;
 }
 
-/* Контейнер детального перегляду на весь екран */
 .item-detail-full-container {
   position: absolute;
   top: 0;
@@ -464,30 +494,30 @@ export default {
 .ripple-fade-leave-active { transition: opacity 2s ease-out; }
 .ripple-fade-enter-from, .ripple-fade-leave-to { opacity: 0; }
 
-/* Анімації контенту */
+/* Анімації контенту з розмиттям (Blur) */
 .offer-change-enter-active {
-  transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-              filter 0.45s ease;
-  transition-delay: 0.1s;
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.35s ease,
+              transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: 0.05s;
 }
 
 .offer-change-leave-active {
-  transition: opacity 0.3s cubic-bezier(0.7, 0, 0.84, 0),
-              transform 0.3s cubic-bezier(0.7, 0, 0.84, 0),
-              filter 0.3s ease;
+  transition: opacity 0.25s cubic-bezier(0.7, 0, 0.84, 0),
+              filter 0.25s ease,
+              transform 0.25s cubic-bezier(0.7, 0, 0.84, 0);
 }
 
 .offer-change-enter-from {
   opacity: 0;
-  transform: translateY(18px) scale(0.98);
   filter: blur(8px);
+  transform: scale(0.99);
 }
 
 .offer-change-leave-to {
   opacity: 0;
-  transform: translateY(-12px) scale(0.98);
   filter: blur(8px);
+  transform: scale(0.99);
 }
 
 .main-content-fade-enter-active {

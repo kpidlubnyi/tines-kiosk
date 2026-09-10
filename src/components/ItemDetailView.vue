@@ -1,15 +1,16 @@
 <template>
   <div class="item-detail-view">
     <div class="item-detail-container">
-      <!-- Ліва частина: 3D Модель Sketchfab (або Фото) -->
+      <!-- Ліва частина: 3D Модель Sketchfab (або Фото) + Галерея моделей -->
       <div 
         class="media-column" 
         :class="{ 'full-width': isSidebarCollapsed }"
       >
         <div class="media-wrapper">
           <SketchfabViewer 
-            v-if="item.sketchfabId || item.sketchfabUrl"
-            :modelId="item.sketchfabId"
+            v-if="activeSketchfabId || item.sketchfabUrl"
+            :key="activeSketchfabId"
+            :modelId="activeSketchfabId"
             :url="item.sketchfabUrl"
             :title="item.title"
             :autoplay="true"
@@ -20,6 +21,48 @@
             :alt="item.title" 
             class="detail-image" 
           />
+        </div>
+
+        <!-- Галерея 3D-моделей під в'ювером -->
+        <div v-if="hasMultipleModels" class="models-gallery">
+          <button 
+            class="nav-arrow left-arrow" 
+            title="Попередня модель" 
+            @click="prevModel"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <div class="thumbnails-container">
+            <button
+              v-for="(id, index) in modelIds"
+              :key="id"
+              class="thumb-box"
+              :class="{ 'is-active': id === activeSketchfabId }"
+              :title="`Модель ${index + 1}`"
+              @click="selectModel(id)"
+            >
+              <img 
+                :src="`/3d-thumbnails/${id}.png`" 
+                :alt="`Model ${index + 1}`"
+                class="thumb-img"
+                @error="handleImageError"
+              />
+              <span class="thumb-badge">3D</span>
+            </button>
+          </div>
+
+          <button 
+            class="nav-arrow right-arrow" 
+            title="Наступна модель" 
+            @click="nextModel"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
         </div>
       </div>
 
@@ -136,7 +179,8 @@ export default {
         description: '',
         image: '',
         sketchfabId: '',
-        sketchfabUrl: ''
+        sketchfabUrl: '',
+        sketchfab: null
       })
     }
   },
@@ -146,6 +190,8 @@ export default {
       currentSlide: 0,
       hasAppIcon: true,
       
+      activeSketchfabId: null,
+
       isDragging: false,
       startX: 0,
       dragOffset: 0,
@@ -153,9 +199,38 @@ export default {
     }
   },
   computed: {
+    modelIds() {
+      if (this.item.sketchfab?.sketchfabIds?.length) {
+        return this.item.sketchfab.sketchfabIds
+      }
+      const fallbackId = this.item.sketchfab?.defaultId || this.item.sketchfabId
+      return fallbackId ? [fallbackId] : []
+    },
+    hasMultipleModels() {
+      return this.modelIds.length > 1
+    },
+    currentIndex() {
+      return this.modelIds.indexOf(this.activeSketchfabId)
+    },
     currentTranslateX() {
       const baseTranslate = -this.currentSlide * this.slideWidth
       return baseTranslate + this.dragOffset
+    }
+  },
+  watch: {
+    item: {
+      immediate: true,
+      handler(newItem) {
+        if (newItem.sketchfab?.defaultId) {
+          this.activeSketchfabId = newItem.sketchfab.defaultId
+        } else if (newItem.sketchfab?.sketchfabIds?.length) {
+          this.activeSketchfabId = newItem.sketchfab.sketchfabIds[0]
+        } else if (newItem.sketchfabId) {
+          this.activeSketchfabId = newItem.sketchfabId
+        } else {
+          this.activeSketchfabId = null
+        }
+      }
     }
   },
   mounted() {
@@ -174,6 +249,31 @@ export default {
     window.removeEventListener('touchend', this.handleMouseUp)
   },
   methods: {
+    selectModel(id) {
+      this.activeSketchfabId = id
+    },
+    prevModel() {
+      const total = this.modelIds.length
+      if (total <= 1) return
+      const prevIdx = (this.currentIndex - 1 + total) % total
+      this.activeSketchfabId = this.modelIds[prevIdx]
+    },
+    nextModel() {
+      const total = this.modelIds.length
+      if (total <= 1) return
+      const nextIdx = (this.currentIndex + 1) % total
+      this.activeSketchfabId = this.modelIds[nextIdx]
+    },
+    // Фоллбек на png або приховання якщо зображення відсутнє
+    handleImageError(e) {
+      if (!e.target.dataset.fallbackTried) {
+        e.target.dataset.fallbackTried = 'true'
+        e.target.src = e.target.src.replace('.jpg', '.png')
+      } else {
+        e.target.style.opacity = '0'
+      }
+    },
+
     toggleSidebar() {
       this.isSidebarCollapsed = !this.isSidebarCollapsed
       
@@ -272,6 +372,8 @@ export default {
   width: 55%;
   height: 100%;
   display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
   flex-shrink: 0;
   box-sizing: border-box;
   transition: width 0.45s cubic-bezier(0.16, 1, 0.3, 1);
@@ -283,7 +385,7 @@ export default {
 
 .media-wrapper {
   width: 100%;
-  height: 100%;
+  flex: 1;
   border-radius: 1.5vw;
   overflow: hidden;
   box-shadow: 0 1vw 3vw rgba(0, 0, 0, 0.12);
@@ -297,6 +399,109 @@ export default {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/* Галерея 3D Моделей під в'ювером */
+.models-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8vw;
+  height: 8vh;
+  min-height: 60px;
+  flex-shrink: 0;
+}
+
+.thumbnails-container {
+  display: flex;
+  align-items: center;
+  gap: 0.6vw;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 0.2vw;
+}
+
+.thumbnails-container::-webkit-scrollbar {
+  display: none;
+}
+
+.thumb-box {
+  position: relative;
+  width: 6vw;
+  height: 4vw;
+  border-radius: 0.8vw;
+  border: 0.12vw solid #e2e8f0;
+  background-color: #0f172a;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 0.2vw 0.6vw rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumb-box:hover {
+  border-color: #007bc2;
+  transform: translateY(-0.15vw);
+  box-shadow: 0 0.4vw 1vw rgba(0, 123, 194, 0.2);
+}
+
+.thumb-box.is-active {
+  border-color: #007bc2;
+  border-width: 0.18vw;
+  box-shadow: 0 0 0 0.2vw rgba(0, 123, 194, 0.3);
+  transform: scale(1.05);
+}
+
+.thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumb-badge {
+  position: absolute;
+  bottom: 0.2vw;
+  right: 0.2vw;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  font-size: 0.55vw;
+  font-weight: 700;
+  padding: 0.1vw 0.3vw;
+  border-radius: 0.3vw;
+  pointer-events: none;
+}
+
+.nav-arrow {
+  width: 2.2vw;
+  height: 2.2vw;
+  min-width: 32px;
+  min-height: 32px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 0.1vw solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 0.2vw 0.6vw rgba(0, 0, 0, 0.05);
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.nav-arrow:hover {
+  transform: scale(1.08);
+}
+
+.nav-arrow svg {
+  width: 1.1vw;
+  height: 1.1vw;
+  min-width: 16px;
+  min-height: 16px;
 }
 
 .toggle-sidebar-btn {
@@ -492,7 +697,6 @@ export default {
   word-break: break-word;
 }
 
-/* Слайд 2: Галерея з градієнтною маскою прозорості зверху та знизу */
 .gallery-scroll-container {
   flex: 1;
   width: 100%;
@@ -501,7 +705,6 @@ export default {
   scrollbar-width: none;
   -ms-overflow-style: none;
 
-  /* Градієнтна маска прозорості для верхнього та нижнього країв */
   -webkit-mask-image: linear-gradient(
     to bottom,
     transparent 0%,
@@ -526,7 +729,7 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 1.2vw;
-  padding: 1.5vh 0; /* Невеликі відступи, щоб перша/остання картка гарно заходила під розмиття */
+  padding: 1.5vh 0;
 }
 
 .gallery-item-card {

@@ -9,55 +9,108 @@
         "description": "To jest szczegółowy opis oferty numer 1 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
         "title": "System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup>",
         "image": "/products/kolej/zint-nawierzchnia-tines.png",
-        "sketchfabId": "c0dac337daad4dabbe6ee1ff943f83a9"
+        "sketchfab": {
+          "defaultId": "c0dac337daad4dabbe6ee1ff943f83a9",
+          "sketchfabIds": [
+            "c0dac337daad4dabbe6ee1ff943f83a9", 
+            "168c4dd5546449e691f6d8ba692954fd", 
+            "19a874123e964c49bc896bfa143ac91c"
+          ]
+        },
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ]
       },
       {
         "id": "kolej-2",
         "title": "System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup> GTP",
         "description": "To jest szczegółowy opis oferty numer 2 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
-        "image": "/products/kolej/tines-gtp.png"
+        "image": "/products/kolej/tines-gtp.png",
+        "crossCategories": [
+          "kolej",
+          "przemysl"
+        ]
       },
       {
         "id": "kolej-3",
         "title": "System nawierzchni bezpodsypkowej TINES<sup>®</sup> EBS",
         "description": "To jest szczegółowy opis oferty numer 3 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
-        "image": "/products/kolej/tines-ebs.png"
+        "image": "/products/kolej/tines-ebs.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ]
       },
       {
         "id": "kolej-4",
         "title": "System nawierzchni bezpodsypkowej TINES<sup>®</sup> Slab Track EBS",
         "description": "To jest szczegółowy opis oferty numer 4 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
-        "image": "/products/kolej/tines-st-ebs.png"
+        "image": "/products/kolej/tines-st-ebs.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ]
       },
       {
         "id": "kolej-5",
         "title": "System szczelnej nawierzchni torowej TINES<sup>®</sup> SRT",
         "description": "To jest szczegółowy opis oferty numer 5 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
-        "image": "/products/kolej/tines-srt.png"
+        "image": "/products/kolej/tines-srt.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ]
       },
       {
         "id": "kolej-6",
         "title": "System przytwierdzenia typu TINES<sup>®</sup> ERS",
         "description": "To jest szczegółowy opis oferty numer 6 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
-        "image": "/products/kolej/tines-ers.png"
+        "image": "/products/kolej/tines-ers.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ]
       },
       {
         "id": "kolej-7",
         "title": "Prefabrykowane płyty torowe TINES<sup>®</sup>",
         "description": "To jest szczegółowy opis oferty numer 7 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
-        "image": "/products/kolej/tines-lc-l.png"
+        "image": "/products/kolej/tines-lc-l.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "tramwaj",
+          "przemysl"
+        ]
       },
       {
         "id": "kolej-8",
         "title": "Maty wibroizolacyjne TINES<sup>®</sup>",
         "description": "To jest szczegółowy opis oferty numer 8 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
-        "image": "/products/kolej/maty.png"
+        "image": "/products/kolej/maty.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "tramwaj",
+          "przemysl"
+        ]
       },
       {
         "id": "kolej-9",
         "title": "Elastomery polimerowe TINES<sup>®</sup> Polyrail ",
         "description": "To jest szczegółowy opis oferty numer 9 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
-        "image": "/products/kolej/tines-polyrail.png"
+        "image": "/products/kolej/tines-polyrail.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ]
       }
     ]
   },
@@ -70,7 +123,12 @@
         "id": "metro-1",
         "title": "System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup>",
         "description": "To jest szczegółowy opis oferty numer 1 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
-        "image": "/products/metro/zint-nawierzchnia-tines.png"
+        "image": "/products/metro/zint-nawierzchnia-tines.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ]
       },
       {
         "id": "metro-2",
@@ -82,43 +140,80 @@
         "id": "metro-3",
         "title": "System nawierzchni bezpodsypkowej TINES<sup>®</sup> EBS",
         "description": "To jest szczegółowy opis oferty numer 3 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
-        "image": "/products/metro/tines-ebs.png"
+        "image": "/products/metro/tines-ebs.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ]
       },
       {
         "id": "metro-4",
         "title": "System nawierzchni bezpodsypkowej TINES<sup>®</sup> Slab Track EBS",
         "description": "To jest szczegółowy opis oferty numer 4 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
-        "image": "/products/metro/tines-st-ebs.png"
+        "image": "/products/metro/tines-st-ebs.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ]
       },
       {
         "id": "metro-5",
         "title": "System szczelnej nawierzchni torowej TINES<sup>®</sup> SRT",
         "description": "To jest szczegółowy opis oferty numer 5 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
-        "image": "/products/metro/tines-srt.png"
+        "image": "/products/metro/tines-srt.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ]
       },
       {
         "id": "metro-6",
         "title": "System przytwierdzenia typu TINES<sup>®</sup> ERS",
         "description": "To jest szczegółowy opis oferty numer 6 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
-        "image": "/products/metro/tines-ers.png"
+        "image": "/products/metro/tines-ers.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ]
       },
       {
         "id": "metro-7",
         "title": "Prefabrykowane płyty torowe TINES<sup>®</sup>",
         "description": "To jest szczegółowy opis oferty numer 7 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
-        "image": "/products/metro/tines-lc-l.png"
+        "image": "/products/metro/tines-lc-l.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "tramwaj",
+          "przemysl"
+        ]
       },
       {
         "id": "metro-8",
         "title": "Maty wibroizolacyjne TINES<sup>®</sup>",
         "description": "To jest szczegółowy opis oferty numer 8 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
-        "image": "/products/metro/maty.png"
+        "image": "/products/metro/maty.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "tramwaj",
+          "przemysl"
+        ]
       },
       {
         "id": "metro-9",
         "title": "Elastomery polimerowe TINES<sup>®</sup> Polyrail ",
         "description": "To jest szczegółowy opis oferty numer 9 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
-        "image": "/products/metro/tines-polyrail.png"
+        "image": "/products/metro/tines-polyrail.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ]
       }
     ]
   },
@@ -161,13 +256,25 @@
         "id": "tramwaj-6",
         "title": "Prefabrykowane płyty torowe TINES<sup>®</sup>",
         "description": "To jest szczegółowy opis oferty numer 6 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
-        "image": "/products/tramwaj/tines-lc-l.png"
+        "image": "/products/tramwaj/tines-lc-l.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "tramwaj",
+          "przemysl"
+        ]
       },
       {
         "id": "tramwaj-7",
         "title": "Maty wibroizolacyjne TINES<sup>®</sup>",
         "description": "To jest szczegółowy opis oferty numer 7 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
-        "image": "/products/tramwaj/maty.png"
+        "image": "/products/tramwaj/maty.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "tramwaj",
+          "przemysl"
+        ]
       },
       {
         "id": "tramwaj-8",
@@ -186,55 +293,101 @@
         "id": "przemysl-1",
         "title": "System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup>",
         "description": "To jest szczegółowy opis oferty numer 1 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
-        "image": "/products/przemysl/zint-nawierzchnia-tines.png"
+        "image": "/products/przemysl/zint-nawierzchnia-tines.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ]
       },
       {
         "id": "przemysl-2",
         "title": "System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup> GTP",
         "description": "To jest szczegółowy opis oferty numer 2 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
-        "image": "/products/przemysl/tines-gtp.png"
+        "image": "/products/przemysl/tines-gtp.png",
+        "crossCategories": [
+          "kolej",
+          "przemysl"
+        ]
       },
       {
         "id": "przemysl-3",
         "title": "System nawierzchni bezpodsypkowej TINES<sup>®</sup> EBS",
         "description": "To jest szczegółowy opis oferty numer 3 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
-        "image": "/products/przemysl/tines-ebs.png"
+        "image": "/products/przemysl/tines-ebs.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ]
       },
       {
         "id": "przemysl-4",
         "title": "System nawierzchni bezpodsypkowej TINES<sup>®</sup> Slab Track EBS",
         "description": "To jest szczegółowy opis oferty numer 4 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
-        "image": "/products/przemysl/tines-st-ebs.png"
+        "image": "/products/przemysl/tines-st-ebs.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ]
       },
       {
         "id": "przemysl-5",
         "title": "System szczelnej nawierzchni torowej TINES<sup>®</sup> SRT",
         "description": "To jest szczegółowy opis oferty numer 5 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
-        "image": "/products/przemysl/tines-srt.png"
+        "image": "/products/przemysl/tines-srt.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ]
       },
       {
         "id": "przemysl-6",
         "title": "System przytwierdzenia typu TINES<sup>®</sup> ERS",
         "description": "To jest szczegółowy opis oferty numer 6 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
-        "image": "/products/przemysl/tines-ers.png"
+        "image": "/products/przemysl/tines-ers.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ]
       },
       {
         "id": "przemysl-7",
         "title": "Prefabrykowane płyty torowe TINES<sup>®</sup>",
         "description": "To jest szczegółowy opis oferty numer 7 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
-        "image": "/products/przemysl/tines-lc-l.png"
+        "image": "/products/przemysl/tines-lc-l.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "tramwaj",
+          "przemysl"
+        ]
       },
       {
         "id": "przemysl-8",
         "title": "Maty wibroizolacyjne TINES<sup>®</sup>",
         "description": "To jest szczegółowy opis oferty numer 8 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
-        "image": "/products/przemysl/maty.png"
+        "image": "/products/przemysl/maty.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "tramwaj",
+          "przemysl"
+        ]
       },
       {
         "id": "przemysl-9",
         "title": "Elastomery polimerowe TINES<sup>®</sup> Polyrail ",
         "description": "To jest szczegółowy opis oferty numer 9 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
-        "image": "/products/przemysl/tines-polyrail.png"
+        "image": "/products/przemysl/tines-polyrail.png",
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ]
       }
     ]
   },
