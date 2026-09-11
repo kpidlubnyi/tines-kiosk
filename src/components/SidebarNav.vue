@@ -41,7 +41,7 @@
               v-if="mode === 'circles' && !getItemImage(item)" 
               class="circle-fallback"
             >
-              1
+              {{ index + 1 }}
             </span>
           </div>
         </div>
@@ -66,9 +66,9 @@
             key="reset-bars"
             class="nav-arrow reset-btn" 
             @click="switchToBars"
-            title="Повернутися до ліній"
+            title="Wróć do linii"
           >
-            <AppIcon name="bars" class="arrow-icon" />
+            <AppIcon name="collapse" class="arrow-icon" />
           </button>
         </Transition>
       </div>
@@ -96,6 +96,10 @@ export default {
     activeIndex: {
       type: Number,
       default: 0
+    },
+    category: {
+      type: String,
+      default: ''
     }
   },
   emits: ['navigate'],
@@ -109,7 +113,7 @@ export default {
       if (this.items && this.items.length > 0) {
         return this.items
       }
-      return Array.from({ length: this.totalItems }, (_, i) => ({ id: i }))
+      return Array.from({ length: this.totalItems }, (_, i) => ({ id: i + 1 }))
     },
     totalItemsCount() {
       return this.itemsList.length
@@ -134,13 +138,22 @@ export default {
       this.mode = 'bars'
     },
     getItemImage(item) {
-      return item?.image || item?.bgImage || null
+      if (item?.image || item?.bgImage) {
+        return item.image || item.bgImage
+      }
+      
+      if (item && item.id !== undefined && item.id !== null) {
+        const catPath = this.category ? `${this.category}/` : ''
+        return `/nav-thumbnails/${catPath}${item.id}.png`
+      }
+      
+      return null
     },
     getCircleStyle(item) {
       const imageUrl = this.getItemImage(item)
       if (imageUrl) {
         return {
-          backgroundImage: `url(${imageUrl})`
+          backgroundImage: `url("${imageUrl}")`
         }
       }
       return {}
@@ -160,7 +173,6 @@ export default {
 </script>
 
 <style scoped>
-/* Обгортка для розміщення трохи нижче середини екрана */
 .sidebar-nav-wrapper {
   display: flex;
   flex-direction: column;
@@ -168,27 +180,22 @@ export default {
   align-items: center;
   width: 100%;
   flex: 1;
-  padding-bottom: 6vh; /* Опускає плашку трохи нижче від центра */
+  padding-bottom: 6vh;
   box-sizing: border-box;
 }
 
-/* САМА КРАСИВА СІРА ПЛАШКА: тепер огортає ТІЛЬКИ навігацію */
 .sidebar-nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-height: 40vh; /* Обмеження висоти у 40% екрана */
-  
-  /* Перенесені стилі зі стильного контейнера */
+  max-height: 40vh;
   background-color: #f8fafc;
   border-radius: 1vw;
   border: 0.1vw solid rgba(226, 232, 240, 0.8);
   padding: 1vh 0.2vw;
   box-sizing: border-box;
-
-  /* Плавна трансформація розмірів плашки при перемиканні режиму */
   transition: all 0.4s cubic-bezier(0.34, 1.25, 0.64, 1);
 }
 
@@ -242,9 +249,9 @@ export default {
 .nav-scroll-container {
   overflow-y: auto;
   width: 100%;
+  border-radius: 15%;
   max-height: calc(40vh - 3.6vw);
   scroll-behavior: smooth;
-  
   scrollbar-width: none;
   -ms-overflow-style: none;
 }

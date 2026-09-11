@@ -15,7 +15,7 @@
         class="offer-header-brand"
       >
         <img src="./assets/logo.png" class="header-logo" alt="Логотип компанії" />
-        <span class="active-offer-title" v-html="currentOfferData.title"></span>
+        <span class="active-offer-title" v-html="langStore.getText(currentOfferData.title)"></span>
       </div>
     </Transition>
 
@@ -114,6 +114,7 @@ import SolutionsCarousel from './components/SolutionsCarousel.vue'
 import AppSidebar from './components/AppSidebar.vue'
 import OfferDetails from './components/OfferDetails.vue'
 import ItemDetailView from './components/ItemDetailView.vue'
+import { useLanguageStore } from './stores/language.js';
 
 export default {
   name: 'MainScreen',
@@ -128,6 +129,7 @@ export default {
   },
   data() {
     return {
+      langStore: useLanguageStore(),
       isOfferActive: false,
       isAnimating: false,
       isItemDetailActive: false,
@@ -375,7 +377,7 @@ handleCrossCategorySwitch(targetCategoryKey) {
       if (newCategoryData && newCategoryData.items && newCategoryData.items.length > 0) {
         // Шукаємо такий самий товар у новій категорії за ID або схожою назвою
         const matchedItem = newCategoryData.items.find(
-          item => item.id === this.selectedItem.id || item.title === this.selectedItem.title
+          item => item.id === this.selectedItem.id || this.langStore.getText(item.title) === this.langStore.getText(this.selectedItem.title)
         );
 
         // Якщо товар знайдено — показуємо його в новій категорії, 

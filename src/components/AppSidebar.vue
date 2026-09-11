@@ -34,6 +34,7 @@
           :items="items"
           :totalItems="totalItems" 
           :activeIndex="activeIndex"
+          :category="activeOfferId"
           @navigate="$emit('navigate', $event)"
         />
 
