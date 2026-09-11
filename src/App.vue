@@ -91,6 +91,12 @@
       </Transition>
     </div>
 
+    <Transition name="main-content-fade" appear>
+      <div v-if="!isOfferActive" class="main-lang-selector">
+        <LanguageSelector />
+      </div>
+    </Transition>
+
     <!-- Ripple Overlay для всіх переходів -->
     <Transition name="ripple-fade">
       <div 
@@ -115,6 +121,7 @@ import AppSidebar from './components/AppSidebar.vue'
 import OfferDetails from './components/OfferDetails.vue'
 import ItemDetailView from './components/ItemDetailView.vue'
 import { useLanguageStore } from './stores/language.js';
+import LanguageSelector from './components/LanguageSelector.vue';
 
 export default {
   name: 'MainScreen',
@@ -125,7 +132,8 @@ export default {
     SolutionsCarousel,
     AppSidebar,
     OfferDetails,
-    ItemDetailView
+    ItemDetailView,
+    LanguageSelector
   },
   data() {
     return {

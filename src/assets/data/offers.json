@@ -20,7 +20,7 @@
           "uk": "Система інтегрованого залізнично-дорожнього покриття TINES<sup>®</sup>"
         },
         "description": {
-          "pl": "KOLEJ To jest szczegółowy opis oferty numer 1 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
+          "pl": "KOLEJ System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup> to bezpodsypkowa konstrukcja nawierzchni kolejowo-drogowej. Podstawowym elementem jest <strong>prefabrykowana płyta torowa TINES<sup>®</sup> LC-L</strong>. W płycie są ukształtowane kanały szynowe, w których szyny przytwierdzane są za pomocą <strong>systemu przytwierdzenia typu TINES<sup>®</sup> ERS</strong>.",
           "en": "RAILWAY This is a detailed description of offer number 1 in the railway infrastructure category. Advanced technical solutions ensure optimal performance, durability, and top vibration isolation features.",
           "uk": "ЗАЛІЗНИЦЯ Це детальний опис пропозиції №1 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
         },
@@ -28,8 +28,8 @@
         "sketchfab": {
           "defaultId": "c0dac337daad4dabbe6ee1ff943f83a9",
           "sketchfabIds": [
-            "c0dac337daad4dabbe6ee1ff943f83a9", 
-            "168c4dd5546449e691f6d8ba692954fd", 
+            "c0dac337daad4dabbe6ee1ff943f83a9",
+            "168c4dd5546449e691f6d8ba692954fd",
             "19a874123e964c49bc896bfa143ac91c"
           ]
         },
@@ -47,11 +47,18 @@
           "uk": "Система інтегрованого залізнично-дорожнього покриття TINES<sup>®</sup> GTP"
         },
         "description": {
-          "pl": "To jest szczegółowy opis oferty numer 2 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
+          "pl": "System zintegrowanej nawierzchni kolejowo-drogowej TINES® GTP to bezpodsypkowa konstrukcja nawierzchni kolejowo-drogowej. Podstawowym elementem jest <strong>prefabrykowana płyta torowa TINES® LC-L W14</strong>. W płycie są ukształtowane kanały szynowe, w których szyny przytwierdzane są za pomocą <strong>systemu przytwierdzenia typu TINES® W14</strong>.",
           "en": "This is a detailed description of offer number 2 in the railway infrastructure category. Advanced technical solutions ensure optimal performance, durability, and top vibration isolation features.",
           "uk": "Це детальний опис пропозиції №2 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
         },
         "image": "/products/kolej/tines-gtp.png",
+        "sketchfab": {
+          "defaultId": "fdb6d7968f0b48ebbc9a53b85b4ca910",
+          "sketchfabIds": [
+            "b9fe6d622f114d89aa87ea82b41d9572",
+            "43c0026944d34b8eb263b4aa842c7537"
+          ]
+        },
         "crossCategories": [
           "kolej",
           "przemysl"
@@ -65,11 +72,20 @@
           "uk": "Безбаластна система колії TINES<sup>®</sup> EBS"
         },
         "description": {
-          "pl": "To jest szczegółowy opis oferty numer 3 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
+          "pl": "<strong>System nawierzchni bezpodsypkowej TINES® EBS<strong> jest rozwiązaniem z betonową płytą nawierzchni torowej wylewaną na miejscu budowy. Dwustopniowe sprężyste mocowanie i sprężyste podparcie szyny zapewnia doskonałe przenoszenie obciążeń od pojazdów szynowych i tłumienie drgań wywołanych ich przejazdem.",
           "en": "This is a detailed description of offer number 3 in the railway infrastructure category. Advanced technical solutions ensure optimal performance, durability, and top vibration isolation features.",
           "uk": "Це детальний опис пропозиції №3 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
         },
         "image": "/products/kolej/tines-ebs.png",
+        "sketchfab": {
+          "defaultId": "6c73cf5c238244bdadca51ad9a849352",
+          "sketchfabIds": [
+            "d3d36e47147a4ce7a949ded288e6e09f",
+            "1809282d11e14ed8a4d59c85f0e20a96",
+            "3a623dcb13f44e488f8b7acd6e32bdd2",
+            "c50789388be84f969b2eb8e25dc7fad6"
+          ]
+        },
         "crossCategories": [
           "kolej",
           "metro",
@@ -89,6 +105,13 @@
           "uk": "Це детальний опис пропозиції №4 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
         },
         "image": "/products/kolej/tines-st-ebs.png",
+        "sketchfab": {
+          "defaultId": "0dfd49c3e09f4c969f74db0243d2c0da",
+          "sketchfabIds": [
+            "6c73cf5c238244bdadca51ad9a849352",
+            "c1cb5b288f504219b927837a976b7bd7"
+          ]
+        },
         "crossCategories": [
           "kolej",
           "metro",
@@ -108,6 +131,34 @@
           "uk": "Це детальний опис пропозиції №5 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
         },
         "image": "/products/kolej/tines-srt.png",
+        "sketchfab": {
+          "defaultId": "3fd4b6e5ee914a4ba541a6b1e38f96d0",
+          "sketchfabIds": [
+            "70faeb489c814558991f611967e72058"
+          ]
+        },
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ]
+      },
+      {
+        "id": "kolej-srt",
+        "title": {
+          "pl": "System przytwierdzenia TINES<sup>®</sup> W14",
+          "en": "TINES<sup>®</sup> W14 Rail Fastening System",
+          "uk": "Система рейкового скріплення TINES<sup>®</sup> W14"
+        },
+        "description": {
+          "pl": "System przytwierdzenia typu TINES® W14 stosuje się do przytwierdzania szyn typu 49E1 i 60E1 w systemach nawierzchni bezpodsypkowej produkcji TINES: system TINES® EBS, w prefabrykowanych płytach torowych TINES® LC-L W14, w systemie szczelnej nawierzchni TINES®, w podporach blokowych systemu TINES® BST, w innych systemach nawierzchni bezpodsypkowej produkcji TINES®.",
+          "en": "The TINES® W14 rail fastening system is used for fastening 49E1 and 60E1 rails in TINES ballastless track systems: the TINES® EBS system, TINES® LC-L W14 prefabricated track slabs, the TINES® sealed track surface system, TINES® BST block supports, and other TINES® ballastless track systems.",
+          "uk": "Система рейкового скріплення TINES® W14 застосовується для кріплення рейок типів 49E1 та 60E1 у безбаластних системах колійного покриття виробництва TINES: системі TINES® EBS, збірних колійних плитах TINES® LC-L W14, системі герметичного колійного покриття TINES®, блокових опорах системи TINES® BST та інших безбаластних системах колійного покриття виробництва TINES®."
+        },
+        "image": "/products/kolej/tines-w14.png",
+        "sketchfab": {
+          "defaultId": "8272b255a3c1488eb4dd8d24439fe7c8"
+        },
         "crossCategories": [
           "kolej",
           "metro",
@@ -127,6 +178,12 @@
           "uk": "Це детальний опис пропозиції №6 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
         },
         "image": "/products/kolej/tines-ers.png",
+        "sketchfab": {
+          "defaultId": "4e48532080cf4d21a6e828b940e35e71",
+          "sketchfabIds": [
+            "19a874123e964c49bc896bfa143ac91c"
+          ]
+        },
         "crossCategories": [
           "kolej",
           "metro",
@@ -146,6 +203,15 @@
           "uk": "Це детальний опис пропозиції №7 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
         },
         "image": "/products/kolej/tines-lc-l.png",
+        "sketchfab": {
+          "defaultId": "c1cb5b288f504219b927837a976b7bd7",
+          "sketchfabIds": [
+            "86026adc74344b00a5d919e0888efb68",
+            "69ac7060b00f441cb624e064cd9dd041",
+            "168c4dd5546449e691f6d8ba692954fd",
+            "c0dac337daad4dabbe6ee1ff943f83a9"
+          ]
+        },
         "crossCategories": [
           "kolej",
           "metro",
@@ -166,6 +232,14 @@
           "uk": "Це детальний опис пропозиції №8 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
         },
         "image": "/products/kolej/maty.png",
+        "sketchfab": {
+          "defaultId": "bf5315035e2d43f39375467340d81e1c",
+          "sketchfabIds": [
+            "b98a0c87d0a84b5f99dd6bf3ef29a4c6",
+            "d1b1b24ba0ed47d983ce9763a40e120d",
+            "3379ecf3b8b7476e9e8a7393b1ecfe38"
+          ]
+        },
         "crossCategories": [
           "kolej",
           "metro",
@@ -186,6 +260,12 @@
           "uk": "Це детальний опис пропозиції №9 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
         },
         "image": "/products/kolej/tines-polyrail.png",
+        "sketchfab": {
+          "defaultId": "26aaccd27a7b486b8c94abb279cf4e17",
+          "sketchfabIds": [
+            "26aaccd27a7b486b8c94abb279cf4e17"
+          ]
+        },
         "crossCategories": [
           "kolej",
           "metro",
