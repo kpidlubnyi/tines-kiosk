@@ -1,13 +1,29 @@
 {
   "kolej": {
     "id": "kolej",
-    "title": "KOLEJ",
-    "subtitle": "Kompleksowe rozwiązania dla torów i magistrali kolejowych",
+    "title": {
+      "pl": "KOLEJ",
+      "en": "RAILWAY",
+      "uk": "ЗАЛІЗНИЦЯ"
+    },
+    "subtitle": {
+      "pl": "Kompleksowe rozwiązania dla torów i magistrali kolejowych",
+      "en": "Comprehensive solutions for tracks and railway mainlines",
+      "uk": "Комплексні рішення для колій та залізничних магістралей"
+    },
     "items": [
       {
         "id": "kolej-zint-tines",
-        "description": "KOLEJ To jest szczegółowy opis oferty numer 1 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
-        "title": "System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup>",
+        "title": {
+          "pl": "System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup>",
+          "en": "TINES<sup>®</sup> Integrated Railway-Road Track System",
+          "uk": "Система інтегрованого залізнично-дорожнього покриття TINES<sup>®</sup>"
+        },
+        "description": {
+          "pl": "KOLEJ To jest szczegółowy opis oferty numer 1 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
+          "en": "RAILWAY This is a detailed description of offer number 1 in the railway infrastructure category. Advanced technical solutions ensure optimal performance, durability, and top vibration isolation features.",
+          "uk": "ЗАЛІЗНИЦЯ Це детальний опис пропозиції №1 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
+        },
         "image": "/products/kolej/zint-nawierzchnia-tines.png",
         "sketchfab": {
           "defaultId": "c0dac337daad4dabbe6ee1ff943f83a9",
@@ -25,8 +41,16 @@
       },
       {
         "id": "kolej-zint-tines-gtp",
-        "title": "System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup> GTP",
-        "description": "To jest szczegółowy opis oferty numer 2 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
+        "title": {
+          "pl": "System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup> GTP",
+          "en": "TINES<sup>®</sup> GTP Integrated Railway-Road Track System",
+          "uk": "Система інтегрованого залізнично-дорожнього покриття TINES<sup>®</sup> GTP"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 2 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
+          "en": "This is a detailed description of offer number 2 in the railway infrastructure category. Advanced technical solutions ensure optimal performance, durability, and top vibration isolation features.",
+          "uk": "Це детальний опис пропозиції №2 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
+        },
         "image": "/products/kolej/tines-gtp.png",
         "crossCategories": [
           "kolej",
@@ -35,8 +59,16 @@
       },
       {
         "id": "kolej-ebs",
-        "title": "System nawierzchni bezpodsypkowej TINES<sup>®</sup> EBS",
-        "description": "To jest szczegółowy opis oferty numer 3 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
+        "title": {
+          "pl": "System nawierzchni bezpodsypkowej TINES<sup>®</sup> EBS",
+          "en": "TINES<sup>®</sup> EBS Ballastless Track System",
+          "uk": "Безбаластна система колії TINES<sup>®</sup> EBS"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 3 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
+          "en": "This is a detailed description of offer number 3 in the railway infrastructure category. Advanced technical solutions ensure optimal performance, durability, and top vibration isolation features.",
+          "uk": "Це детальний опис пропозиції №3 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
+        },
         "image": "/products/kolej/tines-ebs.png",
         "crossCategories": [
           "kolej",
@@ -46,8 +78,16 @@
       },
       {
         "id": "kolej-st-ebs",
-        "title": "System nawierzchni bezpodsypkowej TINES<sup>®</sup> Slab Track EBS",
-        "description": "To jest szczegółowy opis oferty numer 4 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
+        "title": {
+          "pl": "System nawierzchni bezpodsypkowej TINES<sup>®</sup> Slab Track EBS",
+          "en": "TINES<sup>®</sup> Slab Track EBS Ballastless System",
+          "uk": "Безбаластна система колії TINES<sup>®</sup> Slab Track EBS"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 4 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
+          "en": "This is a detailed description of offer number 4 in the railway infrastructure category. Advanced technical solutions ensure optimal performance, durability, and top vibration isolation features.",
+          "uk": "Це детальний опис пропозиції №4 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
+        },
         "image": "/products/kolej/tines-st-ebs.png",
         "crossCategories": [
           "kolej",
@@ -57,8 +97,16 @@
       },
       {
         "id": "kolej-srt",
-        "title": "System szczelnej nawierzchni torowej TINES<sup>®</sup> SRT",
-        "description": "To jest szczegółowy opis oferty numer 5 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
+        "title": {
+          "pl": "System szczelnej nawierzchni torowej TINES<sup>®</sup> SRT",
+          "en": "TINES<sup>®</sup> SRT Sealed Track Surface System",
+          "uk": "Система герметичного покриття колії TINES<sup>®</sup> SRT"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 5 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
+          "en": "This is a detailed description of offer number 5 in the railway infrastructure category. Advanced technical solutions ensure optimal performance, durability, and top vibration isolation features.",
+          "uk": "Це детальний опис пропозиції №5 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
+        },
         "image": "/products/kolej/tines-srt.png",
         "crossCategories": [
           "kolej",
@@ -68,8 +116,16 @@
       },
       {
         "id": "kolej-ers",
-        "title": "System przytwierdzenia typu TINES<sup>®</sup> ERS",
-        "description": "To jest szczegółowy opis oferty numer 6 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
+        "title": {
+          "pl": "System przytwierdzenia typu TINES<sup>®</sup> ERS",
+          "en": "TINES<sup>®</sup> ERS Fastening System",
+          "uk": "Система скріплення типу TINES<sup>®</sup> ERS"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 6 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
+          "en": "This is a detailed description of offer number 6 in the railway infrastructure category. Advanced technical solutions ensure optimal performance, durability, and top vibration isolation features.",
+          "uk": "Це детальний опис пропозиції №6 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
+        },
         "image": "/products/kolej/tines-ers.png",
         "crossCategories": [
           "kolej",
@@ -79,8 +135,16 @@
       },
       {
         "id": "kolej-plyty",
-        "title": "Prefabrykowane płyty torowe TINES<sup>®</sup>",
-        "description": "To jest szczegółowy opis oferty numer 7 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
+        "title": {
+          "pl": "Prefabrykowane płyty torowe TINES<sup>®</sup>",
+          "en": "TINES<sup>®</sup> Prefabricated Track Slabs",
+          "uk": "Збірні колійні плити TINES<sup>®</sup>"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 7 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
+          "en": "This is a detailed description of offer number 7 in the railway infrastructure category. Advanced technical solutions ensure optimal performance, durability, and top vibration isolation features.",
+          "uk": "Це детальний опис пропозиції №7 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
+        },
         "image": "/products/kolej/tines-lc-l.png",
         "crossCategories": [
           "kolej",
@@ -91,8 +155,16 @@
       },
       {
         "id": "kolej-maty",
-        "title": "Maty wibroizolacyjne TINES<sup>®</sup>",
-        "description": "To jest szczegółowy opis oferty numer 8 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
+        "title": {
+          "pl": "Maty wibroizolacyjne TINES<sup>®</sup>",
+          "en": "TINES<sup>®</sup> Anti-Vibration Mats",
+          "uk": "Віброізоляційні мати TINES<sup>®</sup>"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 8 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
+          "en": "This is a detailed description of offer number 8 in the railway infrastructure category. Advanced technical solutions ensure optimal performance, durability, and top vibration isolation features.",
+          "uk": "Це детальний опис пропозиції №8 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
+        },
         "image": "/products/kolej/maty.png",
         "crossCategories": [
           "kolej",
@@ -103,8 +175,16 @@
       },
       {
         "id": "kolej-polyrail",
-        "title": "Elastomery polimerowe TINES<sup>®</sup> Polyrail ",
-        "description": "To jest szczegółowy opis oferty numer 9 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
+        "title": {
+          "pl": "Elastomery polimerowe TINES<sup>®</sup> Polyrail",
+          "en": "TINES<sup>®</sup> Polyrail Polymer Elastomers",
+          "uk": "Полімерні еластомери TINES<sup>®</sup> Polyrail"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 9 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
+          "en": "This is a detailed description of offer number 9 in the railway infrastructure category. Advanced technical solutions ensure optimal performance, durability, and top vibration isolation features.",
+          "uk": "Це детальний опис пропозиції №9 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
+        },
         "image": "/products/kolej/tines-polyrail.png",
         "crossCategories": [
           "kolej",
@@ -116,13 +196,29 @@
   },
   "metro": {
     "id": "metro",
-    "title": "METRO",
-    "subtitle": "Ochrona środowiska miejskiego przed wibracjami tunelowymi",
+    "title": {
+      "pl": "METRO",
+      "en": "METRO",
+      "uk": "МЕТРО"
+    },
+    "subtitle": {
+      "pl": "Ochrona środowiska miejskiego przed wibracjami tunelowymi",
+      "en": "Protection of urban environment against tunnel vibrations",
+      "uk": "Захист міського середовища від тунельних вібрацій"
+    },
     "items": [
       {
         "id": "metro-zint-tines",
-        "title": "System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup>",
-        "description": "METRO To jest szczegółowy opis oferty numer 1 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
+        "title": {
+          "pl": "System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup>",
+          "en": "TINES<sup>®</sup> Integrated Railway-Road Track System",
+          "uk": "Система інтегрованого залізнично-дорожнього покриття TINES<sup>®</sup>"
+        },
+        "description": {
+          "pl": "METRO To jest szczegółowy opis oferty numer 1 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
+          "en": "METRO This is a detailed description of offer number 1 in the metro systems category. Innovative damping materials effectively reduce vibrations and noise in underground infrastructure.",
+          "uk": "МЕТРО Це детальний опис пропозиції №1 у категорії систем метро. Інноваційні демпферні матеріали ефективно знижують вібрацію та шум у підземній інфраструктурі."
+        },
         "image": "/products/metro/zint-nawierzchnia-tines.png",
         "crossCategories": [
           "kolej",
@@ -132,14 +228,30 @@
       },
       {
         "id": "metro-zint-tines-gtp",
-        "title": "System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup> GTP2",
-        "description": "To jest szczegółowy opis oferty numer 2 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
+        "title": {
+          "pl": "System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup> GTP2",
+          "en": "TINES<sup>®</sup> GTP2 Integrated Railway-Road Track System",
+          "uk": "Система інтегрованого залізнично-дорожнього покриття TINES<sup>®</sup> GTP2"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 2 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
+          "en": "This is a detailed description of offer number 2 in the metro systems category. Innovative damping materials effectively reduce vibrations and noise in underground infrastructure.",
+          "uk": "Це детальний опис пропозиції №2 у категорії систем метро. Інноваційні демпферні матеріали ефективно знижують вібрацію та шум у підземній інфраструктурі."
+        },
         "image": "/products/metro/tines-gtp.png"
       },
       {
         "id": "metro-ebs",
-        "title": "System nawierzchni bezpodsypkowej TINES<sup>®</sup> EBS",
-        "description": "To jest szczegółowy opis oferty numer 3 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
+        "title": {
+          "pl": "System nawierzchni bezpodsypkowej TINES<sup>®</sup> EBS",
+          "en": "TINES<sup>®</sup> EBS Ballastless Track System",
+          "uk": "Безбаластна система колії TINES<sup>®</sup> EBS"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 3 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
+          "en": "This is a detailed description of offer number 3 in the metro systems category. Innovative damping materials effectively reduce vibrations and noise in underground infrastructure.",
+          "uk": "Це детальний опис пропозиції №3 у категорії систем метро. Інноваційні демпферні матеріали ефективно знижують вібрацію та шум у підземній інфраструктурі."
+        },
         "image": "/products/metro/tines-ebs.png",
         "crossCategories": [
           "kolej",
@@ -149,8 +261,16 @@
       },
       {
         "id": "metro-st-ebs",
-        "title": "System nawierzchni bezpodsypkowej TINES<sup>®</sup> Slab Track EBS",
-        "description": "To jest szczegółowy opis oferty numer 4 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
+        "title": {
+          "pl": "System nawierzchni bezpodsypkowej TINES<sup>®</sup> Slab Track EBS",
+          "en": "TINES<sup>®</sup> Slab Track EBS Ballastless System",
+          "uk": "Безбаластна система колії TINES<sup>®</sup> Slab Track EBS"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 4 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
+          "en": "This is a detailed description of offer number 4 in the metro systems category. Innovative damping materials effectively reduce vibrations and noise in underground infrastructure.",
+          "uk": "Це детальний опис пропозиції №4 у категорії систем метро. Інноваційні демпферні матеріали ефективно знижують вібрацію та шум у підземній інфраструктурі."
+        },
         "image": "/products/metro/tines-st-ebs.png",
         "crossCategories": [
           "kolej",
@@ -160,8 +280,16 @@
       },
       {
         "id": "metro-srt",
-        "title": "System szczelnej nawierzchni torowej TINES<sup>®</sup> SRT",
-        "description": "To jest szczegółowy opis oferty numer 5 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
+        "title": {
+          "pl": "System szczelnej nawierzchni torowej TINES<sup>®</sup> SRT",
+          "en": "TINES<sup>®</sup> SRT Sealed Track Surface System",
+          "uk": "Система герметичного покриття колії TINES<sup>®</sup> SRT"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 5 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
+          "en": "This is a detailed description of offer number 5 in the metro systems category. Innovative damping materials effectively reduce vibrations and noise in underground infrastructure.",
+          "uk": "Це детальний опис пропозиції №5 у категорії систем метро. Інноваційні демпферні матеріали ефективно знижують вібрацію та шум у підземній інфраструктурі."
+        },
         "image": "/products/metro/tines-srt.png",
         "crossCategories": [
           "kolej",
@@ -171,8 +299,16 @@
       },
       {
         "id": "metro-ers",
-        "title": "System przytwierdzenia typu TINES<sup>®</sup> ERS",
-        "description": "To jest szczegółowy opis oferty numer 6 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
+        "title": {
+          "pl": "System przytwierdzenia typu TINES<sup>®</sup> ERS",
+          "en": "TINES<sup>®</sup> ERS Fastening System",
+          "uk": "Система скріплення типу TINES<sup>®</sup> ERS"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 6 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
+          "en": "This is a detailed description of offer number 6 in the metro systems category. Innovative damping materials effectively reduce vibrations and noise in underground infrastructure.",
+          "uk": "Це детальний опис пропозиції №6 у категорії систем метро. Інноваційні демпферні матеріали ефективно знижують вібрацію та шум у підземній інфраструктурі."
+        },
         "image": "/products/metro/tines-ers.png",
         "crossCategories": [
           "kolej",
@@ -182,8 +318,16 @@
       },
       {
         "id": "metro-plyty",
-        "title": "Prefabrykowane płyty torowe TINES<sup>®</sup>",
-        "description": "To jest szczegółowy opis oferty numer 7 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
+        "title": {
+          "pl": "Prefabrykowane płyty torowe TINES<sup>®</sup>",
+          "en": "TINES<sup>®</sup> Prefabricated Track Slabs",
+          "uk": "Збірні колійні плити TINES<sup>®</sup>"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 7 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
+          "en": "This is a detailed description of offer number 7 in the metro systems category. Innovative damping materials effectively reduce vibrations and noise in underground infrastructure.",
+          "uk": "Це детальний опис пропозиції №7 у категорії систем метро. Інноваційні демпферні матеріали ефективно знижують вібрацію та шум у підземній інфраструктурі."
+        },
         "image": "/products/metro/tines-lc-l.png",
         "crossCategories": [
           "kolej",
@@ -194,8 +338,16 @@
       },
       {
         "id": "metro-maty",
-        "title": "Maty wibroizolacyjne TINES<sup>®</sup>",
-        "description": "To jest szczegółowy opis oferty numer 8 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
+        "title": {
+          "pl": "Maty wibroizolacyjne TINES<sup>®</sup>",
+          "en": "TINES<sup>®</sup> Anti-Vibration Mats",
+          "uk": "Віبروізоляційні мати TINES<sup>®</sup>"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 8 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
+          "en": "This is a detailed description of offer number 8 in the metro systems category. Innovative damping materials effectively reduce vibrations and noise in underground infrastructure.",
+          "uk": "Це детальний опис пропозиції №8 у категорії систем метро. Інноваційні демпферні матеріали ефективно знижують вібрацію та шум у підземній інфраструктурі."
+        },
         "image": "/products/metro/maty.png",
         "crossCategories": [
           "kolej",
@@ -206,8 +358,16 @@
       },
       {
         "id": "metro-polyrail",
-        "title": "Elastomery polimerowe TINES<sup>®</sup> Polyrail ",
-        "description": "To jest szczegółowy opis oferty numer 9 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
+        "title": {
+          "pl": "Elastomery polimerowe TINES<sup>®</sup> Polyrail",
+          "en": "TINES<sup>®</sup> Polyrail Polymer Elastomers",
+          "uk": "Полімерні еластомери TINES<sup>®</sup> Polyrail"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 9 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
+          "en": "This is a detailed description of offer number 9 in the metro systems category. Innovative damping materials effectively reduce vibrations and noise in underground infrastructure.",
+          "uk": "Це детальний опис пропозиції №9 у категорії систем метро. Інноваційні демпферні матеріали ефективно знижують вібрацію та шум у підземній інфраструктурі."
+        },
         "image": "/products/metro/tines-polyrail.png",
         "crossCategories": [
           "kolej",
@@ -219,43 +379,99 @@
   },
   "tramwaj": {
     "id": "tramwaj",
-    "title": "TRAMWAJ",
-    "subtitle": "Cichy i niezawodny miejski transport szynowy",
+    "title": {
+      "pl": "TRAMWAJ",
+      "en": "TRAMWAY",
+      "uk": "ТРАМВАЙ"
+    },
+    "subtitle": {
+      "pl": "Cichy i niezawodny miejski transport szynowy",
+      "en": "Quiet and reliable urban rail transport",
+      "uk": "Тихий та надійний міський рейковий транспорт"
+    },
     "items": [
       {
         "id": "tramwaj-zint-tines-tram",
-        "title": "System zintegrowanej nawierzchni tramwajowo-drogowej TINES<sup>®</sup> TRAM",
-        "description": "To jest szczegółowy opis oferty numer 1 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
+        "title": {
+          "pl": "System zintegrowanej nawierzchni tramwajowo-drogowej TINES<sup>®</sup> TRAM",
+          "en": "TINES<sup>®</sup> TRAM Integrated Tram-Road Track System",
+          "uk": "Система інтегрованого трамвайно-дорожнього покриття TINES<sup>®</sup> TRAM"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 1 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
+          "en": "This is a detailed description of offer number 1 for urban tram lines. Noise attenuation system provides protection against noise and reduces track wear.",
+          "uk": "Це детальний опис пропозиції №1 для міських трамвайних ліній. Шумоглушача система забезпечує захист від шуму та зменшує знос колійної інфраструктури."
+        },
         "image": "/products/tramwaj/zint-nawierzchnia-tines-tram.png"
       },
       {
         "id": "tramwaj-zint-tines-tram-gtp",
-        "title": "System zintegrowanej nawierzchni tramwajowo-drogowej TINES<sup>®</sup> TRAM GTP",
-        "description": "To jest szczegółowy opis oferty numer 2 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
+        "title": {
+          "pl": "System zintegrowanej nawierzchni tramwajowo-drogowej TINES<sup>®</sup> TRAM GTP",
+          "en": "TINES<sup>®</sup> TRAM GTP Integrated Tram-Road Track System",
+          "uk": "Система інтегрованого трамвайно-дорожнього покриття TINES<sup>®</sup> TRAM GTP"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 2 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
+          "en": "This is a detailed description of offer number 2 for urban tram lines. Noise attenuation system provides protection against noise and reduces track wear.",
+          "uk": "Це детальний опис пропозиції №2 для міських трамвайних ліній. Шумоглушача система забезпечує захист від шуму та зменшує знос колійної інфраструктури."
+        },
         "image": "/products/tramwaj/zint-nawierzchnia-tines-tram-gtp.png"
       },
       {
         "id": "tramwaj-tram-bst",
-        "title": "System podpór blokowych TINES<sup>®</sup> TRAM BST",
-        "description": "To jest szczegółowy opis oferty numer 3 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
+        "title": {
+          "pl": "System podpór blokowych TINES<sup>®</sup> TRAM BST",
+          "en": "TINES<sup>®</sup> TRAM BST Block Support System",
+          "uk": "Система блочних опор TINES<sup>®</sup> TRAM BST"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 3 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
+          "en": "This is a detailed description of offer number 3 for urban tram lines. Noise attenuation system provides protection against noise and reduces track wear.",
+          "uk": "Це детальний опис пропозиції №3 для міських трамвайних ліній. Шумоглушача система забезпечує захист від шуму та зменшує знос колійної інфраструктури."
+        },
         "image": "/products/tramwaj/na-razie-nie-ma.png"
       },
       {
         "id": "tramwaj-tram-srt",
-        "title": "System szczelnej nawierzchni torowej TINES<sup>®</sup> TRAM SRT",
-        "description": "To jest szczegółowy opis oferty numer 4 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
+        "title": {
+          "pl": "System szczelnej nawierzchni torowej TINES<sup>®</sup> TRAM SRT",
+          "en": "TINES<sup>®</sup> TRAM SRT Sealed Track Surface System",
+          "uk": "Система герметичного покриття колії TINES<sup>®</sup> TRAM SRT"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 4 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
+          "en": "This is a detailed description of offer number 4 for urban tram lines. Noise attenuation system provides protection against noise and reduces track wear.",
+          "uk": "Це детальний опис пропозиції №4 для міських трамвайних ліній. Шумоглушача система забезпечує захист від шуму та зменшує знос колійної інфраструктури."
+        },
         "image": "/products/tramwaj/tines-srt.png"
       },
       {
         "id": "tramwaj-polyrail",
-        "title": "Elastomery polimerowe TINES<sup>®</sup> Polyrail",
-        "description": "To jest szczegółowy opis oferty numer 5 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
+        "title": {
+          "pl": "Elastomery polimerowe TINES<sup>®</sup> Polyrail",
+          "en": "TINES<sup>®</sup> Polyrail Polymer Elastomers",
+          "uk": "Полімерні еластомери TINES<sup>®</sup> Polyrail"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 5 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
+          "en": "This is a detailed description of offer number 5 for urban tram lines. Noise attenuation system provides protection against noise and reduces track wear.",
+          "uk": "Це детальний опис пропозиції №5 для міських трамвайних ліній. Шумоглушача система забезпечує захист від шуму та зменшує знос колійної інфраструктури."
+        },
         "image": "/products/tramwaj/tines-polyrail.png"
       },
       {
         "id": "tramwaj-plyty",
-        "title": "Prefabrykowane płyty torowe TINES<sup>®</sup>",
-        "description": "To jest szczegółowy opis oferty numer 6 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
+        "title": {
+          "pl": "Prefabrykowane płyty torowe TINES<sup>®</sup>",
+          "en": "TINES<sup>®</sup> Prefabricated Track Slabs",
+          "uk": "Збірні колійні плити TINES<sup>®</sup>"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 6 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
+          "en": "This is a detailed description of offer number 6 for urban tram lines. Noise attenuation system provides protection against noise and reduces track wear.",
+          "uk": "Це детальний опис пропозиції №6 для міських трамвайних ліній. Шумоглушача система забезпечує захист від шуму та зменшує знос колійної інфраструктури."
+        },
         "image": "/products/tramwaj/tines-lc-l.png",
         "crossCategories": [
           "kolej",
@@ -266,8 +482,16 @@
       },
       {
         "id": "tramwaj-maty",
-        "title": "Maty wibroizolacyjne TINES<sup>®</sup>",
-        "description": "To jest szczegółowy opis oferty numer 7 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
+        "title": {
+          "pl": "Maty wibroizolacyjne TINES<sup>®</sup>",
+          "en": "TINES<sup>®</sup> Anti-Vibration Mats",
+          "uk": "Віبروізоляційні мати TINES<sup>®</sup>"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 7 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
+          "en": "This is a detailed description of offer number 7 for urban tram lines. Noise attenuation system provides protection against noise and reduces track wear.",
+          "uk": "Це детальний опис пропозиції №7 для міських трамвайних ліній. Шумоглушача система забезпечує захист від шуму та зменшує знос колійної інфраструктури."
+        },
         "image": "/products/tramwaj/maty.png",
         "crossCategories": [
           "kolej",
@@ -278,21 +502,45 @@
       },
       {
         "id": "tramwaj-profile",
-        "title": "Profile elastomerowe TINES<sup>®</sup>",
-        "description": "To jest szczegółowy opis oferty numer 8 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
+        "title": {
+          "pl": "Profile elastomerowe TINES<sup>®</sup>",
+          "en": "TINES<sup>®</sup> Elastomeric Profiles",
+          "uk": "Еластомерні профілі TINES<sup>®</sup>"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 8 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
+          "en": "This is a detailed description of offer number 8 for urban tram lines. Noise attenuation system provides protection against noise and reduces track wear.",
+          "uk": "Це детальний опис пропозиції №8 для міських трамвайних ліній. Шумоглушача система забезпечує захист від шуму та зменшує знос колійної інфраструктури."
+        },
         "image": "/products/tramwaj/tines-railfiller.png"
       }
     ]
   },
   "przemysl": {
     "id": "przemysl",
-    "title": "KOLEJ PRZEMYSŁOWA",
-    "subtitle": "Ochrona konstrukcji i izolacja ciężkiego wyposażenia",
+    "title": {
+      "pl": "KOLEJ PRZEMYSŁOWA",
+      "en": "INDUSTRIAL RAILWAY",
+      "uk": "ПРОМИСЛОВА ЗАЛІЗНИЦЯ"
+    },
+    "subtitle": {
+      "pl": "Ochrona konstrukcji i izolacja ciężkiego wyposażenia",
+      "en": "Protection of structures and insulation of heavy equipment",
+      "uk": "Захист конструкцій та ізоляція важкого обладнання"
+    },
     "items": [
       {
         "id": "przemysl-zint-tines",
-        "title": "System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup>",
-        "description": "PRZEMYSL To jest szczegółowy opis oferty numer 1 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
+        "title": {
+          "pl": "System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup>",
+          "en": "TINES<sup>®</sup> Integrated Railway-Road Track System",
+          "uk": "Система інтегрованого залізнично-дорожнього покриття TINES<sup>®</sup>"
+        },
+        "description": {
+          "pl": "PRZEMYSL To jest szczegółowy opis oferty numer 1 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
+          "en": "INDUSTRIAL This is a detailed description of offer number 1 dedicated to industrial facilities. This technology enables effective damping of dynamic loads and extends machine lifespan.",
+          "uk": "ПРОМИСЛОВІСТЬ Це детальний опис пропозиції №1, призначеної для промислових об'єктів. Ця технологія дозволяє ефективно гасити динамічні навантаження та продовжує термін служби машин."
+        },
         "image": "/products/przemysl/zint-nawierzchnia-tines.png",
         "crossCategories": [
           "kolej",
@@ -302,8 +550,16 @@
       },
       {
         "id": "przemysl-zint-tines-gtp",
-        "title": "System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup> GTP",
-        "description": "To jest szczegółowy opis oferty numer 2 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
+        "title": {
+          "pl": "System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup> GTP",
+          "en": "TINES<sup>®</sup> GTP Integrated Railway-Road Track System",
+          "uk": "Система інтегрованого залізнично-дорожнього покриття TINES<sup>®</sup> GTP"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 2 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
+          "en": "This is a detailed description of offer number 2 dedicated to industrial facilities. This technology enables effective damping of dynamic loads and extends machine lifespan.",
+          "uk": "Це детальний опис пропозиції №2, призначеної для промислових об'єктів. Ця технологія дозволяє ефективно гасити динамічні навантаження та продовжує термін служби машин."
+        },
         "image": "/products/przemysl/tines-gtp.png",
         "crossCategories": [
           "kolej",
@@ -312,8 +568,16 @@
       },
       {
         "id": "przemysl-ebs",
-        "title": "System nawierzchni bezpodsypkowej TINES<sup>®</sup> EBS",
-        "description": "To jest szczegółowy opis oferty numer 3 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
+        "title": {
+          "pl": "System nawierzchni bezpodsypkowej TINES<sup>®</sup> EBS",
+          "en": "TINES<sup>®</sup> EBS Ballastless Track System",
+          "uk": "Безбаластна система колії TINES<sup>®</sup> EBS"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 3 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
+          "en": "This is a detailed description of offer number 3 dedicated to industrial facilities. This technology enables effective damping of dynamic loads and extends machine lifespan.",
+          "uk": "Це детальний опис пропозиції №3, призначеної для промислових об'єктів. Ця технологія дозволяє ефективно гасити динамічні навантаження та продовжує термін служби машин."
+        },
         "image": "/products/przemysl/tines-ebs.png",
         "crossCategories": [
           "kolej",
@@ -323,8 +587,16 @@
       },
       {
         "id": "przemysl-st-ebs",
-        "title": "System nawierzchni bezpodsypkowej TINES<sup>®</sup> Slab Track EBS",
-        "description": "To jest szczegółowy opis oferty numer 4 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
+        "title": {
+          "pl": "System nawierzchni bezpodsypkowej TINES<sup>®</sup> Slab Track EBS",
+          "en": "TINES<sup>®</sup> Slab Track EBS Ballastless System",
+          "uk": "Безбаластна система колії TINES<sup>®</sup> Slab Track EBS"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 4 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
+          "en": "This is a detailed description of offer number 4 dedicated to industrial facilities. This technology enables effective damping of dynamic loads and extends machine lifespan.",
+          "uk": "Це детальний опис пропозиції №4, призначеної для промислових об'єктів. Ця технологія дозволяє ефективно гасити динамічні навантаження та продовжує термін служби машин."
+        },
         "image": "/products/przemysl/tines-st-ebs.png",
         "crossCategories": [
           "kolej",
@@ -334,8 +606,16 @@
       },
       {
         "id": "przemysl-srt",
-        "title": "System szczelnej nawierzchni torowej TINES<sup>®</sup> SRT",
-        "description": "To jest szczegółowy opis oferty numer 5 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
+        "title": {
+          "pl": "System szczelnej nawierzchni torowej TINES<sup>®</sup> SRT",
+          "en": "TINES<sup>®</sup> SRT Sealed Track Surface System",
+          "uk": "Система герметичного покриття колії TINES<sup>®</sup> SRT"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 5 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
+          "en": "This is a detailed description of offer number 5 dedicated to industrial facilities. This technology enables effective damping of dynamic loads and extends machine lifespan.",
+          "uk": "Це детальний опис пропозиції №5, призначеної для промислових об'єктів. Ця технологія дозволяє ефективно гасити динамічні навантаження та продовжує термін служби машин."
+        },
         "image": "/products/przemysl/tines-srt.png",
         "crossCategories": [
           "kolej",
@@ -345,8 +625,16 @@
       },
       {
         "id": "przemysl-ers",
-        "title": "System przytwierdzenia typu TINES<sup>®</sup> ERS",
-        "description": "To jest szczegółowy opis oferty numer 6 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
+        "title": {
+          "pl": "System przytwierdzenia typu TINES<sup>®</sup> ERS",
+          "en": "TINES<sup>®</sup> ERS Fastening System",
+          "uk": "Система скріплення типу TINES<sup>®</sup> ERS"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 6 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
+          "en": "This is a detailed description of offer number 6 dedicated to industrial facilities. This technology enables effective damping of dynamic loads and extends machine lifespan.",
+          "uk": "Це детальний опис пропозиції №6, призначеної для промислових об'єктів. Ця технологія дозволяє ефективно гасити динамічні навантаження та продовжує термін служби машин."
+        },
         "image": "/products/przemysl/tines-ers.png",
         "crossCategories": [
           "kolej",
@@ -356,8 +644,16 @@
       },
       {
         "id": "przemysl-plyty",
-        "title": "Prefabrykowane płyty torowe TINES<sup>®</sup>",
-        "description": "To jest szczegółowy opis oferty numer 7 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
+        "title": {
+          "pl": "Prefabrykowane płyty torowe TINES<sup>®</sup>",
+          "en": "TINES<sup>®</sup> Prefabricated Track Slabs",
+          "uk": "Збірні колійні плити TINES<sup>®</sup>"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 7 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
+          "en": "This is a detailed description of offer number 7 dedicated to industrial facilities. This technology enables effective damping of dynamic loads and extends machine lifespan.",
+          "uk": "Це детальний опис пропозиції №7, призначеної для промислових об'єктів. Ця технологія дозволяє ефективно гасити динамічні навантаження та продовжує термін служби машин."
+        },
         "image": "/products/przemysl/tines-lc-l.png",
         "crossCategories": [
           "kolej",
@@ -368,8 +664,16 @@
       },
       {
         "id": "przemysl-maty",
-        "title": "Maty wibroizolacyjne TINES<sup>®</sup>",
-        "description": "To jest szczegółowy opis oferty numer 8 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
+        "title": {
+          "pl": "Maty wibroizolacyjne TINES<sup>®</sup>",
+          "en": "TINES<sup>®</sup> Anti-Vibration Mats",
+          "uk": "Віبروізоляційні мати TINES<sup>®</sup>"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 8 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
+          "en": "This is a detailed description of offer number 8 dedicated to industrial facilities. This technology enables effective damping of dynamic loads and extends machine lifespan.",
+          "uk": "Це детальний опис пропозиції №8, призначеної для промислових об'єктів. Ця технологія дозволяє ефективно гасити динамічні навантаження та продовжує термін служби машин."
+        },
         "image": "/products/przemysl/maty.png",
         "crossCategories": [
           "kolej",
@@ -380,8 +684,16 @@
       },
       {
         "id": "przemysl-polyrail",
-        "title": "Elastomery polimerowe TINES<sup>®</sup> Polyrail ",
-        "description": "To jest szczegółowy opis oferty numer 9 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
+        "title": {
+          "pl": "Elastomery polimerowe TINES<sup>®</sup> Polyrail",
+          "en": "TINES<sup>®</sup> Polyrail Polymer Elastomers",
+          "uk": "Полімерні еластомери TINES<sup>®</sup> Polyrail"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 9 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
+          "en": "This is a detailed description of offer number 9 dedicated to industrial facilities. This technology enables effective damping of dynamic loads and extends machine lifespan.",
+          "uk": "Це детальний опис пропозиції №9, призначеної для промислових об'єктів. Ця технологія дозволяє ефективно гасити динамічні навантаження та продовжує термін служби машин."
+        },
         "image": "/products/przemysl/tines-polyrail.png",
         "crossCategories": [
           "kolej",
@@ -393,19 +705,43 @@
   },
   "budynki": {
     "id": "budynki",
-    "title": "WIBROIZOLACJA",
-    "subtitle": "Ochrona obiektów mieszkalnych i komercyjnych",
+    "title": {
+      "pl": "WIBROIZOLACJA",
+      "en": "VIBRATION ISOLATION",
+      "uk": "ВІБРОІЗОЛЯЦІЯ"
+    },
+    "subtitle": {
+      "pl": "Ochrona obiektów mieszkalnych i komercyjnych",
+      "en": "Protection of residential and commercial buildings",
+      "uk": "Захист житлових та комерційних об'єктів"
+    },
     "items": [
       {
         "id": "budynki-vibrofloor-1",
-        "title": "VIBROFLOOR I",
-        "description": "To jest szczegółowy opis oferty numer 1 przeznaczonej do wibroizolacji budynków. Zapewnia wyciszenie konstrukcji oraz pełny komfort akustyczny mieszkańców i użytkowników obiektu.",
+        "title": {
+          "pl": "VIBROFLOOR I",
+          "en": "VIBROFLOOR I",
+          "uk": "VIBROFLOOR I"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 1 przeznaczonej do wibroizolacji budynków. Zapewnia wyciszenie konstrukcji oraz pełny komfort akustyczny mieszkańców i użytkowników obiektu.",
+          "en": "This is a detailed description of offer number 1 designed for building vibration isolation. Provides structural soundproofing and full acoustic comfort for occupants.",
+          "uk": "Це детальний опис пропозиції №1, призначеної для віبروізоляції будівель. Забезпечує шумоізоляцію конструкції та повний акустичний комфорт мешканців і користувачів об'єкта."
+        },
         "image": "/products/wibro/vibrofloor-i.png"
       },
       {
         "id": "budynki-vibrofloor-2",
-        "title": "VIBROFLOOR II",
-        "description": "To jest szczegółowy opis oferty numer 2 przeznaczonej do wibroizolacji budynków. Zapewnia wyciszenie konstrukcji oraz pełny komfort akustyczny mieszkańców i użytkowników obiektu.",
+        "title": {
+          "pl": "VIBROFLOOR II",
+          "en": "VIBROFLOOR II",
+          "uk": "VIBROFLOOR II"
+        },
+        "description": {
+          "pl": "To jest szczegółowy opis oferty numer 2 przeznaczonej do wibroizolacji budynków. Zapewnia wyciszenie konstrukcji oraz pełny komfort akustyczny mieszkańców i użytkowników obiektu.",
+          "en": "This is a detailed description of offer number 2 designed for building vibration isolation. Provides structural soundproofing and full acoustic comfort for occupants.",
+          "uk": "Це детальний опис пропозиції №2, призначеної для віبروізоляції будівель. Забезпечує шумоізоляцію конструкції та повний акустичний комфорт мешканців і користувачів об'єкта."
+        },
         "image": "/products/wibro/vibrofloor-ii.png"
       }
     ]
