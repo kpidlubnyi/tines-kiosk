@@ -11,12 +11,12 @@
         @click="handleCardClick(item, $event)"
       >
         <div class="item-media">
-          <img :src="item.image" :alt="item.title" class="item-image" />
+          <img :src="item.image" :alt="langStore.getText(item.title)" class="item-image" />
         </div>
 
         <div class="item-content">
-          <h2 class="item-title" v-html="item.title"></h2>
-          <p class="item-description" v-html="item.description"></p>
+          <h2 class="item-title" v-html="langStore.getText(item.title)"></h2>
+          <p class="item-description" v-html="langStore.getText(item.description)"></p>
         </div>
       </article>
     </div>
@@ -24,6 +24,8 @@
 </template>
 
 <script>
+import { useLanguageStore } from '@/stores/language';
+
 export default {
   name: 'OfferDetails',
   props: {
@@ -36,6 +38,7 @@ export default {
   emits: ['active-item-change', 'select-item'],
   data() {
     return {
+      langStore: useLanguageStore(),
       observer: null
     }
   },

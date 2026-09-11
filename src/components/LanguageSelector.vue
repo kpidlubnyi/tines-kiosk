@@ -1,49 +1,46 @@
 <template>
-  <div class="lang-selector-container" ref="containerRef">
-    <!-- Горизонтальний список мов (висувається вліво) -->
-    <Transition name="slide-left">
-      <div v-if="isOpen" class="lang-dropdown-horizontal">
-        <button
-          v-for="lang in langStore.availableLanguages"
-          :key="lang.code"
-          class="lang-option-btn"
-          :class="{ active: langStore.currentLang === lang.code }"
-          @click="selectLanguage(lang.code)"
-        >
-          {{ lang.label }}
-        </button>
-      </div>
-    </Transition>
+  <div class="lang-selector-wrapper" ref="containerRef">
+    <div class="lang-pill" :class="{ expanded: isOpen }">
+      <!-- Варіанти мов (з'являються зліва від іконки при розгортанні) -->
+      <Transition name="fade-options">
+        <div v-if="isOpen" class="lang-options">
+          <button
+            v-for="lang in availableLanguages"
+            :key="lang.code"
+            class="lang-option-btn"
+            :class="{ active: currentLang === lang.code }"
+            @click="selectLanguage(lang.code)"
+          >
+            {{ lang.label }}
+          </button>
+        </div>
+      </Transition>
 
-    <!-- Головна кнопка вибору мови -->
-    <button 
-      class="lang-toggle-btn" 
-      :class="{ active: isOpen }"
-      @click="toggleDropdown"
-      title="Змінити мову"
-    >
-      <span class="current-lang-code">{{ currentLangLabel }}</span>
-      <svg class="globe-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <circle cx="12" cy="12" r="10"></circle>
-        <line x1="2" y1="12" x2="22" y2="12"></line>
-        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-      </svg>
-    </button>
+      <!-- Кругла кнопка-іконка -->
+      <button 
+        class="lang-toggle-btn" 
+        @click="toggleDropdown"
+        :title="isOpen ? 'Закрити' : 'Змінити мову'"
+      >
+        <AppIcon name="globe" class="globe-icon" />
+      </button>
+    </div>
   </div>
 </template>
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useLanguageStore } from '@/stores/language'
+import AppIcon from '@/components/AppIcon.vue'
 
 const langStore = useLanguageStore()
+
+// Зберігаємо реактивність через computed
+const currentLang = computed(() => langStore.currentLang.value || langStore.currentLang)
+const availableLanguages = langStore.availableLanguages
+
 const isOpen = ref(false)
 const containerRef = ref(null)
-
-const currentLangLabel = computed(() => {
-  const found = langStore.availableLanguages.find(l => l.code === langStore.currentLang)
-  return found ? found.label : 'PL'
-})
 
 function toggleDropdown() {
   isOpen.value = !isOpen.value
@@ -54,7 +51,6 @@ function selectLanguage(code) {
   isOpen.value = false
 }
 
-// Закриття меню при кліку поза ним
 function handleClickOutside(event) {
   if (containerRef.value && !containerRef.value.contains(event.target)) {
     isOpen.value = false
@@ -71,90 +67,112 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-.lang-selector-container {
+.lang-selector-wrapper {
   position: relative;
-  display: inline-flex;
-  align-items: center;
-}
-
-/* Кнопка тригер */
-.lang-toggle-btn {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  gap: 6px;
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #fff;
-  padding: 8px 12px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  font-weight: 600;
-  font-size: 14px;
+  width: 48px; /* Фіксуємо базову ширину контейнера */
+  height: 48px;
 }
 
-.lang-toggle-btn:hover,
-.lang-toggle-btn.active {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.4);
-}
-
-.globe-icon {
-  width: 18px;
-  height: 18px;
-}
-
-/* Горизонтальний список мов, що висувається ВЛІВО */
-.lang-dropdown-horizontal {
+/* Капсула розширюється строго ВЛІВО від іконки */
+.lang-pill {
   position: absolute;
-  right: 100%; /* Розгортається ліворуч від кнопки */
-  margin-right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
+  right: 0; /* Прив'язано до правого краю контейнера */
+  top: 0;
+  height: 48px;
+  width: 48px;
+  background-color: #ffffff;
+  border-radius: 24px;
   display: flex;
-  flex-direction: row;
-  gap: 6px;
-  background: #1e1e1e;
-  padding: 4px;
-  border-radius: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  white-space: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
   z-index: 100;
 }
 
-/* Окремі кнопки мов у випадаючому списку */
-.lang-option-btn {
-  background: transparent;
+/* При відкритті ширина збільшується вліво */
+.lang-pill.expanded {
+  width: 200px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  padding-left: 6px;
+}
+
+/* Кругла кнопка-тригер */
+.lang-toggle-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
   border: none;
-  color: #aaa;
-  padding: 6px 12px;
-  border-radius: 16px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease;
+}
+
+.lang-toggle-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.globe-icon {
+  width: 22px;
+  height: 22px;
+}
+
+/* Список мов */
+.lang-options {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-grow: 1;
+  height: 100%;
+  padding-right: 4px;
+}
+
+/* Кнопки мов */
+.lang-option-btn {
+  flex: 1;
+  height: 34px;
+  border: none;
+  background: transparent;
+  color: #555555;
   font-weight: 600;
   font-size: 13px;
+  border-radius: 17px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.2s ease;
 }
 
 .lang-option-btn:hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.1);
+  color: #1e1e1e;
+  background: rgba(169, 151, 151, 0.05);
 }
 
+/* Активна мова — темна заливка */
 .lang-option-btn.active {
-  background: #007bff; /* Ваш акцентний колір */
-  color: #fff;
+  background: #1e1e1e;
+  color: #ffffff;
 }
 
-/* Анімація появи зсувом вліво */
-.slide-left-enter-active,
-.slide-left-leave-active {
-  transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+/* Анімація появи кнопок */
+.fade-options-enter-active {
+  transition: opacity 0.2s ease 0.1s;
+}
+.fade-options-leave-active {
+  transition: opacity 0.1s ease;
 }
 
-.slide-left-enter-from,
-.slide-left-leave-to {
+.fade-options-enter-from,
+.fade-options-leave-to {
   opacity: 0;
-  transform: translate(15px, -50%); /* Починає висуватись зправа наліво */
 }
 </style>
