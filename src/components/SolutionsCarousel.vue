@@ -24,17 +24,17 @@
           <img 
             v-if="getImageUrl(item.image)"
             :src="getImageUrl(item.image)" 
-            :alt="item.title" 
+            :alt="langStore.getText(item.title)" 
             class="card-image" 
             draggable="false" 
           />
           <div v-else class="no-image-placeholder">
-            <span>{{ item.title }}</span>
+            <span>{{ langStore.getText(item.title) }}</span>
           </div>
         </div>
         
         <div class="card-overlay">
-          <span class="card-title" v-html="item.title"></span>
+          <span class="card-title" v-html="langStore.getText(item.title)"></span>
         </div>
       </div>
     </div>
@@ -43,6 +43,7 @@
 
 <script>
 import carouselData from '@/assets/data/carousel-offers.json'
+import { useLanguageStore } from '@/stores/language';
 
 export default {
   name: 'SolutionsCarousel',
@@ -59,6 +60,7 @@ export default {
   emits: ['select-item'],
   data() {
     return {
+      langStore: useLanguageStore(),
       offset: 0,
       isDragging: false,
       isHovered: false,

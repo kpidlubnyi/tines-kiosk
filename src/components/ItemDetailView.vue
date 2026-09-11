@@ -12,13 +12,13 @@
             :key="activeSketchfabId"
             :modelId="activeSketchfabId"
             :url="item.sketchfabUrl"
-            :title="item.title"
+            :title="langStore.getText(item.title)"
             :autoplay="true"
           />
           <img 
             v-else-if="item.image" 
             :src="item.image" 
-            :alt="item.title" 
+            :alt="langStore.getText(item.title)" 
             class="detail-image" 
           />
         </div>
@@ -96,7 +96,7 @@
       >
         <!-- Шапка: Незмінний заголовок та кругла кнопка -->
         <div class="header-row">
-          <h1 class="detail-title" v-html="item.title"></h1>
+          <h1 class="detail-title" v-html="langStore.getText(item.title)"></h1>
           
           <button 
             class="mode-toggle-circle-btn"
@@ -133,7 +133,7 @@
             <!-- Слайд 1: Текстовий контент -->
             <div class="carousel-slide slide-description">
               <div class="description-wrapper" @mousedown.stop @touchstart.stop>
-                <div class="detail-description" v-html="item.description"></div>
+                <div class="detail-description" v-html="langStore.getText(item.description)"></div>
               </div>
             </div>
 
@@ -163,6 +163,7 @@
 <script>
 import SketchfabViewer from './SketchfabViewer.vue'
 import AppIcon from './AppIcon.vue'
+import { useLanguageStore } from '@/stores/language.js';
 
 export default {
   name: 'ItemDetailView',
@@ -186,6 +187,7 @@ export default {
   },
   data() {
     return {
+      langStore: useLanguageStore(),
       isSidebarCollapsed: false,
       currentSlide: 0,
       hasAppIcon: true,

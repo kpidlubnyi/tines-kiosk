@@ -67,7 +67,8 @@ export default {
     SidebarNav,
     OfferSidebarNav,
     CrossCategoryNav,
-    AppIcon
+    AppIcon,
+    LanguageSelector
   },
   props: {
     isOpen: {
