@@ -91,12 +91,6 @@
       </Transition>
     </div>
 
-    <Transition name="main-content-fade" appear>
-      <div v-if="!isOfferActive" class="main-lang-selector">
-        <LanguageSelector />
-      </div>
-    </Transition>
-
     <!-- Ripple Overlay для всіх переходів -->
     <Transition name="ripple-fade">
       <div 

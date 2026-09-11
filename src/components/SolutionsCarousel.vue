@@ -272,14 +272,13 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1vw;
   box-sizing: border-box;
 }
 
 .card-image {
-  max-width: 85%;
-  max-height: 85%;
-  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
   pointer-events: none;
 }
 

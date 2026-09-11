@@ -141,15 +141,24 @@
             <div class="carousel-slide slide-gallery">
               <div class="gallery-scroll-container" @mousedown.stop @touchstart.stop>
                 <div class="gallery-grid">
-                  <div 
-                    v-for="n in 6" 
-                    :key="n" 
-                    class="gallery-item-card"
-                  >
-                    <div class="placeholder-content">
-                      <span>Zdjęcie {{ n }} (16:9)</span>
-                    </div>
-                  </div>
+                  <div class="carousel-slide slide-gallery">
+  <div class="gallery-scroll-container" @mousedown.stop @touchstart.stop>
+    <div class="gallery-grid">
+      <div 
+        v-for="n in 4" 
+        :key="n" 
+        class="gallery-item-card"
+      >
+        <img 
+          :src="`/gallery/kolej/${n}.jpg`" 
+          :alt="`Zdjęcie ${n}`"
+          class="gallery-img"
+          @error="handleImageError"
+        />
+      </div>
+    </div>
+  </div>
+</div>
                 </div>
               </div>
             </div>
@@ -751,6 +760,13 @@ export default {
 .gallery-item-card:hover {
   transform: translateY(-0.2vw);
   box-shadow: 0 0.8vw 2vw rgba(0, 0, 0, 0.1);
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .placeholder-content {
