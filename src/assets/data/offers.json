@@ -300,6 +300,15 @@
           "uk": "МЕТРО Це детальний опис пропозиції №1 у категорії систем метро. Інноваційні демпферні матеріали ефективно знижують вібрацію та шум у підземній інфраструктурі."
         },
         "image": "/products/metro/zint-nawierzchnia-tines.png",
+        "sketchfab": {
+          "defaultId": "c0dac337daad4dabbe6ee1ff943f83a9",
+          "sketchfabIds": [
+            "c0dac337daad4dabbe6ee1ff943f83a9",
+            "168c4dd5546449e691f6d8ba692954fd",
+            "19a874123e964c49bc896bfa143ac91c"
+          ]
+        },
+
         "crossCategories": [
           "kolej",
           "metro",
@@ -622,6 +631,15 @@
           "uk": "ПРОМИСЛОВІСТЬ Це детальний опис пропозиції №1, призначеної для промислових об'єктів. Ця технологія дозволяє ефективно гасити динамічні навантаження та продовжує термін служби машин."
         },
         "image": "/products/przemysl/zint-nawierzchnia-tines.png",
+        "sketchfab": {
+          "defaultId": "c0dac337daad4dabbe6ee1ff943f83a9",
+          "sketchfabIds": [
+            "c0dac337daad4dabbe6ee1ff943f83a9",
+            "168c4dd5546449e691f6d8ba692954fd",
+            "19a874123e964c49bc896bfa143ac91c"
+          ]
+        },
+
         "crossCategories": [
           "kolej",
           "metro",
