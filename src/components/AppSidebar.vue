@@ -1,17 +1,16 @@
 <template>
   <Transition name="slide-sidebar">
     <aside v-if="isOpen" class="sidebar">
-      <!-- Верхній блок: Кнопка повернення + Другий навігатор оферт -->
-      <div class="sidebar-header-group">
+      <!-- 1. Верхній блок (Кнопка Додому + Перемикач Оферт) -->
+      <div class="sidebar-top-section">
         <button 
           class="back-btn" 
           title="На головну" 
           @click="$emit('go-home')"
         >
-          <span class="arrow">←</span>
+          <AppIcon name="home" class="back-to-offer-icon" />
         </button>
 
-        <!-- Другий навігаційний шедевр: перемикач оферт -->
         <OfferSidebarNav 
           :offers="offers"
           :activeOfferId="activeOfferId"
@@ -19,32 +18,37 @@
         />
       </div>
 
-      <!-- Основний навігатор по елементах поточного опису -->
-      <SidebarNav 
-        v-if="totalItems > 0"
-        :items="items"
-        :totalItems="totalItems" 
-        :activeIndex="activeIndex"
-        @navigate="$emit('navigate', $event)"
-      />
+      <!-- 2. Центральний блок (Крос-категорії), розміщений трохи нижче центру -->
+      <div class="sidebar-center-section">
+        <CrossCategoryNav
+          :crossCategories="crossCategories"
+          :activeCategory="activeOfferId"
+          @select-cross-category="$emit('select-cross-category', $event)"
+        />
+      </div>
 
-      <!-- Футер: Перемикання мов -->
-      <div class="sidebar-footer">
-        <button class="lang-btn" title="Переключити мову" @click="$emit('toggle-language')">
-          <svg 
-            class="globe-icon" 
-            viewBox="0 0 24 24" 
-            fill="none" 
-            stroke="currentColor" 
-            stroke-width="2" 
-            stroke-linecap="round" 
-            stroke-linejoin="round"
+      <!-- 3. Нижній блок (Індикатори + Мова) -->
+      <div class="sidebar-bottom-section">
+        <SidebarNav 
+          v-if="!isItemDetailActive && totalItems > 0"
+          :items="items"
+          :totalItems="totalItems" 
+          :activeIndex="activeIndex"
+          @navigate="$emit('navigate', $event)"
+        />
+
+        <div class="sidebar-footer">
+          <button 
+            v-if="isItemDetailActive"
+            class="back-to-offer-btn" 
+            title="Повернутися до оферти"
+            @click="$emit('back-to-offer')"
           >
-            <circle cx="12" cy="12" r="10"></circle>
-            <line x1="2" y1="12" x2="22" y2="12"></line>
-            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4 10z"></path>
-          </svg>
-        </button>
+            <AppIcon name="arrow-left" class="back-to-offer-icon" />
+          </button>
+
+          <LanguageSelector />
+        </div>
       </div>
     </aside>
   </Transition>
@@ -53,15 +57,24 @@
 <script>
 import SidebarNav from './SidebarNav.vue'
 import OfferSidebarNav from './OfferSidebarNav.vue'
+import CrossCategoryNav from './CrossCategoryNav.vue'
+import AppIcon from './AppIcon.vue'
+import LanguageSelector from './LanguageSelector.vue'
 
 export default {
   name: 'AppSidebar',
   components: {
     SidebarNav,
-    OfferSidebarNav
+    OfferSidebarNav,
+    CrossCategoryNav,
+    AppIcon
   },
   props: {
     isOpen: {
+      type: Boolean,
+      default: false
+    },
+    isItemDetailActive: {
       type: Boolean,
       default: false
     },
@@ -84,9 +97,13 @@ export default {
     activeIndex: {
       type: Number,
       default: 0
+    },
+    crossCategories: {
+      type: Array,
+      default: () => []
     }
   },
-  emits: ['toggle-language', 'go-home', 'navigate', 'select-offer']
+  emits: ['toggle-language', 'go-home', 'navigate', 'select-offer', 'back-to-offer', 'select-cross-category']
 }
 </script>
 
@@ -102,19 +119,55 @@ export default {
   box-shadow: -0.3vw 0 1.5vw rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start; /* Використовуємо flex-start замість space-between */
   align-items: center;
   padding: 3vh 0.8vw;
   box-sizing: border-box;
 }
 
-.sidebar-header-group,
+/* Верхній блок фіксовано зверху */
+.sidebar-top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1.5vh;
+  z-index: 10;
+}
+
+/* 
+  Альтернатива space-between: 
+  margin-top: auto виштовхує блок донизу від верхньої секції,
+  а transform: translateY(4vh) додатково зміщує його трохи нижче від центральної осі.
+*/
+.sidebar-center-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: auto; 
+  transform: translateY(8vh); /* Опускаємо елемент трохи нижче */
+  z-index: 10;
+}
+
+/* Нижній блок притиснутий до самого низу завдяки margin-top: auto */
+.sidebar-bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 2vh;
+  margin-top: auto; 
+  z-index: 10;
+}
+
 .sidebar-footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  gap: 1.5vh;
 }
 
 .back-btn {
@@ -143,9 +196,33 @@ export default {
   transform: scale(0.92);
 }
 
-.back-btn .arrow {
-  font-size: 1.4vw;
-  line-height: 1;
+.back-to-offer-btn {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  background-color: #f1f5f9;
+  border: 0.1vw solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  padding: 0;
+}
+
+.back-to-offer-btn:hover {
+  background-color: #e2e8f0;
+  transform: translateY(-0.1vw);
+  box-shadow: 0 0.4vw 1vw rgba(0, 0, 0, 0.08);
+}
+
+.back-to-offer-btn:active {
+  transform: scale(0.92);
+}
+
+.back-to-offer-icon {
+  width: 1.5vw;
+  height: 1.5vw;
 }
 
 .lang-btn {

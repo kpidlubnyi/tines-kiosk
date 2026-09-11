@@ -16,16 +16,34 @@
     >
       <div 
         v-for="(item, index) in longStaticList" 
-        :key="index" 
+        :key="`${item.id}-${index}`" 
         class="carousel-card"
+        @click="handleCardClick($event, item)"
       >
-        <img :src="item.image || item" alt="Gallery Image" class="card-image" draggable="false" />
+        <div class="image-wrapper">
+          <img 
+            v-if="getImageUrl(item.image)"
+            :src="getImageUrl(item.image)" 
+            :alt="item.title" 
+            class="card-image" 
+            draggable="false" 
+          />
+          <div v-else class="no-image-placeholder">
+            <span>{{ item.title }}</span>
+          </div>
+        </div>
+        
+        <div class="card-overlay">
+          <span class="card-title" v-html="item.title"></span>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import carouselData from '@/assets/data/carousel-offers.json'
+
 export default {
   name: 'SolutionsCarousel',
   props: {
@@ -35,9 +53,10 @@ export default {
     },
     repeatCount: {
       type: Number,
-      default: 12
+      default: 10
     }
   },
+  emits: ['select-item'],
   data() {
     return {
       offset: 0,
@@ -49,29 +68,25 @@ export default {
       lastTime: 0,
       velocity: 0,
       friction: 0.95,
+      dragDistance: 0,
       
       animFrameId: null,
       singleSetWidth: 0,
-      localImages: []
+      productsList: carouselData || []
     }
   },
   computed: {
     longStaticList() {
-      if (!this.localImages.length) return []
+      if (!this.productsList.length) return []
       let list = []
       for (let i = 0; i < this.repeatCount; i++) {
-        list = list.concat(this.localImages)
+        list = list.concat(this.productsList)
       }
       return list
     }
   },
-  created() {
-    this.loadLocalImages()
-  },
   mounted() {
-    // Чекаємо повного рендерингу елементів у DOM
     this.$nextTick(() => {
-      // Додатково чекаємо завантаження хоча б одного зображення для точного розрахунку ширини
       setTimeout(() => {
         this.calculateBounds()
         if (this.singleSetWidth > 0) {
@@ -81,7 +96,6 @@ export default {
       }, 100)
     })
 
-    // Глобальні слухачі для миші та сенсорних екранів
     window.addEventListener('mousemove', this.onDrag)
     window.addEventListener('mouseup', this.stopDrag)
     window.addEventListener('touchmove', this.onTouch)
@@ -95,13 +109,9 @@ export default {
     window.removeEventListener('touchend', this.stopDrag)
   },
   methods: {
-    loadLocalImages() {
-      const glob = import.meta.glob('@/assets/main-carousel/*.{png,jpg,jpeg,webp,svg}', { 
-        eager: true, 
-        query: '?url',
-        import: 'default'
-      })
-      this.localImages = Object.values(glob)
+    getImageUrl(imagePath) {
+      if (!imagePath || imagePath.includes('na-razie-nie-ma')) return null
+      return imagePath
     },
 
     calculateBounds() {
@@ -113,24 +123,19 @@ export default {
 
     startAnimation() {
       const step = () => {
-        // Якщо ширина не розрахувалася на старті, пробуємо перерахувати
         if (!this.singleSetWidth) {
           this.calculateBounds()
         }
 
         if (!this.isDragging) {
-          // 1. Рух за інерцією (після свайпу)
           if (Math.abs(this.velocity) > 0.1) {
             this.offset += this.velocity
             this.velocity *= this.friction
-          } 
-          // 2. Автоскрол (працює завжди, коли не зажата ЛКМ / палець)
-          else if (!this.isHovered) {
+          } else if (!this.isHovered) {
             this.offset -= this.speed
           }
         }
 
-        // Безкінечний закольцований скрол
         if (this.singleSetWidth > 0) {
           if (this.offset <= -this.singleSetWidth * (this.repeatCount - 2)) {
             this.offset += this.singleSetWidth * Math.floor(this.repeatCount / 2)
@@ -166,6 +171,7 @@ export default {
     initDrag(pageX) {
       this.isDragging = true
       this.velocity = 0
+      this.dragDistance = 0
       this.startX = pageX
       this.lastX = pageX
       this.lastTime = performance.now()
@@ -186,6 +192,8 @@ export default {
       const deltaX = pageX - this.lastX
       const deltaTime = now - this.lastTime
 
+      this.dragDistance += Math.abs(deltaX)
+
       if (deltaTime > 0) {
         this.velocity = deltaX / Math.max(deltaTime / 16, 1)
       }
@@ -198,7 +206,13 @@ export default {
     stopDrag() {
       if (!this.isDragging) return
       this.isDragging = false
-      this.velocity *= 1.2 // Сила імпульсу при відпусканні
+      this.velocity *= 1.2
+    },
+
+    handleCardClick(event, item) {
+      if (this.dragDistance < 5) {
+        this.$emit('select-item', { item, event })
+      }
     }
   }
 }
@@ -227,30 +241,86 @@ export default {
   will-change: transform;
 }
 
-/* Картка тільки під зображення */
 .carousel-card {
+  position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex: 0 0 18vw;
   height: 20vh;
-  background: #f7fafc;
+  background: #ffffff;
   border-radius: 1vw;
   border: 0.1vw solid rgba(226, 232, 240, 0.8);
   box-shadow: 0 0.5vw 1.5vw rgba(0, 0, 0, 0.05);
   overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
 }
 
 .carousel-card:hover {
-  transform: translateY(-0.3vw);
-  box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.1);
+  transform: translateY(-0.4vw);
+  box-shadow: 0 1vw 2vw rgba(0, 123, 194, 0.15);
+  border-color: rgba(0, 123, 194, 0.4);
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw;
+  box-sizing: border-box;
 }
 
 .card-image {
-  width: 80%;
-  height: 80%;
-  object-fit: cover;
+  max-width: 85%;
+  max-height: 85%;
+  object-fit: contain;
   pointer-events: none;
+}
+
+.no-image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f5f9;
+  color: #64748b;
+  font-size: 0.8vw;
+  font-weight: 600;
+  text-align: center;
+  padding: 1vw;
+  box-sizing: border-box;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.6vw 0.8vw;
+  background: linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.85) 100%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+}
+
+.carousel-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.card-title {
+  color: #ffffff;
+  font-size: 0.75vw;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 </style>

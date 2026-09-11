@@ -2,11 +2,12 @@
   <div class="main-screen">
     <AppBackground :currentState="currentBgState" />
 
+    <!-- Верхня плашка градієнта -->
     <Transition name="fade">
       <div v-if="isOfferActive && !isAnimating" class="offer-top-gradient"></div>
     </Transition>
 
-    <!-- Заголовок оферти з плавним переходом -->
+    <!-- Заголовок оферти -->
     <Transition name="offer-change" mode="out-in">
       <div 
         v-if="isOfferActive && !isAnimating" 
@@ -17,20 +18,26 @@
         <span class="active-offer-title" v-html="currentOfferData.title"></span>
       </div>
     </Transition>
+
     <!-- Бічна панель -->
     <AppSidebar 
       :isOpen="isOfferActive && !isAnimating" 
+      :isItemDetailActive="isItemDetailActive"
       :offers="buttons"
       :activeOfferId="activeOfferId"
       :totalItems="currentOfferItemsCount"
       :activeIndex="activeOfferItemIndex"
+      :crossCategories="selectedItem?.crossCategories || currentOfferData?.crossCategories || []"
       @toggle-language="handleLanguageToggle"
       @go-home="closeOffer"
       @navigate="scrollToOfferItem"
       @select-offer="switchOffer"
+      @back-to-offer="closeItemDetail"
+      @select-cross-category="handleCrossCategorySwitch"
     />
 
     <div class="content-container">
+      <!-- Контент головної сторінки -->
       <Transition name="main-content-fade" appear>
         <div v-if="!isOfferActive" class="top-content-group" key="main-group">
           <div class="main-logo-container">
@@ -43,27 +50,48 @@
         </div>
       </Transition>
 
-      <!-- Контент оферти з плавним переходом та ефектом розмиття -->
+      <!-- Екран 1: Список елементів оферти -->
       <Transition name="offer-change" mode="out-in">
         <main 
-          v-if="isOfferActive && !isAnimating" 
+          v-if="isOfferActive && !isItemDetailActive && !isAnimating" 
           :key="`content-${activeOfferId}`"
           class="offer-content-container"
+          ref="offerContentContainer"
         >
           <OfferDetails 
             ref="offerDetailsRef"
             :offer="currentOfferData" 
             @active-item-change="handleActiveItemChange"
+            @select-item="openItemDetail"
           />
         </main>
       </Transition>
 
+      <!-- Екран 2: Детальний перегляд елемента (На всю область) -->
+      <Transition name="offer-change" mode="out-in">
+        <main 
+          v-if="isOfferActive && isItemDetailActive && selectedItem && !isAnimating" 
+          class="item-detail-full-container"
+        >
+          <ItemDetailView 
+            :key="`${activeOfferId}-${selectedItem.id}`" 
+            :item="selectedItem" 
+          />
+        </main>
+      </Transition>
+      
       <Transition name="main-content-fade" appear>
-        <SolutionsCarousel v-if="!isOfferActive" :solutions="solutions" :speed="1" key="carousel" />
+        <SolutionsCarousel 
+          v-if="!isOfferActive" 
+          :solutions="solutions" 
+          :speed="1" 
+          key="carousel"
+          @select-item="handleCarouselSelect"
+        />
       </Transition>
     </div>
 
-    <!-- Ripple Overlay -->
+    <!-- Ripple Overlay для всіх переходів -->
     <Transition name="ripple-fade">
       <div 
         v-if="ripple.active" 
@@ -85,6 +113,7 @@ import AppNavigation from './components/AppNavigation.vue'
 import SolutionsCarousel from './components/SolutionsCarousel.vue'
 import AppSidebar from './components/AppSidebar.vue'
 import OfferDetails from './components/OfferDetails.vue'
+import ItemDetailView from './components/ItemDetailView.vue'
 
 export default {
   name: 'MainScreen',
@@ -94,14 +123,18 @@ export default {
     AppNavigation,
     SolutionsCarousel,
     AppSidebar,
-    OfferDetails
+    OfferDetails,
+    ItemDetailView
   },
   data() {
     return {
       isOfferActive: false,
       isAnimating: false,
+      isItemDetailActive: false,
+      selectedItem: null,
       activeOfferId: null,
       activeOfferItemIndex: 0,
+      savedScrollTop: 0,
       
       ripple: {
         active: false,
@@ -123,18 +156,7 @@ export default {
         '380000+ metrów toru pojedyńczego',
         '480000+ metrów kwadratowych mat wibroizolacyjnych'
       ],
-      solutions: [
-        {
-          title: 'Система Getzner EBS',
-          description: 'Ефективний захист від вібрацій для залізничних колій.',
-          image: 'https://picsum.photos/400/250?random=1'
-        },
-        {
-          title: 'Підшпальні мати Sylomer',
-          description: 'Зменшення зносу баласту та рівня шуму.',
-          image: 'https://picsum.photos/400/250?random=2'
-        }
-      ]
+      solutions: []
     }
   },
   computed: {
@@ -155,20 +177,26 @@ export default {
     }
   },
   methods: {
-    handleButtonClick(id, event) {
-      if (this.isAnimating) return
-      this.isAnimating = true
-      this.activeOfferItemIndex = 0
-
-      if (event && event.clientX) {
+    triggerRipple(event) {
+      if (event && event.clientX !== undefined) {
         this.ripple.x = event.clientX
         this.ripple.y = event.clientY
       } else {
         this.ripple.x = window.innerWidth / 2
         this.ripple.y = window.innerHeight / 2
       }
-
       this.ripple.active = true
+      setTimeout(() => {
+        this.ripple.active = false
+      }, 500)
+    },
+
+    handleButtonClick(id, event) {
+      if (this.isAnimating) return
+      this.isAnimating = true
+      this.activeOfferItemIndex = 0
+
+      this.triggerRipple(event)
 
       setTimeout(() => {
         this.activeOfferId = id
@@ -176,16 +204,113 @@ export default {
       }, 100)
 
       setTimeout(() => {
-        this.ripple.active = false
-      }, 500)
+        this.isAnimating = false
+      }, 950)
+    },
+
+handleCarouselSelect({ item, event }) {
+  if (this.isAnimating) return
+
+  // 1. Знаходимо першу категорію з масиву categories
+  const targetCategory = item && item.categories && item.categories.length > 0 
+    ? item.categories[0] 
+    : 'kolej'
+
+  this.isAnimating = true
+  this.activeOfferItemIndex = 0
+
+  // 2. Запускаємо хвильовий ефект (Ripple)
+  this.triggerRipple(event)
+
+  // 3. Встановлюємо категорію ТА обраний продукт
+  setTimeout(() => {
+    this.activeOfferId = targetCategory
+    this.isOfferActive = true
+
+    // --- ВАРІАНТ А: Відкрити детальний екран продукту (ItemDetailView) ---
+    // Формуємо повний об'єкт елемента або шукаємо його в даних
+    const categoryData = this.offersData[targetCategory]
+    let foundItem = null
+
+    if (categoryData && categoryData.items) {
+      foundItem = categoryData.items.find(i => i.id === item.id || i.id.endsWith(item.id))
+    }
+
+    // Якщо знайшли продукт у структурі категорії — відкриваємо його детально,
+    // якщо ні — передаємо об'єкт з каруселі
+    this.selectedItem = foundItem || item
+    this.isItemDetailActive = true
+
+    /* 
+    --- ВАРІАНТ Б: Якщо ви НЕ хочете детальний екран, а хочете просто прокрутити до нього у списку категорії ---
+    Замість 3 рядків вище (selectedItem та isItemDetailActive) використайте:
+    
+    if (categoryData && categoryData.items) {
+      const itemIndex = categoryData.items.findIndex(i => i.id === item.id || i.id.endsWith(item.id))
+      if (itemIndex !== -1) {
+        this.activeOfferItemIndex = itemIndex
+        this.$nextTick(() => {
+          this.scrollToOfferItem(itemIndex)
+        })
+      }
+    }
+    */
+  }, 100)
+
+  setTimeout(() => {
+    this.isAnimating = false
+  }, 950)
+},
+
+    openItemDetail({ item, event }) {
+      if (this.isAnimating) return
+      this.isAnimating = true
+
+      // Зберігаємо позицію скролу
+      const container = this.$refs.offerContentContainer
+      if (container) {
+        this.savedScrollTop = container.scrollTop
+      }
+
+      // Запускаємо ripple-хвилю від точки кліку на елемент
+      this.triggerRipple(event)
+
+      setTimeout(() => {
+        this.selectedItem = item
+        this.isItemDetailActive = true
+      }, 100)
 
       setTimeout(() => {
         this.isAnimating = false
       }, 950)
     },
 
+    closeItemDetail() {
+      if (this.isAnimating) return
+      this.isAnimating = true
+
+      this.triggerRipple()
+
+      setTimeout(() => {
+        this.isItemDetailActive = false
+        this.selectedItem = null
+      }, 100)
+
+      setTimeout(() => {
+        this.isAnimating = false
+        this.$nextTick(() => {
+          const container = this.$refs.offerContentContainer
+          if (container) {
+            container.scrollTop = this.savedScrollTop
+          }
+        })
+      }, 950)
+    },
+
     closeOffer() {
       this.isOfferActive = false
+      this.isItemDetailActive = false
+      this.selectedItem = null
       this.activeOfferId = null
       this.activeOfferItemIndex = 0
     },
@@ -205,53 +330,81 @@ export default {
         this.$refs.offerDetailsRef.scrollToIndex(index)
       }
     },
-    
-switchOffer(id) {
-    if (this.activeOfferId === id || this.isAnimating) return
 
-    // Перемикаємо ID оферти
-    this.activeOfferId = id
-    this.activeOfferItemIndex = 0
+    switchOffer(id) {
+      if (this.activeOfferId === id || this.isAnimating) return
+      this.isAnimating = true
 
-    // Прокручуємо контейнер до самого верху
-    this.$nextTick(() => {
-      const container = document.querySelector('.offer-content-container')
-      if (container) {
-        container.scrollTop = 0
+      this.triggerRipple()
+
+      setTimeout(() => {
+        this.isItemDetailActive = false
+        this.selectedItem = null
+        this.activeOfferId = id
+        this.activeOfferItemIndex = 0
+      }, 100)
+
+      setTimeout(() => {
+        this.isAnimating = false
+        this.$nextTick(() => {
+          const container = this.$refs.offerContentContainer
+          if (container) {
+            container.scrollTop = 0
+          }
+        })
+      }, 950)
+    },
+
+handleCrossCategorySwitch(targetCategoryKey) {
+  if (this.activeOfferId === targetCategoryKey || this.isAnimating) return;
+  
+  this.isAnimating = true;
+
+  // Запускаємо ripple-хвилю для плавності
+  this.triggerRipple();
+
+  setTimeout(() => {
+    // 1. Перемикаємо категорію
+    this.activeOfferId = targetCategoryKey;
+    this.activeOfferItemIndex = 0;
+
+    // 2. Якщо ми знаходилися всередині детального перегляду товару (ItemDetailView)
+    if (this.isItemDetailActive && this.selectedItem) {
+      const newCategoryData = this.offersData[targetCategoryKey];
+      
+      if (newCategoryData && newCategoryData.items && newCategoryData.items.length > 0) {
+        // Шукаємо такий самий товар у новій категорії за ID або схожою назвою
+        const matchedItem = newCategoryData.items.find(
+          item => item.id === this.selectedItem.id || item.title === this.selectedItem.title
+        );
+
+        // Якщо товар знайдено — показуємо його в новій категорії, 
+        // якщо ні — беремо перший товар нової категорії
+        this.selectedItem = matchedItem || newCategoryData.items[0];
+      } else {
+        // Якщо в новій категорії немає товарів — закриваємо детальний перегляд
+        this.isItemDetailActive = false;
+        this.selectedItem = null;
       }
-    })
-  }
-  }
+    }
+  }, 150);
+
+  setTimeout(() => {
+    this.isAnimating = false;
+    
+    // Скидаємо скрол контейнера до початку
+    this.$nextTick(() => {
+      const container = this.$refs.offerContentContainer;
+      if (container) {
+        container.scrollTop = 0;
+      }
+    });
+  }, 600);
+}  }
 }
 </script>
 
 <style scoped>
-.main-content-fade-enter-active {
-  transition: all 0.7s ease-in-out;
-  transition-delay: 0.2s;
-}
-
-.main-content-fade-leave-active {
-  transition: all 0.4s ease-in-out;
-}
-
-.main-content-fade-enter-from {
-  opacity: 0;
-  transform: translateY(20px) scale(0.96);
-}
-
-.main-content-fade-leave-to {
-  opacity: 0;
-  transform: translateY(-10px) scale(0.98);
-}
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.5s ease;
-}
-.fade-enter-from, .fade-leave-to {
-  opacity: 0;
-}
-
 .main-screen {
   position: fixed;
   top: 0;
@@ -292,18 +445,9 @@ switchOffer(id) {
   line-height: 1.1;
 }
 
-.main-logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25vw;
-  margin-bottom: 1vh;
-}
-
-.main-logo {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+.active-offer-title :deep(sup) {
+  font-size: 0.6em;
+  vertical-align: super;
 }
 
 .offer-top-gradient {
@@ -339,8 +483,18 @@ switchOffer(id) {
 
 .offer-content-container::-webkit-scrollbar {
   display: none;
-  width: 0;
-  height: 0;
+}
+
+.item-detail-full-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 4vw;
+  bottom: 0;
+  z-index: 6;
+  width: calc(100vw - 4vw);
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 .content-container {
@@ -355,6 +509,20 @@ switchOffer(id) {
   padding: 2% 0;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+.main-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  margin-bottom: 1vh;
+}
+
+.main-logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .top-content-group {
@@ -372,6 +540,7 @@ switchOffer(id) {
   align-items: center;
 }
 
+/* Ripple Overlay */
 .ripple-overlay {
   position: fixed;
   z-index: 999;
@@ -405,7 +574,6 @@ switchOffer(id) {
 .ripple-fade-leave-active { transition: opacity 2s ease-out; }
 .ripple-fade-enter-from, .ripple-fade-leave-to { opacity: 0; }
 
-/* Анімація плавної зміни оферти (Blur + Fade + Scale) */
 .offer-change-enter-active {
   transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
               transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
@@ -429,5 +597,31 @@ switchOffer(id) {
   opacity: 0;
   transform: translateY(-12px) scale(0.98);
   filter: blur(8px);
+}
+
+.main-content-fade-enter-active {
+  transition: all 0.7s ease-in-out;
+  transition-delay: 0.2s;
+}
+
+.main-content-fade-leave-active {
+  transition: all 0.4s ease-in-out;
+}
+
+.main-content-fade-enter-from {
+  opacity: 0;
+  transform: translateY(20px) scale(0.96);
+}
+
+.main-content-fade-leave-to {
+  opacity: 0;
+  transform: translateY(-10px) scale(0.98);
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
 }
 </style>
