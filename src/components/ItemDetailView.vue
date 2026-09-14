@@ -6,23 +6,22 @@
         class="media-column" 
         :class="{ 'full-width': isSidebarCollapsed }"
       >
-        <div class="media-wrapper">
-          <SketchfabViewer 
-            v-if="activeSketchfabId || item.sketchfabUrl"
-            :key="activeSketchfabId"
-            :modelId="activeSketchfabId"
-            :url="item.sketchfabUrl"
-            :title="langStore.getText(item.title)"
-            :autoplay="true"
-          />
-          <img 
-            v-else-if="item.image" 
-            :src="item.image" 
-            :alt="langStore.getText(item.title)" 
-            class="detail-image" 
-          />
-        </div>
-
+<!-- ЗМІНИ В СЕКЦІЇ <template> -->
+<div class="media-wrapper">
+  <SketchfabAPIViewer 
+    v-if="activeSketchfabId"
+    :key="activeSketchfabId"
+    :modelId="activeSketchfabId"
+    :autoplay="true"
+    :annotations="item.annotations"
+  />
+  <img 
+    v-else-if="item.image" 
+    :src="item.image" 
+    :alt="langStore.getText(item.title)" 
+    class="detail-image" 
+  />
+</div>
         <!-- Галерея 3D-моделей під в'ювером -->
         <div v-if="hasMultipleModels" class="models-gallery">
           <button 
@@ -172,10 +171,12 @@
 import SketchfabViewer from './SketchfabViewer.vue'
 import AppIcon from './AppIcon.vue'
 import { useLanguageStore } from '@/stores/language.js';
+import SketchfabAPIViewer from './SketchfabAPIViewer.vue';
 
 export default {
   name: 'ItemDetailView',
   components: {
+    SketchfabAPIViewer,
     SketchfabViewer,
     AppIcon
   },
@@ -261,6 +262,8 @@ export default {
     }
   },
   mounted() {
+    this.$emit('sidebar-toggle', this.isSidebarCollapsed)
+    
     this.updateSlideWidth()
     window.addEventListener('resize', this.updateSlideWidth)
     window.addEventListener('mousemove', this.handleMouseMove)
@@ -304,12 +307,14 @@ export default {
     toggleSidebar() {
       this.isSidebarCollapsed = !this.isSidebarCollapsed
       
+      // Надсилаємо стан нагору в App.vue
+      this.$emit('sidebar-toggle', this.isSidebarCollapsed)
+      
       setTimeout(() => {
         this.updateSlideWidth()
         window.dispatchEvent(new Event('resize'))
       }, 300)
     },
-
     updateSlideWidth() {
       if (this.$refs.carouselWrapper) {
         this.slideWidth = this.$refs.carouselWrapper.clientWidth
