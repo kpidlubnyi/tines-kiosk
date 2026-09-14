@@ -24,7 +24,15 @@
           "en": "RAILWAY This is a detailed description of offer number 1 in the railway infrastructure category. Advanced technical solutions ensure optimal performance, durability, and top vibration isolation features.",
           "uk": "ЗАЛІЗНИЦЯ Це детальний опис пропозиції №1 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
         },
-        "image": "/products/kolej/zint-nawierzchnia-tines.png",
+        "images": {
+          "main_image": "/products/kolej/zint-nawierzchnia-tines.png",
+          "related_images" : [
+            "gallery/kolej/4.jpg",
+            "gallery/kolej/4.jpg",
+            "gallery/kolej/4.jpg",
+            "gallery/kolej/4.jpg"
+          ]
+        },
         "sketchfab": {
           "defaultId": "c0dac337daad4dabbe6ee1ff943f83a9",
           "sketchfabIds": [

@@ -137,28 +137,27 @@
               </div>
             </div>
 
-            <!-- Слайд 2: Галерея з 6 фото 16:9 -->
+            <!-- Слайд 2: Галерея фото 16:9 -->
             <div class="carousel-slide slide-gallery">
               <div class="gallery-scroll-container" @mousedown.stop @touchstart.stop>
                 <div class="gallery-grid">
-                  <div class="carousel-slide slide-gallery">
-  <div class="gallery-scroll-container" @mousedown.stop @touchstart.stop>
-    <div class="gallery-grid">
-      <div 
-        v-for="n in 4" 
-        :key="n" 
-        class="gallery-item-card"
-      >
-        <img 
-          :src="`/gallery/kolej/${n}.jpg`" 
-          :alt="`Zdjęcie ${n}`"
-          class="gallery-img"
-          @error="handleImageError"
-        />
-      </div>
-    </div>
-  </div>
-</div>
+                  <template v-if="galleryImages.length > 0">
+                    <div 
+                      v-for="(imgSrc, index) in galleryImages" 
+                      :key="index" 
+                      class="gallery-item-card"
+                    >
+                      <img 
+                        :src="imgSrc" 
+                        :alt="`Zdjęcie ${index + 1}`"
+                        class="gallery-img"
+                        @error="handleImageError"
+                      />
+                    </div>
+                  </template>
+                  <div v-else class="placeholder-content">
+                    Brak dostępnych zdjęć
+                  </div>
                 </div>
               </div>
             </div>
@@ -188,6 +187,7 @@ export default {
         title: '',
         description: '',
         image: '',
+        images: null,
         sketchfabId: '',
         sketchfabUrl: '',
         sketchfab: null
@@ -210,6 +210,22 @@ export default {
     }
   },
   computed: {
+    // Підтягуємо головне та додаткові зображення для галереї
+    galleryImages() {
+      if (!this.item) return []
+
+      const imgs = []
+
+      if (this.item.images) {
+        if (Array.isArray(this.item.images.related_images)) {
+          imgs.push(...this.item.images.related_images)
+        }
+      } else if (this.item.image) {
+        imgs.push(this.item.image)
+      }
+
+      return imgs
+    },
     modelIds() {
       if (this.item.sketchfab?.sketchfabIds?.length) {
         return this.item.sketchfab.sketchfabIds
