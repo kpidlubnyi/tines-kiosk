@@ -262,6 +262,8 @@ export default {
     }
   },
   mounted() {
+    this.$emit('sidebar-toggle', this.isSidebarCollapsed)
+    
     this.updateSlideWidth()
     window.addEventListener('resize', this.updateSlideWidth)
     window.addEventListener('mousemove', this.handleMouseMove)
@@ -305,12 +307,14 @@ export default {
     toggleSidebar() {
       this.isSidebarCollapsed = !this.isSidebarCollapsed
       
+      // Надсилаємо стан нагору в App.vue
+      this.$emit('sidebar-toggle', this.isSidebarCollapsed)
+      
       setTimeout(() => {
         this.updateSlideWidth()
         window.dispatchEvent(new Event('resize'))
       }, 300)
     },
-
     updateSlideWidth() {
       if (this.$refs.carouselWrapper) {
         this.slideWidth = this.$refs.carouselWrapper.clientWidth

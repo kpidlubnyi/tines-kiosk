@@ -2,6 +2,33 @@
   <div class="main-screen">
     <AppBackground :currentState="currentBgState" />
 
+    <!-- Блокувальники контролів Sketchfab -->
+    <template v-if="isOfferActive && isItemDetailActive">
+      <SketchfabUiBlocker 
+        :isCollapsed="isContentCollapsed"
+        top="10vh"
+        left="2vw"
+        width="51vw"
+        height="7vh"
+        collapsedWidth="90vw"
+      />
+      <SketchfabUiBlocker 
+        :isCollapsed="isContentCollapsed"
+        top="82vh"
+        left="2vw"
+        width="3vw"
+        height="7vh"
+      />
+      <SketchfabUiBlocker 
+        :isCollapsed="isContentCollapsed"
+        top="82vh"
+        left="42vw"
+        width="11vw"
+        height="7vh"
+        collapsedLeft="80vw"
+      />
+    </template>
+
     <!-- Верхня плашка градієнта -->
     <Transition name="fade">
       <div v-if="isOfferActive && !isAnimating" class="offer-top-gradient"></div>
@@ -67,7 +94,7 @@
         </main>
       </Transition>
 
-      <!-- Екран 2: Детальний перегляд елемента (На всю область) -->
+      <!-- Екран 2: Детальний перегляд елемента -->
       <Transition name="offer-change" mode="out-in">
         <main 
           v-if="isOfferActive && isItemDetailActive && selectedItem && !isAnimating" 
@@ -76,6 +103,7 @@
           <ItemDetailView 
             :key="`${activeOfferId}-${selectedItem.id}`" 
             :item="selectedItem" 
+            @sidebar-toggle="handleSidebarToggle"
           />
         </main>
       </Transition>
@@ -124,6 +152,7 @@ import OfferDetails from './components/OfferDetails.vue'
 import ItemDetailView from './components/ItemDetailView.vue'
 import { useLanguageStore } from './stores/language.js';
 import LanguageSelector from './components/LanguageSelector.vue';
+import SketchfabUiBlocker from './components/SketchfabUiBlocker.vue'
 
 export default {
   name: 'MainScreen',
@@ -135,7 +164,8 @@ export default {
     AppSidebar,
     OfferDetails,
     ItemDetailView,
-    LanguageSelector
+    LanguageSelector,
+    SketchfabUiBlocker
   },
   data() {
     return {
@@ -143,6 +173,7 @@ export default {
       isOfferActive: false,
       isAnimating: false,
       isItemDetailActive: false,
+      isContentCollapsed: false,
       selectedItem: null,
       activeOfferId: null,
       activeOfferItemIndex: 0,
@@ -189,6 +220,10 @@ export default {
     }
   },
   methods: {
+    handleSidebarToggle(isCollapsed) {
+      this.isContentCollapsed = isCollapsed
+    },
+
     triggerRipple(event) {
       if (event && event.clientX !== undefined) {
         this.ripple.x = event.clientX
@@ -266,6 +301,7 @@ export default {
       setTimeout(() => {
         this.selectedItem = item
         this.isItemDetailActive = true
+        this.isContentCollapsed = false
       }, 100)
 
       setTimeout(() => {
@@ -282,6 +318,7 @@ export default {
       setTimeout(() => {
         this.isItemDetailActive = false
         this.selectedItem = null
+        this.isContentCollapsed = false
       }, 100)
 
       setTimeout(() => {
@@ -298,6 +335,7 @@ export default {
     closeOffer() {
       this.isOfferActive = false
       this.isItemDetailActive = false
+      this.isContentCollapsed = false
       this.selectedItem = null
       this.activeOfferId = null
       this.activeOfferItemIndex = 0
@@ -327,6 +365,7 @@ export default {
 
       setTimeout(() => {
         this.isItemDetailActive = false
+        this.isContentCollapsed = false
         this.selectedItem = null
         this.activeOfferId = id
         this.activeOfferItemIndex = 0
@@ -365,6 +404,7 @@ export default {
             this.selectedItem = matchedItem || newCategoryData.items[0];
           } else {
             this.isItemDetailActive = false;
+            this.isContentCollapsed = false;
             this.selectedItem = null;
           }
         }
@@ -521,7 +561,6 @@ export default {
   align-items: center;
 }
 
-/* Позиціонування кнопки мови у правому нижньому кутку */
 .home-language-selector {
   position: absolute;
   bottom: 2vh;
@@ -529,7 +568,6 @@ export default {
   z-index: 50;
 }
 
-/* Ripple Overlay */
 .ripple-overlay {
   position: fixed;
   z-index: 999;
