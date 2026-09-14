@@ -1,0 +1,42 @@
+{
+  "3d-models": {
+    "c0dac337daad4dabbe6ee1ff943f83a9": [
+      {
+        "index": 0,
+        "pl": "Rozszerzenie kanału",
+        "en": "Channel extension",
+        "ua": "Розширення каналу"
+      },
+      {
+        "index": 1,
+        "pl": "Blacha osłonowa",
+        "en": "Protective cover plate",
+        "ua": "Захисна накладна пластина"
+      },
+      {
+        "index": 2,
+        "pl": "Rynienka odwadniająca",
+        "en": "Drainage channel",
+        "ua": "Дренажний жолоб"
+      },
+      {
+        "index": 3,
+        "pl": "System TINES® ERS",
+        "en": "TINES® ERS system",
+        "ua": "Система TINES® ERS"
+      },
+      {
+        "index": 4,
+        "pl": "Płaskownik zabezpieczający krawędź płyty",
+        "en": "Flat bar protecting the slab edge",
+        "ua": "Плоска смуга для захисту краю плити"
+      },
+      {
+        "index": 5,
+        "pl": "Płyta TINES® LC-L6",
+        "en": "TINES® LC-L6 slab",
+        "ua": "Плита TINES® LC-L6"
+      }
+    ]
+  }
+}
