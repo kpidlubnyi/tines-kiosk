@@ -445,7 +445,7 @@ handleCrossCategorySwitch(targetCategoryKey) {
   color: #0f172a;
   white-space: nowrap;
   padding-left: 1.2vw;
-  border-left: 0.15vw solid #007bc2;
+  border-left: 0.15vw solid #0000008b;
   line-height: 1.1;
 }
 

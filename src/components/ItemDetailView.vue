@@ -454,15 +454,15 @@ export default {
 }
 
 .thumb-box:hover {
-  border-color: #007bc2;
+  border-color: #0000008b;
   transform: translateY(-0.15vw);
-  box-shadow: 0 0.4vw 1vw rgba(0, 123, 194, 0.2);
+  box-shadow: 0 0.4vw 1vw rgba(0, 0, 0, 0.2);
 }
 
 .thumb-box.is-active {
-  border-color: #007bc2;
+  border-color: #0000008b;
   border-width: 0.18vw;
-  box-shadow: 0 0 0 0.2vw rgba(0, 123, 194, 0.3);
+  box-shadow: 0 0 0 0.2vw rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
 }
 
@@ -531,7 +531,7 @@ export default {
 }
 
 .toggle-sidebar-btn:active {
-  color: #007bc2;
+  color: #0000008b;
   transform: scale(0.9);
 }
 
@@ -606,20 +606,20 @@ export default {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  border: 0.1vw solid rgba(0, 123, 194, 0.3);
-  background-color: rgba(0, 123, 194, 0.08);
-  color: #007bc2;
+  border: 0.1vw solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.08);
+  color: #0000008b;
   flex-shrink: 0;
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   box-shadow: 0 0.2vw 0.6vw rgba(0, 0, 0, 0.04);
 }
 
 .mode-toggle-circle-btn:active {
-  background-color: #007bc2;
+  background-color: #0000008b;
   color: #ffffff;
-  border-color: #007bc2;
+  border-color: #0000008b;
   transform: scale(0.94);
-  box-shadow: 0 0.2vw 0.6vw rgba(0, 123, 194, 0.25);
+  box-shadow: 0 0.2vw 0.6vw rgba(0, 0, 0, 0.25);
 }
 
 .toggle-icon {
@@ -634,8 +634,8 @@ export default {
 }
 
 .mode-toggle-circle-btn.is-gallery {
-  border-color: rgba(15, 23, 42, 0.2);
-  background-color: rgba(15, 23, 42, 0.06);
+  border-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.06);
   color: #0f172a;
 }
 
@@ -643,13 +643,13 @@ export default {
   background-color: #0f172a;
   color: #ffffff;
   border-color: #0f172a;
-  box-shadow: 0 0.2vw 0.6vw rgba(15, 23, 42, 0.25);
+  box-shadow: 0 0.2vw 0.6vw rgba(0, 0, 0, 0.25);
 }
 
 .accent-line {
   width: 5vw;
   height: 0.3vw;
-  background-color: #007bc2;
+  background-color: #0000008b;
   border-radius: 1vw;
   margin-bottom: 2.5vh;
   flex-shrink: 0;
@@ -704,7 +704,7 @@ export default {
 .detail-description {
   font-size: 1.1vw;
   line-height: 1.7;
-  color: #334155;
+  color: #0000008b;
   word-break: break-word;
 }
 

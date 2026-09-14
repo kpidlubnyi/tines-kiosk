@@ -254,7 +254,7 @@ export default {
 .globe-icon {
   width: 1.5vw;
   height: 1.5vw;
-  color: #007bc2;
+  color: #0000008b;
 }
 
 .slide-sidebar-enter-active,

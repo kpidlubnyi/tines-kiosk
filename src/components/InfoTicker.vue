@@ -68,7 +68,7 @@ export default {
   font-family: inherit;
   font-size: 1.2vw;
   font-weight: 500;
-  color: #007bc2;
+  color: #0000008b;
   text-align: center;
   white-space: nowrap;
   padding: 0 4%;

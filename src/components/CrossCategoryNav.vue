@@ -129,16 +129,16 @@ export default {
 }
 
 .cross-nav-btn:hover {
-  border-color: #007bc2;
-  color: #007bc2;
+  border-color: #0000008b;
+  color: #0000008b;
   transform: scale(1.1);
 }
 
 .cross-nav-btn.is-active {
-  background-color: #007bc2;
-  border-color: #007bc2;
+  background-color: #0000008b;
+  border-color: #0000008b;
   color: #ffffff;
-  box-shadow: 0 0 0.6vw rgba(0, 123, 194, 0.45);
+  box-shadow: 0 0 0.6vw rgba(0, 0, 0, 0.45);
 }
 
 .cross-nav-btn.is-active :deep(.app-icon) {

@@ -159,7 +159,7 @@ onUnmounted(() => {
 
 /* Активна мова — темна заливка */
 .lang-option-btn.active {
-  background: #1e1e1e;
+  background: #0000008b;
   color: #ffffff;
 }
 

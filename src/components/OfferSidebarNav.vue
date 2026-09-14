@@ -92,7 +92,7 @@ export default {
   cursor: pointer;
   transition: all 0.25s ease;
   padding: 0;
-  color: #007bc2;
+  color: #0000008b;
   box-shadow: 0 0.2vw 0.8vw rgba(0, 0, 0, 0.05);
   position: relative;
   z-index: 5;
@@ -100,7 +100,7 @@ export default {
 
 .toggle-btn:hover {
   background-color: #f8fafc;
-  border-color: #007bc2;
+  border-color: #0000008b;
   transform: scale(1.05);
 }
 
@@ -150,16 +150,16 @@ export default {
 }
 
 .offer-nav-btn:hover {
-  border-color: #007bc2;
-  color: #007bc2;
+  border-color: #0000008b;
+  color: #0000008b;
   transform: scale(1.1);
 }
 
 .offer-nav-btn.is-active {
-  background-color: #007bc2;
-  border-color: #007bc2;
+  background-color: #0000008b;
+  border-color: #0000008b;
   color: #ffffff;
-  box-shadow: 0 0 0.5vw rgba(0, 123, 194, 0.4);
+  box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.4);
 }
 
 .offer-nav-btn.is-active :deep(.app-icon) {
