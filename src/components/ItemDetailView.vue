@@ -530,9 +530,9 @@ export default {
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.toggle-sidebar-btn:hover {
+.toggle-sidebar-btn:active {
   color: #007bc2;
-  transform: scale(1.2);
+  transform: scale(0.9);
 }
 
 .toggle-sidebar-btn .arrow-icon {
@@ -610,27 +610,27 @@ export default {
   background-color: rgba(0, 123, 194, 0.08);
   color: #007bc2;
   flex-shrink: 0;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   box-shadow: 0 0.2vw 0.6vw rgba(0, 0, 0, 0.04);
 }
 
-.mode-toggle-circle-btn:hover {
+.mode-toggle-circle-btn:active {
   background-color: #007bc2;
   color: #ffffff;
   border-color: #007bc2;
-  transform: scale(1.08);
-  box-shadow: 0 0.4vw 1vw rgba(0, 123, 194, 0.25);
+  transform: scale(0.94);
+  box-shadow: 0 0.2vw 0.6vw rgba(0, 123, 194, 0.25);
 }
 
 .toggle-icon {
   width: 1.3vw;
   height: 1.3vw;
   object-fit: contain;
-  transition: transform 0.25s ease;
+  transition: transform 0.2s ease;
 }
 
-.mode-toggle-circle-btn:hover .toggle-icon {
-  transform: scale(1.1);
+.mode-toggle-circle-btn:active .toggle-icon {
+  transform: scale(0.95);
 }
 
 .mode-toggle-circle-btn.is-gallery {
@@ -639,11 +639,11 @@ export default {
   color: #0f172a;
 }
 
-.mode-toggle-circle-btn.is-gallery:hover {
+.mode-toggle-circle-btn.is-gallery:active {
   background-color: #0f172a;
   color: #ffffff;
   border-color: #0f172a;
-  box-shadow: 0 0.4vw 1vw rgba(15, 23, 42, 0.25);
+  box-shadow: 0 0.2vw 0.6vw rgba(15, 23, 42, 0.25);
 }
 
 .accent-line {

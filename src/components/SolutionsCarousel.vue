@@ -250,7 +250,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex: 0 0 18vw;
-  height: 20vh;
+  height: 18vh;
   background: #ffffff;
   border-radius: 1vw;
   border: 0.1vw solid rgba(226, 232, 240, 0.8);
