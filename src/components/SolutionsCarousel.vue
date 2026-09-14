@@ -223,7 +223,7 @@ export default {
 <style scoped>
 .carousel-container {
   width: 100%;
-  height: 25vh;
+  height: 28vh;
   overflow: hidden;
   display: flex;
   align-items: center;

@@ -89,6 +89,14 @@
           @select-item="handleCarouselSelect"
         />
       </Transition>
+
+      <!-- Кнопка зміни мови в правому нижньому кутку головної сторінки -->
+      <Transition name="fade">
+        <LanguageSelector 
+          v-if="!isOfferActive" 
+          class="home-language-selector" 
+        />
+      </Transition>
     </div>
 
     <!-- Ripple Overlay для всіх переходів -->
@@ -212,71 +220,47 @@ export default {
       }, 950)
     },
 
-handleCarouselSelect({ item, event }) {
-  if (this.isAnimating) return
+    handleCarouselSelect({ item, event }) {
+      if (this.isAnimating) return
 
-  // 1. Знаходимо першу категорію з масиву categories
-  const targetCategory = item && item.categories && item.categories.length > 0 
-    ? item.categories[0] 
-    : 'kolej'
+      const targetCategory = item && item.categories && item.categories.length > 0 
+        ? item.categories[0] 
+        : 'kolej'
 
-  this.isAnimating = true
-  this.activeOfferItemIndex = 0
+      this.isAnimating = true
+      this.activeOfferItemIndex = 0
 
-  // 2. Запускаємо хвильовий ефект (Ripple)
-  this.triggerRipple(event)
+      this.triggerRipple(event)
 
-  // 3. Встановлюємо категорію ТА обраний продукт
-  setTimeout(() => {
-    this.activeOfferId = targetCategory
-    this.isOfferActive = true
+      setTimeout(() => {
+        this.activeOfferId = targetCategory
+        this.isOfferActive = true
 
-    // --- ВАРІАНТ А: Відкрити детальний екран продукту (ItemDetailView) ---
-    // Формуємо повний об'єкт елемента або шукаємо його в даних
-    const categoryData = this.offersData[targetCategory]
-    let foundItem = null
+        const categoryData = this.offersData[targetCategory]
+        let foundItem = null
 
-    if (categoryData && categoryData.items) {
-      foundItem = categoryData.items.find(i => i.id === item.id || i.id.endsWith(item.id))
-    }
+        if (categoryData && categoryData.items) {
+          foundItem = categoryData.items.find(i => i.id === item.id || i.id.endsWith(item.id))
+        }
 
-    // Якщо знайшли продукт у структурі категорії — відкриваємо його детально,
-    // якщо ні — передаємо об'єкт з каруселі
-    this.selectedItem = foundItem || item
-    this.isItemDetailActive = true
+        this.selectedItem = foundItem || item
+        this.isItemDetailActive = true
+      }, 100)
 
-    /* 
-    --- ВАРІАНТ Б: Якщо ви НЕ хочете детальний екран, а хочете просто прокрутити до нього у списку категорії ---
-    Замість 3 рядків вище (selectedItem та isItemDetailActive) використайте:
-    
-    if (categoryData && categoryData.items) {
-      const itemIndex = categoryData.items.findIndex(i => i.id === item.id || i.id.endsWith(item.id))
-      if (itemIndex !== -1) {
-        this.activeOfferItemIndex = itemIndex
-        this.$nextTick(() => {
-          this.scrollToOfferItem(itemIndex)
-        })
-      }
-    }
-    */
-  }, 100)
-
-  setTimeout(() => {
-    this.isAnimating = false
-  }, 950)
-},
+      setTimeout(() => {
+        this.isAnimating = false
+      }, 950)
+    },
 
     openItemDetail({ item, event }) {
       if (this.isAnimating) return
       this.isAnimating = true
 
-      // Зберігаємо позицію скролу
       const container = this.$refs.offerContentContainer
       if (container) {
         this.savedScrollTop = container.scrollTop
       }
 
-      // Запускаємо ripple-хвилю від точки кліку на елемент
       this.triggerRipple(event)
 
       setTimeout(() => {
@@ -359,52 +343,45 @@ handleCarouselSelect({ item, event }) {
       }, 950)
     },
 
-handleCrossCategorySwitch(targetCategoryKey) {
-  if (this.activeOfferId === targetCategoryKey || this.isAnimating) return;
-  
-  this.isAnimating = true;
-
-  // Запускаємо ripple-хвилю для плавності
-  this.triggerRipple();
-
-  setTimeout(() => {
-    // 1. Перемикаємо категорію
-    this.activeOfferId = targetCategoryKey;
-    this.activeOfferItemIndex = 0;
-
-    // 2. Якщо ми знаходилися всередині детального перегляду товару (ItemDetailView)
-    if (this.isItemDetailActive && this.selectedItem) {
-      const newCategoryData = this.offersData[targetCategoryKey];
+    handleCrossCategorySwitch(targetCategoryKey) {
+      if (this.activeOfferId === targetCategoryKey || this.isAnimating) return;
       
-      if (newCategoryData && newCategoryData.items && newCategoryData.items.length > 0) {
-        // Шукаємо такий самий товар у новій категорії за ID або схожою назвою
-        const matchedItem = newCategoryData.items.find(
-          item => item.id === this.selectedItem.id || this.langStore.getText(item.title) === this.langStore.getText(this.selectedItem.title)
-        );
+      this.isAnimating = true;
 
-        // Якщо товар знайдено — показуємо його в новій категорії, 
-        // якщо ні — беремо перший товар нової категорії
-        this.selectedItem = matchedItem || newCategoryData.items[0];
-      } else {
-        // Якщо в новій категорії немає товарів — закриваємо детальний перегляд
-        this.isItemDetailActive = false;
-        this.selectedItem = null;
-      }
+      this.triggerRipple();
+
+      setTimeout(() => {
+        this.activeOfferId = targetCategoryKey;
+        this.activeOfferItemIndex = 0;
+
+        if (this.isItemDetailActive && this.selectedItem) {
+          const newCategoryData = this.offersData[targetCategoryKey];
+          
+          if (newCategoryData && newCategoryData.items && newCategoryData.items.length > 0) {
+            const matchedItem = newCategoryData.items.find(
+              item => item.id === this.selectedItem.id || this.langStore.getText(item.title) === this.langStore.getText(this.selectedItem.title)
+            );
+
+            this.selectedItem = matchedItem || newCategoryData.items[0];
+          } else {
+            this.isItemDetailActive = false;
+            this.selectedItem = null;
+          }
+        }
+      }, 150);
+
+      setTimeout(() => {
+        this.isAnimating = false;
+        
+        this.$nextTick(() => {
+          const container = this.$refs.offerContentContainer;
+          if (container) {
+            container.scrollTop = 0;
+          }
+        });
+      }, 600);
     }
-  }, 150);
-
-  setTimeout(() => {
-    this.isAnimating = false;
-    
-    // Скидаємо скрол контейнера до початку
-    this.$nextTick(() => {
-      const container = this.$refs.offerContentContainer;
-      if (container) {
-        container.scrollTop = 0;
-      }
-    });
-  }, 600);
-}  }
+  }
 }
 </script>
 
@@ -445,7 +422,7 @@ handleCrossCategorySwitch(targetCategoryKey) {
   color: #0f172a;
   white-space: nowrap;
   padding-left: 1.2vw;
-  border-left: 0.15vw solid #0000008b;
+  border-left: 0.15vw solid #00000066;
   line-height: 1.1;
 }
 
@@ -542,6 +519,14 @@ handleCrossCategorySwitch(targetCategoryKey) {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* Позиціонування кнопки мови у правому нижньому кутку */
+.home-language-selector {
+  position: absolute;
+  bottom: 2vh;
+  right: 2vw;
+  z-index: 50;
 }
 
 /* Ripple Overlay */
