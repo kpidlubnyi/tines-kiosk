@@ -11,7 +11,7 @@
         @click="handleCardClick(item, $event)"
       >
         <div class="item-media">
-          <img :src="item.image" :alt="langStore.getText(item.title)" class="item-image" />
+          <img :src="item.images?.main_image" :alt="langStore.getText(item.title)" class="item-image" />
         </div>
 
         <div class="item-content">

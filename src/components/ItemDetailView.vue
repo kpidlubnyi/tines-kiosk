@@ -16,8 +16,8 @@
     :annotations="item.annotations"
   />
   <img 
-    v-else-if="item.image" 
-    :src="item.image" 
+    v-else-if="item.images?.main_image" 
+    :src="item.images?.main_image" 
     :alt="langStore.getText(item.title)" 
     class="detail-image" 
   />
