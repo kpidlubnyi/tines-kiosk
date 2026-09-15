@@ -2,13 +2,14 @@ import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
 export const useLanguageStore = defineStore('language', () => {
-  // За замовчуванням польська
-  const currentLang = ref(localStorage.getItem('lang') || 'pl')
+  const currentLang = ref(localStorage.getItem('lang') || 'en')
 
   const availableLanguages = [
-    { code: 'pl', label: 'PL', name: 'Polski' },
     { code: 'en', label: 'EN', name: 'English' },
-    { code: 'uk', label: 'UA', name: 'Українська' }
+    { code: 'de', label: 'DE', name: 'Deutsch' },
+    { code: 'pl', label: 'PL', name: 'Polski' },
+    { code: 'uk', label: 'UA', name: 'Українська' },
+    { code: 'ru', label: 'RU', name: 'Русский' }
   ]
 
   function setLanguage(code) {
@@ -16,11 +17,10 @@ export const useLanguageStore = defineStore('language', () => {
     localStorage.setItem('lang', code)
   }
 
-  // Хелпер для отримання перекладу з об'єктів { pl: "...", en: "...", uk: "..." }
   function getText(field) {
     if (!field) return ''
     if (typeof field === 'string') return field
-    return field[currentLang.value] || field['pl'] || ''
+    return field[currentLang.value] || field['en'] || field['pl'] || ''
   }
 
   return {

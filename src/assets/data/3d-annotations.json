@@ -5,37 +5,49 @@
         "index": 0,
         "pl": "Rozszerzenie kanału",
         "en": "Channel extension",
-        "ua": "Розширення каналу"
+        "de": "Kanalerweiterung",
+        "ru": "Расширение канала",
+        "uk": "Розширення каналу"
       },
       {
         "index": 1,
         "pl": "Blacha osłonowa",
         "en": "Protective cover plate",
-        "ua": "Захисна накладна пластина"
+        "de": "Abdeckblech",
+        "ru": "Защитная накладная пластина",
+        "uk": "Захисна накладна пластина"
       },
       {
         "index": 2,
         "pl": "Rynienka odwadniająca",
         "en": "Drainage channel",
-        "ua": "Дренажний жолоб"
+        "de": "Entwässerungsrinne",
+        "ru": "Дренажный желоб",
+        "uk": "Дренажний жолоб"
       },
       {
         "index": 3,
         "pl": "System TINES® ERS",
         "en": "TINES® ERS system",
-        "ua": "Система TINES® ERS"
+        "de": "TINES® ERS-System",
+        "ru": "Система TINES® ERS",
+        "uk": "Система TINES® ERS"
       },
       {
         "index": 4,
         "pl": "Płaskownik zabezpieczający krawędź płyty",
         "en": "Flat bar protecting the slab edge",
-        "ua": "Плоска смуга для захисту краю плити"
+        "de": "Flachstahl zum Schutz der Plattenkante",
+        "ru": "Плоская полоса для защиты края плиты",
+        "uk": "Плоска смуга для захисту краю плити"
       },
       {
         "index": 5,
         "pl": "Płyta TINES® LC-L6",
         "en": "TINES® LC-L6 slab",
-        "ua": "Плита TINES® LC-L6"
+        "de": "TINES® LC-L6 Platte",
+        "ru": "Плита TINES® LC-L6",
+        "uk": "Плита TINES® LC-L6"
       }
     ]
   }

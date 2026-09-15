@@ -28,6 +28,18 @@ export default {
       timer: null
     }
   },
+  watch: {
+    phrases: {
+      handler(newPhrases) {
+        if (this.currentIndex >= newPhrases.length) {
+          this.currentIndex = 0
+        }
+        this.stopRotation()
+        this.startRotation()
+      },
+      deep: true
+    }
+  },
   mounted() {
     this.startRotation()
   },
@@ -54,7 +66,7 @@ export default {
 <style scoped>
 /* Блакитна смужка */
 .info-ticker {
-  width: 45%;
+  width: 50%;
   height: 3vw;
   border-radius: 0.5vw;
   display: flex;

@@ -22,8 +22,8 @@
       <SketchfabUiBlocker 
         :isCollapsed="isContentCollapsed"
         top="82vh"
-        left="42vw"
-        width="11vw"
+        left="40vw"
+        width="13vw"
         height="7vh"
         collapsedLeft="80vw"
       />
@@ -41,7 +41,7 @@
         :key="`header-${activeOfferId}`"
         class="offer-header-brand"
       >
-        <img src="./assets/logo.png" class="header-logo" alt="Логотип компанії" />
+        <img src="./assets/logo.png" class="header-logo" alt="TINES" />
         <span class="active-offer-title" v-html="langStore.getText(currentOfferData.title)"></span>
       </div>
     </Transition>
@@ -68,7 +68,7 @@
       <Transition name="main-content-fade" appear>
         <div v-if="!isOfferActive" class="top-content-group" key="main-group">
           <div class="main-logo-container">
-            <img src="./assets/logo.png" class="main-logo" alt="Логотип компанії" />
+            <img src="./assets/logo.png" class="main-logo" alt="Logotyp TINES" />
           </div>
           <div class="interactive-group">
             <InfoTicker :phrases="phrases" :interval="5000" />
@@ -142,6 +142,7 @@
 
 <script>
 import offersDataJson from '@/assets/data/offers.json';
+import mainPageTextJson from '@/assets/data/main-page-text.json';
 
 import AppBackground from './components/AppBackground.vue'
 import InfoTicker from './components/InfoTicker.vue'
@@ -184,25 +185,34 @@ export default {
         x: 0,
         y: 0
       },
-      buttons: [
-        { id: 'kolej', label: 'KOLEJ', icon: 'kolej' },
-        { id: 'przemysl', label: 'KOLEJ PRZEMYSŁOWA', icon: 'przemysl' },
-        { id: 'metro', label: 'METRO', icon: 'metro' },
-        { id: 'tramwaj', label: 'TRAMWAJ', icon: 'tramwaj' },
-        { id: 'budynki', label: 'WIBROIZOLACJA BUDYNKÓW', icon: 'wibro' }
+      buttonConfigs: [
+        { id: 'kolej', categoryKey: 'kolej', icon: 'kolej' },
+        { id: 'przemysl', categoryKey: 'przemysl', icon: 'przemysl' },
+        { id: 'metro', categoryKey: 'metro', icon: 'metro' },
+        { id: 'tramwaj', categoryKey: 'tramwaj', icon: 'tramwaj' },
+        { id: 'uslugi', categoryKey: 'uslugi', icon: 'wibro' }
       ],
       
       offersData: offersDataJson,
-      phrases: [
-        '22 lat doświadczenia',
-        '600+ zrealizowanych projektów',
-        '380000+ metrów toru pojedyńczego',
-        '480000+ metrów kwadratowych mat wibroizolacyjnych'
-      ],
+      mainPageText: mainPageTextJson,
       solutions: []
     }
   },
   computed: {
+    phrases() {
+      if (!this.mainPageText?.phrases) return []
+      return this.mainPageText.phrases.map(phrase => this.langStore.getText(phrase.text))
+    },
+    buttons() {
+      return this.buttonConfigs.map(config => {
+        const catObj = this.mainPageText?.categories?.[config.categoryKey]
+        return {
+          id: config.id,
+          label: catObj ? this.langStore.getText(catObj) : config.id.toUpperCase(),
+          icon: config.icon
+        }
+      })
+    },
     currentBgState() {
       return this.isOfferActive ? this.activeOfferId : 'main'
     },
@@ -210,7 +220,6 @@ export default {
       return this.offersData[this.activeOfferId] || {
         category: 'Інформація',
         title: 'Заголовок оферти',
-        subtitle: 'Підзаголовок',
         description: 'Опис відсутній',
         items: []
       }
@@ -475,7 +484,7 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  right: 8vw;
+  right: 0;
   height: 14vh;
   z-index: 10;
   pointer-events: none;

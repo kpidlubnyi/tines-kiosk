@@ -1,7 +1,7 @@
 <template>
   <div class="lang-selector-wrapper" ref="containerRef">
     <div class="lang-pill" :class="{ expanded: isOpen }">
-      <!-- Варіанти мов (з'являються зліва від іконки при розгортанні) -->
+      <!-- Список доступних мов -->
       <Transition name="fade-options">
         <div v-if="isOpen" class="lang-options">
           <button
@@ -20,7 +20,7 @@
       <button 
         class="lang-toggle-btn" 
         @click="toggleDropdown"
-        :title="isOpen ? 'Закрити' : 'Змінити мову'"
+        :title="isOpen ? 'Close' : 'Change language'"
       >
         <AppIcon name="globe" class="globe-icon" />
       </button>
@@ -35,8 +35,7 @@ import AppIcon from '@/components/AppIcon.vue'
 
 const langStore = useLanguageStore()
 
-// Зберігаємо реактивність через computed
-const currentLang = computed(() => langStore.currentLang.value || langStore.currentLang)
+const currentLang = computed(() => langStore.currentLang)
 const availableLanguages = langStore.availableLanguages
 
 const isOpen = ref(false)
@@ -72,14 +71,13 @@ onUnmounted(() => {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 48px; /* Фіксуємо базову ширину контейнера */
+  width: 48px;
   height: 48px;
 }
 
-/* Капсула розширюється строго ВЛІВО від іконки */
 .lang-pill {
   position: absolute;
-  right: 0; /* Прив'язано до правого краю контейнера */
+  right: 0;
   top: 0;
   height: 48px;
   width: 48px;
@@ -94,14 +92,12 @@ onUnmounted(() => {
   z-index: 100;
 }
 
-/* При відкритті ширина збільшується вліво */
 .lang-pill.expanded {
-  width: 200px;
+  width: 290px; 
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   padding-left: 6px;
 }
 
-/* Кругла кнопка-тригер */
 .lang-toggle-btn {
   width: 48px;
   height: 48px;
@@ -125,7 +121,6 @@ onUnmounted(() => {
   height: 22px;
 }
 
-/* Список мов */
 .lang-options {
   display: flex;
   align-items: center;
@@ -135,7 +130,6 @@ onUnmounted(() => {
   padding-right: 4px;
 }
 
-/* Кнопки мов */
 .lang-option-btn {
   flex: 1;
   height: 34px;
@@ -154,16 +148,14 @@ onUnmounted(() => {
 
 .lang-option-btn:hover {
   color: #1e1e1e;
-  background: rgba(169, 151, 151, 0.05);
+  background: rgba(0, 0, 0, 0.05);
 }
 
-/* Активна мова — темна заливка */
 .lang-option-btn.active {
   background: #0000008b;
   color: #ffffff;
 }
 
-/* Анімація появи кнопок */
 .fade-options-enter-active {
   transition: opacity 0.2s ease 0.1s;
 }

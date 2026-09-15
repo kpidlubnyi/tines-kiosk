@@ -4,6 +4,8 @@
     "title": {
       "pl": "System zintegrowanej nawierzchni kolejowo-drogowej TINES®",
       "en": "TINES® Integrated Railway-Road Track System",
+      "de": "Integriertes Schienen-Straßen-Fahrbahnsystem TINES®",
+      "ru": "Система интегрированного железнодорожно-дорожного покрытия TINES®",
       "uk": "Система інтегрованого залізнично-дорожнього покриття TINES®"
     },
     "image": "/products/kolej/zint-nawierzchnia-tines.png",
@@ -22,6 +24,8 @@
     "title": {
       "pl": "System zintegrowanej nawierzchni kolejowo-drogowej TINES® GTP",
       "en": "TINES® GTP Integrated Railway-Road Track System",
+      "de": "Integriertes Schienen-Straßen-Fahrbahnsystem TINES® GTP",
+      "ru": "Система интегрированного железнодорожно-дорожного покрытия TINES® GTP",
       "uk": "Система інтегрованого залізнично-дорожнього покриття TINES® GTP"
     },
     "image": "/products/kolej/tines-gtp.png",
@@ -32,6 +36,8 @@
     "title": {
       "pl": "System nawierzchni bezpodsypkowej TINES® EBS",
       "en": "TINES® EBS Ballastless Track System",
+      "de": "Feste Fahrbahn TINES® EBS",
+      "ru": "Безбалластная система пути TINES® EBS",
       "uk": "Безбаластна система колії TINES® EBS"
     },
     "image": "/products/kolej/tines-ebs.png",
@@ -42,6 +48,8 @@
     "title": {
       "pl": "System nawierzchni bezpodsypkowej TINES® Slab Track EBS",
       "en": "TINES® Slab Track EBS Ballastless System",
+      "de": "Feste Fahrbahn TINES® Slab Track EBS",
+      "ru": "Безбалластная система пути TINES® Slab Track EBS",
       "uk": "Безбаластна система колії TINES® Slab Track EBS"
     },
     "image": "/products/kolej/tines-st-ebs.png",
@@ -52,6 +60,8 @@
     "title": {
       "pl": "System szczelnej nawierzchni torowej TINES® SRT",
       "en": "TINES® SRT Sealed Track Surface System",
+      "de": "Flüssigkeitsdichtes Gleisoberbausystem TINES® SRT",
+      "ru": "Система герметичного покрытия пути TINES® SRT",
       "uk": "Система герметичного покриття колії TINES® SRT"
     },
     "image": "/products/kolej/tines-srt.png",
@@ -62,6 +72,8 @@
     "title": {
       "pl": "System przytwierdzenia typu TINES® ERS",
       "en": "TINES® ERS Fastening System",
+      "de": "Schienenbefestigungssystem Typ TINES® ERS",
+      "ru": "Система скрепления типа TINES® ERS",
       "uk": "Система скріплення типу TINES® ERS"
     },
     "image": "/products/kolej/tines-ers.png",
@@ -72,6 +84,8 @@
     "title": {
       "pl": "Prefabrykowane płyty torowe TINES®",
       "en": "TINES® Prefabricated Track Slabs",
+      "de": "TINES® Gleistragplatten aus Stahlbeton",
+      "ru": "Сборные путевые плиты TINES®",
       "uk": "Збірні колійні плити TINES®"
     },
     "image": "/products/kolej/tines-lc-l.png",
@@ -82,7 +96,9 @@
     "title": {
       "pl": "Maty wibroizolacyjne TINES®",
       "en": "TINES® Anti-Vibration Mats",
-      "uk": "Віброізоляційні мати TINES®"
+      "de": "TINES® Unterschottermatten / Elastomer-Matten",
+      "ru": "Виброизоляционные маты TINES®",
+      "uk": "Віبروізоляційні мати TINES®"
     },
     "image": "/products/kolej/maty.png",
     "categories": ["kolej", "metro", "tramwaj", "przemysl"]
@@ -92,6 +108,8 @@
     "title": {
       "pl": "Elastomery polimerowe TINES® Polyrail",
       "en": "TINES® Polyrail Polymer Elastomers",
+      "de": "TINES® Polyrail Polymer-Elastomere",
+      "ru": "Полимерные эластомеры TINES® Polyrail",
       "uk": "Полімерні еластомери TINES® Polyrail"
     },
     "image": "/products/kolej/tines-polyrail.png",
@@ -102,6 +120,8 @@
     "title": {
       "pl": "System podpór blokowych TINES® TRAM BST",
       "en": "TINES® TRAM BST Block Support System",
+      "de": "TINES® TRAM BST Einzelstützpunkt-System",
+      "ru": "Система блочных опор TINES® TRAM BST",
       "uk": "Система блочних опор TINES® TRAM BST"
     },
     "image": "/products/tramwaj/na-razie-nie-ma.png",
@@ -112,6 +132,8 @@
     "title": {
       "pl": "Profile elastomerowe TINES®",
       "en": "TINES® Elastomeric Profiles",
+      "de": "TINES® Elastomerprofile",
+      "ru": "Эластомерные профили TINES®",
       "uk": "Еластомерні профілі TINES®"
     },
     "image": "/products/tramwaj/tines-railfiller.png",
