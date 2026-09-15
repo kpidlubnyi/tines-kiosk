@@ -215,19 +215,17 @@ export default {
     galleryImages() {
       if (!this.item) return []
 
-      const imgs = []
-
-      if (this.item.images) {
-        if (Array.isArray(this.item.images.related_images)) {
-          imgs.push(...this.item.images.related_images)
-        }
-      } else if (this.item.image) {
-        imgs.push(this.item.image)
+      if (this.item.images?.related_images && Array.isArray(this.item.images.related_images)) {
+        return this.item.images.related_images.filter(img => img && img.trim() !== '')
       }
 
-      return imgs
+      if (this.item.image) {
+        return [this.item.image]
+      }
+
+      return []
     },
-    modelIds() {
+      modelIds() {
       if (this.item.sketchfab?.sketchfabIds?.length) {
         return this.item.sketchfab.sketchfabIds
       }
@@ -725,7 +723,7 @@ export default {
 .detail-description {
   font-size: 1.1vw;
   line-height: 1.7;
-  color: #0000008b;
+  color: rgba(0, 0, 0, 0.80);
   word-break: break-word;
 }
 

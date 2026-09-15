@@ -1,5 +1,5 @@
 <template>
-  <div class="main-screen">
+  <div class="main-screen" @dblclick="handleDoubleClick">
     <AppBackground :currentState="currentBgState" />
 
     <!-- Блокувальники контролів Sketchfab -->
@@ -40,6 +40,7 @@
         v-if="isOfferActive && !isAnimating" 
         :key="`header-${activeOfferId}`"
         class="offer-header-brand"
+        @click="closeOffer"
       >
         <img src="./assets/logo.png" class="header-logo" alt="TINES" />
         <span class="active-offer-title" v-html="langStore.getText(currentOfferData.title)"></span>
@@ -137,6 +138,19 @@
         <div class="ripple-circle circle-1"></div>
       </div>
     </Transition>
+
+    <template v-if="isOfferActive">
+      <SecretHomeButton 
+        ref="leftSecretBtn"
+        position="left" 
+        @go-home="closeOffer" 
+      />
+      <SecretHomeButton 
+        ref="rightSecretBtn"
+        position="right" 
+        @go-home="closeOffer" 
+      />
+    </template>
   </div>
 </template>
 
@@ -154,6 +168,7 @@ import ItemDetailView from './components/ItemDetailView.vue'
 import { useLanguageStore } from './stores/language.js';
 import LanguageSelector from './components/LanguageSelector.vue';
 import SketchfabUiBlocker from './components/SketchfabUiBlocker.vue'
+import SecretHomeButton from './components/SecretHomeButton.vue'
 
 export default {
   name: 'MainScreen',
@@ -166,7 +181,8 @@ export default {
     OfferDetails,
     ItemDetailView,
     LanguageSelector,
-    SketchfabUiBlocker
+    SketchfabUiBlocker,
+    SecretHomeButton
   },
   data() {
     return {
@@ -341,7 +357,11 @@ export default {
       }, 950)
     },
 
-    closeOffer() {
+closeOffer() {
+      // Примусово ховаємо обидві кнопки при закритті
+      if (this.$refs.leftSecretBtn) this.$refs.leftSecretBtn.hide()
+      if (this.$refs.rightSecretBtn) this.$refs.rightSecretBtn.hide()
+
       this.isOfferActive = false
       this.isItemDetailActive = false
       this.isContentCollapsed = false
@@ -349,7 +369,6 @@ export default {
       this.activeOfferId = null
       this.activeOfferItemIndex = 0
     },
-
     handleLanguageToggle() {
       console.log('Перемикання мови')
     },
@@ -429,7 +448,17 @@ export default {
           }
         });
       }, 600);
-    }
+    },
+    handleDoubleClick(event) {
+      if (!this.isOfferActive) return
+
+      const target = event.target
+      if (target.closest('button, a, .sidebar, iframe')) return
+
+      if (this.$refs.secretButtonsRef) {
+        this.$refs.secretButtonsRef.trigger()
+      }
+    },
   }
 }
 </script>
@@ -463,6 +492,11 @@ export default {
   width: 10vw;
   height: auto;
   object-fit: contain;
+}
+
+.header-logo:active {
+  transform: scale(0.98);
+  transition: 0.2s ease-in-out;
 }
 
 .active-offer-title {
