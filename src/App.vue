@@ -44,6 +44,21 @@
       </div>
     </Transition>
 
+    <Transition name="fade">
+      <div 
+        v-if="isOfferActive && !isAnimating" 
+        class="secondary-logo-top-right"
+      >
+        <img 
+          src="./assets/tracktec-logo.png" 
+          class="square-logo-btn" 
+          alt="Secondary Logo" 
+          title="На головну"
+          @click="closeOffer" 
+        />
+      </div>
+    </Transition>
+
     <AppSidebar 
       :isOpen="isOfferActive && !isAnimating" 
       :isItemDetailActive="isItemDetailActive"
@@ -65,9 +80,10 @@
         <div v-if="!isOfferActive" class="top-content-group" key="main-group">
           <div class="main-logo-container">
             <img src="./assets/logo.png" class="main-logo" alt="Logotyp TINES" />
+            <img src="./assets/tracktec-logo.png" class="main-logo-square" alt="Logotyp TrackTec" />
           </div>
           <div class="interactive-group">
-            <InfoTicker :phrases="phrases" :interval="5000" />
+            <!-- <InfoTicker :phrases="phrases" :interval="5000" /> -->
             <AppNavigation :buttons="buttons" @select="handleButtonClick" />
           </div>
         </div>
@@ -197,7 +213,7 @@ export default {
         { id: 'przemysl', categoryKey: 'przemysl', icon: 'przemysl' },
         { id: 'metro', categoryKey: 'metro', icon: 'metro' },
         { id: 'tramwaj', categoryKey: 'tramwaj', icon: 'tramwaj' },
-        { id: 'uslugi', categoryKey: 'uslugi', icon: 'wibro' }
+        { id: 'wibro', categoryKey: 'wibro', icon: 'wibro' }
       ],
       
       offersData: offersDataJson,
@@ -567,16 +583,45 @@ closeOffer() {
 
 .main-logo-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  width: 25vw;
+  justify-content: center;
+  gap: 3vh;
+  width: 100vw;
   margin-bottom: 1vh;
 }
 
 .main-logo {
-  width: 100%;
+  width: 18vw;
   height: auto;
   object-fit: contain;
+}
+
+.main-logo-square {
+  width: 16vw;
+  height: 16vw;
+  object-fit: contain;
+}
+
+.secondary-logo-top-right {
+  position: fixed;
+  top: 1vh;
+  right: 5vw;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+}
+
+.square-logo-btn {
+  width: 6vw;
+  height: 6vw;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.square-logo-btn:active {
+  transform: scale(0.95);
 }
 
 .top-content-group {
@@ -584,7 +629,7 @@ closeOffer() {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 18vh;
+  margin-top: 10vh;
 }
 
 .interactive-group {

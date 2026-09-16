@@ -1196,8 +1196,7 @@
           "en": "This is a detailed description of offer number 9 dedicated to industrial facilities. This technology enables effective damping of dynamic loads and extends machine lifespan.",
           "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 9 für Industrieanlagen. Diese Technologie ermöglicht eine effektive Dämpfung dynamischer Lasten und verlängert die Lebensdauer von Maschinen.",
           "ru": "Это подробное описание предложения №9, предназначенного для промышленных объектов. Эта технология позволяет эффективно гасить динамические нагрузки и продлевает срок службы машин.",
-          "uk": "Це детальний опис пропозиції №9, призначеної для промислових об'єктів. Ця технологія дозволяє эффективно гасить динамические нагрузки и продлевает срок службы машин.",
-          "uk": "Це детальний опис пропозиції №9, призначеної для промислових об'єктів. Ця технологія дозволяє ефективно гасити динамічні навантаження та продовжує термін служби машин."
+          "uk": "Це детальний опис пропозиції №9, призначеної для промислових об'єктів. Ця технологія дозволяє эффективно гасить динамические нагрузки и продлевает срок службы машин."
         },
         "crossCategories": [
           "kolej",
@@ -1215,8 +1214,8 @@
       }
     ]
   },
-  "budynki": {
-    "id": "budynki",
+  "wibro": {
+    "id": "wibro",
     "title": {
       "pl": "WIBROIZOLACJA",
       "en": "VIBRATION ISOLATION",
@@ -1226,7 +1225,7 @@
     },
     "items": [
       {
-        "id": "budynki-vibrofloor-1",
+        "id": "wibro-vibrofloor-1",
         "title": {
           "pl": "VIBROFLOOR I",
           "en": "VIBROFLOOR I",
@@ -1251,7 +1250,7 @@
         }
       },
       {
-        "id": "budynki-vibrofloor-2",
+        "id": "wibro-vibrofloor-2",
         "title": {
           "pl": "VIBROFLOOR II",
           "en": "VIBROFLOOR II",

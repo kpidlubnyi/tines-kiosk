@@ -54,18 +54,18 @@
       "uk": "Метро"
     },
     "przemysl": {
-      "en": "Industry",
-      "de": "Industrie",
-      "pl": "Przemysł",
-      "ru": "Промышленность",
-      "uk": "Промисловість"
+      "en": "Industrial railway",
+      "de": "Industriebahn",
+      "pl": "Kolej przemysłowa",
+      "ru": "Промышленная железная дорога",
+      "uk": "Промислова залізниця"
     },
-    "uslugi": {
-      "en": "Services",
-      "de": "Dienstleistungen",
-      "pl": "Usługi",
-      "ru": "Услуги",
-      "uk": "Послуги"
+    "wibro": {
+      "en": "Vibration isolation",
+      "de": "Schwingungsisolierung",
+      "pl": "Wibroizolacja",
+      "ru": "Виброизоляция",
+      "uk": "Віброізоляція"
     }
   }
 }

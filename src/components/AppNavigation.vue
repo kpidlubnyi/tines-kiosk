@@ -36,9 +36,9 @@ export default {
 <style scoped>
 .bottom-navigation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-end;
-  width: 33%;
+  width: 40%;
   margin-top: 3%;
   margin-bottom: 2%;
 }
@@ -59,7 +59,7 @@ export default {
   transform: translateX(-50%);
   width: 140%;
   font-family: inherit;
-  font-size: 0.7vw;
+  font-size: 0.9vw;
   font-weight: 600;
   color: #1a202c;
   margin-bottom: 8%;

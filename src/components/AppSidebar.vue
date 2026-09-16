@@ -178,15 +178,12 @@ export default {
   box-shadow: 0 0.2vw 0.8vw rgba(0, 0, 0, 0.05);
 }
 
-.back-btn:hover {
+.back-btn:active {
   background-color: #f8fafc;
   transform: translateY(-0.1vw);
   box-shadow: 0 0.4vw 1vw rgba(0, 0, 0, 0.1);
 }
 
-.back-btn:active {
-  transform: scale(0.92);
-}
 
 .back-to-offer-btn {
   width: 3vw;

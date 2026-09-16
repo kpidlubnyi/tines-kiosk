@@ -75,7 +75,7 @@ export default {
   bottom: 2vh;
   width: 120px;
   height: 100px;
-  z-index: 999;
+  z-index: 30;
   display: flex;
   align-items: center;
 }
@@ -107,6 +107,7 @@ export default {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   pointer-events: auto;
+  z-index: 31;
 }
 
 .back-to-home-btn:active {
