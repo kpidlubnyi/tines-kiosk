@@ -1,12 +1,10 @@
 <template>
   <div class="item-detail-view">
     <div class="item-detail-container">
-      <!-- Ліва частина: 3D Модель Sketchfab (або Фото) + Галерея моделей -->
       <div 
         class="media-column" 
         :class="{ 'full-width': isSidebarCollapsed }"
       >
-<!-- ЗМІНИ В СЕКЦІЇ <template> -->
 <div class="media-wrapper">
   <SketchfabAPIViewer 
     v-if="activeSketchfabId"
@@ -22,7 +20,6 @@
     class="detail-image" 
   />
 </div>
-        <!-- Галерея 3D-моделей під в'ювером -->
         <div v-if="hasMultipleModels" class="models-gallery">
           <button 
             class="nav-arrow left-arrow" 
@@ -65,7 +62,6 @@
         </div>
       </div>
 
-      <!-- Кнопка-стрілка (по центру висоти) -->
       <button 
         class="toggle-sidebar-btn" 
         :class="{ 'collapsed': isSidebarCollapsed }"
@@ -88,12 +84,10 @@
         </svg>
       </button>
 
-      <!-- Права частина: Карусель з драгом (Опис <-> Галерея) -->
       <div 
         class="content-column" 
         :class="{ 'collapsed': isSidebarCollapsed }"
       >
-        <!-- Шапка: Незмінний заголовок та кругла кнопка -->
         <div class="header-row">
           <h1 class="detail-title" v-html="langStore.getText(item.title)"></h1>
           
@@ -129,14 +123,12 @@
             class="carousel-track" 
             :style="{ transform: `translateX(${currentTranslateX}px)` }"
           >
-            <!-- Слайд 1: Текстовий контент -->
             <div class="carousel-slide slide-description">
               <div class="description-wrapper" @mousedown.stop @touchstart.stop>
                 <div class="detail-description" v-html="langStore.getText(item.description)"></div>
               </div>
             </div>
 
-            <!-- Слайд 2: Галерея фото 16:9 -->
             <div class="carousel-slide slide-gallery">
               <div class="gallery-scroll-container" @mousedown.stop @touchstart.stop>
                 <div class="gallery-grid">
@@ -431,7 +423,6 @@ export default {
   display: block;
 }
 
-/* Галерея 3D Моделей під в'ювером */
 .models-gallery {
   display: flex;
   align-items: center;
@@ -473,13 +464,13 @@ export default {
 }
 
 .thumb-box:hover {
-  border-color: #0000008b;
+  border-color: #929292;
   transform: translateY(-0.15vw);
   box-shadow: 0 0.4vw 1vw rgba(0, 0, 0, 0.2);
 }
 
 .thumb-box.is-active {
-  border-color: #0000008b;
+  border-color: #929292;
   border-width: 0.18vw;
   box-shadow: 0 0 0 0.2vw rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
@@ -495,7 +486,7 @@ export default {
   position: absolute;
   bottom: 0.2vw;
   right: 0.2vw;
-  background: rgba(15, 23, 42, 0.75);
+  background: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(4px);
   color: #ffffff;
   font-size: 0.55vw;
@@ -550,7 +541,7 @@ export default {
 }
 
 .toggle-sidebar-btn:active {
-  color: #0000008b;
+  color: #929292;
   transform: scale(0.9);
 }
 
@@ -627,16 +618,16 @@ export default {
   cursor: pointer;
   border: 0.1vw solid rgba(0, 0, 0, 0.3);
   background-color: rgba(0, 0, 0, 0.08);
-  color: #0000008b;
+  color: #929292;
   flex-shrink: 0;
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   box-shadow: 0 0.2vw 0.6vw rgba(0, 0, 0, 0.04);
 }
 
 .mode-toggle-circle-btn:active {
-  background-color: #0000008b;
+  background-color: #929292;
   color: #ffffff;
-  border-color: #0000008b;
+  border-color: #929292;
   transform: scale(0.94);
   box-shadow: 0 0.2vw 0.6vw rgba(0, 0, 0, 0.25);
 }
@@ -668,7 +659,7 @@ export default {
 .accent-line {
   width: 5vw;
   height: 0.3vw;
-  background-color: #0000008b;
+  background-color: #929292;
   border-radius: 1vw;
   margin-bottom: 2.5vh;
   flex-shrink: 0;

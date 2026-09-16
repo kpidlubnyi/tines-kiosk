@@ -1,6 +1,5 @@
 <template>
   <div class="offer-sidebar-nav" :class="{ 'is-expanded': isExpanded }">
-    <!-- Кнопка розгортання/згортання -->
     <button 
       class="toggle-btn" 
       :title="isExpanded ? 'Згорнути оферти' : 'Розгорнути оферти'"
@@ -12,7 +11,6 @@
       />
     </button>
 
-    <!-- Висувний перелік категорій -->
     <Transition name="expand-fade">
       <div v-if="isExpanded" class="expanded-list">
         <button
@@ -92,7 +90,7 @@ export default {
   cursor: pointer;
   transition: all 0.25s ease;
   padding: 0;
-  color: #0000008b;
+  color: #929292;
   box-shadow: 0 0.2vw 0.8vw rgba(0, 0, 0, 0.05);
   position: relative;
   z-index: 5;
@@ -100,7 +98,7 @@ export default {
 
 .toggle-btn:hover {
   background-color: #f8fafc;
-  border-color: #0000008b;
+  border-color: #929292;
   transform: scale(1.05);
 }
 
@@ -109,7 +107,6 @@ export default {
   height: 1.4vw;
 }
 
-/* Висувний список: позиціонується абсолютно, не зміщує потік і не перекриває елементи зверху */
 .expanded-list {
   position: absolute;
   top: calc(100% + 0.8vh);
@@ -128,7 +125,7 @@ export default {
   width: 3.2vw;
   min-width: 38px;
   box-sizing: border-box;
-  z-index: 4; /* Знижений z-index */
+  z-index: 4;
 }
 
 .offer-nav-btn {
@@ -150,14 +147,14 @@ export default {
 }
 
 .offer-nav-btn:hover {
-  border-color: #0000008b;
-  color: #0000008b;
+  border-color: #929292;
+  color: #929292;
   transform: scale(1.1);
 }
 
 .offer-nav-btn.is-active {
-  background-color: #0000008b;
-  border-color: #0000008b;
+  background-color: #929292;
+  border-color: #929292;
   color: #ffffff;
   box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.4);
 }

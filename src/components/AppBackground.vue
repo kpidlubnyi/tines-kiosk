@@ -1,6 +1,5 @@
 <template>
   <div class="app-background">
-    <!-- Фонове відео або зображення для головного екрана -->
     <Transition name="bg-fade">
       <div :key="currentBg.src" class="bg-media-wrapper">
         <video 
@@ -23,7 +22,6 @@
       </div>
     </Transition>
 
-    <!-- Оверлей (затемнення або висвітлення для читабельності) -->
     <div 
       class="bg-overlay" 
       :style="{ backgroundColor: overlayColor }"
@@ -35,7 +33,6 @@
 export default {
   name: 'AppBackground',
   props: {
-    // Поточний стан: 'main' або ID обраної оферти ('kolej', 'metro', 'tramwaj', тощо)
     currentState: {
       type: String,
       default: 'main'
@@ -43,7 +40,6 @@ export default {
   },
   data() {
     return {
-      // Карта фонів під кожен стан аплікації
       backgrounds: {
         main: {
           type: 'video',
@@ -73,11 +69,9 @@ export default {
     }
   },
   computed: {
-    // Визначення поточного медіафайлу
     currentBg() {
       return this.backgrounds[this.currentState] || this.backgrounds.main
     },
-    // Можна регулювати щільність оверлею в залежності від стану
     overlayColor() {
       return this.currentState === 'main' 
         ? 'rgba(255, 255, 255, 0.8)' 
@@ -122,7 +116,6 @@ export default {
   transition: background-color 0.6s ease;
 }
 
-/* Плавна кроспрезентація (Crossfade) між зміною фонів */
 .bg-fade-enter-active,
 .bg-fade-leave-active {
   transition: opacity 0.6s ease-in;

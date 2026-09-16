@@ -1,5 +1,4 @@
 <template>
-  <!-- Контейнер зони даблкліку -->
   <div 
     class="secret-trigger-zone" 
     :class="position" 
@@ -12,7 +11,6 @@
         @click.stop="handleClick"
         title="На головну"
       >
-        <!-- Іконка будиночка / повернення (SVG) -->
         <svg viewBox="0 0 24 24" class="home-icon">
           <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
         </svg>
@@ -25,12 +23,10 @@
 export default {
   name: 'SecretHomeButton',
   props: {
-    // 'left' або 'right'
     position: {
       type: String,
       default: 'left'
     },
-    // Тривалість відображення у мс
     duration: {
       type: Number,
       default: 3000
@@ -74,7 +70,6 @@ export default {
 </script>
 
 <style scoped>
-/* Зона для подвійного кліку в кутку */
 .secret-trigger-zone {
   position: fixed;
   bottom: 2vh;
@@ -83,22 +78,18 @@ export default {
   z-index: 999;
   display: flex;
   align-items: center;
-  /* Для відладки можна тимчасово розкоментувати background нижче: */
-  /* background: rgba(255, 0, 0, 0.15); */
 }
 
-/* Позиціонування зон */
 .secret-trigger-zone.left {
   left: 2vw;
   justify-content: flex-start;
 }
 
 .secret-trigger-zone.right {
-  right: 6vw; /* Зсув від сайдбару */
+  right: 6vw;
   justify-content: flex-end;
 }
 
-/* Кнопка в стилі Back to Home */
 .back-to-home-btn {
   width: 3.2vw;
   height: 3.2vw;
@@ -130,7 +121,6 @@ export default {
   fill: black;
 }
 
-/* Анімація появи */
 .secret-fade-enter-active, 
 .secret-fade-leave-active {
   transition: opacity 0.3s ease, transform 0.3s ease;

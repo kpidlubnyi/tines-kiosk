@@ -1,7 +1,6 @@
 <template>
   <div class="lang-selector-wrapper" ref="containerRef">
     <div class="lang-pill" :class="{ expanded: isOpen }">
-      <!-- Список доступних мов -->
       <Transition name="fade-options">
         <div v-if="isOpen" class="lang-options">
           <button
@@ -16,7 +15,6 @@
         </div>
       </Transition>
 
-      <!-- Кругла кнопка-іконка -->
       <button 
         class="lang-toggle-btn" 
         @click="toggleDropdown"
@@ -152,7 +150,7 @@ onUnmounted(() => {
 }
 
 .lang-option-btn.active {
-  background: #0000008b;
+  background: #929292;
   color: #ffffff;
 }
 

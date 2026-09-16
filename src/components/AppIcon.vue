@@ -14,7 +14,6 @@ const props = defineProps({
 
 const svgContent = ref('')
 
-// Динамічний імпорт локальних SVG файлів із src/assets/icons/
 watchEffect(async () => {
   try {
     const icon = await import(`../assets/icons/${props.name}.svg?raw`)
@@ -33,7 +32,7 @@ watchEffect(async () => {
   justify-content: center;
   width: 100%;
   height: 100%;
-  color: #000000; /* Головний колір для всіх іконок */
+  color: #000000;
 }
 
 .app-icon :deep(svg) {
@@ -42,12 +41,12 @@ watchEffect(async () => {
 }
 
 .app-icon :deep(svg path:not([stroke])) {
-  fill: currentColor !important; /* Робимо заливку чорною */
-  stroke: none !important;       /* Прибираємо будь-які контури */
+  fill: currentColor !important;
+  stroke: none !important;
 }
 
 .app-icon :deep(svg path[stroke]) {
-  fill: none !important;           /* Робимо середину прозорою */
-  stroke: currentColor !important; /* Робимо лінії чорними */
+  fill: none !important;
+  stroke: currentColor !important;
 }
 </style>

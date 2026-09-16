@@ -1,7 +1,6 @@
 <template>
   <Transition name="slide-sidebar">
     <aside v-if="isOpen" class="sidebar">
-      <!-- 1. Верхній блок (Кнопка Додому + Перемикач Оферт) -->
       <div class="sidebar-top-section">
         <button 
           class="back-btn" 
@@ -18,7 +17,6 @@
         />
       </div>
 
-      <!-- 2. Центральний блок (Крос-категорії), розміщений трохи нижче центру -->
       <div class="sidebar-center-section">
         <CrossCategoryNav
           :crossCategories="crossCategories"
@@ -27,7 +25,6 @@
         />
       </div>
 
-      <!-- 3. Нижній блок (Індикатори + Мова) -->
       <div class="sidebar-bottom-section">
         <SidebarNav 
           v-if="!isItemDetailActive && totalItems > 0"
@@ -121,13 +118,12 @@ export default {
   box-shadow: -0.3vw 0 1.5vw rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Використовуємо flex-start замість space-between */
+  justify-content: flex-start;
   align-items: center;
   padding: 3vh 0.8vw;
   box-sizing: border-box;
 }
 
-/* Верхній блок фіксовано зверху */
 .sidebar-top-section {
   display: flex;
   flex-direction: column;
@@ -137,22 +133,16 @@ export default {
   z-index: 10;
 }
 
-/* 
-  Альтернатива space-between: 
-  margin-top: auto виштовхує блок донизу від верхньої секції,
-  а transform: translateY(4vh) додатково зміщує його трохи нижче від центральної осі.
-*/
 .sidebar-center-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   margin-top: auto; 
-  transform: translateY(8vh); /* Опускаємо елемент трохи нижче */
+  transform: translateY(8vh);
   z-index: 10;
 }
 
-/* Нижній блок притиснутий до самого низу завдяки margin-top: auto */
 .sidebar-bottom-section {
   display: flex;
   flex-direction: column;
@@ -254,7 +244,7 @@ export default {
 .globe-icon {
   width: 1.5vw;
   height: 1.5vw;
-  color: #0000008b;
+  color: #929292;
 }
 
 .slide-sidebar-enter-active,

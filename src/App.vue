@@ -2,7 +2,6 @@
   <div class="main-screen" @dblclick="handleDoubleClick">
     <AppBackground :currentState="currentBgState" />
 
-    <!-- Блокувальники контролів Sketchfab -->
     <template v-if="isOfferActive && isItemDetailActive">
       <SketchfabUiBlocker 
         :isCollapsed="isContentCollapsed"
@@ -29,12 +28,10 @@
       />
     </template>
 
-    <!-- Верхня плашка градієнта -->
     <Transition name="fade">
       <div v-if="isOfferActive && !isAnimating" class="offer-top-gradient"></div>
     </Transition>
 
-    <!-- Заголовок оферти -->
     <Transition name="offer-change" mode="out-in">
       <div 
         v-if="isOfferActive && !isAnimating" 
@@ -47,7 +44,6 @@
       </div>
     </Transition>
 
-    <!-- Бічна панель -->
     <AppSidebar 
       :isOpen="isOfferActive && !isAnimating" 
       :isItemDetailActive="isItemDetailActive"
@@ -65,7 +61,6 @@
     />
 
     <div class="content-container">
-      <!-- Контент головної сторінки -->
       <Transition name="main-content-fade" appear>
         <div v-if="!isOfferActive" class="top-content-group" key="main-group">
           <div class="main-logo-container">
@@ -78,7 +73,6 @@
         </div>
       </Transition>
 
-      <!-- Екран 1: Список елементів оферти -->
       <Transition name="offer-change" mode="out-in">
         <main 
           v-if="isOfferActive && !isItemDetailActive && !isAnimating" 
@@ -95,7 +89,6 @@
         </main>
       </Transition>
 
-      <!-- Екран 2: Детальний перегляд елемента -->
       <Transition name="offer-change" mode="out-in">
         <main 
           v-if="isOfferActive && isItemDetailActive && selectedItem && !isAnimating" 
@@ -119,7 +112,6 @@
         />
       </Transition>
 
-      <!-- Кнопка зміни мови в правому нижньому кутку головної сторінки -->
       <Transition name="fade">
         <LanguageSelector 
           v-if="!isOfferActive" 
@@ -128,7 +120,6 @@
       </Transition>
     </div>
 
-    <!-- Ripple Overlay для всіх переходів -->
     <Transition name="ripple-fade">
       <div 
         v-if="ripple.active" 
@@ -358,7 +349,6 @@ export default {
     },
 
 closeOffer() {
-      // Примусово ховаємо обидві кнопки при закритті
       if (this.$refs.leftSecretBtn) this.$refs.leftSecretBtn.hide()
       if (this.$refs.rightSecretBtn) this.$refs.rightSecretBtn.hide()
 

@@ -11,13 +11,11 @@
 export default {
   name: 'SketchfabUiBlocker',
   props: {
-    // Стан розгортки/згортки колонки
     isCollapsed: {
       type: Boolean,
       default: false
     },
     
-    // Стандартні позиції та розміри (коли колонка розгорнута)
     top: {
       type: String,
       default: null
@@ -43,7 +41,6 @@ export default {
       default: 'auto'
     },
 
-    // Позиції та розміри для стану, коли колонка згорнута
     collapsedTop: {
       type: String,
       default: null

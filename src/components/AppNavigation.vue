@@ -68,7 +68,6 @@ export default {
   word-wrap: break-word;
 }
 
-/* Кнопка */
 .kiosk-btn {
   font-family: inherit;
   width: 100%;

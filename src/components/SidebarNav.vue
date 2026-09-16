@@ -1,7 +1,6 @@
 <template>
   <div class="sidebar-nav-wrapper">
     <div class="sidebar-nav" :class="mode">
-      <!-- Стрілка Вгору -->
       <div class="nav-control top-control">
         <Transition name="fade-control">
           <button 
@@ -17,7 +16,6 @@
         </Transition>
       </div>
 
-      <!-- Скролл-контейнер з обмеженням висоти -->
       <div 
         class="nav-scroll-container"
         ref="scrollContainer"
@@ -47,7 +45,6 @@
         </div>
       </div>
 
-      <!-- Нижня стрілка / Кнопка скидання -->
       <div class="nav-control bottom-control">
         <Transition name="fade-control" mode="out-in">
           <button 
@@ -229,7 +226,7 @@ export default {
 }
 
 .nav-arrow:hover:not(:disabled) {
-  color: #0000008b;
+  color: #929292;
   transform: scale(1.25);
 }
 
@@ -239,7 +236,7 @@ export default {
 }
 
 .reset-btn {
-  color: #0000008b;
+  color: #929292;
 }
 
 .reset-btn:hover {
@@ -309,8 +306,8 @@ export default {
   width: 1.7vw;
   height: 0.45vh;
   min-height: 4px;
-  background-color: #0000008b;
-  box-shadow: 0 0 0.4vw rgba(0, 123, 194, 0.45);
+  background-color: #929292;
+  box-shadow: 0 0 0.4vw rgba(0, 0, 0, 0.45);
 }
 
 .nav-item.is-circle {
@@ -328,8 +325,8 @@ export default {
 }
 
 .nav-item.is-circle.is-active {
-  border-color: #0000008b;
-  box-shadow: 0 0 0vw 0.15vw #0000008b, 0 0 0.6vw rgba(0, 123, 194, 0.4);
+  border-color: #929292;
+  box-shadow: 0 0 0vw 0.15vw #929292, 0 0 0.6vw rgba(0, 0, 0, 0.4);
 }
 
 .circle-fallback {

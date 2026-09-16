@@ -26,12 +26,10 @@ export default {
     AppIcon
   },
   props: {
-    // Масив доступних crossCategories для поточного продукту (наприклад, ["kolej", "przemysl", "metro"])
     crossCategories: {
       type: Array,
       default: () => []
     },
-    // Поточна активна категорія
     activeCategory: {
       type: String,
       default: ''
@@ -88,7 +86,6 @@ export default {
   margin-top: 1vh;
 }
 
-/* Дизайн один в один як у розгорнутої плашки оферт */
 .cross-category-nav {
   display: flex;
   flex-direction: column;
@@ -129,14 +126,14 @@ export default {
 }
 
 .cross-nav-btn:hover {
-  border-color: #0000008b;
-  color: #0000008b;
+  border-color: #929292;
+  color: #929292;
   transform: scale(1.1);
 }
 
 .cross-nav-btn.is-active {
-  background-color: #0000008b;
-  border-color: #0000008b;
+  background-color: #929292;
+  border-color: #929292;
   color: #ffffff;
   box-shadow: 0 0 0.6vw rgba(0, 0, 0, 0.45);
 }
@@ -150,7 +147,6 @@ export default {
   height: 1.1vw;
 }
 
-/* Тільки Blur без різких зсувів чи викривлень */
 @keyframes blurFadeIn {
   0% {
     opacity: 0;

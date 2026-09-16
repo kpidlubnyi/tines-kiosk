@@ -1,6 +1,5 @@
 <template>
   <div class="sketchfab-api-viewer">
-    <!-- Блюр та спінер завантаження -->
     <Transition name="fade">
       <div v-if="isLoading" class="loader-overlay">
         <div class="spinner"></div>
@@ -206,7 +205,6 @@ export default {
       this.clearIntervals()
       this.updateAllAnnotations()
       
-      // Вимикаємо спінер і блюр
       this.isLoading = false
       this.$emit('viewer-ready', this.apiApi)
     },
@@ -299,14 +297,13 @@ export default {
   display: block;
 }
 
-/* Оверлей з блюром */
 .loader-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(15, 23, 42, 0.65);
+  background-color: rgba(0, 0, 0, 0.65);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   display: flex;
@@ -315,7 +312,6 @@ export default {
   z-index: 20;
 }
 
-/* Спінер */
 .spinner {
   width: 48px;
   height: 48px;
@@ -331,7 +327,6 @@ export default {
   }
 }
 
-/* Анімація появи/зникання оверлею */
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.3s ease;

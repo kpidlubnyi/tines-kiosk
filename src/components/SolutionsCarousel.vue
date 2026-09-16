@@ -262,8 +262,8 @@ export default {
 
 .carousel-card:hover {
   transform: translateY(-0.4vw);
-  box-shadow: 0 1vw 2vw rgba(0, 123, 194, 0.15);
-  border-color: rgba(0, 123, 194, 0.4);
+  box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.4);
 }
 
 .image-wrapper {
@@ -303,7 +303,7 @@ export default {
   left: 0;
   width: 100%;
   padding: 0.6vw 0.8vw;
-  background: linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.85) 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.85) 100%);
   opacity: 0;
   transition: opacity 0.25s ease;
   box-sizing: border-box;

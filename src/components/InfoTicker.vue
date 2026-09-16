@@ -19,7 +19,7 @@ export default {
     },
     interval: {
       type: Number,
-      default: 5000 // 5 секунд за замовчуванням
+      default: 5000
     }
   },
   data() {
@@ -64,7 +64,6 @@ export default {
 </script>
 
 <style scoped>
-/* Блакитна смужка */
 .info-ticker {
   width: 50%;
   height: 3vw;
@@ -80,14 +79,13 @@ export default {
   font-family: inherit;
   font-size: 1.2vw;
   font-weight: 500;
-  color: #0000008b;
+  color: #929292;
   text-align: center;
   white-space: nowrap;
   padding: 0 4%;
   position: absolute;
 }
 
-/* Анімація зсуву вниз (Slide Down Vertical) */
 .slide-vertical-enter-active,
 .slide-vertical-leave-active {
   transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;

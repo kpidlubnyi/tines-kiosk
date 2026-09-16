@@ -22,12 +22,10 @@
 export default {
   name: 'SketchfabViewer',
   props: {
-    // Можна передавати або суто ID (наприклад, "c0dac337daad4dabbe6ee1ff943f83a9")
     modelId: {
       type: String,
       default: ''
     },
-    // Або повний URL на Sketchfab
     url: {
       type: String,
       default: ''
@@ -36,7 +34,6 @@ export default {
       type: String,
       default: '3D Model Viewer'
     },
-    // Додаткові параметри Sketchfab (автостарт, відключення UI тощо)
     autoplay: {
       type: Boolean,
       default: true
@@ -51,7 +48,6 @@ export default {
       if (this.modelId) return this.modelId
 
       if (this.url) {
-        // Витягуємо хеш/ID з посилання різного формату
         const match = this.url.match(/(?:models\/|3d-models\/[a-z0-9-]+-)([a-f0-9]{32})/i)
         if (match && match[1]) {
           return match[1]
