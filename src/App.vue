@@ -508,7 +508,7 @@ closeOffer() {
 .active-offer-title {
   font-size: 1.3vw;
   font-weight: 700;
-  color: #0f172a;
+  color: #929292;
   white-space: nowrap;
   padding-left: 1.2vw;
   border-left: 0.15vw solid #00000066;

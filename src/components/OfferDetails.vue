@@ -166,7 +166,7 @@ export default {
   margin: 0 0 1vw 0;
   font-size: 1.4vw;
   font-weight: 700;
-  color: #0f172a;
+  color: #929292;
   line-height: 1.3;
 }
 

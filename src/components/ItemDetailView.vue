@@ -452,7 +452,7 @@ export default {
   height: 4vw;
   border-radius: 0.8vw;
   border: 0.12vw solid #e2e8f0;
-  background-color: #0f172a;
+  background-color: #929292;
   cursor: pointer;
   overflow: hidden;
   padding: 0;
@@ -590,7 +590,7 @@ export default {
   margin: 0;
   font-size: 2.2vw;
   font-weight: 700;
-  color: #0f172a;
+  color: #929292;
   line-height: 1.15;
   white-space: normal;
   word-wrap: break-word;
@@ -646,13 +646,13 @@ export default {
 .mode-toggle-circle-btn.is-gallery {
   border-color: rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.06);
-  color: #0f172a;
+  color: #929292;
 }
 
 .mode-toggle-circle-btn.is-gallery:active {
-  background-color: #0f172a;
+  background-color: #929292;
   color: #ffffff;
-  border-color: #0f172a;
+  border-color: #929292;
   box-shadow: 0 0.2vw 0.6vw rgba(0, 0, 0, 0.25);
 }
 

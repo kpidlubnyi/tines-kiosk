@@ -285,7 +285,7 @@ export default {
   width: 100%;
   height: 100%;
   position: relative;
-  background-color: #0f172a;
+  background-color: #929292;
   border-radius: inherit;
   overflow: hidden;
 }
