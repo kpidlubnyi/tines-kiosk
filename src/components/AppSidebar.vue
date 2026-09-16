@@ -199,14 +199,10 @@ export default {
   padding: 0;
 }
 
-.back-to-offer-btn:hover {
+.back-to-offer-btn:active {
   background-color: #e2e8f0;
   transform: translateY(-0.1vw);
   box-shadow: 0 0.4vw 1vw rgba(0, 0, 0, 0.08);
-}
-
-.back-to-offer-btn:active {
-  transform: scale(0.92);
 }
 
 .back-to-offer-icon {
@@ -228,14 +224,10 @@ export default {
   padding: 0;
 }
 
-.lang-btn:hover {
+.lang-btn:active {
   background-color: #e2e8f0;
   transform: translateY(-0.1vw);
   box-shadow: 0 0.4vw 1vw rgba(0, 0, 0, 0.08);
-}
-
-.lang-btn:active {
-  transform: scale(0.92);
 }
 
 .globe-icon {

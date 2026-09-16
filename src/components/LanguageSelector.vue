@@ -110,7 +110,7 @@ onUnmounted(() => {
   transition: background-color 0.2s ease;
 }
 
-.lang-toggle-btn:hover {
+.lang-toggle-btn:active {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
@@ -144,7 +144,7 @@ onUnmounted(() => {
   transition: all 0.2s ease;
 }
 
-.lang-option-btn:hover {
+.lang-option-btn:active {
   color: #1e1e1e;
   background: rgba(0, 0, 0, 0.05);
 }

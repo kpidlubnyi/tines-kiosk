@@ -260,7 +260,7 @@ export default {
   cursor: pointer;
 }
 
-.carousel-card:hover {
+.carousel-card:active {
   transform: translateY(-0.4vw);
   box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.15);
   border-color: rgba(0, 0, 0, 0.4);
@@ -311,7 +311,7 @@ export default {
   align-items: flex-end;
 }
 
-.carousel-card:hover .card-overlay {
+.carousel-card:active .card-overlay {
   opacity: 1;
 }
 

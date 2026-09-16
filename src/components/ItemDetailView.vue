@@ -463,7 +463,7 @@ export default {
   justify-content: center;
 }
 
-.thumb-box:hover {
+.thumb-box:active {
   border-color: #929292;
   transform: translateY(-0.15vw);
   box-shadow: 0 0.4vw 1vw rgba(0, 0, 0, 0.2);
@@ -514,7 +514,7 @@ export default {
   flex-shrink: 0;
 }
 
-.nav-arrow:hover {
+.nav-arrow:active {
   transform: scale(1.08);
 }
 
@@ -767,7 +767,7 @@ export default {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.gallery-item-card:hover {
+.gallery-item-card:active {
   transform: translateY(-0.2vw);
   box-shadow: 0 0.8vw 2vw rgba(0, 0, 0, 0.1);
 }

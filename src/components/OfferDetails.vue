@@ -123,7 +123,7 @@ export default {
   cursor: pointer;
 }
 
-.offer-item-card:hover {
+.offer-item-card:active {
   transform: translateY(-0.3vw) scale(1.005);
   box-shadow: 0 1.2vw 3vw rgba(0, 0, 0, 0.12);
 }
@@ -149,7 +149,7 @@ export default {
   transition: transform 0.5s ease;
 }
 
-.offer-item-card:hover .item-image {
+.offer-item-card:active .item-image {
   transform: scale(1.04);
 }
 

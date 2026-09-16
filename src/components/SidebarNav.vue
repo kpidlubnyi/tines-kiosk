@@ -225,7 +225,7 @@ export default {
   display: block;
 }
 
-.nav-arrow:hover:not(:disabled) {
+.nav-arrow:active:not(:disabled) {
   color: #929292;
   transform: scale(1.25);
 }
@@ -239,7 +239,7 @@ export default {
   color: #929292;
 }
 
-.reset-btn:hover {
+.reset-btn:active {
   transform: rotate(90deg) scale(1.2);
 }
 
@@ -319,7 +319,7 @@ export default {
   cursor: pointer;
 }
 
-.nav-item.is-circle:hover {
+.nav-item.is-circle:active {
   border-color: #94a3b8;
   transform: scale(1.08);
 }

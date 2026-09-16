@@ -125,7 +125,7 @@ export default {
   color: #475569;
 }
 
-.cross-nav-btn:hover {
+.cross-nav-btn:active {
   border-color: #929292;
   color: #929292;
   transform: scale(1.1);

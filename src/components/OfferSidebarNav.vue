@@ -96,7 +96,7 @@ export default {
   z-index: 5;
 }
 
-.toggle-btn:hover {
+.toggle-btn:active {
   background-color: #f8fafc;
   border-color: #929292;
   transform: scale(1.05);
@@ -146,7 +146,7 @@ export default {
   flex-shrink: 0;
 }
 
-.offer-nav-btn:hover {
+.offer-nav-btn:active {
   border-color: #929292;
   color: #929292;
   transform: scale(1.1);
