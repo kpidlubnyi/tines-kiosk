@@ -612,8 +612,8 @@ closeOffer() {
 }
 
 .square-logo-btn {
-  width: 6vw;
-  height: 6vw;
+  width: 4.5vw;
+  height: 4.5vw;
   object-fit: contain;
   cursor: pointer;
   transition: transform 0.2s ease, opacity 0.2s ease;
