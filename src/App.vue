@@ -213,7 +213,6 @@ export default {
         { id: 'przemysl', categoryKey: 'przemysl', icon: 'przemysl' },
         { id: 'metro', categoryKey: 'metro', icon: 'metro' },
         { id: 'tramwaj', categoryKey: 'tramwaj', icon: 'tramwaj' },
-        { id: 'wibro', categoryKey: 'wibro', icon: 'wibro' }
       ],
       
       offersData: offersDataJson,
@@ -508,7 +507,7 @@ closeOffer() {
 .active-offer-title {
   font-size: 1.3vw;
   font-weight: 700;
-  color: #929292;
+  color: #333333;
   white-space: nowrap;
   padding-left: 1.2vw;
   border-left: 0.15vw solid #00000066;

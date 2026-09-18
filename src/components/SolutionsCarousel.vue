@@ -276,10 +276,11 @@ export default {
 }
 
 .card-image {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   pointer-events: none;
+  display: block;
 }
 
 .no-image-placeholder {

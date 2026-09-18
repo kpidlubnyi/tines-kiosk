@@ -110,7 +110,7 @@ export default {
 
 .offer-item-card {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   background: rgba(255, 255, 255, 0.33);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -134,9 +134,7 @@ export default {
 
 .item-media {
   width: 50%;
-  height: 100%;
-  min-height: 220px;
-  max-height: 350px;
+  display: flex;
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -144,7 +142,7 @@ export default {
 .item-image {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
   display: block;
   transition: transform 0.5s ease;
 }
@@ -163,7 +161,7 @@ export default {
 }
 
 .item-title {
-  margin: 0 0 1vw 0;
+  margin: 0;
   font-size: 1.4vw;
   font-weight: 700;
   color: #333333;
@@ -179,7 +177,7 @@ export default {
 
 .item-description {
   margin: 0;
-  font-size: 1vw;
+  font-size: 0.9vw;
   line-height: 1.65;
   color: #334155;
 }

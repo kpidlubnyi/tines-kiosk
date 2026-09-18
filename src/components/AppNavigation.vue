@@ -36,9 +36,10 @@ export default {
 <style scoped>
 .bottom-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
   width: 40%;
+  height: 10vh;
   margin-top: 3%;
   margin-bottom: 2%;
 }
