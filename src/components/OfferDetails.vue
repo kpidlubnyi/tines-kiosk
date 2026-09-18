@@ -144,7 +144,7 @@ export default {
 .item-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   display: block;
   transition: transform 0.5s ease;
 }

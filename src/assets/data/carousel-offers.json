@@ -124,7 +124,7 @@
       "ru": "Система блочных опор TINES® TRAM BST",
       "uk": "Система блочних опор TINES® TRAM BST"
     },
-    "image": "/products/tramwaj/na-razie-nie-ma.png",
+    "image": "/products/tramwaj/tines-tram-bst.png",
     "categories": ["tramwaj"]
   },
   {
@@ -136,7 +136,7 @@
       "ru": "Эластомерные профили TINES®",
       "uk": "Еластомерні профілі TINES®"
     },
-    "image": "/products/tramwaj/tines-railfiller.png",
+    "image": "/products/tramwaj/profile.png",
     "categories": ["tramwaj"]
   }
 ]
