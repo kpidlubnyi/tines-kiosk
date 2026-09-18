@@ -18,12 +18,21 @@
           "ru": "Система интегрированного железнодорожно-дорожного покрытия TINES<sup>®</sup>",
           "uk": "Система інтегрованого залізнично-дорожнього покриття TINES<sup>®</sup>"
         },
-        "description": {
-          "pl": "System zintegrowanej nawierzchni kolejowo-drogowej TINES® to bezpodsypkowa konstrukcja nawierzchni kolejowo-drogowej. Podstawowym elementem jest prefabrykowana płyta torowa TINES® LC-L. W płycie są ukształtowane kanały szynowe, w których szyny przytwierdzane są za pomocą systemu przytwierdzenia typu TINES® ERS.",
-          "en": "The TINES® integrated railway-road track system is a ballastless track structure for railway-road surfaces. The primary element is the TINES® LC-L prefabricated track slab. Rail channels are formed in the slab, where rails are secured using the TINES® ERS fastening system.",
-          "de": "Das integrierte Schienen-Straßen-Fahrbahnsystem TINES® ist eine ballastfreie Gleisoberbaukonstruktion. Das Grundelement ist die vorgefertigte Gleistragplatte TINES® LC-L. In der Platte sind Schienenkanäle geformt, in denen die Schienen mit dem Befestigungssystem TINES® ERS befestigt werden.",
-          "ru": "Система интегрированного железнодорожно-дорожного покрытия TINES® представляет собой безбалластную конструкцию пути. Основным элементом является сборная путевая плита TINES® LC-L. В плите сформированы рельсовые каналы, в которых рельсы закрепляются с помощью системы скрепления типа TINES® ERS.",
-          "uk": "Система інтегрованого залізнично-дорожнього покриття TINES® це безбаластна конструкція колійного покриття. Основним елементом є збірна колійна плита TINES® LC-L. У плиті сформовані рейкові канали, у яких рейки закріплюються за допомогою системи скріплення типу TINES® ERS."
+        "desc": {
+          "brief":{
+            "pl": "<p>System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup> to bezpodsypkowa konstrukcja nawierzchni kolejowo-drogowej. Podstawowym elementem jest prefabrykowana płyta torowa TINES<sup>®</sup> LC-L. W płycie są ukształtowane kanały szynowe, w których szyny przytwierdzane są za pomocą systemu przytwierdzenia typu TINES<sup>®</sup> ERS.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System zintegrowanej nawierzchni kolejowo-drogowej TINES przeznaczony jest do budowy trwałej, bezpodsypkowej nawierzchni kolejowej w miejscach, w których tor musi współpracować z ruchem drogowym lub pieszym. Jego podstawowym zastosowaniem są przejazdy kolejowo-drogowe, przejścia dla pieszych oraz przejazdy rowerowe, gdzie istotne jest zapewnienie równej i bezpiecznej nawierzchni zarówno dla pojazdów szynowych, jak i użytkowników drogi.</p><p>Rozwiązanie może być również stosowane jako wydzielona nawierzchnia kolejowa o konstrukcji bezpodsypkowej oraz w miejscach, w których nawierzchnia torowa i drogowa tworzą wspólną konstrukcję. Dzięki prefabrykacji system sprawdza się szczególnie tam, gdzie kluczowe znaczenie ma szybka realizacja robót i ograniczenie czasu wyłączenia infrastruktury z użytkowania.</p><p>System zintegrowanej nawierzchni kolejowo-drogowej TINES może być stosowany na liniach jednotorowych i wielotorowych, w torach o szerokości 1435 mm i 1520 mm, zarówno na odcinkach prostych, jak i w łukach. Sprężyste, ciągłe mocowanie szyn realizowane za pomocą systemu przytwierdzenia TINES ERS ogranicza oddziaływania dynamiczne, drgania i hałas, a stabilna konstrukcja zapewnia równomierne podparcie toru oraz niskie koszty utrzymania.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "images": {
           "main_image": "/products/kolej/zint-nawierzchnia-tines.png",
@@ -57,12 +66,21 @@
           "ru": "Система интегрированного железнодорожно-дорожного покрытия TINES<sup>®</sup> GTP",
           "uk": "Система інтегрованого залізнично-дорожнього покриття TINES<sup>®</sup> GTP"
         },
-        "description": {
-          "pl": "System zintegrowanej nawierzchni kolejowo-drogowej TINES® GTP to bezpodsypkowa konstrukcja nawierzchni kolejowo-drogowej. Podstawowym elementem jest prefabrykowana płyta torowa TINES® LC-L W14. W płycie są ukształtowane kanały szynowe, w których szyny przytwierdzane są za pomocą systemu przytwierdzenia typu TINES® W14.",
-          "en": "The TINES® GTP integrated railway-road track system is a ballastless track structure for railway-road surfaces. The primary element is the TINES® LC-L W14 prefabricated track slab. Rail channels are formed in the slab, where rails are secured using the TINES® W14 fastening system.",
-          "de": "Das integrierte Schienen-Straßen-Fahrbahnsystem TINES® GTP ist eine ballastfreie Gleisoberbaukonstruktion. Das Grundelement ist die vorgefertigte Gleistragplatte TINES® LC-L W14. In der Platte sind Schienenkanäle geformt, in denen die Schienen mit dem Befestigungssystem TINES® W14 befestigt werden.",
-          "ru": "Система интегрированного железнодорожно-дорожного покрытия TINES® GTP представляет собой безбалластную конструкцию пути. Основным элементом является сборная путевая плита TINES® LC-L W14. В плите сформированы рельсовые каналы, в которых рельсы закрепляются с помощью системы скрепления типа TINES® W14.",
-          "uk": "Система інтегрованого залізнично-дорожнього покриття TINES® GTP це безбаластна конструкція колійного покриття. Основним елементом є збірна колійна плита TINES® LC-L W14. У плиті сформовані рейкові канали, у яких рейки закріплюються за допомогою системи скріплення типу TINES® W14."
+        "desc": {
+          "brief":{
+            "pl": "<p>System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup> GTP to bezpodsypkowa konstrukcja nawierzchni kolejowo-drogowej. Podstawowym elementem jest prefabrykowana płyta torowa TINES<sup>®</sup> LC-L W14. W płycie są ukształtowane kanały szynowe, w których szyny przytwierdzane są za pomocą systemu przytwierdzenia typu TINES<sup>®</sup> W14.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System zintegrowanej nawierzchni kolejowo-drogowej TINES GTP przeznaczony jest do budowy trwałej, bezpodsypkowej nawierzchni kolejowej w miejscach, w których tor współpracuje z ruchem drogowym lub pieszym. Znajduje zastosowanie przede wszystkim na przejazdach kolejowo-drogowych, przejściach dla pieszych i przejazdach rowerowych, zapewniając równą i bezpieczną nawierzchnię dla pojazdów szynowych oraz pozostałych użytkowników infrastruktury.</p><p>Rozwiązanie sprawdza się również w miejscach wymagających wysokiej stabilności toru oraz precyzyjnego utrzymania jego geometrii. Mechaniczne przytwierdzenie szyn za pomocą systemu TINES<sup>®</sup> W14, z wykorzystaniem wkrętów kolejowych, zapewnia skuteczne przenoszenie obciążeń i stabilne połączenie szyny z konstrukcją płyty torowej.</p><p>Prefabrykowana konstrukcja pozwala na sprawną realizację robót i ograniczenie czasu wyłączenia infrastruktury z użytkowania. System zintegrowanej nawierzchni kolejowo-drogowej TINES GTP może być stosowany na liniach jednotorowych i wielotorowych, w torach o szerokości 1435 mm i 1520 mm, zarówno na odcinkach prostych, jak i w łukach. System stanowi rozwiązanie dla infrastruktury, w której istotne są trwałość, bezpieczeństwo oraz niezawodność eksploatacyjna.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "sketchfab": {
           "defaultId": "fdb6d7968f0b48ebbc9a53b85b4ca910",
@@ -93,12 +111,21 @@
           "ru": "Безбалластная система пути TINES<sup>®</sup> EBS",
           "uk": "Безбаластна система колії TINES<sup>®</sup> EBS"
         },
-        "description": {
-          "pl": "System nawierzchni bezpodsypkowej TINES® EBS jest rozwiązaniem z betonową płytą nawierzchni torowej wylewaną na miejscu budowy. Dwustopniowe sprężyste mocowanie i sprężyste podparcie szyny zapewnia doskonałe przenoszenie obciążeń od pojazdów szynowych i tłumienie drgań wywołanych ich przejazdem.",
-          "en": "The TINES® EBS ballastless track system is a solution with a cast-in-place concrete track slab. Two-stage elastic fastening and elastic rail support ensure excellent transfer of rail vehicle loads and damping of vibrations induced by their passage.",
-          "de": "Das System der festen Fahrbahn TINES® EBS ist eine Lösung mit einer vor Ort gegossenen Betongleistragplatte. Die zweistufige elastische Befestigung und elastische Schienenlagerung sorgen für eine hervorragende Übertragung der Lasten von Schienenfahrzeugen und die Dämpfung der durch ihre Fahrt verursachten Schwingungen.",
-          "ru": "Безбалластная система пути TINES® EBS представляет собой решение с бетонной путевой плитой, отливаемой на месте строительства. Двухступенчатое упругое скрепление и упругая опирание рельса обеспечивают отличное распределение нагрузок от рельсовых транспортных средств и гашение вибраций, вызванных их проездом.",
-          "uk": "Безбаластна система колії TINES® EBS є рішенням з бетонною плитою покриття колії, що виливається на місці будівництва. Двоступеневе пружне кріплення та пружна підтримка рейки забезпечують відмінне передавання навантажень від рейкових транспортних засобів і пригнічення вібрацій, викликаних їхнім проїздом."
+        "desc": {
+          "brief":{
+            "pl": "<p>System nawierzchni bezpodsypkowej TINES<sup>®</sup> EBS jest rozwiązaniem z betonową płytą nawierzchni torowej wylewaną na miejscu budowy. Dwustopniowe sprężyste mocowanie i sprężyste podparcie szyny zapewnia doskonałe przenoszenie obciążeń od pojazdów szynowych i tłumienie drgań wywołanych ich przejazdem.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System nawierzchni bezpodsypkowej TINES<sup>®</sup> EBS przeznaczony jest do budowy trwałej infrastruktury kolejowej na liniach konwencjonalnych oraz liniach dużych prędkości. Rozwiązanie sprawdza się szczególnie tam, gdzie wymagana jest wysoka stabilność toru, precyzyjne utrzymanie jego geometrii oraz niezawodna eksploatacja przy dużych prędkościach.</p><p>Betonowa płyta torowa wykonywana bezpośrednio na miejscu budowy tworzy stabilną konstrukcję nawierzchni, a dwustopniowe sprężyste mocowanie i podparcie szyny zapewniają skuteczne przenoszenie obciążeń dynamicznych oraz ograniczenie drgań generowanych przez przejeżdżające pojazdy. System jest przystosowany do stosowania na trasach o wysokich wymaganiach eksploatacyjnych, w tym na liniach dużych prędkości. TINES<sup>®</sup> EBS stanowi rozwiązanie dla infrastruktury, w której kluczowe znaczenie mają trwałość, stabilność toru, komfort przejazdu oraz ograniczenie potrzeb utrzymaniowych.</p><p>System nawierzchni bezpodsypkowej TINES<sup>®</sup> EBS może być stosowany: w łukach R ≥ 400 m przy prędkościach ≥ 250 km/h, w łukach R ≥ 150 m przy prędkościach ≤ 250 km/h.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "sketchfab": {
           "defaultId": "6c73cf5c238244bdadca51ad9a849352",
@@ -132,12 +159,21 @@
           "ru": "Безбалластная система пути TINES<sup>®</sup> Slab Track EBS",
           "uk": "Безбаластна система колії TINES<sup>®</sup> Slab Track EBS"
         },
-        "description": {
-          "pl": "System nawierzchni bezpodsypkowej TINES® Slab Track EBS jest rozwiązaniem z prefabrykowaną płytą nawierzchni torowej TINES® ST EBS, która na etapie prefabrykacji wyposażona została w bloki podporowe systemu TINES® EBS, zapewniające dwustopniowe sprężyste mocowanie i sprężyste podparcie szyny. Prefabrykowana konstrukcja zapewnia skrócenie czasu realizacji inwestycji.",
-          "en": "The TINES® Slab Track EBS ballastless track system utilizes the TINES® ST EBS prefabricated track slab, which is fitted during prefabrication with TINES® EBS system support blocks that provide two-stage elastic fastening and elastic rail support. The prefabricated structure shortens investment completion time.",
-          "de": "Das System der festen Fahrbahn TINES® Slab Track EBS basiert auf der vorgefertigten Gleistragplatte TINES® ST EBS, die bereits im Werk mit Stützblöcken des TINES® EBS-Systems ausgestattet wird. Diese gewährleisten eine zweistufige elastische Befestigung und Lagerung der Schiene. Die vorgefertigte Konstruktion verkürzt die Bauzeit.",
-          "ru": "Безбалластная система пути TINES® Slab Track EBS представляет собой решение со сборной путевой плитой TINES® ST EBS, которая на этапе производства оснащается опорными блоками системы TINES® EBS, обеспечивающими двухступенчатое упругое скрепление и упругое опирание рельса. Сборная конструкция сокращает сроки реализации проекта.",
-          "uk": "Безбаластна система колії TINES® Slab Track EBS є рішенням зі збірною плитою колійного покриття TINES® ST EBS, яка на етапі префабрикації оснащується опорними блоками системи TINES® EBS, що забезпечують двоступеневе пружне кріплення та пружну підтримку рейки. Збірна конструкція забезпечує скорочення термінів реалізації інвестиції."
+        "desc": {
+          "brief":{
+            "pl": "<p>System nawierzchni bezpodsypkowej TINES<sup>®</sup> Slab Track EBS jest rozwiązaniem z prefabrykowaną płytą nawierzchni torowej TINES<sup>®</sup> ST EBS, która na etapie prefabrykacji wyposażona została w bloki podporowe systemu TINES<sup>®</sup> EBS, zapewniające dwustopniowe sprężyste mocowanie i sprężyste podparcie szyny. Prefabrykowana konstrukcja zapewnia skrócenie czasu realizacji inwestycji.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System nawierzchni bezpodsypkowej TINES<sup>®</sup> Slab Track EBS przeznaczony jest do budowy trwałej infrastruktury kolejowej na liniach konwencjonalnych oraz liniach dużych prędkości. Rozwiązanie sprawdza się szczególnie tam, gdzie wymagana jest wysoka stabilność toru, precyzyjne utrzymanie jego geometrii oraz niezawodna eksploatacja przy dużych prędkościach.</p><p>Prefabrykowana płyta torowa TINES<sup>®</sup> ST EBS, wyposażona na etapie produkcji w bloki podporowe systemu TINES<sup>®</sup> EBS, zapewnia dwustopniowe sprężyste mocowanie i podparcie szyny. Konstrukcja skutecznie przenosi obciążenia dynamiczne oraz ogranicza drgania generowane przez przejeżdżające pojazdy. Prefabrykacja pozwala na skrócenie czasu realizacji inwestycji i sprawną organizację robót, co ma szczególne znaczenie na trasach o wysokich wymaganiach eksploatacyjnych.</p><p>TINES<sup>®</sup> Slab Track EBS stanowi rozwiązanie dla infrastruktury, w której kluczowe znaczenie mają trwałość, stabilność toru, komfort przejazdu oraz ograniczenie potrzeb utrzymaniowych.</p><p>System może być stosowany: w łukach R ≥ 400 m przy prędkościach ≥ 250 km/h, w łukach R ≥ 150 m przy prędkościach ≤ 250 km/h.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "sketchfab": {
           "defaultId": "0dfd49c3e09f4c969f74db0243d2c0da",
@@ -169,12 +205,21 @@
           "ru": "Безбалластная система пути TINES для железнодорожных стрелочных переводов",
           "uk": "Безбаластна система колії TINES для залізничних стрілочних переводів"
         },
-        "description": {
-          "pl": "Rozjazdy kolejowe w konstrukcji nawierzchni bezpodsypkowej to trwałe i stabilne rozwiązanie dla nowoczesnej infrastruktury szynowej. Zastosowanie konstrukcji betonowej zapewnia precyzyjne położenie elementów rozjazdu, wysoką odporność na obciążenia dynamiczne oraz ograniczenie drgań i hałasu. Nawierzchnia bezpodsypkowa umożliwia sprawną eksploatację i ułatwia utrzymanie infrastruktury.",
-          "en": "Railway turnouts built on a ballastless track design offer a durable and stable solution for modern rail infrastructure. The concrete structure ensures precise alignment of turnout components, high resistance to dynamic loads, and reduced vibration and noise. Ballastless track enables efficient operations and simplifies infrastructure maintenance.",
-          "de": "Eisenbahnweichen in fester Fahrbahn sind eine langlebige und stabile Lösung für moderne Schieneninfrastrukturen. Die Betonkonstruktion gewährleistet eine präzise Ausrichtung der Weichenkomponenten, eine hohe Widerstandsfähigkeit gegen dynamische Lasten sowie die Reduzierung von Schwingungen und Lärm. Die feste Fahrbahn ermöglicht einen effizienten Betrieb und erleichtert die Instandhaltung.",
-          "ru": "Железнодорожные стрелочные переводы в безбалластной конструкции пути — это долговечное и стабильное решение для современной рельсовой инфраструктуры. Использование бетонной конструкции обеспечивает точное положение элементов перевода, высокую устойчивость к динамическим нагрузкам, а также снижение вибраций и шума. Безбалластный путь обеспечивает эффективную эксплуатацию и упрощает обслуживание инфраструктуры.",
-          "uk": "Залізничні стрілочні переводи у конструкції безбаластної колії — це довговічне та стабільне рішення для сучасної рейкової інфраструктури. Застосування бетонної конструкції забезпечує точне положення елементів переводу, високу стійкість до динамічних навантажень та зменшення вібрацій і шуму. Безбаластна колія уможливлює ефективну експлуатацію та полегшує обслуговування інфраструктури."
+        "desc": {
+          "brief":{
+            "pl": "<p>Rozjazdy kolejowe w konstrukcji nawierzchni bezpodsypkowej to trwałe i stabilne rozwiązanie dla nowoczesnej infrastruktury szynowej. Zastosowanie konstrukcji betonowej zapewnia precyzyjne położenie elementów rozjazdu, wysoką odporność na obciążenia dynamiczne oraz ograniczenie drgań i hałasu. Nawierzchnia bezpodsypkowa umożliwia sprawną eksploatację i ułatwia utrzymanie infrastruktury.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>Prefabrykacja jest istotnym kierunkiem rozwoju nowoczesnych konstrukcji nawierzchni torowych. Przeniesienie części procesu wykonawczego z placu budowy do kontrolowanych warunków produkcyjnych pozwala uzyskać wysoką powtarzalność elementów, precyzję wykonania oraz ograniczyć zakres prac prowadzonych bezpośrednio w torze.</p><p>Bloki podporowe TINES<sup>®</sup> EBS-R znajdują zastosowanie w konstrukcji nawierzchni bezpodsypkowej dla rozjazdów kolejowych. Prefabrykowane elementy umożliwiają precyzyjne odwzorowanie geometrii rozjazdu oraz zapewniają stabilne i równomierne podparcie jego elementów. Przekłada się to na skuteczne przenoszenie obciążeń dynamicznych, ograniczenie odkształceń konstrukcji oraz większą trwałość i niezawodność rozjazdu. Stabilne podparcie ułatwia utrzymanie geometrii toru i może ograniczać zakres oraz częstotliwość prac utrzymaniowych.</p><p>System TINES<sup>®</sup> ERS stosowany w zintegrowanej nawierzchni kolejowo-drogowej TINES umożliwia realizację ciągłego, sprężystego mocowania szyny również w konstrukcjach rozjazdowych. Prefabrykowane płyty torowe mogą być projektowane i oznaczane dla konkretnych typów rozjazdów, zapewniając precyzyjne odwzorowanie ich geometrii oraz jednoznaczne pozycjonowanie poszczególnych elementów podczas montażu. Rozwiązanie pozwala połączyć wysoką dokładność wykonania z szybkim montażem i ograniczeniem czasu wyłączenia infrastruktury z eksploatacji.</p><p>Prefabrykacja TINES<sup>®</sup> umożliwia tym samym zastosowanie zaawansowanych konstrukcji bezpodsypkowych nie tylko na odcinkach prostych, lecz także w rozjazdach, skrzyżowaniach i innych złożonych układach torowych. To większa kontrola nad jakością, powtarzalność parametrów konstrukcji oraz sprawniejsza realizacja inwestycji.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "sketchfab": {
           "defaultId": "",
@@ -199,12 +244,21 @@
           "ru": "Система герметичного покрытия пути TINES<sup>®</sup> SRT",
           "uk": "Система герметичного покриття колії TINES<sup>®</sup> SRT"
         },
-        "description": {
-          "pl": "System szczelnej nawierzchni TINES® to system nawierzchni bezpodsypkowej, którego podstawę stanowią prefabrykowane płyty torowe TINES® SRT i system przytwierdzenia typu TINES® W14, K, bądź inny, o równoważnym przeznaczeniu i zakresie zastosowania. Rozwiązanie systemowe zabezpiecza środkowisko przed substancjami stanowiącymi zagrożenie dla gruntów i wód powierzchniowych.",
-          "en": "The TINES® sealed track system is a ballastless track solution based on TINES® SRT prefabricated track slabs and TINES® W14, K, or equivalent rail fastening systems. This system protects the environment from substances hazardous to soil and surface waters.",
-          "de": "Das flüssigkeitsdichte Gleisoberbausystem TINES® ist eine feste Fahrbahn auf der Basis von vorgefertigten Gleistragplatten TINES® SRT und Schienenbefestigungssystemen TINES® W14, K oder gleichwertigen Systemen. Die Systemlösung schützt die Umwelt vor Stoffen, die eine Gefahr für Boden und Oberflächengewässer darstellen.",
-          "ru": "Система герметичного покрытия пути TINES® представляет собой безбалластную конструкцию, основу которой составляют сборные путевые плиты TINES® SRT и система скрепления типа TINES® W14, K или иная равноценного назначения. Системное решение защищает окружающую среду от веществ, представляющих угрозу для почвы и поверхностных вод.",
-          "uk": "Система герметичного покриття TINES® це система безбаластної колії, основу якої складають збірні колійні плити TINES® SRT та система скріплення типу TINES® W14, K або інша з еквівалентним призначенням. Системне рішення захищає довкілля від речовин, що становлять загрозу для ґрунтів і поверхневих вод."
+        "desc": {
+          "brief":{
+            "pl": "<p>System szczelnej nawierzchni TINES<sup>®</sup> to system nawierzchni bezpodsypkowej, którego podstawę stanowią prefabrykowane płyty torowe TINES<sup>®</sup> SRT i system przytwierdzenia typu TINES<sup>®</sup> W14, K, bądź inny, o równoważnym przeznaczeniu i zakresie zastosowania.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>Rozwiązanie systemowe zabezpiecza środkowisko przed substancjami stanowiącymi zagrożenie dla gruntów i wód powierzchniowych.</p><p>System szczelnej nawierzchni torowej TINES<sup>®</sup> SRT znajduje zastosowanie w kolei konwencjonalnej na stanowiskach i torach przeznaczonych do awaryjnego odstawiania uszkodzonych wagonów kolejowych przewożących towary niebezpieczne. Rozwiązanie spełnia założenia systemu szczelnej nawierzchni torowej, którego zadaniem jest ograniczenie ryzyka przenikania do gruntu i wód powierzchniowych substancji mogących stanowić zagrożenie dla środowiska w przypadku wycieku z uszkodzonego wagonu.</p><p>System tworzą prefabrykowane, szczelne płyty torowe TINES<sup>®</sup> SRT wraz z odpowiednim systemem przytwierdzenia szyn oraz rozwiązaniem uszczelnienia szczelin pomiędzy płytami. Zastosowanie prefabrykowanych elementów umożliwia wykonanie trwałej nawierzchni bezpodsypkowej, dostosowanej do wymagań eksploatacyjnych infrastruktury kolejowej. W przypadku przewidywanego oddziaływania agresywnych substancji chemicznych system może zostać uzupełniony o odpowiednie powłoki ochronne, dobrane do rodzaju występujących zagrożeń.</p><p>TINES<sup>®</sup> SRT przeznaczony do tego zastosowania może być wykorzystywany przy budowie torów do awaryjnego odstawiania wagonów zgodnie z wymaganiami Rozporządzenia Ministra Infrastruktury z dnia 26 sierpnia 2022 r. oraz Instrukcji Ir-16 PKP Polskie Linie Kolejowe S.A. Rozwiązanie zapewnia trwałą i szczelną powierzchnię torową, ograniczającą możliwość przedostania się substancji niebezpiecznych do środowiska.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "sketchfab": {
           "defaultId": "3fd4b6e5ee914a4ba541a6b1e38f96d0",
@@ -235,12 +289,21 @@
           "ru": "Система рельсового скрепления TINES<sup>®</sup> W14",
           "uk": "Система рейкового скріплення TINES<sup>®</sup> W14"
         },
-        "description": {
-          "pl": "System przytwierdzenia typu TINES® W14 stosuje się do przytwierdzania szyn typu 49E1 i 60E1 w systemach nawierzchni bezpodsypkowej produkcji TINES: system TINES® EBS, w prefabrykowanych płytach torowych TINES® LC-L W14, w systemie szczelnej nawierzchni TINES®, w podporach blokowych systemu TINES® BST, w innych systemach nawierzchni bezpodsypkowej produkcji TINES®.",
-          "en": "The TINES® W14 fastening system is used to secure 49E1 and 60E1 rails in TINES ballastless track systems, including TINES® EBS, TINES® LC-L W14 prefabricated track slabs, TINES® sealed track systems, TINES® BST block supports, and other TINES® ballastless track solutions.",
-          "de": "Das Schienenbefestigungssystem TINES® W14 wird zur Befestigung von Schienen der Typen 49E1 und 60E1 in festen Fahrbahnsystemen von TINES angewendet: im System TINES® EBS, in vorgefertigten Gleistragplatten TINES® LC-L W14, im flüssigkeitsdichten System TINES®, in Einzelstützpunkten des Systems TINES® BST sowie in anderen festen Fahrbahnsystemen von TINES®.",
-          "ru": "Система скрепления типа TINES® W14 применяется для крепления рельсов типа 49E1 и 60E1 в системах безбалластного пути производства TINES: система TINES® EBS, сборные путевые плиты TINES® LC-L W14, система герметичного покрытия TINES®, блочные опоры системы TINES® BST и другие системы безбалластного пути TINES®.",
-          "uk": "Система скріплення типу TINES® W14 застосовується для прикріплення рейок типу 49E1 і 60E1 у системах безбаластної колії виробництва TINES: система TINES® EBS, у збірних колійних плитах TINES® LC-L W14, у системі герметичного покриття TINES®, в опорних блоках системи TINES® BST, в інших системах безбаластної колії виробництва TINES®."
+        "desc": {
+          "brief":{
+            "pl": "<p>System przytwierdzenia typu TINES<sup>®</sup> W14 stosuje się do przytwierdzania szyn typu 49E1 i 60E1 w systemach nawierzchni bezpodsypkowej produkcji TINES: system TINES<sup>®</sup> EBS, w prefabrykowanych płytach torowych TINES<sup>®</sup> LC-L W14, w systemie szczelnej nawierzchni TINES<sup>®</sup>, w podporach blokowych systemu TINES<sup>®</sup> BST, w innych systemach nawierzchni bezpodsypkowej produkcji TINES<sup>®</sup>.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System przytwierdzenia typu TINES<sup>®</sup> W14 przeznaczony jest do sprężystego przytwierdzania szyn typu 49E1 i 60E1 w bezpodsypkowych konstrukcjach nawierzchni torowych. Rozwiązanie zapewnia stabilne mocowanie szyny przy jednoczesnym zachowaniu wymaganej sprężystości układu, umożliwiając jego zastosowanie w różnych typach konstrukcji torowych produkcji TINES. System może być stosowany zarówno w nowych nawierzchniach, jak i podczas modernizacji istniejących odcinków torów.</p><p>TINES<sup>®</sup> W14 znajduje zastosowanie między innymi w systemie TINES<sup>®</sup> EBS, prefabrykowanych płytach torowych TINES<sup>®</sup> LC-L W14, systemie szczelnej nawierzchni TINES<sup>®</sup> oraz podporach blokowych systemu TINES<sup>®</sup> BST. Może być również wykorzystywany w innych bezpodsypkowych systemach nawierzchni torowych produkcji TINES.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "sketchfab": {
           "defaultId": "8272b255a3c1488eb4dd8d24439fe7c8"
@@ -268,12 +331,21 @@
           "ru": "Система скрепления типа TINES<sup>®</sup> ERS",
           "uk": "Система скріплення типу TINES<sup>®</sup> ERS"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 6 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
-          "en": "This is a detailed description of offer number 6 in the railway infrastructure category. Advanced technical solutions ensure optimal performance, durability, and top vibration isolation features.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 6 in der Kategorie Eisenbahninfrastruktur. Fortschrittliche technische Lösungen gewährleisten optimale Leistung, Langlebigkeit und höchste Schwingungsisolationswerte.",
-          "ru": "Это подробное описание предложения №6 в категории железнодорожной инфраструктуры. Передовые технические решения обеспечивают оптимальную производительность, долговечность и высочайшие параметры виброизоляции.",
-          "uk": "Це детальний опис пропозиції №6 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
+        "desc": {
+          "brief":{
+            "pl": "<p>System przytwierdzeń typu TINES<sup>®</sup> ERS przeznaczony jest do stosowania w bezpodsypkowych konstrukcjach nawierzchni szynowych. Kanały szynowe mogą zostać ukształtowane w betonowej płycie torowej „wylewanej na mokro”, stanowić część prefabrykatu torowego TINES<sup>®</sup>, bądź zostać wykonane jako prefabrykowane elementy stalowe. System znajduje zastosowanie do przytwierdzenia wszystkich szyn Vignole'a, m.in. o profilach 60E1 i 49E1, szyn specjalnych oraz węzłach rozjazdowych.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System przytwierdzenia szyny w otulinie TINES<sup>®</sup> ERS jest rozwiązaniem przeznaczonym do budowy bezpodsypkowych nawierzchni kolejowych w kolei konwencjonalnej. System wykorzystuje ciągłe, sprężyste przytwierdzenie szyny w kanale szynowym za pomocą elastomeru poliuretanowego TINES<sup>®</sup> Polyrail, który jednocześnie mocuje szynę i zapewnia jej sprężyste podparcie na całej długości. Dzięki eliminacji tradycyjnego, bezpośredniego mocowania śrubowego rozwiązanie zapewnia równomierne przejmowanie obciążeń od ruchu pociągów oraz zmian temperatury szyn.</p><p>TINES<sup>®</sup> ERS może być stosowany na liniach jedno- i wielotorowych, zarówno w torach prostych, jak i w łukach o promieniu R ≥ 150 m. System przeznaczony jest do szyn Vignole’a, w tym profili 60E1 i 49E1, a także szyn specjalnych. Może być stosowany dla szerokości toru 1435 i 1520 mm, przy maksymalnym nacisku osi 260 kN i prędkości do 250 km/h.</p><p>Niewielka wysokość konstrukcyjna systemu ułatwia jego zastosowanie przy modernizacji istniejącej infrastruktury oraz na obiektach inżynieryjnych, takich jak mosty, wiadukty i tunele. TINES<sup>®</sup> ERS może być również stosowany w węzłach rozjazdowych, na przejazdach kolejowych i przejściach dla pieszych oraz w terminalach przeładunkowych.</p><p>Sprężysta otulina szyny skutecznie ogranicza emisję hałasu i wibracji, a właściwości dielektryczne systemu wspierają ochronę infrastruktury przed prądami błądzącymi. TINES<sup>®</sup> ERS to rozwiązanie łączące trwałe przytwierdzenie szyny, ograniczone wymagania utrzymaniowe i możliwość zastosowania w różnorodnych konstrukcjach bezpodsypkowej nawierzchni kolejowej.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "sketchfab": {
           "defaultId": "4e48532080cf4d21a6e828b940e35e71",
@@ -304,12 +376,21 @@
           "ru": "Сборные путевые плиты TINES<sup>®</sup>",
           "uk": "Збірні колійні плити TINES<sup>®</sup>"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 7 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
-          "en": "This is a detailed description of offer number 7 in the railway infrastructure category. Advanced technical solutions ensure optimal performance, durability, and top vibration isolation features.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 7 in der Kategorie Eisenbahninfrastruktur. Fortschrittliche technische Lösungen gewährleisten optimale Leistung, Langlebigkeit und höchste Schwingungsisolationswerte.",
-          "ru": "Это подробное описание предложения №7 в категории железнодорожной инфраструктуры. Передовые технические решения обеспечивают оптимальную производительность, долговечность и высочайшие параметры виброизоляции.",
-          "uk": "Це детальний опис пропозиції №7 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
+        "desc": {
+          "brief":{
+            "pl": "<p>Wszystkie rodzaje i odmiany prefabrykowanych płyt torowych TINES<sup>®</sup> charakteryzują się cechą wskazującą na integrację konstrukcyjną nawierzchni torowej i podbudowy, co umożliwia uzyskanie bardziej stabilnej, trwałej i odpornej na obciążenia konstrukcji torowej.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>Prefabrykowane płyty torowe TINES<sup>®</sup> są przeznaczone do budowy bezpodsypkowej nawierzchni torowej w kolei konwencjonalnej. Stanowią rozwiązanie, w którym elementy nawierzchni torowej i podbudowy są zintegrowane w jednym prefabrykowanym elemencie, umożliwiając szybkie i powtarzalne wykonywanie konstrukcji toru przy zachowaniu wysokiej precyzji wykonania.</p><p>Płyty TINES<sup>®</sup> produkowane są z betonu klasy co najmniej C35/45 i mogą być zbrojone prętami stalowymi lub kompozytowymi, mikrozbrojeniem albo zbrojeniem hybrydowym. W zależności od przyjętego rozwiązania konstrukcyjnego mogą być stosowane z różnymi systemami przytwierdzenia szyn oraz profilami szyn odpowiednimi dla infrastruktury kolejowej.</p><p>Prefabrykowane płyty torowe TINES<sup>®</sup> mogą być stosowane zarówno przy budowie nowych linii, jak i podczas modernizacji istniejącej infrastruktury kolejowej. Technologia prefabrykacji pozwala ograniczyć zakres robót wykonywanych bezpośrednio w torze oraz zapewnić powtarzalność parametrów konstrukcji. Rozwiązanie może być również dostosowane do obiektów o szczególnych wymaganiach eksploatacyjnych, w tym mostów, wiaduktów, tuneli, przejazdów kolejowych i innych obiektów inżynieryjnych.</p><p>W przypadku wymaganej dodatkowej ochrony przed drganiami możliwe jest zastosowanie warstwy wibroizolacyjnej, w tym mat podtorowych, jako elementu konstrukcji toru lub zintegrowanie jej z prefabrykowaną płytą już na etapie produkcji. Kanały szynowe mogą być fabrycznie przygotowane i wyposażone w warstwy poprawiające sczepność, zgodnie z wymaganiami projektu.</p><p>TINES<sup>®</sup> to rozwiązanie pozwalające na elastyczne kształtowanie bezpodsypkowej konstrukcji toru oraz dostosowanie jej do parametrów technicznych i warunków eksploatacji kolei konwencjonalnej.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "sketchfab": {
           "defaultId": "c1cb5b288f504219b927837a976b7bd7",
@@ -344,12 +425,21 @@
           "ru": "Виброизоляционные маты TINES<sup>®</sup>",
           "uk": "Віброізоляційні мати TINES<sup>®</sup>"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 8 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
-          "en": "This is a detailed description of offer number 8 in the railway infrastructure category. Advanced technical solutions ensure optimal performance, durability, and top vibration isolation features.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 8 in der Kategorie Eisenbahninfrastruktur. Fortschrittliche technische Lösungen gewährleisten optimale Leistung, Langlebigkeit und höchste Schwingungsisolationswerte.",
-          "ru": "Это подробное описание предложения №8 в категории железнодорожной инфраструктуры. Передовые технические решения обеспечивают оптимальную производительность, долговечность и высочайшие параметры виброизоляции.",
-          "uk": "Це детальний опис пропозиції №8 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
+        "desc": {
+          "brief":{
+            "pl": "<p>Maty wibroizolacyjne TINES<sup>®</sup> ograniczają przenoszenie drgań i hałasu z torowiska do otoczenia. Stosowane są jako warstwa izolacyjna konstrukcji torowej, poprawiając komfort mieszkańców i użytkowników obiektów zlokalizowanych w otoczeniu tras kolejowych. Dzięki odpowiednio dobranym właściwościom materiałowym zapewniają skuteczną ochronę budynków i infrastruktury przed oddziaływaniami dynamicznymi.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>Maty wibroizolacyjne TINES<sup>®</sup> znajdują zastosowanie w kolei konwencjonalnej oraz na liniach kolei dużych prędkości, ograniczając przenoszenie drgań i hałasu generowanych przez przejeżdżający tabor na podłoże, konstrukcję toru i obiekty znajdujące się w jego otoczeniu.</p><p>Rozwiązanie szczególne znaczenie ma w miejscach, gdzie infrastruktura kolejowa przebiega w pobliżu budynków mieszkalnych, obiektów użyteczności publicznej oraz infrastruktury wrażliwej na oddziaływania dynamiczne. Odpowiedni dobór parametrów mat pozwala dostosować poziom izolacji do konstrukcji toru, warunków gruntowych, prędkości przejazdu oraz wymagań konkretnej inwestycji.</p><p>Maty TINES<sup>®</sup> mogą być stosowane zarówno w konstrukcjach podsypkowych, jak i bezpodsypkowych. W torach podsypkowych mogą być układane pod warstwą tłucznia, ograniczając przenoszenie drgań z nawierzchni torowej do podtorza. W konstrukcjach bezpodsypkowych mogą być stosowane m.in. pod prefabrykowanymi płytami torowymi, tworząc elastyczną warstwę pomiędzy konstrukcją toru a podłożem lub podbudową.</p><p>Dzięki możliwości doboru właściwości wibroizolacyjnych maty TINES<sup>®</sup> mogą być wykorzystywane zarówno w nowych inwestycjach, jak i przy modernizacji istniejących linii kolejowych.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "sketchfab": {
           "defaultId": "bf5315035e2d43f39375467340d81e1c",
@@ -383,12 +473,21 @@
           "ru": "Полимерные эластомеры TINES<sup>®</sup> Polyrail",
           "uk": "Полімерні еластомери TINES<sup>®</sup> Polyrail"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 9 w kategorii infrastruktury kolejowej. Zaawansowane rozwiązania techniczne zapewniają optymalną wydajność, trwałość oraz najwyższe parametry wibroizolacyjne.",
-          "en": "This is a detailed description of offer number 9 in the railway infrastructure category. Advanced technical solutions ensure optimal performance, durability, and top vibration isolation features.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 9 in der Kategorie Eisenbahninfrastruktur. Fortschrittliche technische Lösungen gewährleisten optimale Leistung, Langlebigkeit und höchste Schwingungsisolationswerte.",
-          "ru": "Это подробное описание предложения №9 в категории железнодорожной инфраструктуры. Передовые технические решения обеспечивают оптимальную производительность, долговечность и высочайшие параметры виброизоляции.",
-          "uk": "Це детальний опис пропозиції №9 у категорії залізничної інфраструктури. Передові технічні рішення забезпечують оптимальну продуктивність, довговічність та найвищі параметри віброізоляції."
+        "desc": {
+          "brief":{
+            "pl": "<p>Zestaw elastomerów polimerowych TINES<sup>®</sup> Polyrail umożliwia budowę toru kolejowego z zapewnieniem sprężystego podparcia i mocowania szyn, które ogranicza drgania oraz poprawia trwałość układu torowego. Materiały pełnią także funkcję izolacji elektrycznej szyny, umożliwiają kotwienie elementów torowych, wykonywania szczelin dylatacyjnych oraz naprawy ubytków w konstrukcjach torowych.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>Zestaw wyrobów TINES<sup>®</sup> Polyrail przeznaczony jest do wykonywania sprężystego podparcia i mocowania szyn w konstrukcjach torów kolejowych, w szczególności w rozwiązaniach bezpodsypkowych oraz wybranych elementach nawierzchni kolejowej. Zastosowanie elastomerów polimerowych umożliwia uzyskanie trwałego połączenia szyny z podłożem przy jednoczesnym zapewnieniu odpowiedniej podatności układu. Sprężyste właściwości materiałów ograniczają przenoszenie drgań generowanych przez ruch pojazdów szynowych, wpływając na poprawę warunków pracy konstrukcji torowej oraz jej trwałość eksploatacyjną.</p><p>Wyroby TINES<sup>®</sup> Polyrail mogą być stosowane do wykonywania ciągłego lub punktowego mocowania i podparcia szyn, podlewów sklejających i podpierających, a także do kotwienia elementów stalowych w podłożu betonowym. Materiały mogą również pełnić funkcję izolacji elektrycznej szyny oraz służyć do uszczelniania styków elementów torowych i nawierzchni. Zestaw znajduje zastosowanie także przy wykonywaniu szczelin dylatacyjnych, mocowaniu profili przyszynowych i elementów wibroizolacyjnych oraz podczas lokalnych napraw i reprofilacji podłoży. Dobór wyrobów i sposób ich zastosowania powinien być każdorazowo zgodny z dokumentacją techniczną oraz wytycznymi producenta.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "sketchfab": {
           "defaultId": "26aaccd27a7b486b8c94abb279cf4e17",
@@ -431,12 +530,21 @@
           "ru": "Система интегрированного железнодорожно-дорожного покрытия TINES<sup>®</sup>",
           "uk": "Система інтегрованого залізнично-дорожнього покриття TINES<sup>®</sup>"
         },
-        "description": {
-          "pl": "METRO To jest szczegółowy opis oferty numer 1 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
-          "en": "METRO This is a detailed description of offer number 1 in the metro systems category. Innovative damping materials effectively reduce vibrations and noise in underground infrastructure.",
-          "de": "U-BAHN Dies ist eine detaillierte Beschreibung des Angebots Nr. 1 in der Kategorie U-Bahn-Systeme. Innovative Dämpfungsmaterialien reduzieren Schwingungen und Lärm im unterirdischen Bereich effektiv.",
-          "ru": "МЕТРО Это подробное описание предложения №1 в категории систем метро. Инновационные демпфирующие материалы эффективно снижают вибрацию и шум в подземной инфраструктуре.",
-          "uk": "МЕТРО Це детальний опис пропозиції №1 у категорії систем метро. Інноваційні демпферні матеріали ефективно знижують вібрацію та шум у підземній інфраструктурі."
+        "desc": {
+          "brief":{
+            "pl": "<p>System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup> to bezpodsypkowa konstrukcja nawierzchni kolejowo-drogowej. Podstawowym elementem jest prefabrykowana płyta torowa TINES<sup>®</sup> LC-L. W płycie są ukształtowane kanały szynowe, w których szyny przytwierdzane są za pomocą systemu przytwierdzenia typu TINES<sup>®</sup> ERS.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System zintegrowanej nawierzchni kolejowo-drogowej TINES znajduje zastosowanie w infrastrukturze metra jako rozwiązanie umożliwiające wykorzystanie torowiska nie tylko przez pojazdy szynowe, lecz także przez pojazdy uprzywilejowane w ruchu drogowym. Dzięki odpowiednio ukształtowanej, równej powierzchni torowisko może pełnić funkcję bezpiecznego ciągu komunikacyjnego w sytuacjach awaryjnych oraz podczas prowadzenia działań ratowniczych i interwencyjnych.</p><p>Takie rozwiązanie wpisuje się w koncepcję dual use, zwiększając funkcjonalność i dostępność infrastruktury metra. W przypadku wystąpienia zdarzenia, awarii lub konieczności dotarcia służb ratunkowych do obszaru niedostępnego dla standardowego ruchu drogowego, nawierzchnia torowa może umożliwić przejazd m.in. pojazdom straży pożarnej, pogotowia ratunkowego czy innych służb.</p><p>Zastosowanie systemu TINES pozwala zatem połączyć funkcję transportu szynowego z możliwością wykorzystania torowiska jako drogi dojazdowej dla pojazdów uprzywilejowanych. Trwała, stabilna i równa nawierzchnia zapewnia warunki sprzyjające bezpiecznemu przejazdowi, a prefabrykowana konstrukcja umożliwia sprawną realizację inwestycji oraz ograniczenie zakresu prac utrzymaniowych.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "sketchfab": {
           "defaultId": "c0dac337daad4dabbe6ee1ff943f83a9",
@@ -469,12 +577,21 @@
           "ru": "Система интегрированного железнодорожно-дорожного покрытия TINES<sup>®</sup> GTP2",
           "uk": "Система інтегрованого залізнично-дорожнього покриття TINES<sup>®</sup> GTP2"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 2 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
-          "en": "This is a detailed description of offer number 2 in the metro systems category. Innovative damping materials effectively reduce vibrations and noise in underground infrastructure.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 2 in der Kategorie U-Bahn-Systeme. Innovative Dämpfungsmaterialien reduzieren Schwingungen und Lärm im unterirdischen Bereich effektiv.",
-          "ru": "Это подробное описание предложения №2 в категории систем метро. Инновационные демпфирующие материалы эффективно снижают вибрацию и шум в подземной инфраструктуре.",
-          "uk": "Це детальний опис пропозиції №2 у категорії систем метро. Інноваційні демпферні матеріали ефективно знижують вібрацію та шум у підземній інфраструктурі."
+        "desc": {
+          "brief":{
+            "pl": "<p>System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup> GTP to bezpodsypkowa konstrukcja nawierzchni kolejowo-drogowej. Podstawowym elementem jest prefabrykowana płyta torowa TINES<sup>®</sup> LC-L W14. W płycie są ukształtowane kanały szynowe, w których szyny przytwierdzane są za pomocą systemu przytwierdzenia typu TINES<sup>®</sup> W14.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup> GTP może być stosowany w infrastrukturze metra jako rozwiązanie typu dual use, umożliwiające wykorzystanie torowiska zarówno przez pojazdy szynowe, jak i pojazdy uprzywilejowane w ruchu drogowym. Odpowiednio ukształtowana, stabilna i równa nawierzchnia pozwala na bezpieczne wykorzystanie torowiska jako ciągu komunikacyjnego dla służb ratunkowych i technicznych.</p><p>W sytuacjach awaryjnych, podczas ewakuacji, akcji ratowniczych, usuwania skutków awarii lub prowadzenia prac utrzymaniowych torowisko może zapewnić dostęp pojazdom straży pożarnej, pogotowia ratunkowego, policji oraz służbom technicznym – również w miejscach, do których standardowy dojazd drogowy jest ograniczony lub niemożliwy.</p><p>Zastosowanie systemu TINES<sup>®</sup> GTP pozwala zwiększyć funkcjonalność infrastruktury metra, łącząc wymagania stawiane nawierzchni kolejowej z możliwością bezpiecznego ruchu pojazdów drogowych. Mechaniczne przytwierdzenie szyn za pomocą systemu TINES<sup>®</sup> W14 zapewnia stabilne połączenie szyny z konstrukcją nawierzchni, wspierając jej trwałość i niezawodność w warunkach intensywnej eksploatacji.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "images": {
           "main_image": "/products/metro/tines-gtp.png",
@@ -494,12 +611,21 @@
           "ru": "Безбалластная система пути TINES<sup>®</sup> EBS",
           "uk": "Безбаластна система колії TINES<sup>®</sup> EBS"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 3 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
-          "en": "This is a detailed description of offer number 3 in the metro systems category. Innovative damping materials effectively reduce vibrations and noise in underground infrastructure.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 3 in der Kategorie U-Bahn-Systeme. Innovative Dämpfungsmaterialien reduzieren Schwingungen und Lärm im unterirdischen Bereich effektiv.",
-          "ru": "Это подробное описание предложения №3 в категории систем метро. Инновационные демпфирующие материалы эффективно снижают вибрацию и шум в подземной инфраструктуре.",
-          "uk": "Це детальний опис пропозиції №3 у категорії систем метро. Інноваційні демпферні матеріали ефективно знижують вібрацію та шум у підземній інфраструктурі."
+        "desc": {
+          "brief":{
+            "pl": "<p>System nawierzchni bezpodsypkowej TINES<sup>®</sup> EBS jest rozwiązaniem z betonową płytą nawierzchni torowej wylewaną na miejscu budowy. Dwustopniowe sprężyste mocowanie i sprężyste podparcie szyny zapewnia doskonałe przenoszenie obciążeń od pojazdów szynowych i tłumienie drgań wywołanych ich przejazdem.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System nawierzchni bezpodsypkowej TINES<sup>®</sup> EBS przeznaczony jest do zastosowania w infrastrukturze kolei miejskiej, w szczególności tam, gdzie kluczowe znaczenie mają niezawodność, trwałość oraz stabilność toru przy intensywnym ruchu pociągów. Rozwiązanie może być stosowane na odcinkach tunelowych, stacjach, w rejonie rozjazdów oraz w innych obszarach infrastruktury metra wymagających trwałej i odpornej konstrukcji nawierzchni.</p><p>Betonowa płyta torowa wykonywana bezpośrednio na miejscu budowy zapewnia stabilne podparcie toru i możliwość precyzyjnego wykonania geometrii nawierzchni. Dwustopniowe sprężyste mocowanie i podparcie szyny skutecznie przenoszą obciążenia generowane przez intensywny ruch oraz ograniczają drgania i oddziaływania dynamiczne.</p><p>Bezpodsypkowa konstrukcja pozwala ograniczyć zakres prac utrzymaniowych i zapewnia wysoką dostępność infrastruktury. TINES<sup>®</sup> EBS stanowi rozwiązanie dla systemów metra, w których niezawodność toru, trwałość konstrukcji i ciągłość eksploatacji mają bezpośrednie znaczenie dla sprawnego funkcjonowania transportu miejskiego.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "crossCategories": [
           "kolej",
@@ -524,12 +650,21 @@
           "ru": "Безбалластная система пути TINES<sup>®</sup> Slab Track EBS",
           "uk": "Безбаластна система колії TINES<sup>®</sup> Slab Track EBS"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 4 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
-          "en": "This is a detailed description of offer number 4 in the metro systems category. Innovative damping materials effectively reduce vibrations and noise in underground infrastructure.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 4 in der Kategorie U-Bahn-Systeme. Innovative Dämpfungsmaterialien reduzieren Schwingungen und Lärm im unterirdischen Bereich effektiv.",
-          "ru": "Это подробное описание предложения №4 в категории систем метро. Инновационные демпфирующие материалы эффективно снижают вибрацию и шум в подземной инфраструктуре.",
-          "uk": "Це детальний опис пропозиції №4 у категорії систем метро. Інноваційні демпферні матеріали ефективно знижують вібрацію та шум у підземній інфраструктурі."
+        "desc": {
+          "brief":{
+            "pl": "<p>System nawierzchni bezpodsypkowej TINES<sup>®</sup> Slab Track EBS jest rozwiązaniem z prefabrykowaną płytą nawierzchni torowej TINES<sup>®</sup> ST EBS, która na etapie prefabrykacji wyposażona została w bloki podporowe systemu TINES<sup>®</sup> EBS, zapewniające dwustopniowe sprężyste mocowanie i sprężyste podparcie szyny. Prefabrykowana konstrukcja zapewnia skrócenie czasu realizacji inwestycji.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System nawierzchni bezpodsypkowej TINES<sup>®</sup> Slab Track EBS znajduje zastosowanie w infrastrukturze metra, gdzie wysoka intensywność ruchu wymaga trwałej, stabilnej i niezawodnej konstrukcji torowej. Rozwiązanie może być stosowane na odcinkach tunelowych, stacjach oraz w innych miejscach, w których ograniczenie prac utrzymaniowych i zapewnienie ciągłości eksploatacji infrastruktury mają szczególne znaczenie.</p><p>Prefabrykowana płyta torowa TINES<sup>®</sup> ST EBS, wyposażona w bloki podporowe systemu TINES<sup>®</sup> EBS, zapewnia dwustopniowe sprężyste mocowanie i podparcie szyny. Konstrukcja skutecznie przenosi obciążenia dynamiczne oraz ogranicza drgania generowane przez intensywny ruch pociągów, wspierając komfort pasażerów i ochronę infrastruktury sąsiadującej z torowiskiem.</p><p>Prefabrykacja umożliwia skrócenie czasu realizacji robót i sprawną organizację prac w warunkach ograniczonego dostępu, charakterystycznych dla infrastruktury podziemnej. TINES<sup>®</sup> Slab Track EBS stanowi rozwiązanie dla kolei miejskiej, w której kluczowe znaczenie mają niezawodność, wysoka dostępność toru, trwałość oraz ograniczenie zakresu utrzymania.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "crossCategories": [
           "kolej",
@@ -546,20 +681,29 @@
         }
       },
       {
-        "id": "metro-srt",
+        "id": "metro-rozjazdy",
         "title": {
-          "pl": "System szczelnej nawierzchni torowej TINES<sup>®</sup> SRT",
-          "en": "TINES<sup>®</sup> SRT Sealed Track Surface System",
-          "de": "Flüssigkeitsdichtes Gleisoberbausystem TINES<sup>®</sup> SRT",
-          "ru": "Система герметичного покрытия пути TINES<sup>®</sup> SRT",
-          "uk": "Система герметичного покриття колії TINES<sup>®</sup> SRT"
+          "pl": "System nawierzchni bezpodsypkowej dla rozjazdów kolejowych TINES",
+          "en": "",
+          "de": "",
+          "ru": "",
+          "uk": ""
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 5 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
-          "en": "This is a detailed description of offer number 5 in the metro systems category. Innovative damping materials effectively reduce vibrations and noise in underground infrastructure.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 5 in der Kategorie U-Bahn-Systeme. Innovative Dämpfungsmaterialien reduzieren Schwingungen und Lärm im unterirdischen Bereich effektiv.",
-          "ru": "Это подробное описание предложения №5 в категории систем метро. Инновационные демпфирующие материалы эффективно снижают вибрацию и шум в подземной инфраструктуре.",
-          "uk": "Це детальний опис пропозиції №5 у категорії систем метро. Інноваційні демпферні матеріали ефективно знижують вібрацію та шум у підземній інфраструктурі."
+        "desc": {
+          "brief":{
+            "pl": "<p>Rozjazdy metra w konstrukcji nawierzchni bezpodsypkowej to trwałe i stabilne rozwiązanie dla nowoczesnej infrastruktury szynowej. Zastosowanie konstrukcji betonowej zapewnia precyzyjne położenie elementów rozjazdu, wysoką odporność na obciążenia dynamiczne oraz ograniczenie drgań i hałasu. Nawierzchnia bezpodsypkowa umożliwia sprawną eksploatację i ułatwia utrzymanie infrastruktury.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>Prefabrykowane konstrukcje nawierzchni torowej TINES<sup>®</sup> znajdują zastosowanie w infrastrukturze metra, gdzie ograniczony dostęp do torowiska, intensywna eksploatacja oraz konieczność minimalizowania wyłączeń infrastruktury wymagają sprawnych i precyzyjnych technologii wykonawczych. Produkcja elementów w kontrolowanych warunkach zapewnia wysoką powtarzalność parametrów, precyzję wykonania oraz ograniczenie zakresu prac prowadzonych bezpośrednio w tunelu lub na stacji.</p><p>Bloki podporowe TINES<sup>®</sup> EBS-R umożliwiają wykonywanie konstrukcji nawierzchni bezpodsypkowej również w rejonie rozjazdów metra. Prefabrykowane elementy pozwalają na precyzyjne odwzorowanie geometrii układu torowego oraz zapewniają stabilne i równomierne podparcie jego elementów. Ma to szczególne znaczenie w miejscach, gdzie niezawodność rozjazdów i ograniczenie prac utrzymaniowych wpływają na dostępność całej infrastruktury.</p><p>System TINES<sup>®</sup> ERS, stosowany w zintegrowanej nawierzchni kolejowo-drogowej TINES, pozwala na realizację prefabrykowanych płyt również dla rozjazdów, skrzyżowań i innych złożonych układów torowych. Płyty mogą być projektowane i oznaczane dla konkretnych typów rozjazdów oraz poszczególnych pozycji w układzie, co zapewnia jednoznaczne pozycjonowanie elementów podczas montażu.</p><p>Prefabrykacja TINES<sup>®</sup> umożliwia tym samym sprawną realizację nawierzchni torowej w tunelach, na stacjach, w rejonie rozjazdów i w innych wymagających obszarach infrastruktury metra. Ograniczenie prac wykonywanych na miejscu, skrócenie czasu montażu oraz powtarzalność parametrów konstrukcji wspierają wysoką dostępność infrastruktury i ograniczenie czasu wyłączeń z eksploatacji.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "crossCategories": [
           "kolej",
@@ -576,6 +720,84 @@
         }
       },
       {
+        "id": "metro-srt",
+        "title": {
+          "pl": "System szczelnej nawierzchni torowej TINES<sup>®</sup> SRT",
+          "en": "TINES<sup>®</sup> SRT Sealed Track Surface System",
+          "de": "Flüssigkeitsdichtes Gleisoberbausystem TINES<sup>®</sup> SRT",
+          "ru": "Система герметичного покрытия пути TINES<sup>®</sup> SRT",
+          "uk": "Система герметичного покриття колії TINES<sup>®</sup> SRT"
+        },
+        "desc": {
+          "brief":{
+            "pl": "<p>System szczelnej nawierzchni TINES<sup>®</sup> to system nawierzchni bezpodsypkowej, którego podstawę stanowią prefabrykowane płyty torowe TINES<sup>®</sup> SRT i system przytwierdzenia typu TINES<sup>®</sup> W14, K, bądź inny, o równoważnym przeznaczeniu i zakresie zastosowania.</p><p>Rozwiązanie systemowe zabezpiecza środkowisko przed substancjami stanowiącymi zagrożenie dla gruntów i wód powierzchniowych.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System szczelnej nawierzchni torowej TINES<sup>®</sup> SRT znajduje zastosowanie w infrastrukturze metra, w szczególności na stacjach techniczno-postojowych, w halach naprawczych i utrzymaniowych oraz na stanowiskach mycia i obsługi taboru. Rozwiązanie umożliwia wykonanie trwałej, bezpodsypkowej nawierzchni torowej, dostosowanej do specyfiki obiektów, w których prowadzona jest bieżąca obsługa, czyszczenie, konserwacja i naprawa pojazdów metra.</p><p>Szczelna konstrukcja nawierzchni ogranicza możliwość przenikania do podłoża wód technologicznych, środków stosowanych podczas mycia taboru, olejów oraz innych substancji mogących stanowić zagrożenie dla gruntu i wód. Ma to szczególne znaczenie w obrębie myjni oraz stanowisk utrzymaniowych, gdzie nawierzchnia jest narażona na cykliczne oddziaływanie wody i środków chemicznych.</p><p>Prefabrykowane płyty torowe TINES<sup>®</sup> SRT wraz z systemem przytwierdzenia szyn i szczelnym rozwiązaniem połączeń pomiędzy płytami tworzą kompletny system nawierzchni bezpodsypkowej. W przypadku występowania agresywnych czynników chemicznych możliwe jest zastosowanie odpowiednich powłok ochronnych, dobranych do rodzaju i intensywności oddziaływania. System może być stosowany z profilami szyn odpowiednimi dla infrastruktury metra, zapewniając trwałe i szczelne rozwiązanie dla obiektów technicznych oraz zaplecza eksploatacyjnego.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
+        },
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ],
+        "images": {
+          "main_image": "/products/metro/tines-srt.png",
+          "related_images": [
+            "",
+            "",
+            ""
+          ]
+        }
+      },
+      {
+        "id": "metro-w14",
+        "title": {
+          "pl": "System przytwierdzenia typu TINES W14",
+          "en": "",
+          "de": "",
+          "ru": "",
+          "uk": ""
+        },
+        "desc": {
+          "brief":{
+            "pl": "<p>System przytwierdzenia typu TINES<sup>®</sup> W14 stosuje się do przytwierdzania szyn typu 49E1 i 60E1 w systemach nawierzchni bezpodsypkowej produkcji TINES: system TINES<sup>®</sup> EBS, w prefabrykowanych płytach torowych TINES<sup>®</sup> LC-L W14, w systemie szczelnej nawierzchni TINES<sup>®</sup>, w podporach blokowych systemu TINES<sup>®</sup> BST, w innych systemach nawierzchni bezpodsypkowej produkcji TINES<sup>®</sup>.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System przytwierdzenia typu TINES<sup>®</sup> W14 przeznaczony jest do sprężystego przytwierdzania szyn typu 49E1 i 60E1 w bezpodsypkowych konstrukcjach nawierzchni torowych. Rozwiązanie zapewnia stabilne mocowanie szyny przy jednoczesnym zachowaniu wymaganej sprężystości układu, umożliwiając jego zastosowanie w różnych typach konstrukcji torowych produkcji TINES. System może być stosowany zarówno w nowych nawierzchniach, jak i podczas modernizacji istniejących odcinków torów.</p><p>TINES<sup>®</sup> W14 znajduje zastosowanie między innymi w systemie TINES<sup>®</sup> EBS, prefabrykowanych płytach torowych TINES<sup>®</sup> LC-L W14, systemie szczelnej nawierzchni TINES<sup>®</sup> oraz podporach blokowych systemu TINES<sup>®</sup> BST. Może być również wykorzystywany w innych bezpodsypkowych systemach nawierzchni torowych produkcji TINES.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
+        },
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ],
+        "images": {
+          "main_image": "/products/metro/tines-ers.png",
+          "related_images": [
+            "",
+            "",
+            ""
+          ]
+        }
+      },
+      {
         "id": "metro-ers",
         "title": {
           "pl": "System przytwierdzenia typu TINES<sup>®</sup> ERS",
@@ -584,12 +806,21 @@
           "ru": "Система скрепления типа TINES<sup>®</sup> ERS",
           "uk": "Система скріплення типу TINES<sup>®</sup> ERS"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 6 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
-          "en": "This is a detailed description of offer number 6 in the metro systems category. Innovative damping materials effectively reduce vibrations and noise in underground infrastructure.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 6 in der Kategorie U-Bahn-Systeme. Innovative Dämpfungsmaterialien reduzieren Schwingungen und Lärm im unterirdischen Bereich effektiv.",
-          "ru": "Это подробное описание предложения №6 в категории систем метро. Инновационные демпфирующие материалы эффективно снижают вибрацию и шум в подземной инфраструктуре.",
-          "uk": "Це детальний опис пропозиції №6 у категорії систем метро. Інноваційні демпферні матеріали ефективно знижують вібрацію та шум у підземній інфраструктурі."
+        "desc": {
+          "brief":{
+            "pl": "<p>System przytwierdzeń typu TINES<sup>®</sup> ERS przeznaczony jest do stosowania w bezpodsypkowych konstrukcjach nawierzchni szynowych. Kanały szynowe mogą zostać ukształtowane w betonowej płycie torowej „wylewanej na mokro”, stanowić część prefabrykatu torowego TINES<sup>®</sup>, bądź zostać wykonane jako prefabrykowane elementy stalowe. System znajduje zastosowanie do przytwierdzenia wszystkich szyn Vignole'a, m.in. o profilach 60E1 i 49E1, szyn specjalnych oraz węzłach rozjazdowych.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System przytwierdzenia szyny w otulinie TINES<sup>®</sup> ERS znajduje zastosowanie w bezpodsypkowych konstrukcjach torów metra, zarówno na odcinkach liniowych, jak i w obrębie stacji, tuneli oraz infrastruktury technicznej i utrzymaniowej. Ciągłe, sprężyste podparcie szyny w elastomerowej otulinie pozwala na ograniczenie przenoszenia drgań i hałasu na konstrukcję obiektu, co ma szczególne znaczenie w przypadku infrastruktury prowadzonej w zwartej zabudowie oraz w tunelach.</p><p>Niewielka wysokość konstrukcyjna systemu ułatwia jego zastosowanie w obiektach o ograniczonej przestrzeni oraz podczas modernizacji istniejącej infrastruktury. TINES<sup>®</sup> ERS może być stosowany z szynami Vignole’a, w tym profilami 60E1 i 49E1, a także z szynami specjalnymi. Kanał szynowy może być wykonany bezpośrednio w konstrukcji betonowej, w prefabrykacie lub jako element stalowy, co umożliwia dostosowanie systemu do różnych technologii budowy toru.</p><p>Rozwiązanie może również wspierać rozwój infrastruktury o charakterze dual-use, projektowanej z uwzględnieniem możliwości wykorzystania torów nie tylko do standardowej eksploatacji metra, lecz także do przejazdu pojazdów technicznych, specjalnych lub innych pojazdów szynowych, zgodnie z wymaganiami danego operatora i przyjętymi parametrami infrastruktury. TINES<sup>®</sup> ERS łączy w tym zastosowaniu trwałe i ciągłe przytwierdzenie szyny z możliwością ograniczenia oddziaływań dynamicznych oraz elastycznego dostosowania konstrukcji toru do funkcji obiektu.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "crossCategories": [
           "kolej",
@@ -614,12 +845,21 @@
           "ru": "Сборные путевые плиты TINES<sup>®</sup>",
           "uk": "Збірні колійні плити TINES<sup>®</sup>"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 7 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
-          "en": "This is a detailed description of offer number 7 in the metro systems category. Innovative damping materials effectively reduce vibrations and noise in underground infrastructure.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 7 in der Kategorie U-Bahn-Systeme. Innovative Dämpfungsmaterialien reduzieren Schwingungen und Lärm im unterirdischen Bereich effektiv.",
-          "ru": "Это подробное описание предложения №7 в категории систем метро. Инновационные демпфирующие материалы эффективно снижают вибрацию и шум в подземной инфраструктуре.",
-          "uk": "Це детальний опис пропозиції №7 у категорії систем метро. Інноваційні демпферні матеріали ефективно знижують вібрацію та шум у підземній інфраструктурі."
+        "desc": {
+          "brief":{
+            "pl": "<p>Wszystkie rodzaje i odmiany prefabrykowanych płyt torowych TINES<sup>®</sup> charakteryzują się cechą wskazującą na integrację konstrukcyjną nawierzchni torowej i podbudowy, co umożliwia uzyskanie bardziej stabilnej, trwałej i odpornej na obciążenia konstrukcji torowej.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>Prefabrykowane płyty torowe TINES<sup>®</sup> znajdują zastosowanie w bezpodsypkowej infrastrukturze metra, zarówno na odcinkach liniowych, jak i w tunelach, na stacjach oraz w obiektach technicznych i zapleczu utrzymaniowym. Prefabrykowana konstrukcja pozwala na uzyskanie powtarzalnych parametrów toru oraz ograniczenie zakresu robót prowadzonych bezpośrednio w obiekcie, co ma szczególne znaczenie w warunkach ograniczonej przestrzeni budowy.</p><p>Płyty TINES<sup>®</sup> wykonane są z betonu klasy co najmniej C35/45 i mogą być wyposażone w różne rozwiązania zbrojenia oraz systemy przytwierdzenia szyn, odpowiednio do wymagań projektowych. Integracja nawierzchni torowej i podbudowy w jednym prefabrykowanym elemencie pozwala na elastyczne kształtowanie konstrukcji oraz dostosowanie jej do geometrii tuneli, stacji i innych obiektów metra.</p><p>W miejscach wymagających ograniczenia oddziaływań dynamicznych możliwe jest zastosowanie dodatkowej warstwy wibroizolacyjnej, w tym mat podtorowych, również jako elementu zintegrowanego z prefabrykowaną płytą. Rozwiązanie pozwala na ograniczenie przenoszenia drgań z toru na konstrukcję obiektu i jego otoczenie.</p><p>Prefabrykowane płyty TINES<sup>®</sup> mogą również znaleźć zastosowanie w infrastrukturze o charakterze dual-use, której konstrukcja i parametry umożliwiają, obok standardowej eksploatacji metra, wykorzystanie torów przez pojazdy techniczne lub specjalne, zgodnie z wymaganiami operatora i założeniami projektowymi. Elastyczność prefabrykacji umożliwia dostosowanie rozwiązania do indywidualnych wymagań infrastruktury metra, przy zachowaniu trwałości i niezawodności konstrukcji toru.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "crossCategories": [
           "kolej",
@@ -645,12 +885,21 @@
           "ru": "Виброизоляционные маты TINES<sup>®</sup>",
           "uk": "Віброізоляційні мати TINES<sup>®</sup>"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 8 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
-          "en": "This is a detailed description of offer number 8 in the metro systems category. Innovative damping materials effectively reduce vibrations and noise in underground infrastructure.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 8 in der Kategorie U-Bahn-Systeme. Innovative Dämpfungsmaterialien reduzieren Schwingungen und Lärm im unterirdischen Bereich effektiv.",
-          "ru": "Это подробное описание предложения №8 в категории систем метро. Инновационные демпфирующие материалы эффективно снижают вибрацию и шум в подземной инфраструктуре.",
-          "uk": "Це детальний опис пропозиції №8 у категорії систем метро. Інноваційні демпферні матеріали ефективно знижують вібрацію та шум у підземній інфраструктурі."
+        "desc": {
+          "brief":{
+            "pl": "<p>Maty wibroizolacyjne TINES<sup>®</sup> ograniczają przenoszenie drgań i hałasu z torowiska do otoczenia. Stosowane są jako warstwa izolacyjna konstrukcji torowej, poprawiając komfort mieszkańców i użytkowników obiektów zlokalizowanych w otoczeniu tras kolejowych. Dzięki odpowiednio dobranym właściwościom materiałowym zapewniają skuteczną ochronę budynków i infrastruktury przed oddziaływaniami dynamicznymi.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>Maty wibroizolacyjne TINES<sup>®</sup> znajdują zastosowanie w infrastrukturze metra, szczególnie w inwestycjach tunelowych, gdzie istotne jest ograniczenie przenoszenia drgań z toru na konstrukcję tunelu, grunt i otaczające budynki. Stanowią warstwę izolacyjną konstrukcji torowej, ograniczającą oddziaływania dynamiczne generowane przez przejeżdżający tabor.</p><p>Maty TINES<sup>®</sup> mogą być stosowane zarówno w konstrukcjach podsypkowych, jak i bezpodsypkowych. W konstrukcjach podsypkowych układane są pod warstwą tłucznia, natomiast w konstrukcjach bezpodsypkowych mogą stanowić warstwę pomiędzy płytą torową a konstrukcją tunelu lub podłożem. Umożliwia to dostosowanie rozwiązania do technologii wykonania toru i warunków konkretnej inwestycji.</p><p>Szczególne znaczenie maty mają na odcinkach tunelowych przebiegających pod gęsto zabudowanymi obszarami, w pobliżu budynków mieszkalnych, obiektów użyteczności publicznej oraz infrastruktury wrażliwej na drgania. Dobór parametrów wibroizolacyjnych pozwala dostosować poziom izolacji do konstrukcji toru, charakterystyki tunelu oraz wymagań inwestycji.</p><p>Maty TINES<sup>®</sup> stanowią element kompleksowej ochrony wibroakustycznej infrastruktury metra.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "crossCategories": [
           "kolej",
@@ -676,12 +925,21 @@
           "ru": "Полимерные эластомеры TINES<sup>®</sup> Polyrail",
           "uk": "Полімерні еластомери TINES<sup>®</sup> Polyrail"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 9 w kategorii systemów metra. Innowacyjne materiały tłumiące skutecznie redukują drgania oraz hałas w infrastrukturze podziemnej.",
-          "en": "This is a detailed description of offer number 9 in the metro systems category. Innovative damping materials effectively reduce vibrations and noise in underground infrastructure.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 9 in der Kategorie U-Bahn-Systeme. Innovative Dämpfungsmaterialien reduzieren Schwingungen und Lärm im unterirdischen Bereich effektiv.",
-          "ru": "Это подробное описание предложения №9 в категории систем метро. Инновационные демпфирующие материалы эффективно снижают вибрацию и шум в подземной инфраструктуре.",
-          "uk": "Це детальний опис пропозиції №9 у категорії систем метро. Інноваційні демпферні матеріали ефективно знижують вібрацію та шум у підземній інфраструктурі."
+        "desc": {
+          "brief":{
+            "pl": "<p>Zestaw elastomerów polimerowych TINES<sup>®</sup> Polyrail umożliwia budowę torów metra z zapewnieniem sprężystego podparcia i mocowania szyn, które ogranicza drgania oraz poprawia trwałość układu torowego. Materiały pełnią także funkcję izolacji elektrycznej szyny, umożliwiają kotwienie elementów torowych, wykonywania szczelin dylatacyjnych oraz naprawy ubytków w konstrukcjach torowych.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>Zestaw wyrobów TINES<sup>®</sup> Polyrail znajduje zastosowanie w budowie i modernizacji infrastruktury torowej metra, szczególnie w konstrukcjach bezpodsypkowych, gdzie istotne znaczenie ma sprężyste podparcie i mocowanie szyn oraz ograniczenie przenoszenia drgań na konstrukcję tunelu i otoczenie. Elastomery polimerowe zapewniają odpowiednią podatność układu szyna–podłoże, wspierając trwałość nawierzchni torowej oraz jej prawidłową pracę przy dużej częstotliwości przejazdów pojazdów szynowych.</p><p>Wyroby TINES<sup>®</sup> Polyrail mogą być stosowane do wykonywania ciągłego i punktowego mocowania oraz podparcia szyn, w tym podlewów pod stopką szyny, a także do kotwienia elementów torowych w podłożu betonowym. Materiały pełnią również funkcję izolacji elektrycznej szyny, a dzięki właściwościom sprężystym mogą przyczyniać się do ograniczenia przenoszenia drgań i hałasu strukturalnego. Zestaw może być wykorzystywany także do uszczelniania styków elementów torowych, mocowania profili przyszynowych i mat wibroizolacyjnych, wykonywania szczelin dylatacyjnych oraz lokalnych napraw i reprofilacji podłoży. Rozwiązania TINES<sup>®</sup> Polyrail sprawdzają się zarówno przy budowie nowych odcinków metra, jak i podczas modernizacji istniejącej infrastruktury torowej.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "crossCategories": [
           "kolej",
@@ -718,12 +976,21 @@
           "ru": "Система интегрированного трамвайно-дорожного покрытия TINES<sup>®</sup> TRAM",
           "uk": "Система інтегрованого трамвайно-дорожнього покриття TINES<sup>®</sup> TRAM"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 1 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
-          "en": "This is a detailed description of offer number 1 for urban tram lines. Noise attenuation system provides protection against noise and reduces track wear.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 1 für städtische Straßenbahnlinien. Das Schalldämpfungssystem bietet Schutz vor Lärm und reduziert den Verschleiß der Gleisinfrastruktur.",
-          "ru": "Это подробное описание предложения №1 для городских трамвайных линий. Шумоглушащая система обеспечивает защиту от шума и снижает износ путевой инфраструктуры.",
-          "uk": "Це детальний опис пропозиції №1 для міських трамвайних ліній. Шумоглушача система забезпечує захист від шуму та зменшує знос колійної інфраструктури."
+        "desc": {
+          "brief":{
+            "pl": "<p>System zintegrowanej nawierzchni tramwajowo-drogowej TINES<sup>®</sup> TRAM to system opracowany z myślą o nowoczesnej infrastrukturze miejskiej, gdzie kluczowe znaczenie mają trwałość, bezpieczeństwo oraz komfort użytkowania. Technologia bezpodsypkowa oparta na prefabrykowanych płytach torowych TINES<sup>®</sup> TRAM LC-L oraz sprężystym systemie przytwierdzenia szyny TINES<sup>®</sup> TRAM ERS.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System zintegrowanej nawierzchni tramwajowo-drogowej TINES<sup>®</sup> TRAM został opracowany z myślą o nowoczesnej infrastrukturze miejskiej, w której torowisko tramwajowe współdzieli przestrzeń z ruchem samochodowym i pieszym. Bezpodsypkowa konstrukcja oparta na prefabrykowanych płytach żelbetowych TINES<sup>®</sup> TRAM LC-L oraz sprężystym systemie przytwierdzenia szyny TINES<sup>®</sup> TRAM ERS zapewnia stabilną i trwałą nawierzchnię, przystosowaną do intensywnej eksploatacji oraz oddziaływań dynamicznych.</p><p>Ciągłe, elastyczne podparcie szyny ogranicza przenoszenie drgań i hałasu do otoczenia, co ma szczególne znaczenie w gęsto zabudowanych obszarach miejskich. Szczelna zabudowa szyny oraz rozwiązania w zakresie odwodnienia chronią konstrukcję przed wodą i zanieczyszczeniami, wspierając jej trwałość eksploatacyjną. System zapewnia również izolację elektryczną szyny, ograniczając ryzyko oddziaływania prądów błądzących na infrastrukturę znajdującą się w sąsiedztwie torowiska.</p><p>TINES<sup>®</sup> TRAM znajduje zastosowanie w torowiskach wspólnych z jezdnią, przejazdach tramwajowo-drogowych, przejściach dla pieszych oraz innych przestrzeniach miejskich wymagających trwałego i estetycznego połączenia funkcji torowej i drogowej. Prefabrykacja elementów pozwala na sprawny montaż i ograniczenie utrudnień komunikacyjnych podczas realizacji inwestycji. System może być również dostosowany do geometrii toru i indywidualnych wymagań projektowych.                                                                                  System zintegrowanej nawierzchni tramwajowo-drogowej TINES<sup>®</sup> TRAM otrzymał wyróżnienie w konkursie im. prof. Jana Podoskiego podczas Międzynarodowych Targów Kolejowych TRAKO 2023, potwierdzając uznanie rozwiązania w obszarze nowoczesnej infrastruktury szynowej.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "images": {
           "main_image": "/products/tramwaj/zint-nawierzchnia-tines-tram.png",
@@ -743,15 +1010,92 @@
           "ru": "Система интегрированного трамвайно-дорожного покрытия TINES<sup>®</sup> TRAM GTP",
           "uk": "Система інтегрованого трамвайно-дорожнього покриття TINES<sup>®</sup> TRAM GTP"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 2 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
-          "en": "This is a detailed description of offer number 2 for urban tram lines. Noise attenuation system provides protection against noise and reduces track wear.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 2 für städtische Straßenbahnlinien. Das Schalldämpfungssystem bietet Schutz vor Lärm und reduziert den Verschleiß der Gleisinfrastruktur.",
-          "ru": "Это подробное описание предложения №2 для городских трамвайных линий. Шумоглушащая система обеспечивает защиту от шума и снижает износ путевой инфраструктуры.",
-          "uk": "Це детальний опис пропозиції №2 для міських трамвайних ліній. Шумоглушача система забезпечує захист від шуму та зменшує знос колійної інфраструктури."
+        "desc": {
+          "brief":{
+            "pl": "<p>System zintegrowanej nawierzchni tramwajowo-drogowej TINES<sup>®</sup> TRAM GTP to system opracowany z myślą o nowoczesnej infrastrukturze miejskiej, gdzie kluczowe znaczenie mają trwałość, bezpieczeństwo oraz komfort użytkowania. Technologia bezpodsypkowa oparta na prefabrykowanych płytach torowych TINES<sup>®</sup> TRAM LC-L oraz sprężystym systemie przytwierdzenia szyny TINES<sup>®</sup> W14.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System zintegrowanej nawierzchni tramwajowo-drogowej TINES<sup>®</sup> TRAM GTP został opracowany z myślą o nowoczesnej infrastrukturze miejskiej, w której torowisko tramwajowe jest zintegrowane z przestrzenią przeznaczoną dla ruchu drogowego i pieszego. Bezpodsypkowa konstrukcja oparta na prefabrykowanych płytach torowych TINES<sup>®</sup> TRAM LC-L oraz sprężystym systemie przytwierdzenia szyny TINES<sup>®</sup> W14 zapewnia stabilne i trwałe rozwiązanie nawierzchni torowej, przystosowane do intensywnej eksploatacji.</p><p>Zastosowanie sprężystego przytwierdzenia szyn umożliwia odpowiednią współpracę szyny z konstrukcją torowiska oraz ograniczenie oddziaływań dynamicznych i przenoszenia drgań. Rozwiązanie wspiera również trwałość nawierzchni i zapewnia właściwe przenoszenie obciążeń generowanych przez ruch tramwajowy. Prefabrykowane płyty torowe umożliwiają sprawną realizację konstrukcji oraz integrację torowiska z nawierzchnią drogową.</p><p>TINES<sup>®</sup> TRAM GTP może być stosowany w torowiskach wspólnych z jezdnią, na przejazdach tramwajowo-drogowych, przejściach dla pieszych oraz w innych przestrzeniach miejskich, w których wymagane jest połączenie funkcji torowej i drogowej. System stanowi rozwiązanie umożliwiające wykonanie trwałej, funkcjonalnej i estetycznej nawierzchni, dostosowanej do specyfiki miejskiej infrastruktury transportowej.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "images": {
           "main_image": "/products/tramwaj/zint-nawierzchnia-tines-tram-gtp.png",
+          "related_images": [
+            "",
+            "",
+            ""
+          ]
+        }
+      },
+      {
+        "id": "tramwaj-rozjazdy",
+        "title": {
+          "pl": "System nawierzchni bezpodsypkowej dla rozjazdów tramwajowych TINES TRAM",
+          "en": "",
+          "de": "",
+          "ru": "",
+          "uk": ""
+        },
+        "desc": {
+          "brief":{
+            "pl": "<p>Rozjazdy tramwajowe w konstrukcji nawierzchni bezpodsypkowej to trwałe i stabilne rozwiązanie dla nowoczesnej infrastruktury szynowej. Zastosowanie konstrukcji betonowej zapewnia precyzyjne położenie elementów rozjazdu, wysoką odporność na obciążenia dynamiczne oraz ograniczenie drgań i hałasu. Nawierzchnia bezpodsypkowa umożliwia sprawną eksploatację i ułatwia utrzymanie infrastruktury.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System nawierzchni bezpodsypkowej dla rozjazdów tramwajowych TINES<sup>®</sup> TRAM to rozwiązanie przeznaczone do wykonywania trwałych i stabilnych konstrukcji w miejscach szczególnie istotnych dla prawidłowego funkcjonowania sieci tramwajowej. Konstrukcja betonowa zapewnia precyzyjne i stabilne osadzenie elementów rozjazdu, umożliwiając ich prawidłową współpracę z nawierzchnią torową oraz przenoszenie obciążeń generowanych przez intensywny ruch tramwajowy.</p><p>Rozwiązanie może być stosowane w ramach zintegrowanej nawierzchni tramwajowo-drogowej TINES<sup>®</sup> TRAM, dzięki czemu rozjazd może zostać wkomponowany w przestrzeń miejską współdzieloną przez torowisko i ruch drogowy. Bezpodsypkowa konstrukcja pozwala na uzyskanie trwałej nawierzchni oraz ograniczenie zakresu prac związanych z bieżącym utrzymaniem torowiska. Zastosowanie odpowiednio dobranych rozwiązań sprężystego podparcia i mocowania szyn wspiera ograniczenie przenoszenia drgań oraz oddziaływań dynamicznych na konstrukcję i otoczenie.</p><p>TINES<sup>®</sup> TRAM umożliwia również dostosowanie konstrukcji do specyfiki istniejącej infrastruktury miejskiej, w tym ograniczonej przestrzeni oraz licznych sieci i urządzeń podziemnych. System dla rozjazdów tramwajowych stanowi rozwiązanie łączące trwałość konstrukcji bezpodsypkowej z wymaganiami nowoczesnego transportu tramwajowego, zapewniając stabilne warunki eksploatacji i ułatwiając utrzymanie infrastruktury.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
+        },
+        "images": {
+          "main_image": "/products/tramwaj/na-razie-nie-ma.png",
+          "related_images": [
+            "",
+            "",
+            ""
+          ]
+        }
+      },
+      {
+        "id": "tramwaj-tram-ebs",
+        "title": {
+          "pl": "System nawierzchni bezpodsypkowej TINES TRAM EBS",
+          "en": "",
+          "de": "",
+          "ru": "",
+          "uk": ""
+        },
+        "desc": {
+          "brief":{
+            "pl": "<p>System nawierzchni bezpodsypkowej TINES<sup>®</sup> TRAM EBS jest rozwiązaniem z betonową płytą nawierzchni torowej wylewaną na miejscu budowy. Dwustopniowe sprężyste mocowanie i sprężyste podparcie szyny zapewnia doskonałe przenoszenie obciążeń od pojazdów szynowych i tłumienie drgań wywołanych ich przejazdem. Montowany jest metodą „od góry do dołu” przy użyciu bramek regulacyjnych.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System nawierzchni bezpodsypkowej TINES<sup>®</sup> TRAM EBS został opracowany z myślą o torowiskach tramwajowych, w których szczególne znaczenie ma ograniczenie przenoszenia drgań i hałasu do otoczenia. Rozwiązanie znajduje zastosowanie przede wszystkim w wymagających warunkach miejskich, w tym w sąsiedztwie budynków mieszkalnych, obiektów użyteczności publicznej oraz infrastruktury szczególnie wrażliwej na oddziaływania dynamiczne. Skuteczność rozwiązania w zakresie wibroizolacji została potwierdzona zastosowaniami referencyjnymi na kolei i w metrze, a technologia jest obecnie wykorzystywana również w środowisku miejskim.</p><p>TINES<sup>®</sup> TRAM EBS wykorzystuje betonową płytę nawierzchni torowej wykonywaną bezpośrednio na miejscu budowy. Zastosowane dwustopniowe sprężyste mocowanie i sprężyste podparcie szyny zapewniają odpowiednią współpracę szyny z konstrukcją torowiska, właściwe przenoszenie obciążeń od pojazdów szynowych oraz skuteczne tłumienie drgań generowanych przez ich przejazd. Elastyczny układ podparcia ogranicza przekazywanie oddziaływań dynamicznych na podłoże i sąsiadującą zabudowę.</p><p>System montowany jest metodą „od góry do dołu”, z wykorzystaniem bramek regulacyjnych, co pozwala na precyzyjne ustawienie geometrii toru przed wykonaniem płyty betonowej. Technologia TINES<sup>®</sup> TRAM EBS stanowi rozwiązanie dla miejskich torowisk tramwajowych, w których wymagane jest połączenie trwałości konstrukcji z wysokim poziomem ochrony wibroakustycznej.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
+        },
+        "images": {
+          "main_image": "/products/tramwaj/na-razie-nie-ma.png",
           "related_images": [
             "",
             "",
@@ -768,12 +1112,21 @@
           "ru": "Система блочных опор TINES<sup>®</sup> TRAM BST",
           "uk": "Система блочних опор TINES<sup>®</sup> TRAM BST"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 3 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
-          "en": "This is a detailed description of offer number 3 for urban tram lines. Noise attenuation system provides protection against noise and reduces track wear.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 3 für städtische Straßenbahnlinien. Das Schalldämpfungssystem bietet Schutz vor Lärm und reduziert den Verschleiß der Gleisinfrastruktur.",
-          "ru": "Это подробное описание предложения №3 для городских трамвайных линий. Шумоглушащая система обеспечивает защиту от шума и снижает износ путевой инфраструктуры.",
-          "uk": "Це детальний опис пропозиції №3 для міських трамвайних ліній. Шумоглушача система забезпечує захист від шуму та зменшує знос колійної інфраструктури."
+        "desc": {
+          "brief":{
+            "pl": "<p>System nawierzchni bezpodsypkowej TINES TRAM BST to rozwiązanie, którego podstawowy element stanowi system podpór blokowych TINES TRAM BST. Jest to technologia ciągłego mocowania szyn w bezpodsypkowych konstrukcjach nawierzchni szynowych opartych na zastosowaniu profili przyszynowych wykonanych z granulatu gumowego oraz profilu podszynowego wykonanego z granulatu gumowego lub z elastomeru na bazie poliuretanu. System ten może być stosowany zarówno na torowiskach wspólnych z jezdnią jak i wydzielonych z jezdni. Montowany jest metodą „od góry do dołu” przy użyciu bramek regulacyjnych.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System nawierzchni bezpodsypkowej TINES<sup>®</sup> TRAM BST to rozwiązanie przeznaczone do wykonywania trwałych konstrukcji torowisk tramwajowych, zarówno na torowiskach wspólnych z jezdnią, jak i wydzielonych z jezdni. Podstawowym elementem systemu są pojedyncze podpory blokowe TINES<sup>®</sup> TRAM BST, które dzięki kompaktowej formie są łatwe w transporcie, składowaniu i montażu, co ułatwia prowadzenie prac w ograniczonej przestrzeni miejskiej.</p><p>System zapewnia ciągłe mocowanie i podparcie szyn w bezpodsypkowej konstrukcji nawierzchni. W rozwiązaniu wykorzystuje się profile przyszynowe wykonane z granulatu gumowego oraz profile podszynowe wykonane z granulatu gumowego lub elastomeru na bazie poliuretanu. Elastyczne elementy umożliwiają odpowiednią współpracę szyny z konstrukcją torowiska, ograniczając przenoszenie drgań i oddziaływań dynamicznych generowanych przez przejazd pojazdów tramwajowych.</p><p>Montaż systemu odbywa się metodą „od góry do dołu”, z wykorzystaniem bramek regulacyjnych, co pozwala na precyzyjne ustawienie geometrii toru przed wykonaniem pozostałych warstw konstrukcji. Modułowa budowa podpór ułatwia organizację i etapowanie robót, co ma szczególne znaczenie podczas realizacji inwestycji w istniejącej przestrzeni miejskiej.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "images": {
           "main_image": "/products/tramwaj/na-razie-nie-ma.png",
@@ -793,12 +1146,21 @@
           "ru": "Система герметичного покрытия пути TINES<sup>®</sup> TRAM SRT",
           "uk": "Система герметичного покриття колії TINES<sup>®</sup> TRAM SRT"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 4 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
-          "en": "This is a detailed description of offer number 4 for urban tram lines. Noise attenuation system provides protection against noise and reduces track wear.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 4 für städtische Straßenbahnlinien. Das Schalldämpfungssystem bietet Schutz vor Lärm und reduziert den Verschleiß der Gleisinfrastruktur.",
-          "ru": "Это подробное описание предложения №4 для городских трамвайных линий. Шумоглушащая система обеспечивает защиту от шума и снижает износ путевой инфраструктуры.",
-          "uk": "Це детальний опис пропозиції №4 для міських трамвайних ліній. Шумоглушача система забезпечує захист від шуму та зменшує знос колійної інфраструктури."
+        "desc": {
+          "brief":{
+            "pl": "<p>System szczelnej nawierzchni TINES<sup>®</sup> to system nawierzchni bezpodsypkowej, którego podstawę stanowią prefabrykowane płyty torowe TINES<sup>®</sup> SRT i system przytwierdzenia typu TINES<sup>®</sup> W14, K, bądź inny, o równoważnym przeznaczeniu i zakresie zastosowania.</p><p>Rozwiązanie systemowe zabezpiecza środkowisko przed substancjami stanowiącymi zagrożenie dla gruntów i wód powierzchniowych.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System szczelnej nawierzchni torowej TINES<sup>®</sup> SRT znajduje zastosowanie w infrastrukturze tramwajowej, w szczególności na terenie zajezdni, stacji techniczno-postojowych, hal naprawczych i utrzymaniowych oraz na stanowiskach mycia i obsługi taboru tramwajowego. Rozwiązanie umożliwia wykonanie trwałej, bezpodsypkowej i szczelnej nawierzchni torowej, dostosowanej do specyfiki procesów związanych z eksploatacją i utrzymaniem pojazdów.</p><p>Szczelna konstrukcja systemu ogranicza możliwość przenikania do podłoża wód technologicznych, środków stosowanych podczas mycia taboru, olejów oraz innych substancji mogących stanowić zagrożenie dla gruntu i wód powierzchniowych. Szczególne znaczenie ma to na stanowiskach mycia, napraw i bieżącego utrzymania, gdzie nawierzchnia jest narażona na działanie wody oraz środków chemicznych.</p><p>Prefabrykowane płyty torowe TINES<sup>®</sup> SRT mogą być stosowane z szynami Vignole’a, szynami rowkowymi oraz profilami specjalnymi, co pozwala na dostosowanie systemu do różnych konstrukcji torów tramwajowych. W przypadku występowania agresywnych czynników chemicznych możliwe jest zastosowanie odpowiednich powłok ochronnych oraz systemów uszczelniania szczelin, dobranych do rodzaju występujących substancji. System stanowi rozwiązanie dla technicznej infrastruktury tramwajowej wymagającej trwałej i szczelnej nawierzchni.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "images": {
           "main_image": "/products/tramwaj/tines-srt.png",
@@ -810,6 +1172,41 @@
         }
       },
       {
+        "id": "tramwaj-w14",
+        "title": {
+          "pl": "System przytwierdzenia typu TINES W14",
+          "en": "",
+          "de": "",
+          "ru": "",
+          "uk": ""
+        },
+        "desc": {
+          "brief":{
+            "pl": "<p>System przytwierdzenia typu TINES<sup>®</sup> W14 stosuje się do przytwierdzania szyn typu 49E1 i 60E1 w systemach nawierzchni bezpodsypkowej produkcji TINES: system TINES<sup>®</sup> TRAM EBS, w prefabrykowanych płytach torowych TINES<sup>®</sup> TRAM LC-L W14, w systemie szczelnej nawierzchni TINES<sup>®</sup> TRAM SRT, w podporach blokowych systemu TINES<sup>®</sup> TRAM BST, w innych systemach nawierzchni bezpodsypkowej produkcji TINES<sup>®</sup>.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System przytwierdzenia typu TINES<sup>®</sup> W14 przeznaczony jest do sprężystego przytwierdzania szyn typu 49E1 i 60E1 w bezpodsypkowych konstrukcjach nawierzchni torowych. Rozwiązanie zapewnia stabilne mocowanie szyny przy jednoczesnym zachowaniu wymaganej sprężystości układu, umożliwiając jego zastosowanie w różnych typach konstrukcji torowych produkcji TINES. System może być stosowany zarówno w nowych nawierzchniach, jak i podczas modernizacji istniejących odcinków torów.</p><p>TINES<sup>®</sup> W14 znajduje zastosowanie między innymi w systemie TINES<sup>®</sup> TRAM EBS, prefabrykowanych płytach torowych TINES<sup>®</sup> TRAM LC-L W14, systemie szczelnej nawierzchni TINES<sup>®</sup> oraz podporach blokowych systemu TINES<sup>®</sup> TRAM BST. Może być również wykorzystywany w innych bezpodsypkowych systemach nawierzchni torowych produkcji TINES.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
+        },
+        "images": {
+          "main_image": "/products/tramwaj/tines-w14.png",
+          "related_images": [
+            "",
+            "",
+            ""
+          ]
+        }
+      },
+
+      {
         "id": "tramwaj-polyrail",
         "title": {
           "pl": "Elastomery polimerowe TINES<sup>®</sup> Polyrail",
@@ -818,12 +1215,21 @@
           "ru": "Полимерные эластомеры TINES<sup>®</sup> Polyrail",
           "uk": "Полімерні еластомери TINES<sup>®</sup> Polyrail"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 5 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
-          "en": "This is a detailed description of offer number 5 for urban tram lines. Noise attenuation system provides protection against noise and reduces track wear.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 5 für städtische Straßenbahnlinien. Das Schalldämpfungssystem bietet Schutz vor Lärm und reduziert den Verschleiß der Gleisinfrastruktur.",
-          "ru": "Это подробное описание предложения №5 для городских трамвайных линий. Шумоглушащая система обеспечивает защиту от шума и снижает износ путевой инфраструктуры.",
-          "uk": "Це детальний опис пропозиції №5 для міських трамвайних ліній. Шумоглушача система забезпечує захист від шуму та зменшує знос колійної інфраструктури."
+        "desc": {
+          "brief":{
+            "pl": "<p>Zestaw elastomerów polimerowych TINES<sup>®</sup> Polyrail umożliwia budowę torów tramwaowych z zapewnieniem sprężystego podparcia i mocowania szyn, które ogranicza drgania oraz poprawia trwałość układu torowego. Materiały pełnią także funkcję izolacji elektrycznej szyny, umożliwiają kotwienie elementów torowych, wykonywania szczelin dylatacyjnych oraz naprawy ubytków w konstrukcjach torowych.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>Zestaw wyrobów TINES<sup>®</sup> Polyrail znajduje zastosowanie w budowie i modernizacji konstrukcji torowisk tramwajowych, szczególnie w rozwiązaniach bezpodsypkowych, gdzie istotne znaczenie ma sprężyste podparcie i mocowanie szyn oraz ograniczenie przenoszenia drgań i hałasu do otoczenia. Elastomery polimerowe zapewniają odpowiednią podatność układu szyna–podłoże, poprawiając warunki pracy konstrukcji torowej oraz wspierając jej trwałość przy intensywnej eksploatacji.</p><p>Wyroby TINES<sup>®</sup> Polyrail mogą być stosowane do wykonywania punktowego i ciągłego mocowania oraz podparcia szyn, w tym podlewów pod stopką szyny i podkładkami żebrowymi, a także do kotwienia elementów torowych w podłożu betonowym. Materiały zapewniają również izolację elektryczną szyny i mogą być wykorzystywane do uszczelniania styków elementów torowiska, mocowania profili przyszynowych oraz mat wibroizolacyjnych. Zestaw znajduje zastosowanie zarówno w torowiskach wydzielonych, jak i w zintegrowanych nawierzchniach torowo-drogowych, na przejazdach i przejściach dla pieszych. Może być również wykorzystywany podczas remontów, modernizacji oraz lokalnych napraw istniejących konstrukcji torowych.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "images": {
           "main_image": "/products/tramwaj/tines-polyrail.png",
@@ -843,12 +1249,21 @@
           "ru": "Сборные путевые плиты TINES<sup>®</sup>",
           "uk": "Збірні колійні плити TINES<sup>®</sup>"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 6 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
-          "en": "This is a detailed description of offer number 6 for urban tram lines. Noise attenuation system provides protection against noise and reduces track wear.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 6 für städtische Straßenbahnlinien. Das Schalldämpfungssystem bietet Schutz vor Lärm und reduziert den Verschleiß der Gleisinfrastruktur.",
-          "ru": "Это подробное описание предложения №6 для городских трамвайных линий. Шумоглушащая система обеспечивает защиту от шума и снижает износ путевой инфраструктуры.",
-          "uk": "Це детальний опис пропозиції №6 для міських трамвайних ліній. Шумоглушача система забезпечує захист від шуму та зменшує знос колійної інфраструктури."
+        "desc": {
+          "brief":{
+            "pl": "<p>Wszystkie rodzaje i odmiany prefabrykowanych płyt torowych TINES<sup>®</sup> TRAM charakteryzują się cechą wskazującą na integrację konstrukcyjną nawierzchni torowej i podbudowy, co umożliwia uzyskanie bardziej stabilnej, trwałej i odpornej na obciążenia konstrukcji torowej.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>Prefabrykowane płyty torowe TINES<sup>®</sup> znajdują zastosowanie w torowiskach tramwajowych, szczególnie w warunkach gęstej zabudowy miejskiej, gdzie konstrukcja toru musi uwzględniać istniejącą infrastrukturę podziemną oraz liczne instalacje i urządzenia miejskie. Bezpodsypkowa technologia prefabrykowana umożliwia sprawną realizację torowiska przy ograniczeniu zakresu robót prowadzonych bezpośrednio w pasie drogowym oraz ułatwia organizację prac w przestrzeni o ograniczonej dostępności.</p><p>Płyty TINES<sup>®</sup> tworzą stabilną konstrukcję torową i mogą być dostosowane do geometrii torowiska, układu drogowego oraz lokalnych warunków zabudowy. Zastosowanie prefabrykowanych elementów pozwala na precyzyjne kształtowanie przebiegu toru oraz integrację nawierzchni tramwajowej z otaczającą infrastrukturą miejską. Rozwiązanie może być stosowane zarówno na torowiskach wydzielonych, jak i w torowiskach zintegrowanych z jezdnią.</p><p>Istotną cechą systemu jest możliwość zastosowania różnych rozwiązań sprężystego podparcia i przytwierdzenia szyn, dostosowanych do wymagań konkretnego torowiska. W przypadku lokalizacji wymagających ograniczenia przenoszenia drgań konstrukcję można uzupełnić o odpowiednie rozwiązania wibroizolacyjne. Prefabrykacja zapewnia powtarzalność wykonania, ogranicza czas prowadzenia robót i ułatwia etapowanie inwestycji, co ma szczególne znaczenie podczas modernizacji torowisk tramwajowych w funkcjonującej tkance miejskiej, gdzie konieczna jest koordynacja prac z istniejącymi sieciami i urządzeniami infrastruktury.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "crossCategories": [
           "kolej",
@@ -874,12 +1289,21 @@
           "ru": "Виброизоляционные маты TINES<sup>®</sup>",
           "uk": "Віброізоляційні мати TINES<sup>®</sup>"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 7 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
-          "en": "This is a detailed description of offer number 7 for urban tram lines. Noise attenuation system provides protection against noise and reduces track wear.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 7 für städtische Straßenbahnlinien. Das Schalldämpfungssystem bietet Schutz vor Lärm und reduziert den Verschleiß der Gleisinfrastruktur.",
-          "ru": "Это подробное описание предложения №7 для городских трамвайных линий. Шумоглушащая система обеспечивает защиту от шума и снижает износ путевой инфраструктуры.",
-          "uk": "Це детальний опис пропозиції №7 для міських трамвайних ліній. Шумоглушача система забезпечує захист від шуму та зменшує знос колійної інфраструктури."
+        "desc": {
+          "brief":{
+            "pl": "<p>Maty wibroizolacyjne TINES<sup>®</sup> ograniczają przenoszenie drgań i hałasu z torowiska do otoczenia. Stosowane są jako warstwa izolacyjna konstrukcji torowej, poprawiając komfort mieszkańców i użytkowników obiektów zlokalizowanych w otoczeniu tras tramwajowych. Dzięki odpowiednio dobranym właściwościom materiałowym zapewniają skuteczną ochronę budynków i infrastruktury przed oddziaływaniami dynamicznymi.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>Maty wibroizolacyjne TINES<sup>®</sup> znajdują zastosowanie w infrastrukturze tramwajowej, szczególnie na odcinkach torowisk przebiegających przez gęsto zabudowane obszary miejskie, gdzie istotne jest ograniczenie przenoszenia drgań generowanych przez przejeżdżający tabor na podłoże, sąsiadujące budynki oraz infrastrukturę miejską. Stanowią warstwę izolacyjną konstrukcji torowej, ograniczającą oddziaływania dynamiczne i wspierającą ochronę wibroakustyczną otoczenia.</p><p>Maty TINES<sup>®</sup> mogą być stosowane zarówno w konstrukcjach podsypkowych, jak i bezpodsypkowych. W zależności od przyjętej technologii mogą być układane pod warstwą podsypki lub stanowić warstwę wibroizolacyjną pomiędzy konstrukcją torowiska a podłożem. Pozwala to na dostosowanie rozwiązania do rodzaju nawierzchni tramwajowej, warunków gruntowych oraz specyfiki prowadzenia torowiska w przestrzeni miejskiej.</p><p>Szczególne znaczenie zastosowanie mat ma na odcinkach przebiegających w bezpośrednim sąsiedztwie budynków mieszkalnych, obiektów użyteczności publicznej, infrastruktury technicznej oraz miejsc wymagających ograniczenia oddziaływań dynamicznych. Dobór odpowiednich parametrów wibroizolacyjnych pozwala dostosować poziom ochrony do konstrukcji torowiska, charakterystyki taboru oraz wymagań konkretnej inwestycji. Maty TINES<sup>®</sup> stanowią element kompleksowego rozwiązania ograniczającego drgania w infrastrukturze tramwajowej.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "crossCategories": [
           "kolej",
@@ -905,12 +1329,21 @@
           "ru": "Эластомерные профили TINES<sup>®</sup>",
           "uk": "Еластомерні профілі TINES<sup>®</sup>"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 8 dla miejskich linii tramwajowych. System wyciszający zapewnia ochronę przed hałasem oraz zmniejsza zużycie infrastruktury torowej.",
-          "en": "This is a detailed description of offer number 8 for urban tram lines. Noise attenuation system provides protection against noise and reduces track wear.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 8 für städtische Straßenbahnlinien. Das Schalldämpfungssystem bietet Schutz vor Lärm und reduziert den Verschleiß der Gleisinfrastruktur.",
-          "ru": "Это подробное описание предложения №8 для городских трамвайных линий. Шумоглушащая система обеспечивает защиту от шума и снижает износ путевой инфраструктуры.",
-          "uk": "Це детальний опис пропозиції №8 для міських трамвайних ліній. Шумоглушача система забезпечує захист від шуму та зменшує знос колійної інфраструктури."
+        "desc": {
+          "brief":{
+            "pl": "<p>Profile elastomerowe TINES<sup>®</sup> wytwarzane są z wysokogatunkowego granulatu gumowego trwale zespolonego za pomocą specjalistycznego spoiwa poliuretanowego. Zastosowanie odpowiednio dobranej mieszanki materiałowej zapewnia optymalne właściwości sprężyste, wysoką wytrzymałość mechaniczną oraz stabilność parametrów użytkowych przez cały okres eksploatacji nawierzchni szynowej. Materiał elastomerowy wykazuje wysoką odporność na długotrwałe obciążenia dynamiczne i cykliczne, charakterystyczne dla infrastruktury transportu szynowego.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>Profile elastomerowe TINES<sup>®</sup> znajdują zastosowanie w konstrukcjach torowisk tramwajowych jako elementy sprężyste przeznaczone do podparcia, izolacji i ochrony szyn oraz pozostałych elementów nawierzchni torowej. Wykonywane są z wysokogatunkowego granulatu gumowego trwale zespolonego za pomocą specjalistycznego spoiwa poliuretanowego. Odpowiednio dobrana struktura materiału zapewnia właściwości sprężyste, wysoką wytrzymałość mechaniczną oraz stabilność parametrów podczas długotrwałej eksploatacji.</p><p>W infrastrukturze tramwajowej profile TINES<sup>®</sup> mogą być stosowane między innymi jako profile przyszynowe i podszynowe, elementy systemów ciągłego mocowania szyn oraz rozwiązania ograniczające przenoszenie drgań pomiędzy szyną a konstrukcją torowiska. Ich elastyczność umożliwia odpowiednią współpracę szyny z nawierzchnią, wpływając na sposób przenoszenia obciążeń dynamicznych generowanych przez przejeżdżający tabor.</p><p>Profile mogą być wykorzystywane zarówno w torowiskach wydzielonych, jak i w zintegrowanych nawierzchniach tramwajowo-drogowych, gdzie szczególnego znaczenia nabiera ograniczenie oddziaływań dynamicznych na otoczenie oraz trwałość konstrukcji. Odporność materiału na cykliczne i długotrwałe obciążenia pozwala stosować profile TINES<sup>®</sup> w warunkach intensywnej eksploatacji. Stanowią one element kompleksowych rozwiązań sprężystego mocowania i wibroizolacji torowisk tramwajowych.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "images": {
           "main_image": "/products/tramwaj/tines-railfiller.png",
@@ -942,12 +1375,21 @@
           "ru": "Система интегрированного железнодорожно-дорожного покрытия TINES<sup>®</sup>",
           "uk": "Система інтегрованого залізнично-дорожнього покриття TINES<sup>®</sup>"
         },
-        "description": {
-          "pl": "PRZEMYSL To jest szczegółowy opis oferty numer 1 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
-          "en": "INDUSTRIAL This is a detailed description of offer number 1 dedicated to industrial facilities. This technology enables effective damping of dynamic loads and extends machine lifespan.",
-          "de": "INDUSTRIE Dies ist eine detaillierte Beschreibung des Angebots Nr. 1 für Industrieanlagen. Diese Technologie ermöglicht eine effektive Dämpfung dynamischer Lasten und verlängert die Lebensdauer von Maschinen.",
-          "ru": "ПРОМЫШЛЕННОСТЬ Это подробное описание предложения №1, предназначенного для промышленных объектов. Эта технология позволяет эффективно гасить динамические нагрузки и продлевает срок службы машин.",
-          "uk": "ПРОМИСЛОВІСТЬ Це детальний опис пропозиції №1, призначеної для промислових об'єктів. Ця технологія дозволяє ефективно гасити динамічні навантаження та продовжує термін служби машин."
+        "desc": {
+          "brief":{
+            "pl": "<p>System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup> to bezpodsypkowa konstrukcja nawierzchni kolejowo-drogowej. Podstawowym elementem jest prefabrykowana płyta torowa TINES<sup>®</sup> LC-L. W płycie są ukształtowane kanały szynowe, w których szyny przytwierdzane są za pomocą systemu przytwierdzenia typu TINES<sup>®</sup> ERS.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System zintegrowanej nawierzchni kolejowo-drogowej TINES znajduje szerokie zastosowanie w infrastrukturze kolei przemysłowej, szczególnie w miejscach, gdzie tor współdzieli przestrzeń z ruchem pojazdów drogowych, transportem wewnętrznym i ruchem pieszym. Rozwiązanie sprawdza się na terminalach przeładunkowych i intermodalnych, bocznicach kolejowych, placach manewrowych i składowych, a także w halach naprawczych, przeglądowych i utrzymaniowych taboru.</p><p>Bezpodsypkowa konstrukcja pozwala efektywnie wykorzystać przestrzeń wokół toru, zapewniając równą i stabilną nawierzchnię umożliwiającą swobodny przejazd samochodów ciężarowych, wózków i pojazdów technologicznych. Dzięki temu torowisko może być integralną częścią organizacji procesów logistycznych i technologicznych zakładu.</p><p>System może być również stosowany w myjniach taboru, halach produkcyjnych, zakładach przemysłowych, centrach logistycznych, magazynach oraz na bocznicach obsługujących zakłady produkcyjne i energetyczne. Prefabrykacja umożliwia sprawną realizację inwestycji i ograniczenie czasu wyłączenia infrastruktury z eksploatacji.</p><p>Sprężyste mocowanie szyn TINES<sup>®</sup> ERS ogranicza drgania i hałas, a trwała konstrukcja oraz ograniczone wymagania utrzymaniowe pozwalają na intensywną, wieloletnią eksploatację infrastruktury przemysłowej.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "sketchfab": {
           "defaultId": "c0dac337daad4dabbe6ee1ff943f83a9",
@@ -980,12 +1422,21 @@
           "ru": "Система интегрированного железнодорожно-дорожного покрытия TINES<sup>®</sup> GTP",
           "uk": "Система інтегрованого залізнично-дорожнього покриття TINES<sup>®</sup> GTP"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 2 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
-          "en": "This is a detailed description of offer number 2 dedicated to industrial facilities. This technology enables effective damping of dynamic loads and extends machine lifespan.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 2 für Industrieanlagen. Diese Technologie ermöglicht eine effektive Dämpfung dynamischer Lasten und verlängert die Lebensdauer von Maschinen.",
-          "ru": "Это подробное описание предложения №2, предназначенного для промышленных объектов. Эта технология позволяет эффективно гасить динамические нагрузки и продлевает срок службы машин.",
-          "uk": "Це детальний опис пропозиції №2, призначеної для промислових об'єктів. Ця технологія дозволяє ефективно гасити динамічні навантаження та продовжує термін служби машин."
+        "desc": {
+          "brief":{
+            "pl": "<p>System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup> GTP to bezpodsypkowa konstrukcja nawierzchni kolejowo-drogowej. Podstawowym elementem jest prefabrykowana płyta torowa TINES<sup>®</sup> LC-L W14. W płycie są ukształtowane kanały szynowe, w których szyny przytwierdzane są za pomocą systemu przytwierdzenia typu TINES<sup>®</sup> W14.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System zintegrowanej nawierzchni kolejowo-drogowej TINES<sup>®</sup> GTP znajduje zastosowanie w infrastrukturze kolei przemysłowej, szczególnie w miejscach, gdzie tor jest integralną częścią przestrzeni technologicznej i współdzieli ją z ruchem drogowym, pojazdami technologicznymi oraz ruchem pieszym. Rozwiązanie sprawdza się na terminalach przeładunkowych i intermodalnych, bocznicach kolejowych, placach manewrowych i składowych, a także w halach naprawczych, przeglądowych i utrzymaniowych taboru.</p><p>Równa i stabilna nawierzchnia pozwala na efektywne wykorzystanie przestrzeni wokół toru, umożliwiając jednoczesny ruch pojazdów szynowych oraz samochodów ciężarowych, wózków i innych pojazdów technologicznych. System może być stosowany również w myjniach taboru, halach produkcyjnych, zakładach przemysłowych, centrach logistycznych oraz na bocznicach obsługujących zakłady produkcyjne i energetyczne.</p><p>Mechaniczne przytwierdzenie szyn za pomocą systemu TINES<sup>®</sup> W14 zapewnia stabilne połączenie szyny z konstrukcją płyty, szczególnie istotne w warunkach intensywnego ruchu i częstych manewrów taboru. Prefabrykacja pozwala na sprawną realizację inwestycji, ograniczenie czasu wyłączenia infrastruktury oraz łatwe włączenie torowiska w organizację procesów logistycznych i technologicznych zakładu.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "crossCategories": [
           "kolej",
@@ -1009,12 +1460,21 @@
           "ru": "Безбалластная система пути TINES<sup>®</sup> EBS",
           "uk": "Безбаластна система колії TINES<sup>®</sup> EBS"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 3 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
-          "en": "This is a detailed description of offer number 3 dedicated to industrial facilities. This technology enables effective damping of dynamic loads and extends machine lifespan.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 3 für Industrieanlagen. Diese Technologie ermöglicht eine effektive Dämpfung dynamischer Lasten und verlängert die Lebensdauer von Maschinen.",
-          "ru": "Это подробное описание предложения №3, предназначенного для промышленных объектов. Эта технология позволяет эффективно гасить динамические нагрузки и продлевает срок службы машин.",
-          "uk": "Це детальний опис пропозиції №3, призначеної для промислових об'єктів. Ця технологія дозволяє ефективно гасити динамічні навантаження та продовжує термін служби машин."
+        "desc": {
+          "brief":{
+            "pl": "<p>System nawierzchni bezpodsypkowej TINES<sup>®</sup> EBS jest rozwiązaniem z betonową płytą nawierzchni torowej wylewaną na miejscu budowy. Dwustopniowe sprężyste mocowanie i sprężyste podparcie szyny zapewnia doskonałe przenoszenie obciążeń od pojazdów szynowych i tłumienie drgań wywołanych ich przejazdem.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System nawierzchni bezpodsypkowej TINES<sup>®</sup> EBS znajduje zastosowanie w infrastrukturze kolei przemysłowej, szczególnie w obiektach, w których istotny jest bezpośredni i łatwy dostęp do toru oraz możliwość prowadzenia prac utrzymaniowych w jego bezpośrednim sąsiedztwie. Rozwiązanie sprawdza się w halach naprawczych i przeglądowych, kanałach utrzymaniowych, myjniach taboru, halach produkcyjnych oraz na stanowiskach obsługi i serwisowania pojazdów szynowych.</p><p>Betonowa płyta torowa wykonywana bezpośrednio na miejscu budowy pozwala na elastyczne kształtowanie nawierzchni i dostosowanie jej do układu technologicznego obiektu. Dwustopniowe sprężyste mocowanie i podparcie szyny zapewniają stabilność toru, skuteczne przenoszenie obciążeń oraz ograniczenie drgań podczas przejazdu i pracy taboru.</p><p>Bezpodsypkowa konstrukcja ułatwia organizację stanowisk utrzymaniowych, zapewniając równą powierzchnię wokół toru i możliwość swobodnego dostępu do szyny. TINES<sup>®</sup> EBS jest rozwiązaniem dla obiektów przemysłowych, w których liczą się trwałość, bezpieczeństwo pracy, dostępność infrastruktury oraz ograniczenie potrzeb utrzymaniowych.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "crossCategories": [
           "kolej",
@@ -1039,12 +1499,21 @@
           "ru": "Безбалластная система пути TINES<sup>®</sup> Slab Track EBS",
           "uk": "Безбаластна система колії TINES<sup>®</sup> Slab Track EBS"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 4 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
-          "en": "This is a detailed description of offer number 4 dedicated to industrial facilities. This technology enables effective damping of dynamic loads and extends machine lifespan.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 4 für Industrieanlagen. Diese Technologie ermöglicht eine effektive Dämpfung dynamischer Lasten und verlängert die Lebensdauer von Maschinen.",
-          "ru": "Это подробное описание предложения №4, предназначенного для промышленных объектов. Эта технология позволяет эффективно гасить динамические нагрузки и продлевает срок службы машин.",
-          "uk": "Це детальний опис пропозиції №4, призначеної для промислових об'єктів. Ця технологія дозволяє ефективно гасити динамічні навантаження та продовжує термін служби машин."
+        "desc": {
+          "brief":{
+            "pl": "<p>System nawierzchni bezpodsypkowej TINES<sup>®</sup> Slab Track EBS jest rozwiązaniem z prefabrykowaną płytą nawierzchni torowej TINES<sup>®</sup> ST EBS, która na etapie prefabrykacji wyposażona została w bloki podporowe systemu TINES<sup>®</sup> EBS, zapewniające dwustopniowe sprężyste mocowanie i sprężyste podparcie szyny. Prefabrykowana konstrukcja zapewnia skrócenie czasu realizacji inwestycji.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System nawierzchni bezpodsypkowej TINES<sup>®</sup> Slab Track EBS znajduje zastosowanie w obiektach kolei przemysłowej, w których tor jest częścią stanowiska technologicznego i musi zapewniać łatwy dostęp do szyny oraz wygodne warunki prowadzenia prac utrzymaniowych. Rozwiązanie może być stosowane w halach naprawczych i przeglądowych, kanałach utrzymaniowych, myjniach taboru, halach produkcyjnych oraz na stanowiskach obsługi i serwisowania pojazdów szynowych.</p><p>Prefabrykowana płyta torowa TINES<sup>®</sup> ST EBS, wyposażona w bloki podporowe systemu TINES<sup>®</sup> EBS, zapewnia dwustopniowe sprężyste mocowanie i podparcie szyny. Stabilna konstrukcja umożliwia bezpośredni dostęp do toru oraz tworzenie równej, uporządkowanej przestrzeni roboczej wokół szyny, co ułatwia realizację prac technologicznych, serwisowych i utrzymaniowych.</p><p>Prefabrykacja pozwala na skrócenie czasu montażu i ograniczenie zakresu robót na terenie zakładu. TINES<sup>®</sup> Slab Track EBS jest rozwiązaniem dla infrastruktury przemysłowej, w której kluczowe znaczenie mają dostępność szyny, bezpieczeństwo pracy, trwałość konstrukcji oraz sprawna realizacja i utrzymanie stanowisk technologicznych.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "crossCategories": [
           "kolej",
@@ -1053,6 +1522,46 @@
         ],
         "images": {
           "main_image": "/products/przemysl/tines-st-ebs.png",
+          "related_images": [
+            "",
+            "",
+            ""
+          ]
+        }
+      },
+            {
+        "id": "przemysl-rozjazdy",
+        "title": {
+          "pl": "System nawierzchni bezpodsypkowej dla rozjazdów kolejowych TINES",
+          "en": "",
+          "de": "",
+          "ru": "",
+          "uk": ""
+        },
+        "desc": {
+          "brief":{
+            "pl": "<p>Rozjazdy kolejowe w konstrukcji nawierzchni bezpodsypkowej to trwałe i stabilne rozwiązanie dla nowoczesnej infrastruktury szynowej. Zastosowanie konstrukcji betonowej zapewnia precyzyjne położenie elementów rozjazdu, wysoką odporność na obciążenia dynamiczne oraz ograniczenie drgań i hałasu. Nawierzchnia bezpodsypkowa umożliwia sprawną eksploatację i ułatwia utrzymanie infrastruktury.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>Prefabrykowane konstrukcje nawierzchni torowej TINES<sup>®</sup> znajdują szczególne zastosowanie w infrastrukturze kolei przemysłowej, gdzie tor jest częścią ciągu technologicznego zakładu, a czas wyłączenia infrastruktury z użytkowania bezpośrednio wpływa na ciągłość procesów produkcyjnych i logistycznych. Produkcja elementów w kontrolowanych warunkach zapewnia wysoką powtarzalność i precyzję wykonania, a montaż prefabrykowanych elementów pozwala skrócić czas prowadzenia robót na terenie zakładu.</p><p>Bloki podporowe TINES<sup>®</sup> EBS-R umożliwiają wykonanie stabilnych konstrukcji bezpodsypkowych również w rejonie rozjazdów. Precyzyjne odwzorowanie geometrii oraz równomierne podparcie elementów rozjazdu sprzyjają ograniczeniu odkształceń i ułatwiają utrzymanie toru w warunkach intensywnej eksploatacji, częstych manewrów i dużych obciążeń.</p><p>System TINES<sup>®</sup> ERS, stosowany w zintegrowanej nawierzchni kolejowo-drogowej TINES, pozwala na realizację prefabrykowanych płyt również dla rozjazdów, skrzyżowań i innych złożonych układów torowych. Precyzyjne oznakowanie i dopasowanie płyt do konkretnego układu torowego usprawnia ich montaż oraz ogranicza ryzyko błędów podczas realizacji.</p><p>Prefabrykacja pozwala tworzyć trwałe i funkcjonalne nawierzchnie w terminalach, bocznicach, halach produkcyjnych, zakładach przemysłowych, na placach przeładunkowych oraz w obszarach intensywnego ruchu technologicznego. Łączy precyzję wykonania z krótkim czasem montażu i ograniczeniem przestojów infrastruktury.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
+        },
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "tramwaj",
+          "przemysl"
+        ],
+        "images": {
+          "main_image": "/products/przemysl/maty.png",
           "related_images": [
             "",
             "",
@@ -1069,12 +1578,21 @@
           "ru": "Система герметичного покрытия пути TINES<sup>®</sup> SRT",
           "uk": "Система герметичного покриття колії TINES<sup>®</sup> SRT"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 5 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
-          "en": "This is a detailed description of offer number 5 dedicated to industrial facilities. This technology enables effective damping of dynamic loads and extends machine lifespan.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 5 für Industrieanlagen. Diese Technologie ermöglicht eine effektive Dämpfung dynamischer Lasten und verlängert die Lebensdauer von Maschinen.",
-          "ru": "Это подробное описание предложения №5, предназначенного для промышленных объектов. Эта технология позволяет эффективно гасить динамические нагрузки и продлевает срок службы машин.",
-          "uk": "Це детальний опис пропозиції №5, призначеної для промислових об'єктів. Ця технологія дозволяє ефективно гасити динамічні навантаження та продовжує термін служби машин."
+        "desc": {
+          "brief":{
+            "pl": "<p>System szczelnej nawierzchni TINES<sup>®</sup> to system nawierzchni bezpodsypkowej, którego podstawę stanowią prefabrykowane płyty torowe TINES<sup>®</sup> SRT i system przytwierdzenia typu TINES<sup>®</sup> W14, K, bądź inny, o równoważnym przeznaczeniu i zakresie zastosowania.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>Rozwiązanie systemowe zabezpiecza środkowisko przed substancjami stanowiącymi zagrożenie dla gruntów i wód powierzchniowych.</p><p>System szczelnej nawierzchni torowej TINES<sup>®</sup> SRT znajduje zastosowanie w kolei przemysłowej, w szczególności na bocznicach, terminalach oraz torach technologicznych zlokalizowanych na terenie zakładów przemysłowych. Rozwiązanie przeznaczone jest do miejsc, w których prowadzony jest transport, przeładunek, napełnianie, opróżnianie lub magazynowanie substancji mogących stanowić zagrożenie dla gruntu i wód powierzchniowych.</p><p>Prefabrykowane płyty torowe TINES<sup>®</sup> SRT tworzą wraz z systemem przytwierdzenia szyn oraz uszczelnieniem szczelin trwałą, bezpodsypkową nawierzchnię torową. Jej konstrukcja pozwala na ograniczenie ryzyka przedostawania się wycieków z procesów technologicznych, cystern i wagonów do podłoża. System może być stosowany m.in. na bocznicach zakładów chemicznych i paliwowych, w rejonie magazynów i stacji paliw, terminali przeładunkowych, a także na stanowiskach związanych z obsługą i utrzymaniem taboru.</p><p>W zależności od rodzaju występujących substancji oraz przewidywanej klasy ekspozycji rozwiązanie może zostać uzupełnione o odpowiednie powłoki ochronne oraz system uszczelnienia szczelin, dobrane do wymaganej odporności chemicznej. Dzięki temu TINES<sup>®</sup> SRT umożliwia dostosowanie nawierzchni torowej do specyfiki procesów prowadzonych w danym zakładzie i związanych z nimi wymagań środowiskowych.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "crossCategories": [
           "kolej",
@@ -1083,6 +1601,45 @@
         ],
         "images": {
           "main_image": "/products/przemysl/tines-srt.png",
+          "related_images": [
+            "",
+            "",
+            ""
+          ]
+        }
+      },
+            {
+        "id": "przemysl-w14",
+        "title": {
+          "pl": "System przytwierdzenia typu TINES W14",
+          "en": "",
+          "de": "",
+          "ru": "",
+          "uk": ""
+        },
+        "desc": {
+          "brief":{
+            "pl": "<p>System przytwierdzenia typu TINES<sup>®</sup> W14 stosuje się do przytwierdzania szyn typu 49E1 i 60E1 w systemach nawierzchni bezpodsypkowej produkcji TINES: system TINES<sup>®</sup> EBS, w prefabrykowanych płytach torowych TINES<sup>®</sup> LC-L W14, w systemie szczelnej nawierzchni TINES<sup>®</sup>, w podporach blokowych systemu TINES<sup>®</sup> BST, w innych systemach nawierzchni bezpodsypkowej produkcji TINES<sup>®</sup>.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System przytwierdzenia typu TINES<sup>®</sup> W14 stosuje się do przytwierdzania szyn typu 49E1 i 60E1 w systemach nawierzchni bezpodsypkowej produkcji TINES: system TINES<sup>®</sup> EBS, w prefabrykowanych płytach torowych TINES<sup>®</sup> LC-L W14, w systemie szczelnej nawierzchni TINES<sup>®</sup>, w podporach blokowych systemu TINES<sup>®</sup> BST, w innych systemach nawierzchni bezpodsypkowej produkcji TINES<sup>®</sup>.</p><p>System przytwierdzenia typu TINES<sup>®</sup> W14 przeznaczony jest do sprężystego przytwierdzania szyn typu 49E1 i 60E1 w bezpodsypkowych konstrukcjach nawierzchni torowych. Rozwiązanie zapewnia stabilne mocowanie szyny przy jednoczesnym zachowaniu wymaganej sprężystości układu, umożliwiając jego zastosowanie w różnych typach konstrukcji torowych produkcji TINES. System może być stosowany zarówno w nowych nawierzchniach, jak i podczas modernizacji istniejących odcinków torów.</p><p>TINES<sup>®</sup> W14 znajduje zastosowanie między innymi w systemie TINES<sup>®</sup> EBS, prefabrykowanych płytach torowych TINES<sup>®</sup> LC-L W14, systemie szczelnej nawierzchni TINES<sup>®</sup> oraz podporach blokowych systemu TINES<sup>®</sup> BST. Może być również wykorzystywany w innych bezpodsypkowych systemach nawierzchni torowych produkcji TINES.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
+        },
+        "crossCategories": [
+          "kolej",
+          "metro",
+          "przemysl"
+        ],
+        "images": {
+          "main_image": "/products/przemysl/tines-ers.png",
           "related_images": [
             "",
             "",
@@ -1099,12 +1656,21 @@
           "ru": "Система скрепления типа TINES<sup>®</sup> ERS",
           "uk": "Система скріплення типу TINES<sup>®</sup> ERS"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 6 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
-          "en": "This is a detailed description of offer number 6 dedicated to industrial facilities. This technology enables effective damping of dynamic loads and extends machine lifespan.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 6 für Industrieanlagen. Diese Technologie ermöglicht eine effektive Dämpfung dynamischer Lasten und verlängert die Lebensdauer von Maschinen.",
-          "ru": "Это подробное описание предложения №6, предназначенного для промышленных объектов. Эта технология позволяет эффективно гасить динамические нагрузки и продлевает срок службы машин.",
-          "uk": "Це детальний опис пропозиції №6, призначеної для промислових об'єктів. Ця технологія дозволяє ефективно гасити динамічні навантаження та продовжує термін службы машин."
+        "desc": {
+          "brief":{
+            "pl": "<p>System przytwierdzeń typu TINES<sup>®</sup> ERS przeznaczony jest do stosowania w bezpodsypkowych konstrukcjach nawierzchni szynowych. Kanały szynowe mogą zostać ukształtowane w betonowej płycie torowej „wylewanej na mokro”, stanowić część prefabrykatu torowego TINES<sup>®</sup>, bądź zostać wykonane jako prefabrykowane elementy stalowe. System znajduje zastosowanie do przytwierdzenia wszystkich szyn Vignole'a, m.in. o profilach 60E1 i 49E1, szyn specjalnych oraz węzłach rozjazdowych.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>System przytwierdzenia szyny w otulinie TINES<sup>®</sup> ERS znajduje zastosowanie w kolei przemysłowej, szczególnie na bocznicach, torach technologicznych, w halach oraz na placach załadunkowych i przeładunkowych. Bezpodsypkowa konstrukcja z ciągłym, sprężystym przytwierdzeniem szyny pozwala na wykonanie trwałej nawierzchni dostosowanej do intensywnej eksploatacji i specyfiki zakładów przemysłowych.</p><p>W systemie TINES<sup>®</sup> ERS szyna jest na całej długości osadzona w kanale szynowym za pomocą elastomeru poliuretanowego TINES<sup>®</sup> Polyrail. Takie rozwiązanie zapewnia ciągłe podparcie i przytwierdzenie szyny, a jednocześnie ogranicza przenoszenie drgań generowanych przez przejeżdżający tabor na konstrukcję toru i otoczenie. System zapewnia również izolację elektryczną szyny.</p><p>TINES<sup>®</sup> ERS może być stosowany z szynami Vignole’a, w tym profilami 60E1 i 49E1, oraz z szynami specjalnymi. Rozwiązanie może być wykonywane w kanałach ukształtowanych w konstrukcji betonowej lub prefabrykowanej, a także w prefabrykowanych kanałach stalowych. Dzięki temu system można dostosować do różnych technologii budowy torów przemysłowych.</p><p>TINES<sup>®</sup> ERS sprawdza się również w miejscach wymagających połączenia funkcji toru i nawierzchni technologicznej, m.in. na placach przeładunkowych i w halach. Możliwość ograniczenia wysokości konstrukcji oraz prosta technologia montażu ułatwiają zastosowanie systemu zarówno przy budowie nowych torów, jak i modernizacji istniejącej infrastruktury przemysłowej.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "crossCategories": [
           "kolej",
@@ -1129,12 +1695,21 @@
           "ru": "Сборные путевые плиты TINES<sup>®</sup>",
           "uk": "Збірні колійні плити TINES<sup>®</sup>"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 7 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
-          "en": "This is a detailed description of offer number 7 dedicated to industrial facilities. This technology enables effective damping of dynamic loads and extends machine lifespan.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 7 für Industrieanlagen. Diese Technologie ermöglicht eine effektive Dämpfung dynamischer Lasten und verlängert die Lebensdauer von Maschinen.",
-          "ru": "Это подробное описание предложения №7, предназначенного для промышленных объектов. Эта технология позволяет эффективно гасить динамические нагрузки и продлевает срок службы машин.",
-          "uk": "Це детальний опис пропозиції №7, призначеної для промислових об'єктів. Ця технологія дозволяє ефективно гасити динамічні навантаження та продовжує термін службы машин."
+        "desc": {
+          "brief":{
+            "pl": "<p>Wszystkie rodzaje i odmiany prefabrykowanych płyt torowych TINES<sup>®</sup> charakteryzują się cechą wskazującą na integrację konstrukcyjną nawierzchni torowej i podbudowy, co umożliwia uzyskanie bardziej stabilnej, trwałej i odpornej na obciążenia konstrukcji torowej.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>Prefabrykowane płyty torowe TINES<sup>®</sup> znajdują zastosowanie w kolei przemysłowej wszędzie tam, gdzie wymagana jest trwała, niezawodna i odporna na intensywną eksploatację konstrukcja toru. Bezpodsypkowa technologia prefabrykowana sprawdza się na bocznicach, torach technologicznych, placach przeładunkowych, w halach oraz na stanowiskach obsługi i utrzymania taboru.</p><p>Płyty TINES<sup>®</sup> wykonane są z betonu klasy co najmniej C35/45, zbrojonego w zależności od rozwiązania prętami stalowymi lub kompozytowymi, mikrozbrojeniem albo zbrojeniem hybrydowym. Integracja nawierzchni torowej i podbudowy w prefabrykowanym elemencie zapewnia stabilną konstrukcję oraz ogranicza zakres prac wykonywanych bezpośrednio na terenie zakładu.</p><p>Istotną zaletą systemu jest elastyczność kształtowania rozwiązania. Prefabrykowane płyty mogą być dostosowywane do geometrii toru, układu technologicznego zakładu oraz przyjętego systemu przytwierdzenia szyn. Umożliwia to wykonywanie zarówno standardowych odcinków torowych, jak i rozwiązań przeznaczonych do miejsc o szczególnych wymaganiach eksploatacyjnych, takich jak strefy intensywnego ruchu taboru, przeładunku czy prowadzenia procesów technologicznych.</p><p>W przypadku wymaganej redukcji drgań konstrukcję można uzupełnić o warstwę wibroizolacyjną, w tym maty podtorowe. Prefabrykacja zapewnia powtarzalność wykonania i wysoką jakość elementów, a jednocześnie pozwala ograniczyć czas realizacji robót torowych. TINES<sup>®</sup> stanowi rozwiązanie dla infrastruktury przemysłowej, w której trwałość, niezawodność i możliwość dostosowania konstrukcji toru do indywidualnych warunków zakładu mają kluczowe znaczenie.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "crossCategories": [
           "kolej",
@@ -1160,12 +1735,21 @@
           "ru": "Виброизоляционные маты TINES<sup>®</sup>",
           "uk": "Віброізоляційні мати TINES<sup>®</sup>"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 8 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
-          "en": "This is a detailed description of offer number 8 dedicated to industrial facilities. This technology enables effective damping of dynamic loads and extends machine lifespan.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 8 für Industrieanlagen. Diese Technologie ermöglicht eine effektive Dämpfung dynamischer Lasten und verlängert die Lebensdauer von Maschinen.",
-          "ru": "Это подробное описание предложения №8, предназначенного для промышленных объектов. Эта технология позволяет эффективно гасить динамические нагрузки и продлевает срок службы машин.",
-          "uk": "Це детальний опис пропозиції №8, призначеної для промислових об'єктів. Ця технологія дозволяє ефективно гасити динамічні навантаження та продовжує термін службы машин."
+        "desc": {
+          "brief":{
+            "pl": "<p>Maty wibroizolacyjne TINES<sup>®</sup> ograniczają przenoszenie drgań i hałasu z torowiska do otoczenia. Stosowane są jako warstwa izolacyjna konstrukcji torowej, poprawiając komfort mieszkańców i użytkowników obiektów zlokalizowanych w otoczeniu tras kolejowych. Dzięki odpowiednio dobranym właściwościom materiałowym zapewniają skuteczną ochronę budynków i infrastruktury przed oddziaływaniami dynamicznymi.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>Maty wibroizolacyjne TINES<sup>®</sup> znajdują zastosowanie w kolei przemysłowej jako warstwa izolacyjna ograniczająca przenoszenie drgań i hałasu z toru na konstrukcję obiektów oraz podłoże. Rozwiązanie sprawdza się szczególnie w zakładach przemysłowych, gdzie tory przebiegają w pobliżu hal produkcyjnych, magazynów, budynków technicznych oraz innych obiektów wrażliwych na oddziaływania dynamiczne.</p><p>Zastosowanie mat pozwala ograniczyć drgania generowane przez intensywny ruch taboru, w tym pojazdów o dużych naciskach osi, oraz zmniejszyć ich oddziaływanie na konstrukcje budowlane i urządzenia technologiczne. Odpowiedni dobór parametrów wibroizolacyjnych umożliwia dostosowanie rozwiązania do charakterystyki toru, obciążenia oraz warunków występujących na terenie zakładu.</p><p>Maty TINES<sup>®</sup> mogą być stosowane zarówno w konstrukcjach podsypkowych, jak i bezpodsypkowych. W torach podsypkowych mogą być układane pod warstwą tłucznia, natomiast w konstrukcjach bezpodsypkowych mogą współpracować m.in. z prefabrykowanymi płytami torowymi, tworząc elastyczną warstwę pomiędzy konstrukcją toru a podłożem lub podbudową.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "crossCategories": [
           "kolej",
@@ -1191,12 +1775,21 @@
           "ru": "Полимерные эластомеры TINES<sup>®</sup> Polyrail",
           "uk": "Полімерні еластомери TINES<sup>®</sup> Polyrail"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 9 dedykowanej dla obiektów przemysłowych. Technologia ta umożliwia skuteczne tłumienie obciążeń dynamicznych i wydłuża żywotność maszyn.",
-          "en": "This is a detailed description of offer number 9 dedicated to industrial facilities. This technology enables effective damping of dynamic loads and extends machine lifespan.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 9 für Industrieanlagen. Diese Technologie ermöglicht eine effektive Dämpfung dynamischer Lasten und verlängert die Lebensdauer von Maschinen.",
-          "ru": "Это подробное описание предложения №9, предназначенного для промышленных объектов. Эта технология позволяет эффективно гасить динамические нагрузки и продлевает срок службы машин.",
-          "uk": "Це детальний опис пропозиції №9, призначеної для промислових об'єктів. Ця технологія дозволяє эффективно гасить динамические нагрузки и продлевает срок службы машин."
+        "desc": {
+          "brief":{
+            "pl": "<p>Zestaw elastomerów polimerowych TINES<sup>®</sup> Polyrail umożliwia budowę toru kolejowego z zapewnieniem sprężystego podparcia i mocowania szyn, które ogranicza drgania oraz poprawia trwałość układu torowego. Materiały pełnią także funkcję izolacji elektrycznej szyny, umożliwiają kotwienie elementów torowych, wykonywania szczelin dylatacyjnych oraz naprawy ubytków w konstrukcjach torowych.</p>",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"<p>Zestaw wyrobów TINES<sup>®</sup> Polyrail znajduje zastosowanie w budowie i modernizacji torów kolei przemysłowych, gdzie istotne znaczenie mają trwałość konstrukcji torowej, odporność na obciążenia eksploatacyjne oraz ograniczenie przenoszenia drgań. Elastomery polimerowe umożliwiają wykonanie sprężystego podparcia i mocowania szyn, zapewniając odpowiednią współpracę szyny z podłożem oraz ograniczając oddziaływania dynamiczne powstające podczas przejazdu ciężkich składów towarowych i pojazdów technologicznych.</p><p>Wyroby TINES<sup>®</sup> Polyrail mogą być stosowane do wykonywania punktowego i ciągłego mocowania oraz podparcia szyn, podlewów pod stopką szyny i podkładkami żebrowymi, a także do kotwienia elementów torowych w konstrukcjach betonowych. Materiały zapewniają również izolację elektryczną szyny i mogą być wykorzystywane do uszczelniania połączeń, wykonywania szczelin dylatacyjnych, mocowania profili przyszynowych oraz elementów wibroizolacyjnych. Zestaw znajduje zastosowanie zarówno przy budowie nowych odcinków torów przemysłowych, jak i podczas remontów, modernizacji oraz lokalnych napraw istniejącej infrastruktury torowej.</p>",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "crossCategories": [
           "kolej",
@@ -1233,12 +1826,21 @@
           "ru": "VIBROFLOOR I",
           "uk": "VIBROFLOOR I"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 1 przeznaczonej do wibroizolacji budynków. Zapewnia wyciszenie konstrukcji oraz pełny komfort akustyczny mieszkańców i użytkowników obiektu.",
-          "en": "This is a detailed description of offer number 1 designed for building vibration isolation. Provides structural soundproofing and full acoustic comfort for occupants.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 1 zur Schwingungsisolierung von Gebäuden. Es bietet eine Schalldämmung der Struktur und vollen akustischen Komfort für die Bewohner.",
-          "ru": "Это подробное описание предложения №1, предназначенного для виброизоляции зданий. Обеспечивает звукоизоляцию конструкции и полный акустический комфорт жителей и пользователей объекта.",
-          "uk": "Це детальний опис пропозиції №1, призначеної для віброізоляції будівель. Забезпечує шумоізоляцію конструкції та повний акустичний комфорт мешканців і користувачів об'єкта."
+        "desc": {
+          "brief":{
+            "pl": "",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "images": {
           "main_image": "/products/wibro/vibrofloor-i.png",
@@ -1258,12 +1860,21 @@
           "ru": "VIBROFLOOR II",
           "uk": "VIBROFLOOR II"
         },
-        "description": {
-          "pl": "To jest szczegółowy opis oferty numer 2 przeznaczonej do wibroizolacji budynków. Zapewnia wyciszenie konstrukcji oraz pełny komfort akustyczny mieszkańców i użytkowników obiektu.",
-          "en": "This is a detailed description of offer number 2 designed for building vibration isolation. Provides structural soundproofing and full acoustic comfort for occupants.",
-          "de": "Dies ist eine detaillierte Beschreibung des Angebots Nr. 2 zur Schwingungsisolierung von Gebäuden. Es bietet eine Schalldämmung der Struktur und vollen akustischen Komfort für die Bewohner.",
-          "ru": "Это подробное описание предложения №2, предназначенного для виброизоляции зданий. Обеспечивает звукоизоляцию конструкции и полный акустический комфорт жителей и пользователей объекта.",
-          "uk": "Це детальний опис пропозиції №2, призначеної для віброізоляції будівель. Забезпечує шумоізоляцію конструкції та повний акустичний комфорт мешканців і користувачів об'єкта."
+        "desc": {
+          "brief":{
+            "pl": "",
+            "en": "",
+            "de": "",
+            "ru": "",
+            "uk": ""
+          },
+          "detailed":{
+            "pl":"",
+            "en":"",
+            "de":"",
+            "ru":"",
+            "uk":""
+          }
         },
         "images": {
           "main_image": "/products/wibro/vibrofloor-ii.png",

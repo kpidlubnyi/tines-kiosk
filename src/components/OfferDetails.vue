@@ -16,7 +16,7 @@
 
         <div class="item-content">
           <h2 class="item-title" v-html="langStore.getText(item.title)"></h2>
-          <p class="item-description" v-html="langStore.getText(item.description)"></p>
+          <p class="item-description" v-html="langStore.getText(item.desc?.brief)"></p>
         </div>
       </article>
     </div>
@@ -166,7 +166,7 @@ export default {
   margin: 0 0 1vw 0;
   font-size: 1.4vw;
   font-weight: 700;
-  color: #929292;
+  color: #333333;
   line-height: 1.3;
 }
 

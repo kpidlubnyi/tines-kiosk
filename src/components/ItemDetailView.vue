@@ -125,7 +125,7 @@
           >
             <div class="carousel-slide slide-description">
               <div class="description-wrapper" @mousedown.stop @touchstart.stop>
-                <div class="detail-description" v-html="langStore.getText(item.description)"></div>
+                <div class="detail-description" v-html="langStore.getText(item.desc?.detailed)"></div>
               </div>
             </div>
 
@@ -178,7 +178,7 @@ export default {
       required: true,
       default: () => ({
         title: '',
-        description: '',
+        desc: { brief: null, detailed: null },
         image: '',
         images: null,
         sketchfabId: '',
@@ -590,7 +590,7 @@ export default {
   margin: 0;
   font-size: 2.2vw;
   font-weight: 700;
-  color: #929292;
+  color: #333333;
   line-height: 1.15;
   white-space: normal;
   word-wrap: break-word;

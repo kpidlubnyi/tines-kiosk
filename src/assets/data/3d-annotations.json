@@ -5,49 +5,465 @@
         "index": 0,
         "pl": "Rozszerzenie kanału",
         "en": "Channel extension",
+        "ua": "Розширення каналу",
         "de": "Kanalerweiterung",
-        "ru": "Расширение канала",
-        "uk": "Розширення каналу"
+        "ru": "Расширение канала"
       },
       {
         "index": 1,
         "pl": "Blacha osłonowa",
         "en": "Protective cover plate",
+        "ua": "Захисна накладна пластина",
         "de": "Abdeckblech",
-        "ru": "Защитная накладная пластина",
-        "uk": "Захисна накладна пластина"
+        "ru": "Защитная накладная пластина"
       },
       {
         "index": 2,
         "pl": "Rynienka odwadniająca",
         "en": "Drainage channel",
+        "ua": "Дренажний жолоб",
         "de": "Entwässerungsrinne",
-        "ru": "Дренажный желоб",
-        "uk": "Дренажний жолоб"
+        "ru": "Дренажный желоб"
       },
       {
         "index": 3,
         "pl": "System TINES® ERS",
         "en": "TINES® ERS system",
+        "ua": "Система TINES® ERS",
         "de": "TINES® ERS-System",
-        "ru": "Система TINES® ERS",
-        "uk": "Система TINES® ERS"
+        "ru": "Система TINES® ERS"
       },
       {
         "index": 4,
         "pl": "Płaskownik zabezpieczający krawędź płyty",
         "en": "Flat bar protecting the slab edge",
+        "ua": "Плоска смуга для захисту краю плити",
         "de": "Flachstahl zum Schutz der Plattenkante",
-        "ru": "Плоская полоса для защиты края плиты",
-        "uk": "Плоска смуга для захисту краю плити"
+        "ru": "Плоская полоса защиты края плиты"
       },
       {
         "index": 5,
         "pl": "Płyta TINES® LC-L6",
         "en": "TINES® LC-L6 slab",
+        "ua": "Плита TINES® LC-L6",
         "de": "TINES® LC-L6 Platte",
-        "ru": "Плита TINES® LC-L6",
-        "uk": "Плита TINES® LC-L6"
+        "ru": "Плита TINES® LC-L6"
+      }
+    ],
+    "bf5315035e2d43f39375467340d81e1c": [
+      {
+        "index": 0,
+        "pl": "TINES® TRAM LC-L {Płyta torowa}",
+        "en": "TINES® TRAM LC-L {Track slab}",
+        "ua": "TINES® TRAM LC-L {Плита колійна}",
+        "de": "TINES® TRAM LC-L {Gleisplatte}",
+        "ru": "TINES® TRAM LC-L {Путевая плита}"
+      },
+      {
+        "index": 1,
+        "pl": "TINES® TRAM LC-LM {TINES TRAM LC-LM – płyta międzytorowa}",
+        "en": "TINES® TRAM LC-LM {Intertrack slab}",
+        "ua": "TINES® TRAM LC-LM {Міжколійна плита}",
+        "de": "TINES® TRAM LC-LM {Zwischengleisplatte}",
+        "ru": "TINES® TRAM LC-LM {Междупутная плита}"
+      },
+      {
+        "index": 2,
+        "pl": "TINES® Polymat STM / TINES® Rubbermat STM {Podpłytowe maty wibroizolacyjne}",
+        "en": "TINES® Polymat STM / TINES® Rubbermat STM {Sub-slab vibration isolation mats}",
+        "ua": "TINES® Polymat STM / TINES® Rubbermat STM {Підплитні віброізоляційні мати}",
+        "de": "TINES® Polymat STM / TINES® Rubbermat STM {Unterplatten-Schwingungsisolierungsmatten}",
+        "ru": "TINES® Polymat STM / TINES® Rubbermat STM {Подплитные виброизоляционные маты}"
+      },
+      {
+        "index": 3,
+        "pl": "System TINES® TRAM ERS",
+        "en": "TINES® TRAM ERS system",
+        "ua": "Система TINES® TRAM ERS",
+        "de": "TINES® TRAM ERS-System",
+        "ru": "Система TINES® TRAM ERS"
+      },
+      {
+        "index": 4,
+        "pl": "TINES® Polyrail {Wypełnienie szczelin między płytami masą zalewową}",
+        "en": "TINES® Polyrail {Joint filling between slabs with grouting/joint compound}",
+        "ua": "TINES® Polyrail {Заповнення швів між плитами герметиком}",
+        "de": "TINES® Polyrail {Fugenverfüllung zwischen den Platten mit Vergussmasse}",
+        "ru": "TINES® Polyrail {Заполнение швов между плитами герметиком}"
+      },
+      {
+        "index": 5,
+        "pl": "TINES® TRAM LC-LK {Płyta torowa kablowa}",
+        "en": "TINES® TRAM LC-LK {Cable track slab}",
+        "ua": "TINES® TRAM LC-LK {Кабельна колійна плита}",
+        "de": "TINES® TRAM LC-LK {Kabelgleisplatte}",
+        "ru": "TINES® TRAM LC-LK {Кабельная путевая плита}"
+      },
+      {
+        "index": 6,
+        "pl": "TINES® TRAM LC-LO {Płyta torowa odwodnieniowa}",
+        "en": "TINES® TRAM LC-LO {Drainage track slab}",
+        "ua": "TINES® TRAM LC-LO {Дренажна колійна плита}",
+        "de": "TINES® TRAM LC-LO {Entwässerungsgleisplatte}",
+        "ru": "TINES® TRAM LC-LO {Дренажная путевая плита}"
+      },
+      {
+        "index": 7,
+        "pl": "TINES® TRAM LC-LW {Płyta torowa włazowa}",
+        "en": "TINES® TRAM LC-LW {Manhole/access track slab}",
+        "ua": "TINES® TRAM LC-LW {Колійна плита з люком}",
+        "de": "TINES® TRAM LC-LW {Schachtgleisplatte}",
+        "ru": "TINES® TRAM LC-LW {Люковая путевая плита}"
+      }
+    ],
+    "b98a0c87d0a84b5f99dd6bf3ef29a4c6": [
+      {
+        "index": 0,
+        "pl": "Podsypka tłuczniowa",
+        "en": "Ballast bed",
+        "ua": "Щебеневий баласт",
+        "de": "Schotterbett",
+        "ru": "Щебеночный балласт"
+      },
+      {
+        "index": 1,
+        "pl": "Podtłuczniowa mata wibroizolacyjna",
+        "en": "Sub-ballast vibration isolation mat",
+        "ua": "Підбаластна віброізоляційна мата",
+        "de": "Unterschottermatte",
+        "ru": "Подбалластный виброизоляционный мат"
+      },
+      {
+        "index": 2,
+        "pl": "Zagęszczone podtorze gruntowe",
+        "en": "Compacted subgrade",
+        "ua": "Ущільнена земляна основа (підґрунтя)",
+        "de": "Verdichteter Untergrund",
+        "ru": "Уплотненное земляное полотно"
+      }
+    ],
+    "d1b1b24ba0ed47d983ce9763a40e120d": [
+      {
+        "index": 0,
+        "pl": "Prefabrykowana płyta torowa",
+        "en": "Prefabricated track slab",
+        "ua": "Збірна залізобетонна колійна плита",
+        "de": "Vorgefertigte Gleisplatte",
+        "ru": "Сборная путевая плита"
+      },
+      {
+        "index": 1,
+        "pl": "Podpłytowa mata wibroizolacyjna",
+        "en": "Sub-slab vibration isolation mat",
+        "ua": "Підплитна віброізоляційна мата",
+        "de": "Unterplatten-Schwingungsisolierungsmatten",
+        "ru": "Подплитный виброизоляционный мат"
+      },
+      {
+        "index": 2,
+        "pl": "Uszczelnienie z poliuretanowej masy zalewowej",
+        "en": "Polyurethane joint sealant/grout seal",
+        "ua": "Ущільнення з поліуретанового герметика",
+        "de": "Abdichtung aus Polyurethan-Vergussmasse",
+        "ru": "Уплотнение из полиуретанового герметика"
+      },
+      {
+        "index": 3,
+        "pl": "Podbudowa betonowa torowiska",
+        "en": "Concrete track foundation/subbase",
+        "ua": "Бетонна основа колії",
+        "de": "Betonträgerunterbau",
+        "ru": "Бетонное основание пути"
+      }
+    ],
+    "3a623dcb13f44e488f8b7acd6e32bdd2": [
+      {
+        "index": 0,
+        "pl": "Szyna Vignole’a o profilu 60E1",
+        "en": "Vignole rail 60E1 profile",
+        "ua": "Вікнольний профіль рейки 60E1 (рейка Вігноля)",
+        "de": "Vignolschiene Profil 60E1",
+        "ru": "Рельс Вигноля профиля 60E1"
+      },
+      {
+        "index": 1,
+        "pl": "Wkręt śrubowy z podkłdką",
+        "en": "Screw spike with washer",
+        "ua": "Шруп-шуруп із підкладкою",
+        "de": "Schraubdüse/Schraube mit Unterlegscheibe",
+        "ru": "Шуруп с шайбой"
+      },
+      {
+        "index": 2,
+        "pl": "Łapka sprężysta",
+        "en": "Elastic rail clip",
+        "ua": "Пружинна клема",
+        "de": "Spreizklemme / Spannklemme",
+        "ru": "Пружинная клемма"
+      },
+      {
+        "index": 3,
+        "pl": "Przekładka podszynowa",
+        "en": "Rail pad",
+        "ua": "Підрейкова прокладка",
+        "de": "Schienenzwischenlage",
+        "ru": "Подрельсовая прокладка"
+      },
+      {
+        "index": 4,
+        "pl": "Prowadnica kątowa",
+        "en": "Angled guide plate / shoulder",
+        "ua": "Кутова напрямна",
+        "de": "Winkelrichtplatte",
+        "ru": "Угловая направляющая"
+      },
+      {
+        "index": 5,
+        "pl": "Prefabrykowany, żelbetowy blok podporowy",
+        "en": "Prefabricated reinforced concrete support block",
+        "ua": "Збірний залізобетонний опорний блок",
+        "de": "Vorgefertigter Stahlbeton-Stützblock",
+        "ru": "Сборный железобетонный опорный блок"
+      },
+      {
+        "index": 6,
+        "pl": "Sprężysta otulina bloku podporowego TINES® Polyrail",
+        "en": "TINES® Polyrail elastic support block boot",
+        "ua": "Пружна оболонка опорного блока TINES® Polyrail",
+        "de": "Elastische Stützblockumhüllung TINES® Polyrail",
+        "ru": "Упругая оболочка опорного блока TINES® Polyrail"
+      },
+      {
+        "index": 7,
+        "pl": "Powłoka gruntująca",
+        "en": "Primer coating",
+        "ua": "Ґрунтувальне покриття",
+        "de": "Grundierungsbeschichtung",
+        "ru": "Грунтовочное покрытие"
+      },
+      {
+        "index": 8,
+        "pl": "Prefabrykowane, żelbetowe gniazdo bloku podporowego",
+        "en": "Prefabricated reinforced concrete support block pocket/socket",
+        "ua": "Збірне залізобетонне гніздо опорного блока",
+        "de": "Vorgefertigte Stahlbeton-Stützblocktasche",
+        "ru": "Сборное железобетонное гнездо опорного блока"
+      },
+      {
+        "index": 9,
+        "pl": "Prefabrykowane, żelbetowe gniazdo bloku podporowego",
+        "en": "Prefabricated reinforced concrete support block pocket/socket",
+        "ua": "Збірне залізобетонне гніздо опорного блока",
+        "de": "Vorgefertigte Stahlbeton-Stützblocktasche",
+        "ru": "Сборное железобетонное гнездо опорного блока"
+      },
+      {
+        "index": 10,
+        "pl": "Uchwyt transportowy",
+        "en": "Lifting/transport anchor",
+        "ua": "Транспортна петля/захват",
+        "de": "Transportanker",
+        "ru": "Транспортная петля"
+      }
+    ],
+    "4e48532080cf4d21a6e828b940e35e71": [
+      {
+        "index": 0,
+        "pl": "Szyna rowkowa o profilu 60R2",
+        "en": "Grooved rail 60R2 profile",
+        "ua": "Жолобчаста рейка профілю 60R2",
+        "de": "Rillenschiene Profil 60R2",
+        "ru": "Желобчатый рельс профиля 60R2"
+      },
+      {
+        "index": 1,
+        "pl": "TINES® Polyrail 53+ {Klej do bloczków}",
+        "en": "TINES® Polyrail 53+ {Block adhesive}",
+        "ua": "TINES® Polyrail 53+ {Клей для блоків}",
+        "de": "TINES® Polyrail 53+ {Blockkleber}",
+        "ru": "TINES® Polyrail 53+ {Клей для блоков}"
+      },
+      {
+        "index": 2,
+        "pl": "Wkładki komorowe np. bloczki betonowe",
+        "en": "Chamber fillers e.g. concrete blocks",
+        "ua": "Камерні вкладиші, напр. бетонні блоки",
+        "de": "Kammerfüllungen z.B. Betonblöcke",
+        "ru": "Камерные вкладыши, например бетонные блоки"
+      },
+      {
+        "index": 3,
+        "pl": "TINES® Railwedge {Kliny stabilizujące}",
+        "en": "TINES® Railwedge {Stabilizing wedges}",
+        "ua": "TINES® Railwedge {Стабілізуючі клини}",
+        "de": "TINES® Railwedge {Stabilisierungskeile}",
+        "ru": "TINES® Railwedge {Стабилизирующие клинья}"
+      },
+      {
+        "index": 4,
+        "pl": "TINES® Railshim {Podkładki do regulacji położenia szyny w płaszczyźnie pionowej}",
+        "en": "TINES® Railshim {Vertical rail alignment shims}",
+        "ua": "TINES® Railshim {Прокладки для вертикального регулювання положення рейки}",
+        "de": "TINES® Railshim {Unterlegscheiben zur vertikalen Schienenjustierung}",
+        "ru": "TINES® Railshim {Прокладки для вертикальной регулировки положения рельса}"
+      },
+      {
+        "index": 5,
+        "pl": "TINES® Railstrip {Ciągła sprężysta przekładka podszynowa}",
+        "en": "TINES® Railstrip {Continuous elastic rail pad}",
+        "ua": "TINES® Railstrip {Безперервна пружна підрейкова прокладка}",
+        "de": "TINES® Railstrip {Kontinuierliche elastische Schienenzwischenlage}",
+        "ru": "TINES® Railstrip {Непрерывная упругая подрельсовая прокладка}"
+      },
+      {
+        "index": 6,
+        "pl": "TINES® Polyrail 50/55 {Sprężysta otulina z elastomeru poliuretanowego}",
+        "en": "TINES® Polyrail 50/55 {Polyurethane elastomer elastic boot}",
+        "ua": "TINES® Polyrail 50/55 {Пружна оболонка з поліуретанового еластомеру}",
+        "de": "TINES® Polyrail 50/55 {Elastische Polyurethan-Elastomer-Umhüllung}",
+        "ru": "TINES® Polyrail 50/55 {Упругая оболочка из полиуретанового эластомера}"
+      }
+    ],
+    "3379ecf3b8b7476e9e8a7393b1ecfe38": [
+      {
+        "index": 0,
+        "pl": "Podsypka tłuczniowa",
+        "en": "Ballast bed",
+        "ua": "Щебеневий баласт",
+        "de": "Schotterbett",
+        "ru": "Щебеночный балласт"
+      },
+      {
+        "index": 1,
+        "pl": "Podtłuczniowa mata wibroizolacyjna",
+        "en": "Sub-ballast vibration isolation mat",
+        "ua": "Підбаластна віброізоляційна мата",
+        "de": "Unterschottermatte",
+        "ru": "Подбалластный виброизоляционный мат"
+      },
+      {
+        "index": 2,
+        "pl": "Podtorze betonowe",
+        "en": "Concrete subgrade / base",
+        "ua": "Бетонна основа підторі",
+        "de": "Betonuntergrund",
+        "ru": "Бетонное подрельсовое основание"
+      }
+    ],
+    "d3d36e47147a4ce7a949ded288e6e09f": [
+      {
+        "index": 0,
+        "pl": "Prefabrykowany blok podporowy",
+        "en": "Prefabricated support block",
+        "ua": "Збірний опорний блок",
+        "de": "Vorgefertigter Stützblock",
+        "ru": "Сборный опорный блок"
+      },
+      {
+        "index": 1,
+        "pl": "Stalowe gniazdo podpory blokowej",
+        "en": "Steel support block pocket/socket",
+        "ua": "Сталеве гніздо блокової опори",
+        "de": "Stahl-Stützblocktasche",
+        "ru": "Стальное гнездо блочной опоры"
+      },
+      {
+        "index": 2,
+        "pl": "Sprężysta otulina bloku podporowego",
+        "en": "Elastic support block boot/envelope",
+        "ua": "Пружна оболонка опорного блока",
+        "de": "Elastische Stützblockumhüllung",
+        "ru": "Упругая оболочка опорного блока"
+      },
+      {
+        "index": 3,
+        "pl": "Dybel śrubowy {Lokalizacja, rodzaj i ilość dybli wg. właściwej dokumentacji rozjazdu}",
+        "en": "Screw dowel {Location, type and quantity per turnout documentation}",
+        "ua": "Шрупковий дюбель {Розташування, тип і кількість згідно з документацією стрілочного переводу}",
+        "de": "Schraubdübel {Lage, Typ und Anzahl gem. Weichendokumentation}",
+        "ru": "Шурупный дюбель {Расположение, тип и количество согл. документации стрелочного перевода}"
+      }
+    ],
+    "19a874123e964c49bc896bfa143ac91c": [
+      {
+        "index": 0, 
+        "pl": "Szyna rowkowa o profilu 49E1",
+        "en": "Grooved rail 49E1 profile",
+        "ua": "Жолобчаста рейка профілю 49E1",
+        "de": "Rillenschiene Profil 49E1",
+        "ru": "Желобчатый рельс профиля 49E1"
+      },
+      {
+        "index": 1,
+        "pl": "TINES® Polyrail 50/55 {Sprężysta otulina z elastomeru poliuretanowego}",
+        "en": "TINES® Polyrail 50/55 {Polyurethane elastomer elastic boot}",
+        "ua": "TINES® Polyrail 50/55 {Пружна оболонка з поліуретанового еластомеру}",
+        "de": "TINES® Polyrail 50/55 {Elastische Polyurethan-Elastomer-Umhüllung}",
+        "ru": "TINES® Polyrail 50/55 {Упругая оболочка из полиуретанового эластомера}"
+      },
+      {
+        "index": 2,
+        "pl": "TINES® Polyrail 53+/ TINES® Polyrail Primer {Powłoka gruntująca}",
+        "en": "TINES® Polyrail 53+/ TINES® Polyrail Primer {Primer coating}",
+        "ua": "TINES® Polyrail 53+/ TINES® Polyrail Primer {Ґрунтувальне покриття}",
+        "de": "TINES® Polyrail 53+/ TINES® Polyrail Primer {Grundierungsbeschichtung}",
+        "ru": "TINES® Polyrail 53+/ TINES® Polyrail Primer {Грунтовочное покрытие}"
+      },
+      {
+        "index": 3,
+        "pl": "Rury PVC {Wkładki komorowe}",
+        "en": "PVC pipes {Chamber fillers}",
+        "ua": "ПВХ-труби {Камерні вкладиші}",
+        "de": "PVC-Rohre {Kammerfüllungen}",
+        "ru": "ПВХ-трубы {Камерные вкладыши}"
+      },
+      {
+        "index": 4,
+        "pl": "TINES® Railspacer {Uchwyty do rur PVC}",
+        "en": "TINES® Railspacer {PVC pipe spacers/holders}",
+        "ua": "TINES® Railspacer {Тримачі для ПВХ-труб}",
+        "de": "TINES® Railspacer {PVC-Rohrhalter}",
+        "ru": "TINES® Railspacer {Фиксаторы/держатели ПВХ-труб}"
+      },
+      {
+        "index": 5,
+        "pl": "TINES® Railwedge {Kliny stabilizujące}",
+        "en": "TINES® Railwedge {Stabilizing wedges}",
+        "ua": "TINES® Railwedge {Стабілізуючі клини}",
+        "de": "TINES® Railwedge {Stabilisierungskeile}",
+        "ru": "TINES® Railwedge {Стабилизирующие клинья}"
+      },
+      {
+        "index": 6,
+        "pl": "TINES® Railshim {Podkładki regulacyjne}",
+        "en": "TINES® Railshim {Alignment shims}",
+        "ua": "TINES® Railshim {Регулювальні прокладки}",
+        "de": "TINES® Railshim {Justier-Unterlegscheiben}",
+        "ru": "TINES® Railshim {Регулировочные прокладки}"
+      },
+      {
+        "index": 7,
+        "pl": "TINES® Railstrip {Ciągła sprężysta przekładka podszynowa}",
+        "en": "TINES® Railstrip {Continuous elastic rail pad}",
+        "ua": "TINES® Railstrip {Безперервна пружна підрейкова прокладка}",
+        "de": "TINES® Railstrip {Kontinuierliche elastische Schienenzwischenlage}",
+        "ru": "TINES® Railstrip {Непрерывная упругая подрельсовая прокладка}"
+      },
+      {
+        "index": 8,
+        "pl": "TINES® Polyrail 53+ {Powłoka z kleju (opcjonalnie)}",
+        "en": "TINES® Polyrail 53+ {Adhesive coating (optional)}",
+        "ua": "TINES® Polyrail 53+ {Клейове покриття (опціонально)}",
+        "de": "TINES® Polyrail 53+ {Klebebeschichtung (optional)}",
+        "ru": "TINES® Polyrail 53+ {Клеевое покрытие (опционально)}"
+      },
+      {
+        "index": 9,
+        "pl": "Oczyszczony betonowy kanał szynowy",
+        "en": "Cleaned concrete rail trough/channel",
+        "ua": "Очищений бетонний жолоб/канал рейки",
+        "de": "Gereinigter Betonschienenkanal",
+        "ru": "Очищенный бетонный желоб/канал рельса"
       }
     ]
   }
