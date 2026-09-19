@@ -35,13 +35,13 @@
           }
         },
         "images": {
-          "main_image": "/products/kolej/zint-nawierzchnia-tines.png",
+          "main_image": "/tines-kiosk/products/kolej/zint-nawierzchnia-tines.png",
           "related_images": [
-            "gallery/kolej/kolej-zint-tines-1.png",
-            "gallery/kolej/kolej-zint-tines-2.png",
-            "gallery/kolej/kolej-zint-tines-3.png",
-            "gallery/kolej/kolej-zint-tines-4.png",
-            "gallery/kolej/kolej-zint-tines-5.png"
+            "/tines-kiosk/gallery/kolej/kolej-zint-tines-1.png",
+            "/tines-kiosk/gallery/kolej/kolej-zint-tines-2.png",
+            "/tines-kiosk/gallery/kolej/kolej-zint-tines-3.png",
+            "/tines-kiosk/gallery/kolej/kolej-zint-tines-4.png",
+            "/tines-kiosk/gallery/kolej/kolej-zint-tines-5.png"
           ]
         },
         "sketchfab": {
@@ -101,11 +101,11 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/kolej/tines-gtp.png",
+          "main_image": "/tines-kiosk/products/kolej/tines-gtp.png",
           "related_images": [
-            "gallery/kolej/kolej-zint-tines-gtp-1.png",
-            "gallery/kolej/kolej-zint-tines-gtp-2.png",
-            "gallery/kolej/kolej-zint-tines-gtp-3.png"
+            "/tines-kiosk/gallery/kolej/kolej-zint-tines-gtp-1.png",
+            "/tines-kiosk/gallery/kolej/kolej-zint-tines-gtp-2.png",
+            "/tines-kiosk/gallery/kolej/kolej-zint-tines-gtp-3.png"
           ]
         }
       },
@@ -148,16 +148,16 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/kolej/tines-ebs.png",
+          "main_image": "/tines-kiosk/products/kolej/tines-ebs.png",
           "related_images": [
-            "gallery/kolej/kolej-ebs-1.png",
-            "gallery/kolej/kolej-ebs-2.png",
-            "gallery/kolej/kolej-ebs-3.png",
-            "gallery/kolej/kolej-ebs-4.png",
-            "gallery/kolej/kolej-ebs-5.png",
-            "gallery/kolej/kolej-ebs-6.png",
-            "gallery/kolej/kolej-ebs-7.png",
-            "gallery/kolej/kolej-ebs-8.png"
+            "/tines-kiosk/gallery/kolej/kolej-ebs-1.png",
+            "/tines-kiosk/gallery/kolej/kolej-ebs-2.png",
+            "/tines-kiosk/gallery/kolej/kolej-ebs-3.png",
+            "/tines-kiosk/gallery/kolej/kolej-ebs-4.png",
+            "/tines-kiosk/gallery/kolej/kolej-ebs-5.png",
+            "/tines-kiosk/gallery/kolej/kolej-ebs-6.png",
+            "/tines-kiosk/gallery/kolej/kolej-ebs-7.png",
+            "/tines-kiosk/gallery/kolej/kolej-ebs-8.png"
           ]
         }
       },
@@ -200,7 +200,7 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/kolej/tines-st-ebs.png",
+          "main_image": "/tines-kiosk/products/kolej/tines-st-ebs.png",
           "related_images": []
         }
       },
@@ -237,12 +237,12 @@
         },
         "crossCategories": [],
         "images": {
-          "main_image": "/products/kolej/rozjazdy.png",
+          "main_image": "/tines-kiosk/products/kolej/rozjazdy.png",
           "related_images": [
-            "gallery/kolej/kolej-rozjazdy-1.png",
-            "gallery/kolej/kolej-rozjazdy-2.png",
-            "gallery/kolej/kolej-rozjazdy-3.png",
-            "gallery/kolej/kolej-rozjazdy-4.png"
+            "/tines-kiosk/gallery/kolej/kolej-rozjazdy-1.png",
+            "/tines-kiosk/gallery/kolej/kolej-rozjazdy-2.png",
+            "/tines-kiosk/gallery/kolej/kolej-rozjazdy-3.png",
+            "/tines-kiosk/gallery/kolej/kolej-rozjazdy-4.png"
           ]
         }
       },
@@ -285,7 +285,7 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/kolej/tines-srt.png",
+          "main_image": "/tines-kiosk/products/kolej/tines-srt.png",
           "related_images": []
         }
       },
@@ -328,7 +328,7 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/kolej/w14.png",
+          "main_image": "/tines-kiosk/products/kolej/w14.png",
           "related_images": []
         }
       },
@@ -374,16 +374,16 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/kolej/tines-ers.png",
+          "main_image": "/tines-kiosk/products/kolej/tines-ers.png",
           "related_images": [
-            "gallery/kolej/kolej-ers-1.png",
-            "gallery/kolej/kolej-ers-2.png",
-            "gallery/kolej/kolej-ers-3.png",
-            "gallery/kolej/kolej-ers-4.png",
-            "gallery/kolej/kolej-ers-5.png",
-            "gallery/kolej/kolej-ers-6.png",
-            "gallery/kolej/kolej-ers-7.png",
-            "gallery/kolej/kolej-ers-8.png"
+            "/tines-kiosk/gallery/kolej/kolej-ers-1.png",
+            "/tines-kiosk/gallery/kolej/kolej-ers-2.png",
+            "/tines-kiosk/gallery/kolej/kolej-ers-3.png",
+            "/tines-kiosk/gallery/kolej/kolej-ers-4.png",
+            "/tines-kiosk/gallery/kolej/kolej-ers-5.png",
+            "/tines-kiosk/gallery/kolej/kolej-ers-6.png",
+            "/tines-kiosk/gallery/kolej/kolej-ers-7.png",
+            "/tines-kiosk/gallery/kolej/kolej-ers-8.png"
           ]
         }
       },
@@ -427,15 +427,15 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/kolej/tines-lc-l.png",
+          "main_image": "/tines-kiosk/products/kolej/tines-lc-l.png",
           "related_images": [
-            "gallery/kolej/kolej-plyty-1.png",
-            "gallery/kolej/kolej-plyty-2.png",
-            "gallery/kolej/kolej-plyty-3.png",
-            "gallery/kolej/kolej-plyty-4.png",
-            "gallery/kolej/kolej-plyty-5.png",
-            "gallery/kolej/kolej-plyty-6.png",
-            "gallery/kolej/kolej-plyty-7.png"
+            "/tines-kiosk/gallery/kolej/kolej-plyty-1.png",
+            "/tines-kiosk/gallery/kolej/kolej-plyty-2.png",
+            "/tines-kiosk/gallery/kolej/kolej-plyty-3.png",
+            "/tines-kiosk/gallery/kolej/kolej-plyty-4.png",
+            "/tines-kiosk/gallery/kolej/kolej-plyty-5.png",
+            "/tines-kiosk/gallery/kolej/kolej-plyty-6.png",
+            "/tines-kiosk/gallery/kolej/kolej-plyty-7.png"
           ]
         }
       },
@@ -479,13 +479,13 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/kolej/maty.png",
+          "main_image": "/tines-kiosk/products/kolej/maty.png",
           "related_images": [
-            "gallery/kolej/kolej-maty-1.png",
-            "gallery/kolej/kolej-maty-2.png",
-            "gallery/kolej/kolej-maty-3.png",
-            "gallery/kolej/kolej-maty-4.png",
-            "gallery/kolej/kolej-maty-5.png"
+            "/tines-kiosk/gallery/kolej/kolej-maty-1.png",
+            "/tines-kiosk/gallery/kolej/kolej-maty-2.png",
+            "/tines-kiosk/gallery/kolej/kolej-maty-3.png",
+            "/tines-kiosk/gallery/kolej/kolej-maty-4.png",
+            "/tines-kiosk/gallery/kolej/kolej-maty-5.png"
           ]
         }
       },
@@ -527,12 +527,12 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/kolej/tines-polyrail.png",
+          "main_image": "/tines-kiosk/products/kolej/tines-polyrail.png",
           "related_images": [
-            "gallery/kolej/kolej-polyrail-1.png",
-            "gallery/kolej/kolej-polyrail-2.png",
-            "gallery/kolej/kolej-polyrail-3.png",
-            "gallery/kolej/kolej-polyrail-4.png"
+            "/tines-kiosk/gallery/kolej/kolej-polyrail-1.png",
+            "/tines-kiosk/gallery/kolej/kolej-polyrail-2.png",
+            "/tines-kiosk/gallery/kolej/kolej-polyrail-3.png",
+            "/tines-kiosk/gallery/kolej/kolej-polyrail-4.png"
           ]
         }
       }
@@ -588,13 +588,13 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/metro/zint-nawierzchnia-tines.png",
+          "main_image": "/tines-kiosk/products/metro/zint-nawierzchnia-tines.png",
           "related_images": [
-            "gallery/metro/zint-tines-1.png",
-            "gallery/metro/zint-tines-2.png",
-            "gallery/metro/zint-tines-3.png",
-            "gallery/metro/zint-tines-4.png",
-            "gallery/metro/zint-tines-5.png"
+            "/tines-kiosk/gallery/metro/zint-tines-1.png",
+            "/tines-kiosk/gallery/metro/zint-tines-2.png",
+            "/tines-kiosk/gallery/metro/zint-tines-3.png",
+            "/tines-kiosk/gallery/metro/zint-tines-4.png",
+            "/tines-kiosk/gallery/metro/zint-tines-5.png"
           ]
         }
       },
@@ -636,11 +636,11 @@
 
         ],
         "images": {
-          "main_image": "/products/metro/tines-gtp.png",
+          "main_image": "/tines-kiosk/products/metro/tines-gtp.png",
           "related_images": [
-            "gallery/metro/gtp-1.png",
-            "gallery/metro/gtp-2.png",
-            "gallery/metro/gtp-3.png"
+            "/tines-kiosk/gallery/metro/gtp-1.png",
+            "/tines-kiosk/gallery/metro/gtp-2.png",
+            "/tines-kiosk/gallery/metro/gtp-3.png"
           ]
         }
       },
@@ -687,14 +687,14 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/metro/tines-ebs.png",
+          "main_image": "/tines-kiosk/products/metro/tines-ebs.png",
           "related_images": [
-            "gallery/metro/ebs-1.png",
-            "gallery/metro/ebs-2.png",
-            "gallery/metro/ebs-3.png",
-            "gallery/metro/ebs-4.png",
-            "gallery/metro/ebs-5.png",
-            "gallery/metro/ebs-6.png"
+            "/tines-kiosk/gallery/metro/ebs-1.png",
+            "/tines-kiosk/gallery/metro/ebs-2.png",
+            "/tines-kiosk/gallery/metro/ebs-3.png",
+            "/tines-kiosk/gallery/metro/ebs-4.png",
+            "/tines-kiosk/gallery/metro/ebs-5.png",
+            "/tines-kiosk/gallery/metro/ebs-6.png"
           ]
         }
       },
@@ -735,12 +735,12 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/metro/rozjazdy.png",
+          "main_image": "/tines-kiosk/products/metro/rozjazdy.png",
           "related_images": [
-            "gallery/metro/rozjazdy-1.png",
-            "gallery/metro/rozjazdy-2.png",
-            "gallery/metro/rozjazdy-3.png",
-            "gallery/metro/rozjazdy-4.png"
+            "/tines-kiosk/gallery/metro/rozjazdy-1.png",
+            "/tines-kiosk/gallery/metro/rozjazdy-2.png",
+            "/tines-kiosk/gallery/metro/rozjazdy-3.png",
+            "/tines-kiosk/gallery/metro/rozjazdy-4.png"
           ]
         }
       },
@@ -783,7 +783,7 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/metro/tines-srt.png",
+          "main_image": "/tines-kiosk/products/metro/tines-srt.png",
           "related_images": []
         }
       },
@@ -825,7 +825,7 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/metro/w14.png",
+          "main_image": "/tines-kiosk/products/metro/w14.png",
           "related_images": []
         }
       },
@@ -871,9 +871,9 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/metro/tines-ers.png",
+          "main_image": "/tines-kiosk/products/metro/tines-ers.png",
           "related_images": [
-            "gallery/metro/ers-1.png"
+            "/tines-kiosk/gallery/metro/ers-1.png"
           ]
         }
       },
@@ -917,9 +917,9 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/metro/tines-lc-l.png",
+          "main_image": "/tines-kiosk/products/metro/tines-lc-l.png",
           "related_images": [
-            "gallery/metro/plyty-1.png"
+            "/tines-kiosk/gallery/metro/plyty-1.png"
           ]
         }
       },
@@ -963,7 +963,7 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/metro/maty.png",
+          "main_image": "/tines-kiosk/products/metro/maty.png",
           "related_images": []
         }
       },
@@ -1005,11 +1005,11 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/metro/tines-polyrail.png",
+          "main_image": "/tines-kiosk/products/metro/tines-polyrail.png",
           "related_images": [
-            "gallery/metro/polyrail-1.png",
-            "gallery/metro/polyrail-2.png",
-            "gallery/metro/polyrail-3.png"
+            "/tines-kiosk/gallery/metro/polyrail-1.png",
+            "/tines-kiosk/gallery/metro/polyrail-2.png",
+            "/tines-kiosk/gallery/metro/polyrail-3.png"
           ]
         }
       }
@@ -1064,14 +1064,14 @@
           ]
         },
         "images": {
-          "main_image": "/products/tramwaj/zint-nawierzchnia-tines-tram.png",
+          "main_image": "/tines-kiosk/products/tramwaj/zint-nawierzchnia-tines-tram.png",
           "related_images": [
-            "gallery/tramwaj/tram-1.png",
-            "gallery/tramwaj/tram-2.png",
-            "gallery/tramwaj/tram-3.png",
-            "gallery/tramwaj/tram-4.png",
-            "gallery/tramwaj/tram-5.png",
-            "gallery/tramwaj/tram-6.png"
+            "/tines-kiosk/gallery/tramwaj/tram-1.png",
+            "/tines-kiosk/gallery/tramwaj/tram-2.png",
+            "/tines-kiosk/gallery/tramwaj/tram-3.png",
+            "/tines-kiosk/gallery/tramwaj/tram-4.png",
+            "/tines-kiosk/gallery/tramwaj/tram-5.png",
+            "/tines-kiosk/gallery/tramwaj/tram-6.png"
           ]
         }
       },
@@ -1110,9 +1110,9 @@
           ]
         },
         "images": {
-          "main_image": "/products/tramwaj/zint-nawierzchnia-tines-tram-gtp.png",
+          "main_image": "/tines-kiosk/products/tramwaj/zint-nawierzchnia-tines-tram-gtp.png",
           "related_images": [
-            "gallery/tramwaj/gtp-1.png"
+            "/tines-kiosk/gallery/tramwaj/gtp-1.png"
           ]
         }
       },
@@ -1148,7 +1148,7 @@
           ]
         },
         "images": {
-          "main_image": "/products/tramwaj/rozjazdy.png",
+          "main_image": "/tines-kiosk/products/tramwaj/rozjazdy.png",
           "related_images": []
         }
       },
@@ -1190,12 +1190,12 @@
           ]
         },
         "images": {
-          "main_image": "/products/tramwaj/tines-tram-ebs.png",
+          "main_image": "/tines-kiosk/products/tramwaj/tines-tram-ebs.png",
           "related_images": [
-            "gallery/tramwaj/ebs-1.png",
-            "gallery/tramwaj/ebs-2.png",
-            "gallery/tramwaj/ebs-3.png",
-            "gallery/tramwaj/ebs-4.png"
+            "/tines-kiosk/gallery/tramwaj/ebs-1.png",
+            "/tines-kiosk/gallery/tramwaj/ebs-2.png",
+            "/tines-kiosk/gallery/tramwaj/ebs-3.png",
+            "/tines-kiosk/gallery/tramwaj/ebs-4.png"
           ]
         }
       },
@@ -1231,7 +1231,7 @@
           ]
         },
         "images": {
-          "main_image": "/products/tramwaj/tines-tram-bst.png",
+          "main_image": "/tines-kiosk/products/tramwaj/tines-tram-bst.png",
           "related_images": []
         }
       },
@@ -1269,7 +1269,7 @@
           ]
         },
         "images": {
-          "main_image": "/products/tramwaj/tines-srt.png",
+          "main_image": "/tines-kiosk/products/tramwaj/tines-srt.png",
           "related_images": []
         }
       },
@@ -1305,7 +1305,7 @@
           ]
         },
         "images": {
-          "main_image": "/products/tramwaj/tines-w14.png",
+          "main_image": "/tines-kiosk/products/tramwaj/tines-w14.png",
           "related_images": []
         }
       },
@@ -1344,16 +1344,16 @@
           ]
         },
         "images": {
-          "main_image": "/products/tramwaj/tines-polyrail.png",
+          "main_image": "/tines-kiosk/products/tramwaj/tines-polyrail.png",
           "related_images": [
-            "gallery/tramwaj/polyrail-1.png",
-            "gallery/tramwaj/polyrail-2.png",
-            "gallery/tramwaj/polyrail-3.png",
-            "gallery/tramwaj/polyrail-4.png",
-            "gallery/tramwaj/polyrail-5.png",
-            "gallery/tramwaj/polyrail-6.png",
-            "gallery/tramwaj/polyrail-7.png",
-            "gallery/tramwaj/polyrail-8.png"
+            "/tines-kiosk/gallery/tramwaj/polyrail-1.png",
+            "/tines-kiosk/gallery/tramwaj/polyrail-2.png",
+            "/tines-kiosk/gallery/tramwaj/polyrail-3.png",
+            "/tines-kiosk/gallery/tramwaj/polyrail-4.png",
+            "/tines-kiosk/gallery/tramwaj/polyrail-5.png",
+            "/tines-kiosk/gallery/tramwaj/polyrail-6.png",
+            "/tines-kiosk/gallery/tramwaj/polyrail-7.png",
+            "/tines-kiosk/gallery/tramwaj/polyrail-8.png"
           ]
         }
       },
@@ -1399,13 +1399,13 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/tramwaj/tines-lc-l.png",
+          "main_image": "/tines-kiosk/products/tramwaj/tines-lc-l.png",
           "related_images": [
-            "gallery/tramwaj/plyty-1.png",
-            "gallery/tramwaj/plyty-2.png",
-            "gallery/tramwaj/plyty-3.png",
-            "gallery/tramwaj/plyty-4.png",
-            "gallery/tramwaj/plyty-5.png"
+            "/tines-kiosk/gallery/tramwaj/plyty-1.png",
+            "/tines-kiosk/gallery/tramwaj/plyty-2.png",
+            "/tines-kiosk/gallery/tramwaj/plyty-3.png",
+            "/tines-kiosk/gallery/tramwaj/plyty-4.png",
+            "/tines-kiosk/gallery/tramwaj/plyty-5.png"
           ]
         }
       },
@@ -1449,9 +1449,9 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/tramwaj/maty.png",
+          "main_image": "/tines-kiosk/products/tramwaj/maty.png",
           "related_images": [
-            "gallery/tramwaj/maty-1.png"
+            "/tines-kiosk/gallery/tramwaj/maty-1.png"
           ]
         }
       },
@@ -1490,12 +1490,12 @@
           ]
         },
         "images": {
-          "main_image": "/products/tramwaj/profile.png",
+          "main_image": "/tines-kiosk/products/tramwaj/profile.png",
           "related_images": [
-            "gallery/tramwaj/profile-1.png",
-            "gallery/tramwaj/profile-2.png",
-            "gallery/tramwaj/profile-3.png",
-            "gallery/tramwaj/profile-4.png"
+            "/tines-kiosk/gallery/tramwaj/profile-1.png",
+            "/tines-kiosk/gallery/tramwaj/profile-2.png",
+            "/tines-kiosk/gallery/tramwaj/profile-3.png",
+            "/tines-kiosk/gallery/tramwaj/profile-4.png"
           ]
         }
       }
@@ -1551,15 +1551,15 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/przemysl/zint-nawierzchnia-tines.png",
+          "main_image": "/tines-kiosk/products/przemysl/zint-nawierzchnia-tines.png",
           "related_images": [
-            "gallery/przemysl/zint-tines-1.png",
-            "gallery/przemysl/zint-tines-2.png",
-            "gallery/przemysl/zint-tines-3.png",
-            "gallery/przemysl/zint-tines-4.png",
-            "gallery/przemysl/zint-tines-5.png",
-            "gallery/przemysl/zint-tines-6.png",
-            "gallery/przemysl/zint-tines-7.png"
+            "/tines-kiosk/gallery/przemysl/zint-tines-1.png",
+            "/tines-kiosk/gallery/przemysl/zint-tines-2.png",
+            "/tines-kiosk/gallery/przemysl/zint-tines-3.png",
+            "/tines-kiosk/gallery/przemysl/zint-tines-4.png",
+            "/tines-kiosk/gallery/przemysl/zint-tines-5.png",
+            "/tines-kiosk/gallery/przemysl/zint-tines-6.png",
+            "/tines-kiosk/gallery/przemysl/zint-tines-7.png"
           ]
         }
       },
@@ -1602,11 +1602,11 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/przemysl/tines-gtp.png",
+          "main_image": "/tines-kiosk/products/przemysl/tines-gtp.png",
           "related_images": [
-            "gallery/przemysl/gtp-1.png",
-            "gallery/przemysl/gtp-2.png",
-            "gallery/przemysl/gtp-3.png"
+            "/tines-kiosk/gallery/przemysl/gtp-1.png",
+            "/tines-kiosk/gallery/przemysl/gtp-2.png",
+            "/tines-kiosk/gallery/przemysl/gtp-3.png"
           ]
         }
       },
@@ -1653,11 +1653,11 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/przemysl/tines-ebs.png",
+          "main_image": "/tines-kiosk/products/przemysl/tines-ebs.png",
           "related_images": [
-            "gallery/przemysl/ebs-1.png",
-            "gallery/przemysl/ebs-2.png",
-            "gallery/przemysl/ebs-3.png"
+            "/tines-kiosk/gallery/przemysl/ebs-1.png",
+            "/tines-kiosk/gallery/przemysl/ebs-2.png",
+            "/tines-kiosk/gallery/przemysl/ebs-3.png"
           ]
         }
       },
@@ -1699,9 +1699,9 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/przemysl/rozjazdy.png",
+          "main_image": "/tines-kiosk/products/przemysl/rozjazdy.png",
           "related_images": [
-            "gallery/przemysl/rozjazdy-1.png"
+            "/tines-kiosk/gallery/przemysl/rozjazdy-1.png"
           ]
         }
       },
@@ -1745,7 +1745,7 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/przemysl/tines-srt.png",
+          "main_image": "/tines-kiosk/products/przemysl/tines-srt.png",
           "related_images": []
         }
       },
@@ -1787,7 +1787,7 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/przemysl/tines-ers.png",
+          "main_image": "/tines-kiosk/products/przemysl/tines-ers.png",
           "related_images": []
         }
       },
@@ -1833,14 +1833,14 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/przemysl/tines-ers.png",
+          "main_image": "/tines-kiosk/products/przemysl/tines-ers.png",
           "related_images": [
-            "gallery/przemysl/ers-1.png",
-            "gallery/przemysl/ers-2.png",
-            "gallery/przemysl/ers-3.png",
-            "gallery/przemysl/ers-4.png",
-            "gallery/przemysl/ers-5.png",
-            "gallery/przemysl/ers-6.png"
+            "/tines-kiosk/gallery/przemysl/ers-1.png",
+            "/tines-kiosk/gallery/przemysl/ers-2.png",
+            "/tines-kiosk/gallery/przemysl/ers-3.png",
+            "/tines-kiosk/gallery/przemysl/ers-4.png",
+            "/tines-kiosk/gallery/przemysl/ers-5.png",
+            "/tines-kiosk/gallery/przemysl/ers-6.png"
           ]
         }
       },
@@ -1885,7 +1885,7 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/przemysl/tines-lc-l.png",
+          "main_image": "/tines-kiosk/products/przemysl/tines-lc-l.png",
           "related_images": []
         }
       },
@@ -1929,7 +1929,7 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/przemysl/maty.png",
+          "main_image": "/tines-kiosk/products/przemysl/maty.png",
           "related_images": []
         }
       },
@@ -1971,12 +1971,12 @@
           "przemysl"
         ],
         "images": {
-          "main_image": "/products/przemysl/tines-polyrail.png",
+          "main_image": "/tines-kiosk/products/przemysl/tines-polyrail.png",
           "related_images": [
-            "gallery/przemysl/polyrail-1.png",
-            "gallery/przemysl/polyrail-2.png",
-            "gallery/przemysl/polyrail-3.png",
-            "gallery/przemysl/polyrail-4.png"
+            "/tines-kiosk/gallery/przemysl/polyrail-1.png",
+            "/tines-kiosk/gallery/przemysl/polyrail-2.png",
+            "/tines-kiosk/gallery/przemysl/polyrail-3.png",
+            "/tines-kiosk/gallery/przemysl/polyrail-4.png"
           ]
         }
       }

@@ -41,7 +41,7 @@
               @click="selectModel(id)"
             >
               <img 
-                :src="`/3d-thumbnails/${id}.png`" 
+                :src="`/tines-kiosk/3d-thumbnails/${id}.png`" 
                 :alt="`Model ${index + 1}`"
                 class="thumb-img"
                 @error="handleImageError"
