@@ -44,19 +44,31 @@
       </div>
     </Transition>
 
+    <!-- Менша версія логотипа у правому верхньому куті (перехід на localhost:4174) -->
     <Transition name="fade">
       <div 
         v-if="isOfferActive && !isAnimating" 
         class="secondary-logo-top-right"
       >
-        <img 
-          src="./assets/tracktec-logo.png" 
-          class="square-logo-btn" 
-          alt="Secondary Logo" 
-          title="На головну"
-          @click="closeOffer" 
-        />
+        <a href="http://localhost:4174" class="logo-link" title="Перейти на другий сайт">
+          <img 
+            src="./assets/tracktec-logo.png" 
+            class="square-logo-btn" 
+            alt="Secondary Logo" 
+          />
+        </a>
       </div>
+    </Transition>
+
+    <Transition name="fade">
+      <a 
+        v-if="!isOfferActive" 
+        href="http://localhost:4174" 
+        class="external-site-btn"
+        title="Перейти на другий сайт"
+      >
+        <AppIcon name="tracktec" class="btn-app-icon" />
+      </a>
     </Transition>
 
     <AppSidebar 
@@ -80,7 +92,10 @@
         <div v-if="!isOfferActive" class="top-content-group" key="main-group">
           <div class="main-logo-container">
             <img src="./assets/logo.png" class="main-logo" alt="Logotyp TINES" />
-            <img src="./assets/tracktec-logo.png" class="main-logo-square" alt="Logotyp TrackTec" />
+            <!-- Головне квадратне лого з переходом на localhost:4174 -->
+            <a href="http://localhost:4174" class="logo-link" title="Перейти на другий сайт">
+              <img src="./assets/tracktec-logo.png" class="main-logo-square" alt="Logotyp TrackTec" />
+            </a>
           </div>
           <div class="interactive-group">
             <!-- <InfoTicker :phrases="phrases" :interval="5000" /> -->
@@ -176,6 +191,7 @@ import { useLanguageStore } from './stores/language.js';
 import LanguageSelector from './components/LanguageSelector.vue';
 import SketchfabUiBlocker from './components/SketchfabUiBlocker.vue'
 import SecretHomeButton from './components/SecretHomeButton.vue'
+import AppIcon from './components/AppIcon.vue'
 
 export default {
   name: 'MainScreen',
@@ -189,7 +205,8 @@ export default {
     ItemDetailView,
     LanguageSelector,
     SketchfabUiBlocker,
-    SecretHomeButton
+    SecretHomeButton,
+    AppIcon
   },
   data() {
     return {
@@ -363,7 +380,7 @@ export default {
       }, 950)
     },
 
-closeOffer() {
+    closeOffer() {
       if (this.$refs.leftSecretBtn) this.$refs.leftSecretBtn.hide()
       if (this.$refs.rightSecretBtn) this.$refs.rightSecretBtn.hide()
 
@@ -374,6 +391,7 @@ closeOffer() {
       this.activeOfferId = null
       this.activeOfferItemIndex = 0
     },
+
     handleLanguageToggle() {
       console.log('Перемикання мови')
     },
@@ -454,6 +472,7 @@ closeOffer() {
         });
       }, 600);
     },
+
     handleDoubleClick(event) {
       if (!this.isOfferActive) return
 
@@ -483,6 +502,63 @@ closeOffer() {
   align-items: center;
 }
 
+/* Огортка посилання для логотипів */
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.external-site-btn {
+  position: fixed;
+  left: 2vw;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+
+  width: 4.5vw;
+  height: 4.5vw;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.external-site-btn:hover {
+  background: #ffffff;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 0.6vw 2vw rgba(0, 0, 0, 0.3);
+}
+
+.external-site-btn:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+/* Гарантоване відображення та розміри для AppIcon */
+.btn-app-icon {
+  width: 3.5vw !important;
+  height: 3.5vw !important;
+  min-width: 2.2vw;
+  min-height: 2.2vw;
+  display: block !important;
+  color: #666666;
+  fill: currentColor;
+  stroke: currentColor;
+  pointer-events: none;
+}
+
 .offer-header-brand {
   position: fixed;
   top: 3vh;
@@ -491,6 +567,7 @@ closeOffer() {
   display: flex;
   align-items: center;
   gap: 1.2vw;
+  cursor: pointer;
 }
 
 .header-logo {
@@ -600,6 +677,15 @@ closeOffer() {
   width: 16vw;
   height: 16vw;
   object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.main-logo-square:hover {
+  transform: scale(1.03);
+}
+
+.main-logo-square:active {
+  transform: scale(0.97);
 }
 
 .secondary-logo-top-right {
@@ -617,6 +703,10 @@ closeOffer() {
   object-fit: contain;
   cursor: pointer;
   transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.square-logo-btn:hover {
+  transform: scale(1.08);
 }
 
 .square-logo-btn:active {

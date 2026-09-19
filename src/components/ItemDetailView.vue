@@ -6,13 +6,24 @@
         :class="{ 'full-width': isSidebarCollapsed }"
       >
         <div class="media-wrapper">
+          <!-- Офлайн Three.js 3D плеєр (бере файл /models/<activeSketchfabId>.glb) -->
+          <Local3DViewer
+            v-if="activeSketchfabId && isOfflineMode"
+            :key="'local-' + activeSketchfabId"
+            :modelId="activeSketchfabId"
+            :autoplay="true"
+          />
+
+          <!-- Онлайн Sketchfab 3D плеєр -->
           <SketchfabAPIViewer 
-            v-if="activeSketchfabId"
-            :key="activeSketchfabId"
+            v-else-if="activeSketchfabId"
+            :key="'sketchfab-' + activeSketchfabId"
             :modelId="activeSketchfabId"
             :autoplay="true"
             :annotations="item.annotations"
           />
+
+          <!-- Звичайне зображення, якщо відсутня 3D модель -->
           <img 
             v-else-if="item.images?.main_image" 
             :src="item.images?.main_image" 
@@ -63,27 +74,38 @@
         </div>
       </div>
 
-      <button 
-        class="toggle-sidebar-btn" 
-        :class="{ 'collapsed': isSidebarCollapsed }"
-        @click="toggleSidebar"
-        :title="isSidebarCollapsed ? 'Показати опис' : 'Згорнути опис'"
-        aria-label="Перемикач панелі опису"
-      >
-        <svg 
-          viewBox="0 0 24 24" 
-          width="24" 
-          height="24" 
-          stroke="currentColor" 
-          stroke-width="2.5" 
-          fill="none" 
-          stroke-linecap="round" 
-          stroke-linejoin="round"
-          class="arrow-icon"
+      <!-- Панель керування між колонками -->
+      <div class="sidebar-controls">
+        <!-- Кнопка перемикання режиму джерела 3D (Онлайн / Локальний Three.js) -->
+        <ViewerSourceToggle 
+          v-if="activeSketchfabId"
+          :isOffline="isOfflineMode"
+          @toggle="toggleOfflineMode"
+        />
+
+        <!-- Кнопка згортання / розгортання бічної панелі -->
+        <button 
+          class="toggle-sidebar-btn" 
+          :class="{ 'collapsed': isSidebarCollapsed }"
+          @click="toggleSidebar"
+          :title="isSidebarCollapsed ? 'Показати опис' : 'Згорнути опис'"
+          aria-label="Перемикач панелі опису"
         >
-          <polyline points="9 18 15 12 9 6"></polyline>
-        </svg>
-      </button>
+          <svg 
+            viewBox="0 0 24 24" 
+            width="24" 
+            height="24" 
+            stroke="currentColor" 
+            stroke-width="2.5" 
+            fill="none" 
+            stroke-linecap="round" 
+            stroke-linejoin="round"
+            class="arrow-icon"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
 
       <div 
         class="content-column" 
@@ -92,7 +114,6 @@
         <div class="header-row">
           <h1 class="detail-title" v-html="langStore.getText(item.title)"></h1>
           
-          <!-- Показуємо кнопку лише якщо є хоча б одне зображення у related_images -->
           <button 
             v-if="hasRelatedImages"
             class="mode-toggle-circle-btn"
@@ -164,15 +185,19 @@
 
 <script>
 import SketchfabViewer from './SketchfabViewer.vue'
+import SketchfabAPIViewer from './SketchfabAPIViewer.vue'
+import Local3DViewer from './Local3DViewer.vue'
+import ViewerSourceToggle from './ViewerSourceToggle.vue'
 import AppIcon from './AppIcon.vue'
-import { useLanguageStore } from '@/stores/language.js';
-import SketchfabAPIViewer from './SketchfabAPIViewer.vue';
+import { useLanguageStore } from '@/stores/language.js'
 
 export default {
   name: 'ItemDetailView',
   components: {
     SketchfabAPIViewer,
     SketchfabViewer,
+    Local3DViewer,
+    ViewerSourceToggle,
     AppIcon
   },
   props: {
@@ -198,6 +223,7 @@ export default {
       hasAppIcon: true,
       
       activeSketchfabId: null,
+      isOfflineMode: !navigator.onLine,
 
       isDragging: false,
       startX: 0,
@@ -206,15 +232,12 @@ export default {
     }
   },
   computed: {
-    // Перевіряємо наявність дійсно заповнених елементів у related_images
     hasRelatedImages() {
       if (!this.item?.images?.related_images || !Array.isArray(this.item.images.related_images)) {
         return false
       }
       return this.item.images.related_images.some(img => img && img.trim() !== '')
     },
-
-    // Підтягуємо додаткові зображення для галереї
     galleryImages() {
       if (!this.item) return []
 
@@ -243,7 +266,6 @@ export default {
     item: {
       immediate: true,
       handler(newItem) {
-        // Якщо змінили товар і у нового немає картинок, скидаємо слайдер на опис
         if (!this.hasRelatedImages) {
           this.currentSlide = 0
         }
@@ -269,6 +291,9 @@ export default {
     window.addEventListener('mouseup', this.handleMouseUp)
     window.addEventListener('touchmove', this.handleTouchMove)
     window.addEventListener('touchend', this.handleMouseUp)
+
+    window.addEventListener('online', this.handleNetworkChange)
+    window.addEventListener('offline', this.handleNetworkChange)
   },
   beforeUnmount() {
     window.removeEventListener('resize', this.updateSlideWidth)
@@ -276,8 +301,17 @@ export default {
     window.removeEventListener('mouseup', this.handleMouseUp)
     window.removeEventListener('touchmove', this.handleTouchMove)
     window.removeEventListener('touchend', this.handleMouseUp)
+
+    window.removeEventListener('online', this.handleNetworkChange)
+    window.removeEventListener('offline', this.handleNetworkChange)
   },
   methods: {
+    toggleOfflineMode() {
+      this.isOfflineMode = !this.isOfflineMode
+    },
+    handleNetworkChange() {
+      this.isOfflineMode = !navigator.onLine
+    },
     selectModel(id) {
       this.activeSketchfabId = id
     },
@@ -293,7 +327,6 @@ export default {
       const nextIdx = (this.currentIndex + 1) % total
       this.activeSketchfabId = this.modelIds[nextIdx]
     },
-    // Фоллбек на png або приховання якщо зображення відсутнє
     handleImageError(e) {
       if (!e.target.dataset.fallbackTried) {
         e.target.dataset.fallbackTried = 'true'
@@ -302,11 +335,8 @@ export default {
         e.target.style.opacity = '0'
       }
     },
-
     toggleSidebar() {
       this.isSidebarCollapsed = !this.isSidebarCollapsed
-      
-      // Надсилаємо стан нагору в App.vue
       this.$emit('sidebar-toggle', this.isSidebarCollapsed)
       
       setTimeout(() => {
@@ -319,42 +349,35 @@ export default {
         this.slideWidth = this.$refs.carouselWrapper.clientWidth
       }
     },
-
     toggleMode() {
       if (!this.hasRelatedImages) return
       this.currentSlide = this.currentSlide === 0 ? 1 : 0
       this.dragOffset = 0
     },
-
     handleMouseDown(e) {
       if (!this.hasRelatedImages) return
       this.startDrag(e.clientX)
     },
-
     handleTouchStart(e) {
       if (!this.hasRelatedImages) return
       if (e.touches && e.touches[0]) {
         this.startDrag(e.touches[0].clientX)
       }
     },
-
     startDrag(clientX) {
       this.isDragging = true
       this.startX = clientX
       this.dragOffset = 0
       this.updateSlideWidth()
     },
-
     handleMouseMove(e) {
       if (!this.isDragging) return
       this.moveDrag(e.clientX)
     },
-
     handleTouchMove(e) {
       if (!this.isDragging || !e.touches || !e.touches[0]) return
       this.moveDrag(e.touches[0].clientX)
     },
-
     moveDrag(clientX) {
       const deltaX = clientX - this.startX
       
@@ -364,7 +387,6 @@ export default {
         this.dragOffset = deltaX
       }
     },
-
     handleMouseUp() {
       if (!this.isDragging) return
       this.isDragging = false
@@ -537,12 +559,20 @@ export default {
   min-height: 16px;
 }
 
+.sidebar-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8vw;
+  align-items: center;
+  align-self: center;
+  flex-shrink: 0;
+}
+
 .toggle-sidebar-btn {
   background: transparent;
   border: none;
-  padding: 1vw 0.2vw;
+  padding: 0.5vw 0.2vw;
   margin: 0;
-  align-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
