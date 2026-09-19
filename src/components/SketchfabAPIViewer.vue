@@ -240,9 +240,23 @@ export default {
         if (sketchfabAnnotations[annotationIndex]) {
           const currentObj = sketchfabAnnotations[annotationIndex]
 
-          const targetTitle = String(item[lang] || item.pl || item.en || currentObj.name || '')
-          const contentKey = `${lang}_content`
-          const rawContent = item[contentKey] || item.content
+          let rawLangText = String(item[lang] || item.pl || item.en || currentObj.name || '')
+          
+          let targetTitle = rawLangText
+          let extractedDesc = ''
+
+          const match = rawLangText.match(/^(.*?)\{(.*?)\}$/)
+          if (match) {
+            targetTitle = match[1].trim()
+            extractedDesc = match[2].trim()
+          }
+
+          const rawDescription = 
+            item[`${lang}_desc`] || 
+            item[`${lang}_content`] || 
+            item.desc || 
+            item.content || 
+            extractedDesc
 
           let fallbackContent = ''
           if (typeof currentObj.content === 'string') {
@@ -251,7 +265,7 @@ export default {
             fallbackContent = currentObj.content.raw
           }
 
-          const finalContent = String(rawContent || fallbackContent || '')
+          const finalContent = String(rawDescription || fallbackContent || '')
 
           const updatedData = {
             ...currentObj,

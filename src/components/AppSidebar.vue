@@ -27,9 +27,9 @@
 
       <div class="sidebar-bottom-section">
         <SidebarNav 
-          v-if="!isItemDetailActive && totalItems > 0"
-          :items="items"
-          :totalItems="totalItems" 
+          v-if="!isItemDetailActive && currentNavItems.length > 0"
+          :items="currentNavItems"
+          :totalItems="currentNavItems.length" 
           :activeIndex="activeIndex"
           :category="activeOfferId"
           @navigate="$emit('navigate', $event)"
@@ -58,6 +58,13 @@ import OfferSidebarNav from './OfferSidebarNav.vue'
 import CrossCategoryNav from './CrossCategoryNav.vue'
 import AppIcon from './AppIcon.vue'
 import LanguageSelector from './LanguageSelector.vue'
+
+const CATEGORY_ITEMS = {
+  kolej: ['ZINT', 'GTP', 'EBS', 'ST', "ROZJ", "SRT", "W14", "ERS", "LC-L", "MAT", "ELAS"],
+  przemysl: ['ZINT', 'GTP', 'EBS', "ROZJ", "SRT", "W14", "ERS", "LC-L", "MAT", "ELAS"],
+  metro: ['ZINT', 'GTP', 'EBS', "ROZJ", "SRT", "W14", "ERS", "LC-L", "MAT", "ELAS"],
+  tramwaj: ['ZINT', "GTP", 'ROZJ', 'EBS', 'BST', 'SRT', 'W14', 'ELAS', 'LC-L', 'MAT', 'PROF']
+}
 
 export default {
   name: 'AppSidebar',
@@ -102,7 +109,27 @@ export default {
       default: () => []
     }
   },
-  emits: ['toggle-language', 'go-home', 'navigate', 'select-offer', 'back-to-offer', 'select-cross-category']
+  emits: ['toggle-language', 'go-home', 'navigate', 'select-offer', 'back-to-offer', 'select-cross-category'],
+  computed: {
+    currentNavItems() {
+      // 1. Якщо масив передано явно через props z зовнішнього джерела
+      if (this.items && this.items.length > 0) {
+        return this.items
+      }
+      
+      // 2. Якщо є відповідний масив для activeOfferId
+      if (this.activeOfferId && CATEGORY_ITEMS[this.activeOfferId]) {
+        return CATEGORY_ITEMS[this.activeOfferId]
+      }
+
+      // 3. Якщо передано просто totalItems — створюємо порожній масив за кількістю
+      if (this.totalItems > 0) {
+        return Array.from({ length: this.totalItems }, (_, i) => i + 1)
+      }
+
+      return []
+    }
+  }
 }
 </script>
 
@@ -184,7 +211,6 @@ export default {
   box-shadow: 0 0.4vw 1vw rgba(0, 0, 0, 0.1);
 }
 
-
 .back-to-offer-btn {
   width: 3vw;
   height: 3vw;
@@ -208,32 +234,6 @@ export default {
 .back-to-offer-icon {
   width: 1.5vw;
   height: 1.5vw;
-}
-
-.lang-btn {
-  width: 3vw;
-  height: 3vw;
-  border-radius: 50%;
-  background-color: #f1f5f9;
-  border: 0.1vw solid #e2e8f0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
-  padding: 0;
-}
-
-.lang-btn:active {
-  background-color: #e2e8f0;
-  transform: translateY(-0.1vw);
-  box-shadow: 0 0.4vw 1vw rgba(0, 0, 0, 0.08);
-}
-
-.globe-icon {
-  width: 1.5vw;
-  height: 1.5vw;
-  color: #929292;
 }
 
 .slide-sidebar-enter-active,

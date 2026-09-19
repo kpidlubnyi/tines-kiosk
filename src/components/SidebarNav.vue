@@ -26,20 +26,19 @@
         >
           <div
             v-for="(item, index) in itemsList"
-            :key="item.id || index"
+            :key="typeof item === 'object' ? item.id || index : index"
             class="nav-item"
             :class="{ 
               'is-active': activeIndex === index,
               'is-circle': mode === 'circles'
             }"
-            :style="mode === 'circles' ? getCircleStyle(item) : {}"
             @click.stop="handleItemClick(index)"
           >
             <span 
-              v-if="mode === 'circles' && !getItemImage(item)" 
-              class="circle-fallback"
+              v-if="mode === 'circles'" 
+              class="circle-label"
             >
-              {{ index + 1 }}
+              {{ getItemLabel(item, index) }}
             </span>
           </div>
         </div>
@@ -76,6 +75,14 @@
 <script>
 import AppIcon from './AppIcon.vue'
 
+// Власний масив назв для кожної категорії. Редагуйте стрінги тут:
+const CATEGORY_NAV_ITEMS = {
+  category1: ['Назва 1', 'Назва 2', 'Назва 3', 'Назва 4', 'Назва 5'],
+  category2: ['Модель A', 'Модель B', 'Модель C', 'Модель D'],
+  category3: ['Тип 100', 'Тип 200', 'Тип 300'],
+  category4: ['Варіант 1', 'Варіант 2', 'Варіант 3', 'Варіант 4']
+}
+
 export default {
   name: 'SidebarNav',
   components: {
@@ -107,9 +114,17 @@ export default {
   },
   computed: {
     itemsList() {
+      // 1. Якщо масив передано явно через props
       if (this.items && this.items.length > 0) {
         return this.items
       }
+      
+      // 2. Якщо задана категорія та для неї є стрінговий масив в CATEGORY_NAV_ITEMS
+      if (this.category && CATEGORY_NAV_ITEMS[this.category]) {
+        return CATEGORY_NAV_ITEMS[this.category]
+      }
+      
+      // 3. За замовчуванням — генеруємо масив за тотальною кількістю
       return Array.from({ length: this.totalItems }, (_, i) => ({ id: i + 1 }))
     },
     totalItemsCount() {
@@ -134,26 +149,11 @@ export default {
     switchToBars() {
       this.mode = 'bars'
     },
-    getItemImage(item) {
-      if (item?.image || item?.bgImage) {
-        return item.image || item.bgImage
+    getItemLabel(item, index) {
+      if (typeof item === 'string' || typeof item === 'number') {
+        return item
       }
-      
-      if (item && item.id !== undefined && item.id !== null) {
-        const catPath = this.category ? `${this.category}/` : ''
-        return `/nav-thumbnails/${catPath}${item.id}.png`
-      }
-      
-      return null
-    },
-    getCircleStyle(item) {
-      const imageUrl = this.getItemImage(item)
-      if (imageUrl) {
-        return {
-          backgroundImage: `url("${imageUrl}")`
-        }
-      }
-      return {}
+      return item?.label || item?.title || item?.name || item?.code || item?.id || (index + 1)
     },
     scrollToActive(index) {
       this.$nextTick(() => {
@@ -282,9 +282,6 @@ export default {
   min-height: 3px;
   background-color: #cbd5e1;
   border-radius: 50vw;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   border: 0.15vw solid transparent;
   box-sizing: border-box;
   display: flex;
@@ -311,11 +308,14 @@ export default {
 }
 
 .nav-item.is-circle {
-  width: 2vw;
-  height: 2vw;
-  min-width: 24px;
-  min-height: 24px;
-  border-radius: 50%;
+  width: auto;
+  min-width: 2.2vw;
+  height: 2.2vw;
+  min-height: 26px;
+  padding: 0 0.4vw;
+  border-radius: 50vw;
+  background-color: #ffffff;
+  border: 0.1vw solid #cbd5e1;
   cursor: pointer;
 }
 
@@ -325,15 +325,17 @@ export default {
 }
 
 .nav-item.is-circle.is-active {
+  background-color: #f1f5f9;
   border-color: #929292;
-  box-shadow: 0 0 0vw 0.15vw #929292, 0 0 0.6vw rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 0vw 0.15vw #929292, 0 0 0.6vw rgba(0, 0, 0, 0.2);
 }
 
-.circle-fallback {
+.circle-label {
   font-size: 0.65vw;
   font-weight: 600;
   color: #475569;
   user-select: none;
+  white-space: nowrap;
   animation: fadeIn 0.25s ease forwards;
 }
 
