@@ -1,10 +1,9 @@
 <template>
   <button 
     class="viewer-source-toggle"
-    :title="isOffline ? 'Переключити на онлайн 3D (Sketchfab)' : 'Переключити на локальний перегляд (Офлайн)'"
+    :title="isOffline ? 'Przejdź w tryb Online' : 'Przejdź w tryb Offline'"
     @click="$emit('toggle')"
   >
-    <!-- Іконка "Онлайн / Хмара" -->
     <svg 
       v-if="!isOffline" 
       viewBox="0 0 24 24" 
@@ -18,7 +17,6 @@
       <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
     </svg>
 
-    <!-- Іконка "Офлайн / Перекреслена хмара" -->
     <svg 
       v-else 
       viewBox="0 0 24 24" 
@@ -29,9 +27,7 @@
       stroke-linejoin="round" 
       class="icon offline"
     >
-      <!-- Базовий контур хмарки -->
       <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
-      <!-- Перекреслювальна лінія -->
       <line x1="2" y1="2" x2="22" y2="22"></line>
     </svg>
   </button>

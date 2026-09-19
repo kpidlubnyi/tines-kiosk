@@ -4,7 +4,6 @@
       <div class="sidebar-top-section">
         <button 
           class="back-btn" 
-          title="На головну" 
           @click="$emit('go-home')"
         >
           <AppIcon name="home" class="back-to-offer-icon" />
@@ -39,7 +38,6 @@
           <button 
             v-if="isItemDetailActive"
             class="back-to-offer-btn" 
-            title="Повернутися до оферти"
             @click="$emit('back-to-offer')"
           >
             <AppIcon name="arrow-left" class="back-to-offer-icon" />

@@ -6,11 +6,9 @@
   >
     <Transition name="secret-fade">
       <div v-if="visible" class="secret-pill-container">
-        <!-- Ліва половина: зовнішній сайт (AppIcon / kolej) -->
         <a 
           href="http://localhost:4174" 
           class="pill-action-btn left-action"
-          title="Перейти на другий сайт"
           @click.stop
         >
           <AppIcon name="tracktec" class="pill-icon" />
@@ -18,10 +16,8 @@
 
         <div class="pill-divider"></div>
 
-        <!-- Права половина: домік (На головну) -->
         <button 
           class="pill-action-btn right-action"
-          title="На головну"
           @click.stop="handleClick"
         >
           <svg viewBox="0 0 24 24" class="pill-icon home-icon">
@@ -109,7 +105,6 @@ export default {
   justify-content: flex-end;
 }
 
-/* Капсула (Pill) */
 .secret-pill-container {
   display: flex;
   align-items: center;
@@ -126,7 +121,6 @@ export default {
   z-index: 31;
 }
 
-/* Спільні стилі для обох половин */
 .pill-action-btn {
   display: flex;
   align-items: center;
@@ -149,14 +143,12 @@ export default {
   background: rgba(0, 0, 0, 0.12);
 }
 
-/* Вертикальний розділювач між половинами */
 .pill-divider {
   width: 1px;
   height: 50%;
   background-color: rgba(0, 0, 0, 0.15);
 }
 
-/* Іконки всередині капсули */
 .pill-icon {
   width: 2vw;
   height: 2vw;
@@ -173,7 +165,6 @@ export default {
   stroke: none;
 }
 
-/* Анімація появи/зникання */
 .secret-fade-enter-active, 
 .secret-fade-leave-active {
   transition: opacity 0.3s ease, transform 0.3s ease;

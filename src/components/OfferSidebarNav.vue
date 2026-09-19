@@ -2,7 +2,7 @@
   <div class="offer-sidebar-nav" :class="{ 'is-expanded': isExpanded }">
     <button 
       class="toggle-btn" 
-      :title="isExpanded ? 'Згорнути оферти' : 'Розгорнути оферти'"
+      :title="isExpanded ? 'Zwiń ofertę' : 'Rozwiń ofertę'"
       @click="toggleExpand"
     >
       <AppIcon 

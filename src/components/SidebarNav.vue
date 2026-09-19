@@ -9,7 +9,6 @@
             class="nav-arrow" 
             :disabled="activeIndex === 0" 
             @click="$emit('navigate', activeIndex - 1)"
-            title="Попередній"
           >
             <AppIcon name="arrow-up" class="arrow-icon" />
           </button>
@@ -52,7 +51,6 @@
             class="nav-arrow" 
             :disabled="activeIndex === totalItemsCount - 1" 
             @click="$emit('navigate', activeIndex + 1)"
-            title="Наступний"
           >
             <AppIcon name="arrow-down" class="arrow-icon" />
           </button>
@@ -62,7 +60,6 @@
             key="reset-bars"
             class="nav-arrow reset-btn" 
             @click="switchToBars"
-            title="Wróć do linii"
           >
             <AppIcon name="collapse" class="arrow-icon" />
           </button>

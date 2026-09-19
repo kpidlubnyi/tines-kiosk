@@ -35,7 +35,6 @@
         <div class="models-gallery">
           <button 
             class="nav-arrow left-arrow" 
-            title="Попередня модель" 
             @click="prevModel"
           >
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -49,7 +48,7 @@
               :key="id"
               class="thumb-box"
               :class="{ 'is-active': id === activeSketchfabId }"
-              :title="`Модель ${index + 1}`"
+              :title="`Model ${index + 1}`"
               @click="selectModel(id)"
             >
               <img 
@@ -64,7 +63,6 @@
 
           <button 
             class="nav-arrow right-arrow" 
-            title="Наступна модель" 
             @click="nextModel"
           >
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -74,9 +72,7 @@
         </div>
       </div>
 
-      <!-- Панель керування між колонками -->
       <div class="sidebar-controls">
-        <!-- Кнопка перемикання режиму джерела 3D (Онлайн / Локальний Three.js) -->
         <ViewerSourceToggle 
           v-if="activeSketchfabId"
           :isOffline="isOfflineMode"
@@ -119,7 +115,7 @@
             class="mode-toggle-circle-btn"
             :class="{ 'is-gallery': currentSlide === 1 }"
             @click="toggleMode"
-            :title="currentSlide === 0 ? 'Перейти до галереї' : 'Повернутися до опису'"
+            :title="currentSlide === 0 ? 'Przejdź do galerii' : 'Wróć do opisu'"
           >
             <AppIcon 
               v-if="currentSlide === 0" 

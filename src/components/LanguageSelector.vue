@@ -18,7 +18,7 @@
       <button 
         class="lang-toggle-btn" 
         @click="toggleDropdown"
-        :title="isOpen ? 'Close' : 'Change language'"
+        :title="isOpen ? 'Zwiń' : 'Zmień język'"
       >
         <AppIcon name="globe" class="globe-icon" />
       </button>

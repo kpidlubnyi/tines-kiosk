@@ -44,13 +44,12 @@
       </div>
     </Transition>
 
-    <!-- Менша версія логотипа у правому верхньому куті (перехід на localhost:4174) -->
     <Transition name="fade">
       <div 
         v-if="isOfferActive && !isAnimating" 
         class="secondary-logo-top-right"
       >
-        <a href="http://localhost:4174" class="logo-link" title="Перейти на другий сайт">
+        <a href="http://localhost:4174" class="logo-link">
           <img 
             src="./assets/tracktec-logo.png" 
             class="square-logo-btn" 
@@ -65,7 +64,6 @@
         v-if="!isOfferActive" 
         href="http://localhost:4174" 
         class="external-site-btn"
-        title="Перейти на другий сайт"
       >
         <AppIcon name="tracktec" class="btn-app-icon" />
       </a>
@@ -92,13 +90,11 @@
         <div v-if="!isOfferActive" class="top-content-group" key="main-group">
           <div class="main-logo-container">
             <img src="./assets/logo.png" class="main-logo" alt="Logotyp TINES" />
-            <!-- Головне квадратне лого з переходом на localhost:4174 -->
-            <a href="http://localhost:4174" class="logo-link" title="Перейти на другий сайт">
+            <a href="http://localhost:4174" class="logo-link">
               <img src="./assets/tracktec-logo.png" class="main-logo-square" alt="Logotyp TrackTec" />
             </a>
           </div>
           <div class="interactive-group">
-            <!-- <InfoTicker :phrases="phrases" :interval="5000" /> -->
             <AppNavigation :buttons="buttons" @select="handleButtonClick" />
           </div>
         </div>
@@ -502,7 +498,6 @@ export default {
   align-items: center;
 }
 
-/* Огортка посилання для логотипів */
 .logo-link {
   display: inline-flex;
   align-items: center;
@@ -546,7 +541,6 @@ export default {
   transform: translateY(-50%) scale(0.95);
 }
 
-/* Гарантоване відображення та розміри для AppIcon */
 .btn-app-icon {
   width: 3.5vw !important;
   height: 3.5vw !important;
