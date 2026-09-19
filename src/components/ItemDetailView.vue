@@ -5,21 +5,22 @@
         class="media-column" 
         :class="{ 'full-width': isSidebarCollapsed }"
       >
-<div class="media-wrapper">
-  <SketchfabAPIViewer 
-    v-if="activeSketchfabId"
-    :key="activeSketchfabId"
-    :modelId="activeSketchfabId"
-    :autoplay="true"
-    :annotations="item.annotations"
-  />
-  <img 
-    v-else-if="item.images?.main_image" 
-    :src="item.images?.main_image" 
-    :alt="langStore.getText(item.title)" 
-    class="detail-image" 
-  />
-</div>
+        <div class="media-wrapper">
+          <SketchfabAPIViewer 
+            v-if="activeSketchfabId"
+            :key="activeSketchfabId"
+            :modelId="activeSketchfabId"
+            :autoplay="true"
+            :annotations="item.annotations"
+          />
+          <img 
+            v-else-if="item.images?.main_image" 
+            :src="item.images?.main_image" 
+            :alt="langStore.getText(item.title)" 
+            class="detail-image" 
+          />
+        </div>
+
         <div class="models-gallery">
           <button 
             class="nav-arrow left-arrow" 
@@ -91,7 +92,9 @@
         <div class="header-row">
           <h1 class="detail-title" v-html="langStore.getText(item.title)"></h1>
           
+          <!-- Показуємо кнопку лише якщо є хоча б одне зображення у related_images -->
           <button 
+            v-if="hasRelatedImages"
             class="mode-toggle-circle-btn"
             :class="{ 'is-gallery': currentSlide === 1 }"
             @click="toggleMode"
@@ -203,21 +206,25 @@ export default {
     }
   },
   computed: {
-    // Підтягуємо головне та додаткові зображення для галереї
+    // Перевіряємо наявність дійсно заповнених елементів у related_images
+    hasRelatedImages() {
+      if (!this.item?.images?.related_images || !Array.isArray(this.item.images.related_images)) {
+        return false
+      }
+      return this.item.images.related_images.some(img => img && img.trim() !== '')
+    },
+
+    // Підтягуємо додаткові зображення для галереї
     galleryImages() {
       if (!this.item) return []
 
-      if (this.item.images?.related_images && Array.isArray(this.item.images.related_images)) {
+      if (this.hasRelatedImages) {
         return this.item.images.related_images.filter(img => img && img.trim() !== '')
-      }
-
-      if (this.item.image) {
-        return [this.item.image]
       }
 
       return []
     },
-      modelIds() {
+    modelIds() {
       if (this.item.sketchfab?.sketchfabIds?.length) {
         return this.item.sketchfab.sketchfabIds
       }
@@ -236,6 +243,11 @@ export default {
     item: {
       immediate: true,
       handler(newItem) {
+        // Якщо змінили товар і у нового немає картинок, скидаємо слайдер на опис
+        if (!this.hasRelatedImages) {
+          this.currentSlide = 0
+        }
+
         if (newItem.sketchfab?.defaultId) {
           this.activeSketchfabId = newItem.sketchfab.defaultId
         } else if (newItem.sketchfab?.sketchfabIds?.length) {
@@ -309,15 +321,18 @@ export default {
     },
 
     toggleMode() {
+      if (!this.hasRelatedImages) return
       this.currentSlide = this.currentSlide === 0 ? 1 : 0
       this.dragOffset = 0
     },
 
     handleMouseDown(e) {
+      if (!this.hasRelatedImages) return
       this.startDrag(e.clientX)
     },
 
     handleTouchStart(e) {
+      if (!this.hasRelatedImages) return
       if (e.touches && e.touches[0]) {
         this.startDrag(e.touches[0].clientX)
       }
