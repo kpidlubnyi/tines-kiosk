@@ -1,16 +1,32 @@
 <template>
   <div class="local-3d-viewer">
-    <canvas ref="canvas"></canvas>
-
-    <Transition name="fade">
-      <div v-if="isLoading" class="loader-overlay">
-        <div class="spinner"></div>
+    <!-- Зображення, якщо активовано фоллбек з 3D на photo -->
+    <div v-if="fallbackToPhoto" class="photo-container">
+      <img 
+        :src="photoPath" 
+        :alt="modelId" 
+        class="fallback-photo" 
+        @error="handlePhotoError" 
+      />
+      <div v-if="error" class="error-overlay">
+        <span>{{ error }}</span>
       </div>
-    </Transition>
-
-    <div v-if="error" class="error-overlay">
-      <span>{{ error }}</span>
     </div>
+
+    <!-- Режим 3D за замовчуванням -->
+    <template v-else>
+      <canvas ref="canvas"></canvas>
+
+      <Transition name="fade">
+        <div v-if="isLoading" class="loader-overlay">
+          <div class="spinner"></div>
+        </div>
+      </Transition>
+
+      <div v-if="error" class="error-overlay">
+        <span>{{ error }}</span>
+      </div>
+    </template>
   </div>
 </template>
 
@@ -36,22 +52,29 @@ export default {
 
   data() {
     return {
-      isLoading: true,
-      error: null
+      isLoading: false,
+      error: null,
+      fallbackToPhoto: false
     }
   },
 
   computed: {
-    modelPath() {
-      if (!this.modelId) return null
+    glbPath() {
       return `/tines-kiosk/models/${this.modelId}.glb`
+    },
+    photoPath() {
+      return `/tines-kiosk/models/${this.modelId}.png`
     }
   },
 
   watch: {
     modelId(newId, oldId) {
       if (newId !== oldId) {
-        this.loadModel()
+        this.fallbackToPhoto = false
+        this.error = null
+        this.$nextTick(() => {
+          this.initOrReloadViewer()
+        })
       }
     }
   },
@@ -76,19 +99,21 @@ export default {
   },
 
   methods: {
+    initOrReloadViewer() {
+      if (!this.renderer) {
+        this.initViewer()
+      } else {
+        this.loadModel()
+      }
+    },
+
     initViewer() {
       const canvas = this.$refs.canvas
+      if (!canvas) return
 
-      if (!canvas) {
-        this.error = 'Canvas не знайдено'
-        return
-      }
-
-      // Scene
       this.scene = new THREE.Scene()
       this.scene.background = new THREE.Color(0xffffff)
 
-      // Camera
       this.camera = new THREE.PerspectiveCamera(
         35,
         canvas.clientWidth / canvas.clientHeight,
@@ -96,7 +121,6 @@ export default {
         1000
       )
 
-      // Renderer
       this.renderer = new THREE.WebGLRenderer({
         canvas,
         antialias: true,
@@ -109,11 +133,9 @@ export default {
       this.renderer.toneMapping = THREE.ACESFilmicToneMapping
       this.renderer.toneMappingExposure = 0.3
 
-      // Shadows
       this.renderer.shadowMap.enabled = true
       this.renderer.shadowMap.type = THREE.VSMShadowMap
 
-      // Environment
       const pmremGenerator = new THREE.PMREMGenerator(this.renderer)
       this.scene.environment = pmremGenerator.fromScene(
         new RoomEnvironment(),
@@ -121,7 +143,6 @@ export default {
       ).texture
       pmremGenerator.dispose()
 
-      // Controls
       this.controls = new OrbitControls(this.camera, canvas)
       this.controls.enableDamping = true
       this.controls.dampingFactor = 0.08
@@ -130,7 +151,6 @@ export default {
       this.controls.maxDistance = 100
       this.controls.autoRotate = false
 
-      // Lights
       const ambientLight = new THREE.AmbientLight(0xffffff, 0.15)
       this.scene.add(ambientLight)
 
@@ -146,19 +166,16 @@ export default {
       fillLight.position.set(-5, 3, -4)
       this.scene.add(fillLight)
 
-      // GLTF loader (без застарілих імпортів)
       this.loader = new GLTFLoader()
 
-      // Resize observer
       this.resizeObserver = new ResizeObserver(() => {
         this.handleResize()
       })
-      this.resizeObserver.observe(canvas.parentElement)
+      if (canvas.parentElement) {
+        this.resizeObserver.observe(canvas.parentElement)
+      }
 
-      // Start rendering
       this.animate()
-
-      // Load model
       this.loadModel()
     },
 
@@ -174,18 +191,10 @@ export default {
         this.model = null
       }
 
-      if (!this.modelPath) {
-        this.isLoading = false
-        this.error = `Локальна модель для "${this.modelId}" не знайдена`
-        return
-      }
-
       this.loader.load(
-        this.modelPath,
+        this.glbPath,
         (gltf) => {
           this.model = gltf.scene
-
-          // Коригування орієнтації
           this.model.rotation.x = -Math.PI / 2
           this.model.updateMatrixWorld(true)
 
@@ -198,12 +207,17 @@ export default {
         },
         undefined,
         (error) => {
-          console.error('[Local3DViewer] Model loading error:', error)
+          console.warn(`[Local3DViewer] GLB file not found for "${this.modelId}", switching to PNG fallback.`, error)
           this.isLoading = false
-          this.error = `Не вдалося завантажити модель /models/${this.modelId}.glb`
+          // Якщо .glb не знайдено — вмикаємо фоллбек на .png
+          this.fallbackToPhoto = true
           this.$emit('viewer-error', error)
         }
       )
+    },
+
+    handlePhotoError() {
+      this.error = 'Файл моделі (.glb або .png) не знайдено'
     },
 
     prepareModel(model) {
@@ -226,7 +240,6 @@ export default {
           const materials = isArray ? object.material : [object.material]
 
           const updatedMaterials = materials.map((material) => {
-            // Фолбек для застарілих PBR Specular Glossiness матеріалів
             if (material.isGLTFSpecularGlossinessMaterial) {
               const pbrMaterial = new THREE.MeshStandardMaterial({
                 color: material.color,
@@ -279,15 +292,10 @@ export default {
 
       const fov = THREE.MathUtils.degToRad(this.camera.fov)
       const distance = maxSize / (2 * Math.tan(fov / 2))
-      
       const cameraDistance = distance * 0.9
 
       const isoFactor = cameraDistance / Math.sqrt(3)
-      this.camera.position.set(
-        isoFactor * 1.5, 
-        isoFactor * 0.4, 
-        isoFactor
-      )
+      this.camera.position.set(isoFactor * 1.5, isoFactor * 0.4, isoFactor)
 
       this.camera.near = Math.max(maxSize / 1000, 0.01)
       this.camera.far = Math.max(maxSize * 100, 100)
@@ -302,26 +310,20 @@ export default {
 
     handleResize() {
       if (!this.renderer || !this.camera) return
-
       const canvas = this.$refs.canvas
       if (!canvas) return
 
       const width = canvas.clientWidth
       const height = canvas.clientHeight
-
       if (!width || !height) return
 
       this.camera.aspect = width / height
       this.camera.updateProjectionMatrix()
-
       this.renderer.setSize(width, height, false)
     },
 
     animate() {
-      if (!this.renderer || !this.scene || !this.camera) {
-        return
-      }
-
+      if (!this.renderer || !this.scene || !this.camera) return
       this.animationFrame = requestAnimationFrame(this.animate)
 
       if (this.controls) {
@@ -334,11 +336,7 @@ export default {
     disposeModel(model) {
       model.traverse((object) => {
         if (!object.isMesh) return
-
-        if (object.geometry) {
-          object.geometry.dispose()
-        }
-
+        if (object.geometry) object.geometry.dispose()
         if (!object.material) return
 
         const materials = Array.isArray(object.material)
@@ -348,16 +346,10 @@ export default {
         materials.forEach((material) => {
           Object.keys(material).forEach((key) => {
             const value = material[key]
-
-            if (
-              value &&
-              typeof value === 'object' &&
-              typeof value.dispose === 'function'
-            ) {
+            if (value && typeof value === 'object' && typeof value.dispose === 'function') {
               value.dispose()
             }
           })
-
           material.dispose()
         })
       })
@@ -368,28 +360,23 @@ export default {
         cancelAnimationFrame(this.animationFrame)
         this.animationFrame = null
       }
-
       if (this.resizeObserver) {
         this.resizeObserver.disconnect()
         this.resizeObserver = null
       }
-
       if (this.controls) {
         this.controls.dispose()
         this.controls = null
       }
-
       if (this.model) {
         this.disposeModel(this.model)
         this.scene.remove(this.model)
         this.model = null
       }
-
       if (this.renderer) {
         this.renderer.dispose()
         this.renderer = null
       }
-
       this.scene = null
       this.camera = null
       this.loader = null
@@ -415,15 +402,28 @@ export default {
   touch-action: none;
 }
 
+.photo-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8fafc;
+}
+
+.fallback-photo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 .loader-overlay {
   position: absolute;
   inset: 0;
   z-index: 20;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
@@ -432,25 +432,19 @@ export default {
 .spinner {
   width: 48px;
   height: 48px;
-
   border: 4px solid rgba(0, 0, 0, 0.1);
   border-top-color: #333333;
-
   border-radius: 50%;
-
   animation: spin 0.8s linear infinite;
 }
 
 .error-overlay {
   position: absolute;
   inset: 0;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 2rem;
-
   color: #333333;
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
