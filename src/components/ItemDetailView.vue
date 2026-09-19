@@ -20,7 +20,7 @@
     class="detail-image" 
   />
 </div>
-        <div v-if="hasMultipleModels" class="models-gallery">
+        <div class="models-gallery">
           <button 
             class="nav-arrow left-arrow" 
             title="Попередня модель" 
@@ -223,9 +223,6 @@ export default {
       }
       const fallbackId = this.item.sketchfab?.defaultId || this.item.sketchfabId
       return fallbackId ? [fallbackId] : []
-    },
-    hasMultipleModels() {
-      return this.modelIds.length > 1
     },
     currentIndex() {
       return this.modelIds.indexOf(this.activeSketchfabId)
