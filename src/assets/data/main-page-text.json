@@ -1,0 +1,71 @@
+{
+  "phrases": [
+    {
+      "index": 0,
+      "text": {
+        "en": "Innovative solutions for rail, urban transport, and industry.",
+        "de": "Innovative Lösungen für Bahn, Stadtverkehr und Industrie.",
+        "pl": "Innowacyjne rozwiązania dla kolei, transportu miejskiego i przemysłu.",
+        "ru": "Инновационные решения для железных дорог, городского транспорта и промышленности.",
+        "uk": "Інноваційні рішення для залізниці, міського транспорту та промисловості."
+      }
+    },
+    {
+      "index": 1,
+      "text": {
+        "en": "Select a category from the list to explore products and services.",
+        "de": "Wählen Sie eine Kategorie aus der Liste, um Produkte und Dienstleistungen zu entdecken.",
+        "pl": "Wybierz kategorię z listy, aby poznać produkty i usługi.",
+        "ru": "Выберите категорию из списка, чтобы ознакомиться с продуктами и услугами.",
+        "uk": "Оберіть категорію зі списку, щоб ознайомитися з продуктами та послугами."
+      }
+    },
+    {
+      "index": 2,
+      "text": {
+        "en": "Scroll down or click an item for detailed information and 3D models.",
+        "de": "Scrollen Sie nach unten oder klicken Sie auf ein Element für detaillierte Informationen und 3D-Modelle.",
+        "pl": "Przewiń w dół lub kliknij element, aby uzyskać szczegółowe informacje i modele 3D.",
+        "ru": "Прокрутите вниз или нажмите на элемент для подробной информации и 3D-моделей.",
+        "uk": "Прокрутіть вниз або натисніть на елемент для детальної інформації та 3D-моделей."
+      }
+    }
+  ],
+  "categories": {
+    "kolej": {
+      "en": "Railway",
+      "de": "Eisenbahn",
+      "pl": "Kolej",
+      "ru": "Железная дорога",
+      "uk": "Залізниця"
+    },
+    "tramwaj": {
+      "en": "Tramways",
+      "de": "Straßenbahn",
+      "pl": "Tramwaj",
+      "ru": "Трамвай",
+      "uk": "Трамвай"
+    },
+    "metro": {
+      "en": "Metro",
+      "de": "U-Bahn",
+      "pl": "Metro",
+      "ru": "Метро",
+      "uk": "Метро"
+    },
+    "przemysl": {
+      "en": "Industrial railway",
+      "de": "Industriebahn",
+      "pl": "Kolej przemysłowa",
+      "ru": "Промышленная железная дорога",
+      "uk": "Промислова залізниця"
+    },
+    "wibro": {
+      "en": "Vibration isolation",
+      "de": "Schwingungsisolierung",
+      "pl": "Wibroizolacja",
+      "ru": "Виброизоляция",
+      "uk": "Віброізоляція"
+    }
+  }
+}

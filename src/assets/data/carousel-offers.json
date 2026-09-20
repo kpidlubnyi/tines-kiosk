@@ -1,0 +1,142 @@
+[
+  {
+    "id": "zint-tines",
+    "title": {
+      "pl": "System zintegrowanej nawierzchni kolejowo-drogowej TINES®",
+      "en": "TINES® Integrated Railway-Road Track System",
+      "de": "Integriertes Schienen-Straßen-Fahrbahnsystem TINES®",
+      "ru": "Система интегрированного железнодорожно-дорожного покрытия TINES®",
+      "uk": "Система інтегрованого залізнично-дорожнього покриття TINES®"
+    },
+    "image": "/tines-kiosk/products/kolej/zint-nawierzchnia-tines.png",
+    "categories": ["kolej", "metro", "przemysl"],
+    "sketchfab": {
+      "defaultId": "c0dac337daad4dabbe6ee1ff943f83a9",
+      "sketchfabIds": [
+        "c0dac337daad4dabbe6ee1ff943f83a9",
+        "168c4dd5546449e691f6d8ba692954fd",
+        "19a874123e964c49bc896bfa143ac91c"
+      ]
+    }
+  },
+  {
+    "id": "zint-tines-gtp",
+    "title": {
+      "pl": "System zintegrowanej nawierzchni kolejowo-drogowej TINES® GTP",
+      "en": "TINES® GTP Integrated Railway-Road Track System",
+      "de": "Integriertes Schienen-Straßen-Fahrbahnsystem TINES® GTP",
+      "ru": "Система интегрированного железнодорожно-дорожного покрытия TINES® GTP",
+      "uk": "Система інтегрованого залізнично-дорожнього покриття TINES® GTP"
+    },
+    "image": "/tines-kiosk/products/kolej/tines-gtp.png",
+    "categories": ["kolej", "metro", "przemysl"]
+  },
+  {
+    "id": "ebs",
+    "title": {
+      "pl": "System nawierzchni bezpodsypkowej TINES® EBS",
+      "en": "TINES® EBS Ballastless Track System",
+      "de": "Feste Fahrbahn TINES® EBS",
+      "ru": "Безбалластная система пути TINES® EBS",
+      "uk": "Безбаластна система колії TINES® EBS"
+    },
+    "image": "/tines-kiosk/products/kolej/tines-ebs.png",
+    "categories": ["kolej", "metro", "przemysl"]
+  },
+  {
+    "id": "st-ebs",
+    "title": {
+      "pl": "System nawierzchni bezpodsypkowej TINES® Slab Track EBS",
+      "en": "TINES® Slab Track EBS Ballastless System",
+      "de": "Feste Fahrbahn TINES® Slab Track EBS",
+      "ru": "Безбалластная система пути TINES® Slab Track EBS",
+      "uk": "Безбаластна система колії TINES® Slab Track EBS"
+    },
+    "image": "/tines-kiosk/products/kolej/tines-st-ebs.png",
+    "categories": ["kolej", "metro", "przemysl"]
+  },
+  {
+    "id": "srt",
+    "title": {
+      "pl": "System szczelnej nawierzchni torowej TINES® SRT",
+      "en": "TINES® SRT Sealed Track Surface System",
+      "de": "Flüssigkeitsdichtes Gleisoberbausystem TINES® SRT",
+      "ru": "Система герметичного покрытия пути TINES® SRT",
+      "uk": "Система герметичного покриття колії TINES® SRT"
+    },
+    "image": "/tines-kiosk/products/kolej/tines-srt.png",
+    "categories": ["kolej", "metro", "przemysl"]
+  },
+  {
+    "id": "ers",
+    "title": {
+      "pl": "System przytwierdzenia typu TINES® ERS",
+      "en": "TINES® ERS Fastening System",
+      "de": "Schienenbefestigungssystem Typ TINES® ERS",
+      "ru": "Система скрепления типа TINES® ERS",
+      "uk": "Система скріплення типу TINES® ERS"
+    },
+    "image": "/tines-kiosk/products/kolej/tines-ers.png",
+    "categories": ["kolej", "metro", "przemysl"]
+  },
+  {
+    "id": "plyty",
+    "title": {
+      "pl": "Prefabrykowane płyty torowe TINES®",
+      "en": "TINES® Prefabricated Track Slabs",
+      "de": "TINES® Gleistragplatten aus Stahlbeton",
+      "ru": "Сборные путевые плиты TINES®",
+      "uk": "Збірні колійні плити TINES®"
+    },
+    "image": "/tines-kiosk/products/kolej/tines-lc-l.png",
+    "categories": ["kolej", "metro", "tramwaj", "przemysl"]
+  },
+  {
+    "id": "maty",
+    "title": {
+      "pl": "Maty wibroizolacyjne TINES®",
+      "en": "TINES® Anti-Vibration Mats",
+      "de": "TINES® Unterschottermatten / Elastomer-Matten",
+      "ru": "Виброизоляционные маты TINES®",
+      "uk": "Віبروізоляційні мати TINES®"
+    },
+    "image": "/tines-kiosk/products/kolej/maty.png",
+    "categories": ["kolej", "metro", "tramwaj", "przemysl"]
+  },
+  {
+    "id": "polyrail",
+    "title": {
+      "pl": "Elastomery polimerowe TINES® Polyrail",
+      "en": "TINES® Polyrail Polymer Elastomers",
+      "de": "TINES® Polyrail Polymer-Elastomere",
+      "ru": "Полимерные эластомеры TINES® Polyrail",
+      "uk": "Полімерні еластомери TINES® Polyrail"
+    },
+    "image": "/tines-kiosk/products/kolej/tines-polyrail.png",
+    "categories": ["kolej", "metro", "tramwaj", "przemysl"]
+  },
+  {
+    "id": "tram-bst",
+    "title": {
+      "pl": "System podpór blokowych TINES® TRAM BST",
+      "en": "TINES® TRAM BST Block Support System",
+      "de": "TINES® TRAM BST Einzelstützpunkt-System",
+      "ru": "Система блочных опор TINES® TRAM BST",
+      "uk": "Система блочних опор TINES® TRAM BST"
+    },
+    "image": "/tines-kiosk/products/tramwaj/tines-tram-bst.png",
+    "categories": ["tramwaj"]
+  },
+  {
+    "id": "profile",
+    "title": {
+      "pl": "Profile elastomerowe TINES®",
+      "en": "TINES® Elastomeric Profiles",
+      "de": "TINES® Elastomerprofile",
+      "ru": "Эластомерные профили TINES®",
+      "uk": "Еластомерні профілі TINES®"
+    },
+    "image": "/tines-kiosk/products/tramwaj/profile.png",
+    "categories": ["tramwaj"]
+  }
+]
