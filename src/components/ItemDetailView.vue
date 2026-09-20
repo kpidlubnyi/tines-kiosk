@@ -750,7 +750,7 @@ export default {
 }
 
 .detail-description {
-  font-size: 1.1vw;
+  font-size: 1vw;
   line-height: 1.7;
   color: rgba(0, 0, 0, 0.80);
   word-break: break-word;

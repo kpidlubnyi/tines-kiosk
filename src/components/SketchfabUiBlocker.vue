@@ -96,6 +96,5 @@ export default {
   pointer-events: auto;
   box-sizing: border-box;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  border: red dashed;
 }
 </style>

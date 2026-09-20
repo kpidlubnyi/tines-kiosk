@@ -176,7 +176,7 @@ export default {
 
 .item-description {
   margin: 0;
-  font-size: 0.9vw;
+  font-size: 1vw;
   line-height: 1.65;
   color: #334155;
 }
