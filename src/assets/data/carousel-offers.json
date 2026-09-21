@@ -20,7 +20,7 @@
     }
   },
   {
-    "id": "zint-tines-gtp",
+    "id": "gtp",
     "title": {
       "pl": "System zintegrowanej nawierzchni kolejowo-drogowej TINES® GTP",
       "en": "TINES® GTP Integrated Railway-Road Track System",
@@ -88,7 +88,7 @@
       "ru": "Сборные путевые плиты TINES®",
       "uk": "Збірні колійні плити TINES®"
     },
-    "image": "/tines-kiosk/products/kolej/tines-lc-l.png",
+    "image": "/tines-kiosk/gallery/kolej/kolej-plyty-1.png",
     "categories": ["kolej", "metro", "tramwaj", "przemysl"]
   },
   {
@@ -136,7 +136,7 @@
       "ru": "Эластомерные профили TINES®",
       "uk": "Еластомерні профілі TINES®"
     },
-    "image": "/tines-kiosk/products/tramwaj/profile.png",
+    "image": "/tines-kiosk/gallery/tramwaj/profile-1.png",
     "categories": ["tramwaj"]
   }
 ]

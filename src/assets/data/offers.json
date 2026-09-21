@@ -90,11 +90,7 @@
           "sketchfabIds": [
             "b9fe6d622f114d89aa87ea82b41d9572",
             "43c0026944d34b8eb263b4aa842c7537",
-            "8272b255a3c1488eb4dd8d24439fe7c8",
-            "ba52cb5e4fd649fd94b8ceb4dfc8734d",
-            "d3d36e47147a4ce7a949ded288e6e09f",
-            "1809282d11e14ed8a4d59c85f0e20a96",
-            "c50789388be84f969b2eb8e25dc7fad6"
+            "8272b255a3c1488eb4dd8d24439fe7c8"
           ]
         },
         "crossCategories": [
@@ -1568,7 +1564,7 @@
     "title": {
       "pl": "KOLEJ PRZEMYSŁOWA",
       "en": "INDUSTRIAL RAILWAY",
-      "de": "INDUSTRIEBAHNEN",
+      "de": "INDUSTRIEBAHN",
       "ru": "ПРОМЫШЛЕННАЯ ЖЕЛЕЗНАЯ ДОРОГА",
       "uk": "ПРОМИСЛОВА ЗАЛІЗНИЦЯ"
     },
@@ -1854,7 +1850,7 @@
           "tramwaj"
         ],
         "images": {
-          "main_image": "/tines-kiosk/products/przemysl/tines-ers.png",
+          "main_image": "/tines-kiosk/products/przemysl/w14.png",
           "related_images": []
         }
       },
