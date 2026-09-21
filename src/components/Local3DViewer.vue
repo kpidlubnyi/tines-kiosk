@@ -209,7 +209,6 @@ export default {
         (error) => {
           console.warn(`[Local3DViewer] GLB file not found for "${this.modelId}", switching to PNG fallback.`, error)
           this.isLoading = false
-          // Якщо .glb не знайдено — вмикаємо фоллбек на .png
           this.fallbackToPhoto = true
           this.$emit('viewer-error', error)
         }
@@ -414,7 +413,7 @@ export default {
 .fallback-photo {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .loader-overlay {

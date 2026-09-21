@@ -210,11 +210,11 @@
       {
         "id": "kolej-rozjazdy",
         "title": {
-          "pl": "System nawierzchni bezpodsypkowej dla rozjazdów kolejowych TINES<sup>®</sup>",
-          "en": "TINES<sup>®</sup> Ballastless Track System for Railway Turnouts",
-          "de": "Das Feste Fahrbahnsystem für Eisenbahnweichen TINES<sup>®</sup>",
-          "ru": "Система безбалластного пути TINES<sup>®</sup> для железнодорожных стрелочных переводов",
-          "uk": "Система безбалостної колії TINES<sup>®</sup> для залізничних стрілочних переводів"
+          "pl": "System nawierzchni bezpodsypkowej dla rozjazdów kolejowych TINES",
+          "en": "TINES Ballastless Track System for Railway Turnouts",
+          "de": "Das Feste Fahrbahnsystem für Eisenbahnweichen TINES",
+          "ru": "Система безбалластного пути TINES для железнодорожных стрелочных переводов",
+          "uk": "Система безбалостної колії TINES для залізничних стрілочних переводів"
         },
         "desc": {
           "brief":{
@@ -717,11 +717,11 @@
       {
         "id": "metro-rozjazdy",
         "title": {
-          "pl": "System nawierzchni bezpodsypkowej dla rozjazdów metra TINES<sup>®</sup> EBS-R",
-          "en": "TINES<sup>®</sup> EBS-R Ballastless Track System for Metro Turnouts",
-          "de": "Das Feste Fahrbahnsystem für U-Bahn-Weichen TINES<sup>®</sup> EBS-R",
-          "ru": "Система безбалластного пути для стрелочных переводов метро TINES<sup>®</sup> EBS-R",
-          "uk": "Система безбаластової колії для стрілочних переводів метро TINES<sup>®</sup> EBS-R"
+          "pl": "System nawierzchni bezpodsypkowej dla rozjazdów metra TINES",
+          "en": "TINES Ballastless Track System for Metro Turnouts",
+          "de": "Das Feste Fahrbahnsystem für U-Bahn-Weichen TINES",
+          "ru": "Система безбалластного пути для стрелочных переводов метро TINES",
+          "uk": "Система безбаластової колії для стрілочних переводів метро TINES"
         },
         "desc": {
           "brief":{
@@ -1050,7 +1050,7 @@
         "title": {
           "pl": "System zintegrowanej nawierzchni tramwajowo-drogowej TINES<sup>®</sup> TRAM",
           "en": "TINES<sup>®</sup> TRAM Integrated Tram-Road Track System",
-          "de": "Das TINES<sup>®</sup> TRAM System für integrierte Gleisoberbau  und Straßenbelag:",
+          "de": "Das TINES<sup>®</sup> TRAM System für integrierte Gleisoberbau  und Straßenbelag",
           "ru": "Система интегрированного трамвайно-дорожного покрытия TINES<sup>®</sup> TRAM",
           "uk": "Система інтегрованого трамвайно-дорожнього покриття TINES<sup>®</sup> TRAM"
         },
@@ -1106,7 +1106,7 @@
         "title": {
           "pl": "System zintegrowanej nawierzchni tramwajowo-drogowej TINES<sup>®</sup> TRAM GTP",
           "en": "TINES<sup>®</sup> TRAM GTP Integrated Tram-Road Track System",
-          "de": "Das TINES<sup>®</sup> GTP-System für integrierte Gleisoberbau  und Straßenbelag:",
+          "de": "Das TINES<sup>®</sup> GTP-System für integrierte Gleisoberbau  und Straßenbelag",
           "ru": "Система интегрированного трамвайно-дорожного покрытия TINES<sup>®</sup> TRAM GTP",
           "uk": "Система інтегрованого трамвайно-дорожнього покриття TINES<sup>®</sup> TRAM GTP"
         },
@@ -1149,53 +1149,11 @@
         }
       },
       {
-        "id": "tramwaj-rozjazdy",
-        "title": {
-          "pl": "System nawierzchni bezpodsypkowej dla rozjazdów tramwajowych TINES<sup>®</sup> TRAM",
-          "en": "TINES<sup>®</sup> TRAM Ballastless Track System for Tram Turnouts",
-          "de": "Das Feste Fahrbahnsystem für Straßebahn-Weichen TINES<sup>®</sup> TRAM:",
-          "ru": "Система безбалластного пути для трамвайных стрелочных переводов TINES<sup>®</sup> TRAM",
-          "uk": "Система безбаластової колії для трамвайних стрілочних переводів TINES<sup>®</sup> TRAM"
-        },
-        "desc": {
-          "brief":{
-            "pl": "<p>Rozjazdy tramwajowe w konstrukcji nawierzchni bezpodsypkowej to trwałe i stabilne rozwiązanie dla nowoczesnej infrastruktury szynowej. Zastosowanie konstrukcji betonowej zapewnia precyzyjne położenie elementów rozjazdu, wysoką odporność na obciążenia dynamiczne oraz ograniczenie drgań i hałasu. Nawierzchnia bezpodsypkowa umożliwia sprawną eksploatację i ułatwia utrzymanie infrastruktury.</p>",
-            "en": "<p>Tram turnouts in a ballastless track structure offer a durable and stable solution for modern rail transit networks. Concrete construction ensures precise positioning of turnout components, high dynamic load resistance, and effective noise and vibration reduction. Ballastless track enables efficient operation and simplifies routine maintenance.</p>",
-            "de": "<p>Straßenbahnweichen in einer schotterlosen Gleisbauweise sind eine dauerhafte und stabile Lösung für eine moderne Schieneninfrastruktur. Die Verwendung einer Betonkonstruktion als Gleisunterbau gewährleistet die präzise Positionierung der Weichenelemente, und die darunter eingebaute elastische Vibrationsdämpfungsschicht sorgt für eine hohe Widerstandsfähigkeit gegen dynamische Belastungen sowie für eine Reduzierung von Schwingungen und Lärm. Der schotterlose Gleiskonstruktion ermöglicht einen reibungslosen Betrieb und erleichtert die Instandhaltung der Infrastruktur.</p>",
-            "ru": "<p>Трамвайные стрелочные переводы в безбалластной конструкции — это долговечное и стабильное решение для современной рельсовой инфраструктуры. Применение бетонной конструкции обеспечивает точное положение элементов стрелочного перевода, высокую устойчивость к динамическим нагрузкам и снижение уровня вибраций и шума. Безбалластная конструкция обеспечивает эффективную эксплуатацию и упрощает обслуживание инфраструктуры.</p>",
-            "uk": "<p>Трамвайні стрілочні переводи в конструкції безбаластного покриття — це міцне та стабільне рішення для сучасної рейкової інфраструктури. Застосування бетонної конструкції забезпечує точне положення елементів стрілочного переводу, високу стійкість до динамічних навантажень, а також зменшення вібрацій та шуму. Безбаластне покриття забезпечує ефективну експлуатацію та полегшує обслуговування інфраструктури.</p>"
-          },
-          "detailed":{
-            "pl":"<p>System nawierzchni bezpodsypkowej dla rozjazdów tramwajowych TINES<sup>®</sup> TRAM to rozwiązanie przeznaczone do wykonywania trwałych i stabilnych konstrukcji w miejscach szczególnie istotnych dla prawidłowego funkcjonowania sieci tramwajowej. Konstrukcja betonowa zapewnia precyzyjne i stabilne osadzenie elementów rozjazdu, umożliwiając ich prawidłową współpracę z nawierzchnią torową oraz przenoszenie obciążeń generowanych przez intensywny ruch tramwajowy.</p><p>Rozwiązanie może być stosowane w ramach zintegrowanej nawierzchni tramwajowo-drogowej TINES<sup>®</sup> TRAM, dzięki czemu rozjazd może zostać wkomponowany w przestrzeń miejską współdzieloną przez torowisko i ruch drogowy. Bezpodsypkowa konstrukcja pozwala na uzyskanie trwałej nawierzchni oraz ograniczenie zakresu prac związanych z bieżącym utrzymaniem torowiska. Zastosowanie odpowiednio dobranych rozwiązań sprężystego podparcia i mocowania szyn wspiera ograniczenie przenoszenia drgań oraz oddziaływań dynamicznych na konstrukcję i otoczenie.</p><p>TINES<sup>®</sup> TRAM umożliwia również dostosowanie konstrukcji do specyfiki istniejącej infrastruktury miejskiej, w tym ograniczonej przestrzeni oraz licznych sieci i urządzeń podziemnych. System dla rozjazdów tramwajowych stanowi rozwiązanie łączące trwałość konstrukcji bezpodsypkowej z wymaganiami nowoczesnego transportu tramwajowego, zapewniając stabilne warunki eksploatacji i ułatwiając utrzymanie infrastruktury.</p>",
-            "en":"<p>The TINES<sup>®</sup> TRAM ballastless track system for tram turnouts is engineered for long-term stability in critical trackwork nodes vital to transit network operation. Heavy-duty concrete construction provides precise, rigid support for turnout elements, ensuring proper interaction with surrounding track pavements under intensive tram passage.</p><p>The turnout system seamlessly integrates into the TINES<sup>®</sup> TRAM urban surface system, allowing turnouts to be placed within shared vehicular roadways. Ballastless construction yields high longevity and significantly reduces routine track maintenance demands. Resilient rail support and fastening damp dynamic impacts and structural vibrations transferred to adjacent buildings and utility networks.</p><p>Furthermore, TINES<sup>®</sup> TRAM turnout designs adapt flexibly to tight urban footprints, constrained working spaces, and dense underground utility grids. The system combines ballastless structural longevity with the demanding needs of modern tram transit, ensuring stable operation and simplified maintenance.</p>",
-            "de":"<p>Das schotterlose Gleisbelagssystem für Straßenbahnweichen TINES<sup>®</sup> TRAM ist eine Lösung für den Bau langlebiger und stabiler Konstruktionen an Stellen, die für den ordnungsgemäßen Betrieb des Straßenbahnnetzes besonders wichtig sind. Die Betonkonstruktion gewährleistet eine präzise und stabile Verankerung der Weichenelemente und ermöglicht so deren einwandfreies Zusammenspiel mit dem Gleisoberbau sowie die Aufnahme der durch den intensiven Straßenbahnverkehr verursachten Belastungen.</p><p>Die Konstruktion des Systems TINES<sup>®</sup> TRAM kann im Rahmen des integrierten Straßenbahnoberbau und Straßenbelags eingesetzt werden, wodurch sich die Weiche in den städtischen Raum einfügen lässt, der von Straßenbahn- und Straßenverkehr gemeinsam genutzt wird. Die schotterlose Bauweise ermöglicht eine langlebige Fahrbahn und reduziert den Aufwand für die Instandhaltung des Gleises. Der Einsatz entsprechend ausgewählter Konstruktion- und Materiallösungen für die elastische Lagerung und Befestigung der Schienen trägt dazu bei, die Übertragung von Schwingungen und dynamischen Einwirkungen auf die Gleiskonstruktion und die Umgebung der Straßenbahnstrecke zu verringern.</p><p>Das TINES<sup>®</sup> TRAM-System ermöglicht es zudem, die Konstruktion des Gleisoberbaus in Weichen an die Besonderheiten der bestehenden städtischen Infrastruktur anzupassen, einschließlich begrenzter Platzverhältnisse sowie zahlreicher unterirdischer Leitungsnetze und Anlagen. Das TINES<sup>®</sup> TRAM-System für Straßenbahnweichen ist eine Lösung, die die Langlebigkeit einer schotterlosen Konstruktion mit den Anforderungen des modernen Straßenbahnverkehrs verbindet, stabile Betriebsbedingungen gewährleistet und die Instandhaltung der Gleisinfrastruktur erleichtert.</p>",
-            "ru":"<p>Система безбалластного верхнего строения пути для трамвайных стрелочных переводов TINES<sup>®</sup> TRAM представляет собой решение, предназначенное для выполнения долговечных и стабильных конструкций в местах, имеющих особое значение для правильного функционирования трамвайной сети. Бетонная конструкция обеспечивает точное и стабильное положение элементов стрелочного перевода, обеспечивая их правильное взаимодействие с верхним строением пути и передачу нагрузок, генерируемых интенсивным трамвайным движением.</p><p>Решение может применяться в рамках интегрированного трамвайно-дорожного покрытия TINES<sup>®</sup> TRAM, благодаря чему стрелочный перевод может быть вписан в городскую совмещенную проезжую часть. Безбалластная конструкция позволяет получить долговечную конструкцию верхнего строения пути и ограничить объем работ, связанных с текущим обслуживанием трамвайного пути. Применение надлежащим образом подобранных решений упругого опирания и скрепления рельсов обеспечивает эффективное снижение уровня вибраций и динамических воздействий на конструкцию и окружающую среду.</p><p>TINES<sup>®</sup> TRAM также позволяет адаптировать конструкцию к специфике существующей городской инфраструктуры, в том числе ограниченному пространству и многочисленным подземным инженерным сетям и коммуникациям. Система для трамвайных стрелочных переводов представляет собой решение, объединяющее долговечность безбалластной конструкции с требованиями современного трамвайного транспорта, обеспечивая стабильные условия эксплуатации и упрощая обслуживание инфраструктуры.</p>",
-            "uk":"<p>Система безбаластного покриття для трамвайних стрілочних переводів TINES<sup>®</sup> TRAM — це рішення, призначене для влаштування міцних та стабільних конструкцій у місцях, особливо важливих для належного функціонування трамвайної мережі. Бетонна конструкція забезпечує точне та стабільне розміщення елементів стрілочного переводу, забезпечуючи їхню належну взаємодію з колійним покриттям та сприйняття навантажень, згенерованих інтенсивним трамвайним рухом.</p><p>Рішення може застосовуватися в рамках інтегрованого трамвайно-дорожнього покриття TINES<sup>®</sup> TRAM, завдяки чому стрілочний перевід може бути гармонійно вписаний у міський простір, спільно використовуваний колією та автомобільним транспортом. Безбаластна конструкція дозволяє отримати довговічне покриття та зменшити обсяг робіт, пов'язаних з поточним утриманням колії. Застосування належно підібраних рішень пружної опори та скріплення рейок сприяє обмеженню передачі вібрацій та динамічних впливів на конструкцію та довкілля.</p><p>TINES<sup>®</sup> TRAM також дозволяє адаптувати конструкцію до специфіки існуючої міської інфраструктури, включаючи обмежений простір та численні підземні мережі й пристрої. Система для трамвайних стрілочних переводів є рішенням, що поєднує довговічність безбаластної конструкції з вимогами сучасного трамвайного транспорту, забезпечуючи стабільні умови експлуатації та полегшуючи обслуговування інфраструктури.</p>"
-          }
-        },
-        "sketchfab": {
-          "defaultId": "86026adc74344b00a5d919e0888efb68",
-          "sketchfabIds": [
-            "86026adc74344b00a5d919e0888efb68"
-          ]
-        },
-        "crossCategories": [
-          "kolej",
-          "przemysl",
-          "metro",
-          "tramwaj"
-        ],
-        "images": {
-          "main_image": "/tines-kiosk/products/tramwaj/rozjazdy.png",
-          "related_images": []
-        }
-      },
-      {
         "id": "tramwaj-ebs",
         "title": {
           "pl": "System nawierzchni bezpodsypkowej TINES<sup>®</sup> TRAM EBS",
           "en": "TINES<sup>®</sup> TRAM EBS Ballastless Track System",
-          "de": "Das Feste Fahrbahnsystem TINES<sup>®</sup> TRAM EBS:",
+          "de": "Das Feste Fahrbahnsystem TINES<sup>®</sup> TRAM EBS",
           "ru": "Система безбалластного пути TINES<sup>®</sup> EBS",
           "uk": "Система безбалостної колії TINES<sup>®</sup> EBS"
         },
@@ -1248,7 +1206,7 @@
         "title": {
           "pl": "System podpór blokowych TINES<sup>®</sup> TRAM BST",
           "en": "TINES<sup>®</sup> TRAM BST Ballastless Track System",
-          "de": "Das Feste Fahrbahnsystem für Straßebahnoberbau TINES<sup>®</sup> TRAM BST:",
+          "de": "Das Feste Fahrbahnsystem für Straßebahnoberbau TINES<sup>®</sup> TRAM BST",
           "ru": "Система блочных опор TINES<sup>®</sup> TRAM BST",
           "uk": "Система блочних опор TINES<sup>®</sup> TRAM BST"
         },
@@ -1276,6 +1234,48 @@
         },
         "images": {
           "main_image": "/tines-kiosk/products/tramwaj/tines-tram-bst.png",
+          "related_images": []
+        }
+      },
+      {
+        "id": "tramwaj-rozjazdy",
+        "title": {
+          "pl": "System nawierzchni bezpodsypkowej dla rozjazdów tramwajowych TINES<sup>®</sup> TRAM",
+          "en": "TINES Ballastless Track System for Tram Turnouts",
+          "de": "Das Feste Fahrbahnsystem für Straßebahn-Weichen TINES<sup>®</sup> TRAM",
+          "ru": "Система безбалластного пути для трамвайных стрелочных переводов TINES<sup>®</sup> TRAM",
+          "uk": "Система безбаластової колії для трамвайних стрілочних переводів TINES<sup>®</sup> TRAM"
+        },
+        "desc": {
+          "brief":{
+            "pl": "<p>Rozjazdy tramwajowe w konstrukcji nawierzchni bezpodsypkowej to trwałe i stabilne rozwiązanie dla nowoczesnej infrastruktury szynowej. Zastosowanie konstrukcji betonowej zapewnia precyzyjne położenie elementów rozjazdu, wysoką odporność na obciążenia dynamiczne oraz ograniczenie drgań i hałasu. Nawierzchnia bezpodsypkowa umożliwia sprawną eksploatację i ułatwia utrzymanie infrastruktury.</p>",
+            "en": "<p>Tram turnouts in a ballastless track structure offer a durable and stable solution for modern rail transit networks. Concrete construction ensures precise positioning of turnout components, high dynamic load resistance, and effective noise and vibration reduction. Ballastless track enables efficient operation and simplifies routine maintenance.</p>",
+            "de": "<p>Straßenbahnweichen in einer schotterlosen Gleisbauweise sind eine dauerhafte und stabile Lösung für eine moderne Schieneninfrastruktur. Die Verwendung einer Betonkonstruktion als Gleisunterbau gewährleistet die präzise Positionierung der Weichenelemente, und die darunter eingebaute elastische Vibrationsdämpfungsschicht sorgt für eine hohe Widerstandsfähigkeit gegen dynamische Belastungen sowie für eine Reduzierung von Schwingungen und Lärm. Der schotterlose Gleiskonstruktion ermöglicht einen reibungslosen Betrieb und erleichtert die Instandhaltung der Infrastruktur.</p>",
+            "ru": "<p>Трамвайные стрелочные переводы в безбалластной конструкции — это долговечное и стабильное решение для современной рельсовой инфраструктуры. Применение бетонной конструкции обеспечивает точное положение элементов стрелочного перевода, высокую устойчивость к динамическим нагрузкам и снижение уровня вибраций и шума. Безбалластная конструкция обеспечивает эффективную эксплуатацию и упрощает обслуживание инфраструктуры.</p>",
+            "uk": "<p>Трамвайні стрілочні переводи в конструкції безбаластного покриття — це міцне та стабільне рішення для сучасної рейкової інфраструктури. Застосування бетонної конструкції забезпечує точне положення елементів стрілочного переводу, високу стійкість до динамічних навантажень, а також зменшення вібрацій та шуму. Безбаластне покриття забезпечує ефективну експлуатацію та полегшує обслуговування інфраструктури.</p>"
+          },
+          "detailed":{
+            "pl":"<p>System nawierzchni bezpodsypkowej dla rozjazdów tramwajowych TINES<sup>®</sup> TRAM to rozwiązanie przeznaczone do wykonywania trwałych i stabilnych konstrukcji w miejscach szczególnie istotnych dla prawidłowego funkcjonowania sieci tramwajowej. Konstrukcja betonowa zapewnia precyzyjne i stabilne osadzenie elementów rozjazdu, umożliwiając ich prawidłową współpracę z nawierzchnią torową oraz przenoszenie obciążeń generowanych przez intensywny ruch tramwajowy.</p><p>Rozwiązanie może być stosowane w ramach zintegrowanej nawierzchni tramwajowo-drogowej TINES<sup>®</sup> TRAM, dzięki czemu rozjazd może zostać wkomponowany w przestrzeń miejską współdzieloną przez torowisko i ruch drogowy. Bezpodsypkowa konstrukcja pozwala na uzyskanie trwałej nawierzchni oraz ograniczenie zakresu prac związanych z bieżącym utrzymaniem torowiska. Zastosowanie odpowiednio dobranych rozwiązań sprężystego podparcia i mocowania szyn wspiera ograniczenie przenoszenia drgań oraz oddziaływań dynamicznych na konstrukcję i otoczenie.</p><p>TINES<sup>®</sup> TRAM umożliwia również dostosowanie konstrukcji do specyfiki istniejącej infrastruktury miejskiej, w tym ograniczonej przestrzeni oraz licznych sieci i urządzeń podziemnych. System dla rozjazdów tramwajowych stanowi rozwiązanie łączące trwałość konstrukcji bezpodsypkowej z wymaganiami nowoczesnego transportu tramwajowego, zapewniając stabilne warunki eksploatacji i ułatwiając utrzymanie infrastruktury.</p>",
+            "en":"<p>The TINES<sup>®</sup> TRAM ballastless track system for tram turnouts is engineered for long-term stability in critical trackwork nodes vital to transit network operation. Heavy-duty concrete construction provides precise, rigid support for turnout elements, ensuring proper interaction with surrounding track pavements under intensive tram passage.</p><p>The turnout system seamlessly integrates into the TINES<sup>®</sup> TRAM urban surface system, allowing turnouts to be placed within shared vehicular roadways. Ballastless construction yields high longevity and significantly reduces routine track maintenance demands. Resilient rail support and fastening damp dynamic impacts and structural vibrations transferred to adjacent buildings and utility networks.</p><p>Furthermore, TINES<sup>®</sup> TRAM turnout designs adapt flexibly to tight urban footprints, constrained working spaces, and dense underground utility grids. The system combines ballastless structural longevity with the demanding needs of modern tram transit, ensuring stable operation and simplified maintenance.</p>",
+            "de":"<p>Das schotterlose Gleisbelagssystem für Straßenbahnweichen TINES<sup>®</sup> TRAM ist eine Lösung für den Bau langlebiger und stabiler Konstruktionen an Stellen, die für den ordnungsgemäßen Betrieb des Straßenbahnnetzes besonders wichtig sind. Die Betonkonstruktion gewährleistet eine präzise und stabile Verankerung der Weichenelemente und ermöglicht so deren einwandfreies Zusammenspiel mit dem Gleisoberbau sowie die Aufnahme der durch den intensiven Straßenbahnverkehr verursachten Belastungen.</p><p>Die Konstruktion des Systems TINES<sup>®</sup> TRAM kann im Rahmen des integrierten Straßenbahnoberbau und Straßenbelags eingesetzt werden, wodurch sich die Weiche in den städtischen Raum einfügen lässt, der von Straßenbahn- und Straßenverkehr gemeinsam genutzt wird. Die schotterlose Bauweise ermöglicht eine langlebige Fahrbahn und reduziert den Aufwand für die Instandhaltung des Gleises. Der Einsatz entsprechend ausgewählter Konstruktion- und Materiallösungen für die elastische Lagerung und Befestigung der Schienen trägt dazu bei, die Übertragung von Schwingungen und dynamischen Einwirkungen auf die Gleiskonstruktion und die Umgebung der Straßenbahnstrecke zu verringern.</p><p>Das TINES<sup>®</sup> TRAM-System ermöglicht es zudem, die Konstruktion des Gleisoberbaus in Weichen an die Besonderheiten der bestehenden städtischen Infrastruktur anzupassen, einschließlich begrenzter Platzverhältnisse sowie zahlreicher unterirdischer Leitungsnetze und Anlagen. Das TINES<sup>®</sup> TRAM-System für Straßenbahnweichen ist eine Lösung, die die Langlebigkeit einer schotterlosen Konstruktion mit den Anforderungen des modernen Straßenbahnverkehrs verbindet, stabile Betriebsbedingungen gewährleistet und die Instandhaltung der Gleisinfrastruktur erleichtert.</p>",
+            "ru":"<p>Система безбалластного верхнего строения пути для трамвайных стрелочных переводов TINES<sup>®</sup> TRAM представляет собой решение, предназначенное для выполнения долговечных и стабильных конструкций в местах, имеющих особое значение для правильного функционирования трамвайной сети. Бетонная конструкция обеспечивает точное и стабильное положение элементов стрелочного перевода, обеспечивая их правильное взаимодействие с верхним строением пути и передачу нагрузок, генерируемых интенсивным трамвайным движением.</p><p>Решение может применяться в рамках интегрированного трамвайно-дорожного покрытия TINES<sup>®</sup> TRAM, благодаря чему стрелочный перевод может быть вписан в городскую совмещенную проезжую часть. Безбалластная конструкция позволяет получить долговечную конструкцию верхнего строения пути и ограничить объем работ, связанных с текущим обслуживанием трамвайного пути. Применение надлежащим образом подобранных решений упругого опирания и скрепления рельсов обеспечивает эффективное снижение уровня вибраций и динамических воздействий на конструкцию и окружающую среду.</p><p>TINES<sup>®</sup> TRAM также позволяет адаптировать конструкцию к специфике существующей городской инфраструктуры, в том числе ограниченному пространству и многочисленным подземным инженерным сетям и коммуникациям. Система для трамвайных стрелочных переводов представляет собой решение, объединяющее долговечность безбалластной конструкции с требованиями современного трамвайного транспорта, обеспечивая стабильные условия эксплуатации и упрощая обслуживание инфраструктуры.</p>",
+            "uk":"<p>Система безбаластного покриття для трамвайних стрілочних переводів TINES<sup>®</sup> TRAM — це рішення, призначене для влаштування міцних та стабільних конструкцій у місцях, особливо важливих для належного функціонування трамвайної мережі. Бетонна конструкція забезпечує точне та стабільне розміщення елементів стрілочного переводу, забезпечуючи їхню належну взаємодію з колійним покриттям та сприйняття навантажень, згенерованих інтенсивним трамвайним рухом.</p><p>Рішення може застосовуватися в рамках інтегрованого трамвайно-дорожнього покриття TINES<sup>®</sup> TRAM, завдяки чому стрілочний перевід може бути гармонійно вписаний у міський простір, спільно використовуваний колією та автомобільним транспортом. Безбаластна конструкція дозволяє отримати довговічне покриття та зменшити обсяг робіт, пов'язаних з поточним утриманням колії. Застосування належно підібраних рішень пружної опори та скріплення рейок сприяє обмеженню передачі вібрацій та динамічних впливів на конструкцію та довкілля.</p><p>TINES<sup>®</sup> TRAM також дозволяє адаптувати конструкцію до специфіки існуючої міської інфраструктури, включаючи обмежений простір та численні підземні мережі й пристрої. Система для трамвайних стрілочних переводів є рішенням, що поєднує довговічність безбаластної конструкції з вимогами сучасного трамвайного транспорту, забезпечуючи стабільні умови експлуатації та полегшуючи обслуговування інфраструктури.</p>"
+          }
+        },
+        "sketchfab": {
+          "defaultId": "86026adc74344b00a5d919e0888efb68",
+          "sketchfabIds": [
+            "86026adc74344b00a5d919e0888efb68"
+          ]
+        },
+        "crossCategories": [
+          "kolej",
+          "przemysl",
+          "metro",
+          "tramwaj"
+        ],
+        "images": {
+          "main_image": "/tines-kiosk/products/tramwaj/rozjazdy.png",
           "related_images": []
         }
       },
