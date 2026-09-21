@@ -61,7 +61,7 @@ const CATEGORY_ITEMS = {
   kolej: ['ZINT', 'GTP', 'EBS', 'ST', "ROZJ", "SRT", "W14", "ERS", "LC-L", "MAT", "ELAS"],
   przemysl: ['ZINT', 'GTP', 'EBS', "ROZJ", "SRT", "W14", "ERS", "LC-L", "MAT", "ELAS"],
   metro: ['ZINT', 'GTP', 'EBS', "ROZJ", "SRT", "W14", "ERS", "LC-L", "MAT", "ELAS"],
-  tramwaj: ['ZINT', "GTP", 'ROZJ', 'EBS', 'BST', 'SRT', 'W14', 'ELAS', 'LC-L', 'MAT', 'PROF']
+  tramwaj: ['ZINT', "GTP", 'EBS', 'BST', 'ROZJ', 'SRT', 'W14', 'ELAS', 'LC-L', 'MAT', 'PROF']
 }
 
 export default {
