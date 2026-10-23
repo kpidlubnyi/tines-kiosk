@@ -72,7 +72,6 @@
 <script>
 import AppIcon from './AppIcon.vue'
 
-// Власний масив назв для кожної категорії. Редагуйте стрінги тут:
 const CATEGORY_NAV_ITEMS = {
   category1: ['Назва 1', 'Назва 2', 'Назва 3', 'Назва 4', 'Назва 5'],
   category2: ['Модель A', 'Модель B', 'Модель C', 'Модель D'],
@@ -111,17 +110,14 @@ export default {
   },
   computed: {
     itemsList() {
-      // 1. Якщо масив передано явно через props
       if (this.items && this.items.length > 0) {
         return this.items
       }
       
-      // 2. Якщо задана категорія та для неї є стрінговий масив в CATEGORY_NAV_ITEMS
       if (this.category && CATEGORY_NAV_ITEMS[this.category]) {
         return CATEGORY_NAV_ITEMS[this.category]
       }
       
-      // 3. За замовчуванням — генеруємо масив за тотальною кількістю
       return Array.from({ length: this.totalItems }, (_, i) => ({ id: i + 1 }))
     },
     totalItemsCount() {

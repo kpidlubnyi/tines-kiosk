@@ -248,9 +248,9 @@ export default {
     },
     currentOfferData() {
       return this.offersData[this.activeOfferId] || {
-        category: 'Інформація',
-        title: 'Заголовок оферти',
-        description: 'Опис відсутній',
+        category: 'Informacja',
+        title: 'Nagłówek oferty',
+        description: 'Brak opisu',
         items: []
       }
     },
@@ -447,7 +447,7 @@ export default {
     },
 
     handleLanguageToggle() {
-      console.log('Перемикання мови')
+      console.log('Przełączenie języka...')
     },
 
     handleActiveItemChange(index) {

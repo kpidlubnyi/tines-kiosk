@@ -1,6 +1,5 @@
 <template>
   <div class="local-3d-viewer">
-    <!-- Зображення, якщо активовано фоллбек з 3D на photo -->
     <div v-if="fallbackToPhoto" class="photo-container">
       <img 
         :src="photoPath" 
@@ -13,7 +12,6 @@
       </div>
     </div>
 
-    <!-- Режим 3D за замовчуванням -->
     <template v-else>
       <canvas ref="canvas"></canvas>
 
@@ -216,7 +214,7 @@ export default {
     },
 
     handlePhotoError() {
-      this.error = 'Файл моделі (.glb або .png) не знайдено'
+      this.error = 'Pliku modelu (.glb або .png) nie znaleziono.'
     },
 
     prepareModel(model) {

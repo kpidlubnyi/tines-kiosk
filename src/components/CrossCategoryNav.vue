@@ -30,7 +30,6 @@ export default {
       type: Array,
       default: () => []
     },
-    // Повний ключ поточної категорії, наприклад: "category1-x-y-z"
     activeCategory: {
       type: String,
       default: ''
@@ -41,12 +40,10 @@ export default {
     hasCrossCategories() {
       return Array.isArray(this.crossCategories) && this.crossCategories.length > 0
     },
-    // Отримуємо префікс поточної категорії (перша частина до дефісу)
     currentPrefix() {
       if (!this.activeCategory) return ''
       return this.activeCategory.split('-')[0]
     },
-    // Отримуємо суфікс/кінцівку поточної категорії (все, що йде після першого дефісу)
     categorySuffix() {
       if (!this.activeCategory) return ''
       const firstDashIndex = this.activeCategory.indexOf('-')

@@ -110,17 +110,14 @@ export default {
   emits: ['toggle-language', 'go-home', 'navigate', 'select-offer', 'back-to-offer', 'select-cross-category'],
   computed: {
     currentNavItems() {
-      // 1. Якщо масив передано явно через props z зовнішнього джерела
       if (this.items && this.items.length > 0) {
         return this.items
       }
       
-      // 2. Якщо є відповідний масив для activeOfferId
       if (this.activeOfferId && CATEGORY_ITEMS[this.activeOfferId]) {
         return CATEGORY_ITEMS[this.activeOfferId]
       }
 
-      // 3. Якщо передано просто totalItems — створюємо порожній масив за кількістю
       if (this.totalItems > 0) {
         return Array.from({ length: this.totalItems }, (_, i) => i + 1)
       }

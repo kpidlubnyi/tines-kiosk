@@ -6,7 +6,6 @@
         :class="{ 'full-width': isSidebarCollapsed }"
       >
         <div class="media-wrapper">
-          <!-- Офлайн Three.js 3D плеєр (бере файл /models/<activeSketchfabId>.glb) -->
           <Local3DViewer
             v-if="activeSketchfabId && isOfflineMode"
             :key="'local-' + activeSketchfabId"
@@ -14,7 +13,6 @@
             :autoplay="true"
           />
 
-          <!-- Онлайн Sketchfab 3D плеєр -->
           <SketchfabAPIViewer 
             v-else-if="activeSketchfabId"
             :key="'sketchfab-' + activeSketchfabId"
@@ -23,7 +21,6 @@
             :annotations="item.annotations"
           />
 
-          <!-- Звичайне зображення, якщо відсутня 3D модель -->
           <img 
             v-else-if="item.images?.main_image" 
             :src="item.images?.main_image" 
@@ -79,13 +76,12 @@
           @toggle="toggleOfflineMode"
         />
 
-        <!-- Кнопка згортання / розгортання бічної панелі -->
         <button 
           class="toggle-sidebar-btn" 
           :class="{ 'collapsed': isSidebarCollapsed }"
           @click="toggleSidebar"
-          :title="isSidebarCollapsed ? 'Показати опис' : 'Згорнути опис'"
-          aria-label="Перемикач панелі опису"
+          :title="isSidebarCollapsed ? 'Pokaż opis' : 'Zwiń opis'"
+          aria-label="Przełącznik panelu opisu"
         >
           <svg 
             viewBox="0 0 24 24" 

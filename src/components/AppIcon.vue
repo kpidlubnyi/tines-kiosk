@@ -19,7 +19,7 @@ watchEffect(async () => {
     const icon = await import(`../assets/icons/${props.name}.svg?raw`)
     svgContent.value = icon.default
   } catch (e) {
-    console.error(`Іконку "${props.name}.svg" не знайдено в src/assets/icons/`)
+    console.error(`Ikonki "${props.name}.svg" nie znaleziono w src/assets/icons/`)
     svgContent.value = ''
   }
 })
